@@ -1,0 +1,45 @@
+{
+  "name": "rimba",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src tests next.config.ts playwright.config.ts vitest.config.mts eslint.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\" \"tests/**/*.{ts,tsx}\" \"*.{json,ts,mts,mjs}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\" \"tests/**/*.{ts,tsx}\" \"*.{json,ts,mts,mjs}\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0",
+    "lucide-react": "1.67.0",
+    "motion": "14.9.0",
+    "next": "16.4.4",
+    "next-intl": "4.14.9",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/turbopack": "4.3.4",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.4.4",
+    "prettier": "3.9.10",
+    "tailwindcss": "4.3.4",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  },
+  "overrides": {
+    "minimatch": "11.0.1"
+  }
+}

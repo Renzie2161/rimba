@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "Rimba — Biodiversity encyclopedia",
+    "description": "Meet species and explore the sources behind every Rimba entry."
+  },
+  "navigation": {
+    "label": "Main navigation",
+    "homeLink": "Rimba — home",
+    "skipToMain": "Skip to main content",
+    "chooseLanguage": "Choose language",
+    "indonesianLanguage": "Bahasa Indonesia",
+    "switchToDarkTheme": "Switch to dark mode",
+    "switchToLightTheme": "Switch to light mode"
+  },
+  "home": {
+    "title": "Every species has a story. Let’s get to know them.",
+    "introduction": "Rimba is an Indonesian-first biodiversity encyclopedia prototype. Entries will pair species explanations with traceable sources.",
+    "projectLabel": "Educational prototype · SDG 15",
+    "projectNote": "Understanding biodiversity starts with information people can trust.",
+    "catalogLabel": "Species catalog",
+    "emptyTitle": "Field notes are being prepared.",
+    "emptyDescription": "No reviewed species entries are available yet. The catalog will grow after records and sources have been checked."
+  },
+  "footer": {
+    "project": "An educational prototype supporting awareness of SDG 15: Life on Land."
+  },
+  "states": {
+    "loading": "Loading page…",
+    "notFoundTitle": "Page not found.",
+    "notFoundDescription": "This address is not available yet. Return to Rimba home.",
+    "homeLink": "Return home",
+    "errorTitle": "Page could not load.",
+    "errorDescription": "Something went wrong while loading this page. Try again.",
+    "retry": "Try again"
+  }
+}

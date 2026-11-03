@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "Rimba — Ensiklopedia keanekaragaman hayati",
+    "description": "Kenali spesies dan sumber informasi di balik setiap catatan Rimba."
+  },
+  "navigation": {
+    "label": "Navigasi utama",
+    "homeLink": "Rimba — beranda",
+    "skipToMain": "Lewati ke konten utama",
+    "chooseLanguage": "Pilih bahasa",
+    "indonesianLanguage": "Bahasa Indonesia",
+    "switchToDarkTheme": "Aktifkan tema gelap",
+    "switchToLightTheme": "Aktifkan tema terang"
+  },
+  "home": {
+    "title": "Setiap spesies punya kisah. Mari mengenalnya.",
+    "introduction": "Rimba adalah prototipe ensiklopedia keanekaragaman hayati berbahasa Indonesia. Entri akan memadukan penjelasan spesies dengan sumber yang dapat ditelusuri.",
+    "projectLabel": "Prototipe edukasi · SDG 15",
+    "projectNote": "Mengenal keanekaragaman hayati dimulai dengan informasi yang dapat dipercaya.",
+    "catalogLabel": "Katalog spesies",
+    "emptyTitle": "Catatan lapangan sedang disiapkan.",
+    "emptyDescription": "Belum ada entri spesies yang ditinjau untuk ditampilkan. Katalog akan terisi setelah catatan dan sumber diperiksa."
+  },
+  "footer": {
+    "project": "Prototipe edukasi untuk meningkatkan pemahaman tentang SDG 15: Life on Land."
+  },
+  "states": {
+    "loading": "Memuat halaman…",
+    "notFoundTitle": "Halaman tidak ditemukan.",
+    "notFoundDescription": "Alamat ini belum tersedia. Kembali ke beranda Rimba.",
+    "homeLink": "Kembali ke beranda",
+    "errorTitle": "Halaman gagal dimuat.",
+    "errorDescription": "Terjadi kendala saat memuat halaman ini. Coba lagi.",
+    "retry": "Coba lagi"
+  }
+}
