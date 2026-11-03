@@ -6,14 +6,11 @@
 
 **An Indonesian-first biodiversity encyclopedia for learning about species and conservation.**
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![Next.js 16.4.4](https://img.shields.io/badge/Next.js-16.4.4-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React 19.3.0](https://img.shields.io/badge/React-19.3.0-149ECA?logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript 5.9.3](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS 4.3.4](https://img.shields.io/badge/Tailwind_CSS-4.3.4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![next-intl 4.14.9](https://img.shields.io/badge/next--intl-4.14.9-111827)](https://next-intl.dev/)
 [![Supabase client scaffold](https://img.shields.io/badge/Supabase-client%20scaffold-3FCF8E?logo=supabase&logoColor=white)](https://supabase.com/)
-[![Vitest 5.1.0](https://img.shields.io/badge/Vitest-5.1.0-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev/)
-[![Playwright 1.64.1](https://img.shields.io/badge/Playwright-1.64.1-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
 [![Node.js 20.9+](https://img.shields.io/badge/Node.js-20.9%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Cloudflare Pages planned and unverified](https://img.shields.io/badge/Cloudflare_Pages-planned%20%2F%20unverified-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
 
@@ -25,7 +22,7 @@
 
 - [About Rimba](#about-rimba)
 - [Project status](#project-status)
-- [Planned product](#planned-product)
+- [How Rimba works](#how-rimba-works)
 - [Technology](#technology)
 - [Getting started](#getting-started)
 - [Development commands](#development-commands)
@@ -33,6 +30,7 @@
 - [Project layout](#project-layout)
 - [Content and safety](#content-and-safety)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## About Rimba
 
@@ -48,14 +46,34 @@ The project has no species records, search, authentication, admin tools, live da
 
 English remains inactive until reviewed translations are ready.
 
-## Planned product
+## How Rimba works
 
-- Find species by common name, scientific name, conservation status, habitat, or region.
-- Read species profiles with taxonomy, sourced facts, conservation assessments, dates when available, and licensed media.
-- Explore conservation campaigns with clear demo labels and source details.
-- Curators and admins will manage sourced drafts, review, and publication.
-- Use a QRIS demonstration that cannot accept money or report real payments.
-- Try image-based identification for selected taxa in a later phase, with uncertainty shown.
+Rimba is designed as a curated encyclopedia, not a live wildlife tracker. Editors will turn researched material into reviewed Indonesian species profiles. Visitors will browse that published catalog without an account.
+
+### Visitor experience (planned)
+
+Visitors will search by common or scientific name, then narrow results by conservation status, habitat, or region. A species profile will connect its taxonomy, habitat, threats, and conservation information to named sources.
+
+Conservation categories will describe a specific assessment, not a live population count. Missing facts will remain unknown. Photos will include attribution and license details, with a typographic fallback when suitable media is unavailable.
+
+Related conservation campaigns will provide educational context. Their QRIS demonstration will use a non-payable code and temporary browser memory. Refreshing will reset it, without collecting money or payer details.
+
+Photo identification is a later optional feature for selected taxa. It will suggest candidates with uncertainty, not confirm an identification.
+
+### Content preparation and publication (planned)
+
+1. Research Indonesian endemic and threatened taxa using authoritative assessments and taxonomic references.
+2. Prepare Indonesian drafts with citations, assessment context, and licensed media or a designed fallback.
+3. Review taxonomy, factual claims, image rights, and copy. The project owner approves the initial batch before publication.
+4. Publish approved entries. Public access must exclude drafts and unapproved supporting content.
+
+Curators will edit drafts. Admins will control publication and changes to published content. External biodiversity services will support research and imports rather than become mandatory dependencies for each visitor request.
+
+### What happens today
+
+The browser requests a page from Next.js, which renders the Indonesian home shell using local message dictionaries. Small client-side controls handle the language disclosure and light/dark theme.
+
+The catalog is intentionally empty. No route fetches species, authenticates users, or contacts Supabase. The data and editorial flows above describe planned behavior, not existing integrations.
 
 ## Technology
 
@@ -94,11 +112,21 @@ Install Chromium once before browser tests: `npx playwright install chromium`.
 
 ## Architecture
 
-Next.js renders pages on the server by default. `next-intl` provides locale routing and message dictionaries.
+Next.js App Router handles pages, layouts, metadata, and route states. Server Components provide the default rendering model. Interactive controls use client components.
 
-Future public data access will use typed server-side queries to read published Supabase records under row-level security.
+The planned data flow is:
 
-Species content will need source records, assessment context, and media license details before publication. Import and review flows are not implemented.
+```mermaid
+flowchart LR
+  Research[Source research] --> Review[Draft and editorial review]
+  Review --> Publish[Admin publication]
+  Publish --> DB[(Supabase with RLS)]
+  Browser[Visitor request] --> Server[Next.js server queries]
+  Server --> DB
+  Server --> Page[Rendered species page]
+```
+
+Typed server-side queries will validate filters and retrieve published records. Supabase row-level security will enforce access independently of UI controls. The existing server-only client is a starting point, not a working data layer.
 
 ## Project layout
 
@@ -124,3 +152,9 @@ Species content will need source records, assessment context, and media license 
 Run formatting, lint, type checks, unit tests, and a production build before a change is complete. Run browser tests for route or interaction changes.
 
 Include a short change summary and the exact checks you ran with each pull request.
+
+## License
+
+Rimba's original code and documentation are licensed under the [Apache License 2.0](./LICENSE). Copyright 2026 Renzie2161.
+
+Third-party dependencies, biodiversity source material, and media retain their respective licenses. The project license does not grant rights to reuse third-party content.
