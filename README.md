@@ -1,15 +1,21 @@
 <div align="center">
 
-<img src="./public/favicon.png" alt="Rimba biodiversity logo" width="180">
+<img src="./public/readme-mark.png" alt="Rimba logo with rounded corners" width="200">
 
 # Rimba
 
-**Indonesian-first biodiversity encyclopedia prototype for source-grounded species learning.**
+**An Indonesian-first biodiversity encyclopedia for learning about species and conservation.**
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.4.4-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.3.0-149ECA?logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.9-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Next.js 16.4.4](https://img.shields.io/badge/Next.js-16.4.4-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React 19.3.0](https://img.shields.io/badge/React-19.3.0-149ECA?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript 5.9.3](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS 4.3.4](https://img.shields.io/badge/Tailwind_CSS-4.3.4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![next-intl 4.14.9](https://img.shields.io/badge/next--intl-4.14.9-111827)](https://next-intl.dev/)
+[![Supabase client scaffold](https://img.shields.io/badge/Supabase-client%20scaffold-3FCF8E?logo=supabase&logoColor=white)](https://supabase.com/)
+[![Vitest 5.1.0](https://img.shields.io/badge/Vitest-5.1.0-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev/)
+[![Playwright 1.64.1](https://img.shields.io/badge/Playwright-1.64.1-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![Node.js 20.9+](https://img.shields.io/badge/Node.js-20.9%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Cloudflare Pages planned and unverified](https://img.shields.io/badge/Cloudflare_Pages-planned%20%2F%20unverified-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
 
 </div>
 
@@ -17,45 +23,60 @@
 
 ## Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
+- [About Rimba](#about-rimba)
+- [Project status](#project-status)
+- [Planned product](#planned-product)
+- [Technology](#technology)
 - [Getting started](#getting-started)
-- [Scripts](#scripts)
-- [Project layout](#project-layout)
+- [Development commands](#development-commands)
 - [Architecture](#architecture)
-- [Supabase development](#supabase-development)
+- [Project layout](#project-layout)
+- [Content and safety](#content-and-safety)
 - [Contributing](#contributing)
-- [Security & safety](#security--safety)
 
----
+## About Rimba
 
-## Features
+Rimba is a university prototype for UN Sustainable Development Goal 15: Life on Land.
 
-- Indonesian home at `/id`; `/` redirects to `/id`. English routes are deferred.
-- Locale menu lists Bahasa Indonesia only; `en.json` stays dormant for future integration.
-- Hanken Grotesk typography, navbar logo, and accessible light/dark theme toggle.
-- Server-rendered foundation for reviewed, source-grounded species entries.
-- No species records, search, accounts, live Supabase reads, or payment collection in Phase 0.
+The planned encyclopedia will help visitors find species, learn about conservation, and inspect sources for published claims.
 
-## Requirements
+## Project status
 
-| Dependency | Version               |
-| :--------- | :-------------------- |
-| Node.js    | `>=20.9`              |
-| npm        | Included with Node.js |
+Phase 0 delivers a responsive Indonesian-first site foundation and development tooling.
 
-Supabase credentials are not required to run the Phase 0 home page.
+The project has no species records, search, authentication, admin tools, live database reads, or conservation pages yet. Supabase credentials are not required for this phase.
+
+English remains inactive until reviewed translations are ready.
+
+## Planned product
+
+- Find species by common name, scientific name, conservation status, habitat, or region.
+- Read species profiles with taxonomy, sourced facts, conservation assessments, dates when available, and licensed media.
+- Explore conservation campaigns with clear demo labels and source details.
+- Curators and admins will manage sourced drafts, review, and publication.
+- Use a QRIS demonstration that cannot accept money or report real payments.
+- Try image-based identification for selected taxa in a later phase, with uncertainty shown.
+
+## Technology
+
+The app uses Next.js App Router, React, TypeScript, Tailwind CSS, and next-intl. Vitest and Playwright cover unit and browser behavior.
+
+Rimba includes environment validation and a lazy, server-only anonymous Supabase client. No route uses it for live data or authentication.
+
+Cloudflare Pages is a requested deployment target. No deployment is configured or tested.
 
 ## Getting started
+
+Requirements: Node.js `>=20.9` and npm.
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000`. The root route opens `/id`; English UI is not enabled.
+Open `http://localhost:3000`. The Phase 0 site runs without Supabase credentials.
 
-## Scripts
+## Development commands
 
 | Command                | Purpose                                               |
 | :--------------------- | :---------------------------------------------------- |
@@ -71,49 +92,35 @@ Open `http://localhost:3000`. The root route opens `/id`; English UI is not enab
 
 Install Chromium once before browser tests: `npx playwright install chromium`.
 
-## Project layout
-
-```text
-src/
-├── app/
-│   ├── [locale]/(home)/       Indonesian home and loading state
-│   ├── [locale]/[...slug]/    Unknown-route handling
-│   ├── [locale]/site-controls.tsx  Language and theme controls
-│   ├── globals.css            Light/dark tokens and responsive styles
-│   └── favicon.ico            Rounded browser favicon
-├── i18n/                      Locale routing and navigation
-├── lib/supabase/              Lazy server-only client
-├── messages/                  Indonesian active; English dormant
-└── proxy.ts                   Locale routing
-public/
-└── favicon.png                Logo used in this README
-tests/
-├── e2e/                       Browser tests
-└── unit/                      Unit tests
-```
-
 ## Architecture
 
-`src/proxy.ts` uses `next-intl` to route `/id` and send `/` to `/id`. Only Indonesian messages load
-at runtime; `en.json` remains dormant for future integration. Pages use Server Components by default.
+Next.js renders pages on the server by default. `next-intl` provides locale routing and message dictionaries.
 
-The Supabase client validates environment values when first used. The Phase 0 home does not call it.
-There is no authentication, database query, or write flow yet.
+Future public data access will use typed server-side queries to read published Supabase records under row-level security.
 
-## Supabase development
+Species content will need source records, assessment context, and media license details before publication. Import and review flows are not implemented.
 
-For future database work, copy `.env.example` to `.env.local` and use credentials from the dedicated
-development project. Keep production credentials out of local development. Never put a service-role
-key in browser code.
+## Project layout
+
+| Path            | Purpose                                                        |
+| :-------------- | :------------------------------------------------------------- |
+| `src/app/`      | Site routes, layouts, and loading, error, and not-found states |
+| `src/i18n/`     | Locale routing and navigation                                  |
+| `src/lib/`      | Environment validation and server-only Supabase client         |
+| `src/messages/` | Locale message dictionaries                                    |
+| `tests/unit/`   | Fast contract tests                                            |
+| `tests/e2e/`    | Browser routing and interaction checks                         |
+| `public/`       | Brand images, including the rounded README mark                |
+
+## Content and safety
+
+- Source every biodiversity claim. Keep unassessed or unknown conservation status explicit.
+- Use media only when its taxon, license, alt text, and attribution are correct.
+- Keep QRIS non-payable and local-only. Do not collect payer data or show real payment totals.
+- Keep `.env.local` and working credentials out of commits. Use a separate development Supabase project.
 
 ## Contributing
 
-Keep changes focused. Include a short summary and the exact checks you ran with each pull request.
-Run browser tests when you change routes or interactive behavior.
+Run formatting, lint, type checks, unit tests, and a production build before a change is complete. Run browser tests for route or interaction changes.
 
-## Security & safety
-
-- Never commit credentials or real `.env.local` values.
-- QRIS, when implemented, remains a non-payable local simulation.
-- `AGENTS.md`, `PRODUCT.md`, and `.private/` stay local through `.git/info/exclude`; fresh clones do
-  not contain these private project notes.
+Include a short change summary and the exact checks you ran with each pull request.
