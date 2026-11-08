@@ -7,10 +7,9 @@ import { Link } from "@/i18n/navigation";
 
 type Theme = "light" | "dark";
 
-export default function SiteControls() {
+export default function SiteControls({ ready }: { ready: boolean }) {
   const t = useTranslations("navigation");
   const [theme, setTheme] = useState<Theme>("light");
-  const [isLanguageMenuOpen, setLanguageMenuOpen] = useState(false);
   const isDark = theme === "dark";
 
   function toggleTheme() {
@@ -21,17 +20,11 @@ export default function SiteControls() {
 
   return (
     <div className="site-controls">
-      <details
-        className="language-menu"
-        onToggle={(event) => setLanguageMenuOpen(event.currentTarget.open)}
-      >
+      <details className="language-menu">
         <summary
           className="site-control language-trigger"
-          role="button"
           aria-label={t("chooseLanguage")}
           title={t("chooseLanguage")}
-          aria-expanded={isLanguageMenuOpen}
-          aria-controls="language-menu-options"
         >
           <Globe size={19} strokeWidth={1.75} aria-hidden="true" />
           <ChevronDown size={14} strokeWidth={1.75} aria-hidden="true" />
@@ -51,6 +44,7 @@ export default function SiteControls() {
       <button
         className="site-control theme-toggle"
         type="button"
+        disabled={!ready}
         aria-label={t(isDark ? "switchToLightTheme" : "switchToDarkTheme")}
         aria-pressed={isDark}
         title={t(isDark ? "switchToLightTheme" : "switchToDarkTheme")}

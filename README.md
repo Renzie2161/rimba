@@ -10,7 +10,7 @@
 [![Next.js 16.4.4](https://img.shields.io/badge/Next.js-16.4.4-black?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React 19.3.0](https://img.shields.io/badge/React-19.3.0-149ECA?logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript 5.9.3](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Supabase client scaffold](https://img.shields.io/badge/Supabase-client%20scaffold-3FCF8E?logo=supabase&logoColor=white)](https://supabase.com/)
+[![Supabase anonymous reads](https://img.shields.io/badge/Supabase-anonymous%20reads-3FCF8E?logo=supabase&logoColor=white)](https://supabase.com/)
 [![Node.js 20.9+](https://img.shields.io/badge/Node.js-20.9%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Cloudflare Pages planned and unverified](https://img.shields.io/badge/Cloudflare_Pages-planned%20%2F%20unverified-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
 
@@ -23,10 +23,10 @@
 - [About Rimba](#about-rimba)
 - [Project status](#project-status)
 - [How Rimba works](#how-rimba-works)
+- [Journal URL controls](#journal-url-controls)
 - [Technology](#technology)
 - [Getting started](#getting-started)
 - [Development commands](#development-commands)
-- [Architecture](#architecture)
 - [Project layout](#project-layout)
 - [Content and safety](#content-and-safety)
 - [Contributing](#contributing)
@@ -34,54 +34,58 @@
 
 ## About Rimba
 
-Rimba is a university prototype for UN Sustainable Development Goal 15: Life on Land.
-
-The planned encyclopedia will help visitors find species, learn about conservation, and inspect sources for published claims.
+Rimba is an Indonesian-first biodiversity prototype for SDG 15, Life on Land. The Ensiklopedia presents published species records. Jurnal Eksplorasi shows synthetic demo observations, not personal history.
 
 ## Project status
 
-Phase 0 delivers a responsive Indonesian-first site foundation and development tooling.
+The configured development database has four published species entries and six synthetic Journal rows: three flora, three fauna, and two record-review flags. All counts come from returned rows.
 
-The project has no species records, search, authentication, admin tools, live database reads, or conservation pages yet. Supabase credentials are not required for this phase.
+The review flag means a demo record needs review. It does not describe conservation status or expert verification. Demo dates and regions are illustrative.
 
-English remains inactive until reviewed translations are ready.
+Cloudflare Pages remains planned and unverified. No deployment is claimed.
 
 ## How Rimba works
 
-Rimba is designed as a curated encyclopedia, not a live wildlife tracker. Editors will turn researched material into reviewed Indonesian species profiles. Visitors will browse that published catalog without an account.
+```mermaid
+flowchart LR
+  Visitor --> Next[Next.js server]
+  Next -->|anonymous read| Supabase[(Supabase)]
+  Supabase --> RLS[Row-level security]
+  RLS -->|published rows| Catalog[Ensiklopedia]
+  RLS -->|demo rows| Journal[Jurnal Eksplorasi]
+  Catalog --> Next
+  Journal --> Next
+  Next --> Visitor
+```
 
-### Visitor experience (planned)
+`/id/species` reads published catalog entries through a server-side RPC. `/id/journal` reads demo rows through the server-side anonymous client. Zod validates database responses. No browser query uses privileged credentials.
 
-Visitors will search by common or scientific name, then narrow results by conservation status, habitat, or region. A species profile will connect its taxonomy, habitat, threats, and conservation information to named sources.
+Editors prepare and review sourced content outside the visitor app. The app has no editor interface, public write path, account, or personal journal history.
 
-Conservation categories will describe a specific assessment, not a live population count. Missing facts will remain unknown. Photos will include attribution and license details, with a typographic fallback when suitable media is unavailable.
+The app also has `Panduan Lapangan`, `Tentang Rimba`, and `Donasi` pages. These pages do not read Supabase. Donation is a static, non-payable demonstration with no QRIS payload or payment flow.
 
-Related conservation campaigns will provide educational context. Their QRIS demonstration will use a non-payable code and temporary browser memory. Refreshing will reset it, without collecting money or payer details.
+`Identifikasi Spesies` is paused. The app makes no AI calls and shows no simulated camera result.
 
-Photo identification is a later optional feature for selected taxa. It will suggest candidates with uncertainty, not confirm an identification.
+### Journal URL controls
 
-### Content preparation and publication (planned)
+Journal state lives in the URL. Search, group, sort, and view survive reload and browser history.
 
-1. Research Indonesian endemic and threatened taxa using authoritative assessments and taxonomic references.
-2. Prepare Indonesian drafts with citations, assessment context, and licensed media or a designed fallback.
-3. Review taxonomy, factual claims, image rights, and copy. The project owner approves the initial batch before publication.
-4. Publish approved entries. Public access must exclude drafts and unapproved supporting content.
+| Parameter | Values and behavior                                                             | Default  |
+| --------- | ------------------------------------------------------------------------------- | -------- |
+| `q`       | Case-insensitive search in common and scientific names; maximum 100 code points | Empty    |
+| `group`   | `all`, `flora`, or `fauna`                                                      | `all`    |
+| `sort`    | `newest`, `oldest`, or `name`                                                   | `newest` |
+| `view`    | `grid` or `list`                                                                | `grid`   |
 
-Curators will edit drafts. Admins will control publication and changes to published content. External biodiversity services will support research and imports rather than become mandatory dependencies for each visitor request.
+Unknown or repeated keys and unsupported values show an invalid-URL message. Journal metrics use all returned rows. The result count and cards use filtered rows.
 
-### What happens today
-
-The browser requests a page from Next.js, which renders the Indonesian home shell using local message dictionaries. Small client-side controls handle the language disclosure and light/dark theme.
-
-The catalog is intentionally empty. No route fetches species, authenticates users, or contacts Supabase. The data and editorial flows above describe planned behavior, not existing integrations.
+Threatened and invasive controls stay disabled because demo rows have no sourced status.
 
 ## Technology
 
-The app uses Next.js App Router, React, TypeScript, Tailwind CSS, and next-intl. Vitest and Playwright cover unit and browser behavior.
+The app uses Next.js App Router, React, TypeScript, Tailwind CSS, and next-intl. Supabase handles anonymous server-side reads. Zod validates data at the database boundary. Vitest and Playwright are installed for unit and browser tests.
 
-Rimba includes environment validation and a lazy, server-only anonymous Supabase client. No route uses it for live data or authentication.
-
-Cloudflare Pages is a requested deployment target. No deployment is configured or tested.
+Indonesian is the only active locale. English messages remain dormant until routing enables that locale.
 
 ## Getting started
 
@@ -92,66 +96,69 @@ npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000`. The Phase 0 site runs without Supabase credentials.
+The checked-in `.env.example` contains placeholders. For Journal and species routes, create `.env.local` with `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` for an approved development project with the required schema and data. Never commit local values.
+
+`/id/journal` and `/id/species` need those Supabase values. `/id/guide`, `/id/about`, and `/id/donate` work without a database.
 
 ## Development commands
 
-| Command                | Purpose                                               |
-| :--------------------- | :---------------------------------------------------- |
-| `npm run dev`          | Start the local Next.js server                        |
-| `npm run build`        | Create a production build                             |
-| `npm run start`        | Serve the production build                            |
-| `npm run lint`         | Run ESLint                                            |
-| `npm run typecheck`    | Run TypeScript without emitting files                 |
-| `npm run test`         | Run Vitest unit tests                                 |
-| `npm run test:e2e`     | Run Playwright browser tests                          |
-| `npm run format`       | Format application source and configuration files     |
-| `npm run format:check` | Check application source and configuration formatting |
+| Command                                  | Purpose                                                    |
+| ---------------------------------------- | ---------------------------------------------------------- |
+| `npm run dev`                            | Start the local Next.js server                             |
+| `npm run build`                          | Create a production build                                  |
+| `npm run start`                          | Serve a production build                                   |
+| `npm run lint`                           | Run ESLint                                                 |
+| `npm run typecheck`                      | Run TypeScript without emitting files                      |
+| `npm run test`                           | Run Vitest unit tests                                      |
+| `npm run test:e2e`                       | Run Playwright browser tests                               |
+| `npm run test:db`                        | Run SQL and consumer checks in disposable local PostgreSQL |
+| `npm run seed:validate -- <drafts.json>` | Validate a draft file without database access              |
+| `npm run seed:sql -- <drafts.json>`      | Generate SQL for review without applying it                |
+| `npm run format:check`                   | Check configured application-source formatting             |
+| `npm run format`                         | Format configured application source and configuration     |
 
-Install Chromium once before browser tests: `npx playwright install chromium`.
+`npm run test:db` requires `initdb`, `pg_ctl`, and `psql` on `PATH`. It creates a temporary loopback cluster and removes it after the run. It does not use a hosted database.
 
 ## Architecture
 
-Next.js App Router handles pages, layouts, metadata, and route states. Server Components provide the default rendering model. Interactive controls use client components.
+Next.js App Router serves the Indonesian pages. The server renders catalog and Journal data from anonymous Supabase reads. Row-level security limits catalog reads to published records and Journal reads to demo rows.
 
-The planned data flow is:
-
-```mermaid
-flowchart LR
-  Research[Source research] --> Review[Draft and editorial review]
-  Review --> Publish[Admin publication]
-  Publish --> DB[(Supabase with RLS)]
-  Browser[Visitor request] --> Server[Next.js server queries]
-  Server --> DB
-  Server --> Page[Rendered species page]
-```
-
-Typed server-side queries will validate filters and retrieve published records. Supabase row-level security will enforce access independently of UI controls. The existing server-only client is a starting point, not a working data layer.
+The species detail resolver requires complete Indonesian content and validates source links and approved media. Incomplete English content, including media alt text, falls back as a complete Indonesian entry. Do not assemble partial records or fetch each card separately.
 
 ## Project layout
 
-| Path            | Purpose                                                        |
-| :-------------- | :------------------------------------------------------------- |
-| `src/app/`      | Site routes, layouts, and loading, error, and not-found states |
-| `src/i18n/`     | Locale routing and navigation                                  |
-| `src/lib/`      | Environment validation and server-only Supabase client         |
-| `src/messages/` | Locale message dictionaries                                    |
-| `tests/unit/`   | Fast contract tests                                            |
-| `tests/e2e/`    | Browser routing and interaction checks                         |
-| `public/`       | Brand images, including the rounded README mark                |
+| Path                                    | Purpose                                                   |
+| --------------------------------------- | --------------------------------------------------------- |
+| `src/app/[locale]/`                     | Locale layout and route pages                             |
+| `src/app/[locale]/species/(catalog)/`   | Species index and its loading/error boundaries            |
+| `src/app/[locale]/species/[slug]/`      | Published species detail and localized not-found boundary |
+| `src/app/[locale]/journal/`             | Journal page, local controls, and styles                  |
+| `src/features/journal/`                 | Journal DTO schema and bounded query                      |
+| `src/features/species/`                 | Catalog URL parsing, schemas, queries, and cards          |
+| `src/i18n/`                             | Locale routing and server message loading                 |
+| `src/messages/`                         | Indonesian messages and dormant English messages          |
+| `supabase/migrations/`                  | Database schema and policies                              |
+| `supabase/seeds/`                       | Explicit demo and research seed files                     |
+| `supabase/tests/`, `tests/`, `scripts/` | SQL checks, unit/browser tests, and local tools           |
+| `public/`                               | Local brand and demo images                               |
 
 ## Content and safety
 
-- Source every biodiversity claim. Keep unassessed or unknown conservation status explicit.
-- Use media only when its taxon, license, alt text, and attribution are correct.
-- Keep QRIS non-payable and local-only. Do not collect payer data or show real payment totals.
-- Keep `.env.local` and working credentials out of commits. Use a separate development Supabase project.
+- Cite scientific claims and keep evidence provenance. Record the scope and date for each conservation assessment.
+- Treat occurrence and observation history separately from population counts.
+- Keep the six Journal photos private and unpublished. Public reuse rights are not granted. Do not add image credits, sources, or downscale notices to the Journal cards.
+- Keep media provenance privately. Review third-party media rights before any later public release; this unpublished prototype displays no image-credit, source, or resize notices.
+- Do not infer conservation or invasive status from a Journal review flag. The threatened and invasive controls stay disabled until sourced data exists.
+- Keep `Identifikasi Spesies` paused. Do not add AI calls, fake camera progress, or fabricated results.
+- Keep `Donasi` static and non-payable. Do not add QRIS payloads, payment actions, payer data, or claimed totals.
+- Do not add fake authentication, accounts, personal history, or editor flows.
+- Keep `.env.local` and working credentials out of tracked files.
 
 ## Contributing
 
-Run formatting, lint, type checks, unit tests, and a production build before a change is complete. Run browser tests for route or interaction changes.
+Contributions must stay within the requested scope. Run checks that match changed paths. Report exact commands and any behavior that remains unverified.
 
-Include a short change summary and the exact checks you ran with each pull request.
+Run browser checks against the actual app. Screenshots or successful HTTP status alone do not prove route behavior.
 
 ## License
 

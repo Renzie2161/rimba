@@ -1,0 +1,396 @@
+[
+  {
+    "slug": "badak-jawa",
+    "scientific_name": "Rhinoceros sondaicus",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Badak jawa",
+    "summary_id": "Badak jawa hidup di hutan hujan Ujung Kulon dan menghadapi risiko besar karena persebarannya sangat terbatas.",
+    "description_id": "Badak jawa merupakan mamalia pemakan tumbuhan yang memiliki kulit kelabu dengan lipatan menyerupai lempeng. Menurut International Rhino Foundation, populasi liarnya kini terbatas di Taman Nasional Ujung Kulon, di bagian barat Pulau Jawa. Satwa ini umumnya hidup menyendiri dan memakan bagian tumbuhan hutan. Jantan memiliki satu cula, sedangkan cula betina lebih kecil atau tidak tampak. Perburuan dan ketergantungan pada satu kawasan menjadi perhatian konservasi. Informasi ini merupakan rangkuman sumber, bukan laporan jumlah individu atau penilaian status konservasi terbaru.",
+    "distinctive_traits_id": "Kulit kelabu berlipat; jantan bercula satu; betina dapat tidak memiliki cula yang menonjol; umumnya hidup menyendiri.",
+    "habitat_description_id": "Hutan hujan tropis di Ujung Kulon, bagian barat Pulau Jawa. Persebaran dibatasi pada tingkat kawasan, tanpa koordinat individu.",
+    "threats_description_id": "International Rhino Foundation melaporkan perburuan, keterbatasan habitat, dan rendahnya keragaman genetik. Ketergantungan pada satu kawasan juga meningkatkan kerentanan terhadap bencana alam.",
+    "region_codes": ["java"],
+    "habitat_codes": ["tropical_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "International Rhino Foundation",
+        "title": "Javan Rhino",
+        "url": "https://rhinos.org/about-rhinos/rhino-species/javan-rhino/",
+        "published_on": "2020-09-29",
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "profile",
+        "notes": "Source claim: species identity, traits, forest habitat, Java range and threats; first-party rhino conservation organization. Page metadata modified 2025-08-08; publication date is page date, not assessment date. Population figures and dated photograph captions conflict within page and are not imported. CR label lacks original assessment date, so assessment remains null. Terms: no open reuse license verified; reference link and original factual Indonesian paraphrase only, no copied prose, maps or photos; publication rights review pending. Draft; owner approval pending. taxon_rank=species."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "badak-sumatra",
+    "scientific_name": "Dicerorhinus sumatrensis",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Badak sumatra",
+    "summary_id": "Badak sumatra memiliki dua cula dan rambut pada tubuhnya, dengan populasi yang terpisah-pisah di Indonesia.",
+    "description_id": "Badak sumatra menghuni hutan tropis lebat, baik di dataran rendah maupun di daerah yang lebih tinggi. Tubuhnya memiliki rambut dan kulit kecokelatan, sementara cula depan lebih besar daripada cula belakang. Menurut International Rhino Foundation, satwa ini umumnya hidup menyendiri dan memakan beragam tumbuhan. Populasi yang terpisah-pisah menyulitkan upaya mempertahankan keberlangsungan spesies. Sumber tersebut juga menjelaskan program pengembangbiakan di Sumatran Rhino Sanctuary sebagai salah satu upaya konservasi. Keberadaan program tidak berarti pemulihan populasi liar telah tercapai atau dapat dijamin.",
+    "distinctive_traits_id": "Memiliki dua cula; cula depan lebih besar; tubuh ditutupi rambut dengan kerapatan bervariasi; telinga berumbai.",
+    "habitat_description_id": "Hutan tropis dataran rendah dan dataran tinggi, terutama di Sumatra; sumber juga mencatat populasi kecil di Kalimantan. Tidak disertakan lokasi rinci satwa.",
+    "threats_description_id": "International Rhino Foundation menyoroti populasi yang kecil dan terisolasi. Sumber tidak menemukan bukti perburuan dalam lebih dari satu dekade, sehingga tidak digunakan untuk mengklaim tingkat perburuan terkini.",
+    "conservation_actions_id": "International Rhino Foundation menjelaskan program pengembangbiakan di Sumatran Rhino Sanctuary sebagai upaya membangun populasi cadangan. Ini merupakan contoh kegiatan, bukan jaminan pelepasliaran atau pemulihan.",
+    "region_codes": ["sumatra", "kalimantan"],
+    "habitat_codes": ["tropical_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "International Rhino Foundation",
+        "title": "Sumatran Rhino",
+        "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/",
+        "published_on": "2020-09-29",
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "profile",
+        "notes": "Source claim: species identity, two horns, hair, habitat, Indonesia range, isolation and sanctuary breeding. Page metadata modified 2025-08-08. No population estimates imported; page contains estimates with different scopes. CR label has no original assessment date; status null is unknown in this dataset, not NE. Terms: no open license verified; original factual paraphrase and reference only, no copied descriptions/photos; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "orangutan-sumatra",
+    "scientific_name": "Pongo abelii",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Orangutan sumatra",
+    "summary_id": "Orangutan sumatra bergantung pada hutan di bagian utara Sumatra, termasuk Ekosistem Leuser.",
+    "description_id": "Orangutan sumatra merupakan salah satu spesies orangutan yang hidup di Indonesia. Sumatran Orangutan Conservation Programme menjelaskan pentingnya Ekosistem Leuser, yang mencakup wilayah Aceh dan Sumatra Utara, bagi kelangsungan hidupnya. Orangutan menghabiskan banyak waktu di pepohonan dan membuat tempat tidur dari ranting serta daun. Pembukaan hutan dapat mengurangi ruang hidup, sedangkan fragmentasi memisahkan kelompok yang sebelumnya terhubung. Perburuan dan perdagangan ilegal juga dicatat sebagai ancaman. Rangkuman ini tidak menyertakan perkiraan populasi, karena angka dan cakupan takson dalam sumber perlu ditinjau sebelum digunakan.",
+    "distinctive_traits_id": "Banyak beraktivitas di pepohonan; menggunakan tangan dan kaki untuk berpegangan; membuat sarang tidur dari bahan tumbuhan.",
+    "habitat_description_id": "Hutan di bagian utara Sumatra, termasuk Ekosistem Leuser di Aceh dan Sumatra Utara. Hutan rawa gambut termasuk habitat yang dibahas sumber.",
+    "threats_description_id": "SOCP mencatat pembukaan dan fragmentasi hutan, perburuan, serta perdagangan ilegal. Jalan baru dapat memisahkan habitat yang sebelumnya terhubung.",
+    "region_codes": ["sumatra"],
+    "habitat_codes": ["tropical_forest", "peat_swamp_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "Sumatran Orangutan Conservation Programme",
+        "title": "Orangutan Distribution",
+        "url": "https://sumatranorangutan.org/orangutans/orangutan-distribution/",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "habitat",
+        "notes": "Source claim: Pongo abelii identity and Leuser/Aceh/North Sumatra/peat forest distribution. Undated field-program page includes 2016 survey material and combines Sumatran/Tapanuli counts; all counts, percentages and future-loss deadlines excluded. Terms: no open license verified; reference and independently worded factual summary only; no copied text/images; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "Sumatran Orangutan Conservation Programme",
+        "title": "Conservation Threats",
+        "url": "https://sumatranorangutan.org/orangutans/conservation-threats/",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "threats",
+        "notes": "Source claim: clearing, fragmentation, hunting and illegal pet trade. Advocacy organization involved in conservation; no current numerical risk estimates adopted. Undated category claim not imported as assessment. Terms: no verified open license; original factual paraphrase/reference only; publication rights review pending."
+      },
+      {
+        "organization": "Borneo Orangutan Survival Foundation",
+        "title": "Orangutan Facts",
+        "url": "https://www.orangutan.or.id/orangutan-facts",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "traits",
+        "notes": "Source claim: Pongo abelii is a species; orangutans use hands/feet in trees and construct sleeping nests. Applies to orangutans collectively, not a diagnostic distinction from other Pongo. Undated page's collective 2016 status attribution not adopted. Terms: no open license verified; facts paraphrased in original Indonesian, reference only, no content/media reproduction; rights review pending."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "orangutan-kalimantan",
+    "scientific_name": "Pongo pygmaeus",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Orangutan kalimantan",
+    "summary_id": "Orangutan kalimantan menghuni beragam hutan di Pulau Borneo, termasuk hutan rawa gambut.",
+    "description_id": "Orangutan kalimantan hidup di Pulau Borneo, yang wilayahnya tidak hanya termasuk Indonesia. Borneo Orangutan Survival Foundation membedakan spesies ini dari orangutan sumatra dan orangutan tapanuli. Di dalam spesies orangutan kalimantan sendiri terdapat beberapa subspesies; entri ini membahas tingkat spesies, bukan satu subspesies tertentu. Habitatnya mencakup hutan dataran rendah dan hutan rawa, termasuk rawa gambut. Seperti orangutan lain, satwa ini memanfaatkan tangan dan kaki saat bergerak di pepohonan serta menyusun sarang untuk tidur. Pembukaan dan kerusakan hutan memecah habitatnya menjadi bagian-bagian yang terpisah.",
+    "distinctive_traits_id": "Bergerak di pepohonan dengan bantuan tangan dan kaki; membuat sarang tidur dari ranting dan daun; merupakan spesies yang berbeda dari Pongo abelii.",
+    "habitat_description_id": "Hutan di Pulau Borneo, termasuk Kalimantan, Sabah, dan Sarawak; sumber membahas hutan dataran rendah, hutan rawa gambut, mangrove, dan hutan karst. Bukan endemik Indonesia saja.",
+    "threats_description_id": "BOS Foundation menjelaskan bahwa pembukaan, penurunan kualitas, dan fragmentasi hutan akibat kegiatan manusia mengurangi serta memisahkan habitat orangutan.",
+    "region_codes": ["kalimantan"],
+    "habitat_codes": ["tropical_forest", "peat_swamp_forest", "mangrove"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "Borneo Orangutan Survival Foundation",
+        "title": "About Orangutan Habitat",
+        "url": "https://www.orangutan.or.id/about-orangutan-habitat",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "habitat",
+        "notes": "Source claim: Borneo distribution, named subspecies and cross-border range, habitat types, anthropogenic fragmentation. Field-program organization, undated; excludes counts and altitude thresholds. Species-level Pongo pygmaeus, not subspecies P. p. pygmaeus. Terms: no open license verified; reference plus independently worded factual summary only; no copying or media; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "Borneo Orangutan Survival Foundation",
+        "title": "Orangutan Facts",
+        "url": "https://www.orangutan.or.id/orangutan-facts",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "traits",
+        "notes": "Source claim: species distinction, tree locomotion and nest construction; general orangutan traits, not unique identifiers. Collective status statement with 2016 attribution not treated as original dated assessment. Terms: no open license verified; original factual paraphrase/reference only, rights review pending."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "komodo",
+    "scientific_name": "Varanus komodoensis",
+    "taxon_rank": "species",
+    "taxon_group": "reptile",
+    "common_name_id": "Komodo",
+    "summary_id": "Komodo merupakan kadal besar endemik Indonesia yang menghadapi perubahan habitat dan dampak perubahan iklim.",
+    "description_id": "Komodo merupakan kadal yang hidup alami di Indonesia. IUCN menyebut persebarannya di Taman Nasional Komodo dan Pulau Flores, serta menyoroti ancaman perubahan iklim dan kehilangan habitat. Komodo dewasa menggunakan lingkungan daratan terbuka, termasuk kawasan sabana, sementara individu muda dapat memanfaatkan pepohonan. Satwa ini memakan hewan lain dan juga bangkai. Tubuhnya bersisik, dengan ekor berotot dan gigi bergerigi. Informasi ancaman dari pengumuman IUCN tahun 2021 perlu dibaca sebagai keterangan bertanggal, bukan hasil pemantauan langsung pada saat pengunjung membuka halaman ini.",
+    "distinctive_traits_id": "Tubuh bersisik; ekor berotot; gigi bergerigi; individu muda dapat hidup di pepohonan.",
+    "habitat_description_id": "Sabana dan lingkungan berhutan di kawasan Nusa Tenggara. IUCN menyebut Taman Nasional Komodo dan Flores; tidak disertakan titik keberadaan individu.",
+    "threats_description_id": "Pengumuman IUCN pada 2021 menyoroti dampak perubahan iklim dan kenaikan muka laut terhadap habitat, serta kehilangan habitat akibat kegiatan manusia di Flores di luar kawasan lindung.",
+    "region_codes": ["nusa_tenggara"],
+    "habitat_codes": ["savanna", "tropical_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "IUCN",
+        "title": "Tuna species recovering despite growing pressures on marine life – IUCN Red List",
+        "url": "https://iucn.org/news/species/202109/tuna-species-recovering-despite-growing-pressures-marine-life-iucn-red-list",
+        "published_on": "2021-09-04",
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "threats",
+        "notes": "Verified fact from original assessment publisher's dated announcement: species identity, Indonesian endemism, Komodo/Flores range and 2021 threat explanation. Reports movement to EN in 2021, but release date is not assessment date; original assessment record and current validity not consulted, so seed assessment remains null. No forecast percentages imported. Terms: no open text/photo license verified; original factual paraphrase and reference only; publication rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "University of Michigan, Animal Diversity Web",
+        "title": "Varanus komodoensis — Leanne Lawwell (2006)",
+        "url": "https://animaldiversity.org/accounts/Varanus_komodoensis/",
+        "published_on": "2006-02-10",
+        "accessed_on": "2026-11-03",
+        "license": "CC BY-NC-SA 3.0 (text; see conditions of use)",
+        "section_key": "traits",
+        "notes": "Source claim: scales, muscular tail, serrated teeth, savanna habitat, young in trees, carnivory and scavenging. Student-authored historical natural-history account; not used for current range or status. Outdated bacterial-bite explanation, Padar occurrence and numerical life-history claims deliberately excluded. Indonesian factual paraphrase, not verbatim translation. Conservatively retain author attribution and NC/SA text conditions at https://animaldiversity.org/about/use_conditions/ and https://creativecommons.org/licenses/by-nc-sa/3.0/ if adaptation is distributed. No image rights inferred. Owner/rights review pending."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "anoa-dataran-rendah",
+    "scientific_name": "Bubalus depressicornis",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Anoa dataran rendah",
+    "summary_id": "Anoa dataran rendah merupakan kerabat kerbau berukuran kecil dari Sulawesi dan pulau sekitarnya.",
+    "description_id": "Anoa dataran rendah memiliki tubuh menyerupai kerbau kecil dengan tanduk yang mengarah ke belakang. Balai Besar KSDA Sulawesi Selatan menjelaskan bahwa rambut individu dewasa lebih jarang dan warnanya dapat menjadi sangat gelap. Satwa ini memakan tumbuhan serta memanfaatkan hutan sebagai tempat berlindung. Kelompok spesialis sapi liar Asia mencatat perburuan dan kehilangan habitat sebagai ancaman bagi anoa. Entri ini menggunakan nama Bubalus depressicornis untuk anoa dataran rendah, bukan mencampurnya dengan anoa gunung. Batas taksonomi keduanya masih menjadi pembahasan dalam sumber spesialis.",
+    "distinctive_traits_id": "Tubuh menyerupai kerbau kecil; tanduk mengarah ke belakang; rambut dewasa relatif jarang; memakan tumbuhan.",
+    "habitat_description_id": "Hutan dataran rendah Sulawesi dan Buton; habitat anoa juga mencakup hutan lembap dan rawa. Batas ketinggian antara anoa dataran rendah dan anoa gunung tidak dianggap mutlak.",
+    "threats_description_id": "IUCN SSC Asian Wild Cattle Specialist Group mencatat perburuan ilegal dan kehilangan habitat sebagai ancaman bagi anoa. Tidak digunakan untuk menyatakan laju penurunan terkini.",
+    "region_codes": ["sulawesi"],
+    "habitat_codes": ["tropical_forest", "swamp_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "Balai Besar KSDA Sulawesi Selatan",
+        "title": "Identifikasi TSL Kunci Sulawesi (Anoa Lowland)",
+        "url": "https://bbksdasulsel.ksdae.kehutanan.go.id/identifikasi-tsl-kunci-sulawesi-anoa-lowland",
+        "published_on": "2024-01-25",
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "traits",
+        "notes": "Source claim from national conservation agency: body, horn, adult hair, herbivory and lowland forest habitat. Source misspells genus as Babulus; canonical Bubalus corroborated by specialist source, not copied from typo. Source cites Red List /3128/ (mountain anoa) despite lowland subject; category, legal status, population, measurements and current assessment excluded. Terms: no open reuse license verified; original factual summary and reference only, no copied wording/photos; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "IUCN SSC Asian Wild Cattle Specialist Group",
+        "title": "Anoa",
+        "url": "https://www.asianwildcattle.org/anoa.html",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "profile",
+        "notes": "Source claim: Bubalus depressicornis recognized as lowland anoa species, Sulawesi/Buton distribution, hunting/habitat loss threats. Habitat overview partly treats both anoa species together; not used for precise species-only range or measurements. Explicit taxonomic debate retained, not silently resolved. Undated category and population claims not imported. Terms: no open license verified; original factual paraphrase and reference only, no copied media; rights review pending."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "jalak-bali",
+    "scientific_name": "Leucopsar rothschildi",
+    "taxon_rank": "species",
+    "taxon_group": "bird",
+    "common_name_id": "Jalak bali",
+    "summary_id": "Jalak bali dikenali melalui bulu putih, ujung sayap gelap, dan kulit biru di sekitar mata.",
+    "description_id": "Jalak bali memiliki bulu putih dengan bagian gelap pada ujung sayap dan ekor. Kulit biru di sekitar mata serta jambulnya menjadi ciri yang mudah dikenali. Burung ini menggunakan lubang pohon untuk bersarang dan memakan buah maupun serangga. San Diego Zoo Wildlife Alliance mengaitkan tekanan terhadap jalak bali dengan penangkapan untuk perdagangan burung dan perubahan habitat. Sumber tersebut juga menjelaskan pengembangbiakan serta pelepasliaran sebagai contoh upaya konservasi. Kegiatan itu tidak digunakan di sini untuk menyatakan bahwa populasi liar sudah pulih.",
+    "distinctive_traits_id": "Bulu dominan putih; ujung sayap dan ekor gelap; kulit sekitar mata berwarna biru; memiliki jambul.",
+    "habitat_description_id": "Persebaran alami terbatas di Bali; memanfaatkan lubang pohon untuk bersarang. Sumber juga membahas introduksi di Nusa Penida, yang tidak diperlakukan sebagai bukti persebaran alami.",
+    "threats_description_id": "San Diego Zoo Wildlife Alliance menjelaskan penangkapan untuk perdagangan burung peliharaan dan perubahan habitat sebagai tekanan terhadap jalak bali.",
+    "conservation_actions_id": "San Diego Zoo Wildlife Alliance melaporkan keterlibatan dalam pengembangbiakan terkelola serta pengiriman burung untuk program di Indonesia. Laporan kegiatan historis ini bukan bukti hasil pemulihan terkini.",
+    "region_codes": ["bali"],
+    "habitat_codes": [],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "San Diego Zoo Wildlife Alliance",
+        "title": "Bali Myna",
+        "url": "https://animals.sandiegozoo.org/animals/bali-myna",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "profile",
+        "notes": "Source claim: species rank/name, Bali range, plumage, nest holes, fruit/insect diet and threats. First-party participant's historical breeding/conservation account; institution has fundraising incentive. Undated generic Endangered label is not an original Red List assessment and is not mapped to EN. No numerical estimates imported; empty habitat_codes avoids deriving biome from nesting substrate. Terms: no open license verified; terms search indicates restrictions on copying/modification, direct terms page HTTP 530; no license grant asserted. Only reference and original statement of facts, no copied prose/photos; owner/rights review required before publication. Draft; owner approval pending. taxon_rank=species."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "babirusa-sulawesi",
+    "scientific_name": "Babyrousa celebensis",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Babirusa sulawesi",
+    "summary_id": "Babirusa sulawesi memiliki taring atas jantan yang tumbuh menembus moncong dan melengkung ke belakang.",
+    "description_id": "Babirusa sulawesi merupakan anggota kelompok babi dengan penampilan yang khas. Pada jantan, taring atas dapat tumbuh melewati kulit moncong lalu melengkung ke arah belakang. Tubuhnya memiliki rambut yang sedikit, dan anaknya tidak menunjukkan pola garis seperti banyak anak babi lain. Saint Louis Zoo mencatat habitatnya berupa rawa serta hutan di sekitar sungai dan danau di Sulawesi. Perburuan berlebihan dan kerusakan habitat menjadi perhatian konservasi. Entri ini membahas Babyrousa celebensis saja, bukan seluruh jenis babirusa yang tersebar di beberapa pulau Indonesia.",
+    "distinctive_traits_id": "Taring atas jantan menembus bagian atas moncong; taring melengkung ke belakang; rambut tubuh sedikit; anak tidak bergaris.",
+    "habitat_description_id": "Rawa dan hutan di sekitar sungai serta danau di Sulawesi. Persebaran jenis babirusa lain di Buru, Sula, atau Togian tidak digabungkan ke entri ini.",
+    "threats_description_id": "Saint Louis Zoo mencatat kerusakan habitat dan perburuan berlebihan sebagai penyebab tekanan terhadap babirusa.",
+    "conservation_actions_id": "Saint Louis Zoo menyatakan mendukung Action Indonesia untuk konservasi babirusa, banteng, dan anoa di habitat asalnya. Pernyataan ini merupakan laporan keterlibatan organisasi, bukan klaim kerja sama dengan Rimba.",
+    "region_codes": ["sulawesi"],
+    "habitat_codes": ["tropical_forest", "swamp_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "Saint Louis Zoo",
+        "title": "Babirusa",
+        "url": "https://stlzoo.org/animals/mammals/hoofed-mammals/babirusa",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "profile",
+        "notes": "Source claim: Babyrousa celebensis species identity, Sulawesi range, tusks, sparse hair, unstriped young, wet forest habitat and threats. First-party claim: zoo supports Action Indonesia; no independent effectiveness claim. Undated generic Threatened label not mapped to Red List category. Terms: no open license verified; original factual summary/reference only, no copied descriptions/photos; publication rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "San Diego Zoo Wildlife Alliance",
+        "title": "Babirusa",
+        "url": "https://animals.sandiegozoo.org/animals/babirusa",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "traits",
+        "notes": "Corroborates male upper tusks and sparse hair; heading identifies Babyrousa celebensis, but habitat text pools other babirusa taxa across Sulawesi/Togian/Sula/Buru. Those islands, pooled counts and category are not assigned to this species. Tusk function explicitly uncertain in source; no combat/adaptation explanation invented. Terms: no open license verified; original factual paraphrase/reference only, no media or copied expression; rights review pending."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "maleo",
+    "scientific_name": "Macrocephalon maleo",
+    "taxon_rank": "species",
+    "taxon_group": "bird",
+    "common_name_id": "Maleo",
+    "summary_id": "Maleo mengubur telur di tempat yang hangat sehingga pengeramannya memanfaatkan panas lingkungan.",
+    "description_id": "Maleo merupakan burung dari Sulawesi yang dikenal karena cara berkembang biaknya. Alih-alih mengerami telur dengan tubuh, induk menimbun telur di tanah atau pasir yang mendapatkan panas dari lingkungan. Sumber Wildlife Conservation Society membahas pantai berpasir yang dipanaskan matahari dan tempat dengan panas vulkanik. Pengambilan telur menjadi salah satu ancaman yang dilaporkan. Pada 2009, organisasi tersebut memberitakan perlindungan sebuah pantai peneluran bersama mitra lokal. Contoh historis ini tidak membuktikan bahwa seluruh tempat bertelur kini terlindungi atau bahwa ancaman pengambilan telur telah berakhir.",
+    "distinctive_traits_id": "Memiliki tonjolan keras di kepala; bulu bagian atas gelap; bagian bawah tubuh berwarna merah muda keputihan; telur ditimbun dan dipanaskan oleh lingkungan.",
+    "habitat_description_id": "Hutan dataran rendah Sulawesi serta tempat peneluran di pasir pantai atau tanah yang mendapat panas vulkanik. Tempat bertelur bukan keseluruhan habitat hidupnya.",
+    "threats_description_id": "WCS pada 2009 melaporkan pengambilan telur secara ilegal. Sumber pemerintah juga mengaitkan berkurangnya maleo dengan konsumsi burung dan pengambilan telur; laju penurunan tidak diimpor.",
+    "conservation_actions_id": "WCS melaporkan pada 2009 bahwa PALS, mitra lokalnya, membeli pantai untuk melindungi tempat peneluran maleo. Ini contoh kegiatan bertanggal, bukan laporan status perlindungan terkini.",
+    "region_codes": ["sulawesi"],
+    "habitat_codes": ["tropical_forest", "coastal"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "Wildlife Conservation Society",
+        "title": "WCS Helps Buy Private Beach for Maleo Nests",
+        "url": "https://programs.wcs.org/press/News-Releases/articleType/ArticleView/articleId/6007/WCS-Helps-Buy-Private-Beach-for-Maleo-Nests.aspx",
+        "published_on": "2009-05-12",
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "conservation",
+        "notes": "First-party historical project claim: Sulawesi endemism, buried eggs warmed by sand/sun or volcanic soil, egg poaching, local NGO PALS beach protection. Not evidence of 2026 program state or current assessment; no site coordinates, nesting counts or monetary values imported. WCS terms https://www.wcs.org/legal/terms-of-use allow unchanged noncommercial informational copying with notices, not a general modification/translation grant. No content copied/translated; original brief factual paraphrase and reference only; permission/rights review required for any expression reuse. No photos. Draft; owner approval pending."
+      },
+      {
+        "organization": "Balai Besar KSDA Sulawesi Selatan",
+        "title": "Identifikasi Spesies Kunci Sulawesi (Maleo - Si anti poligami)",
+        "url": "https://bbksdasulsel.ksdae.kehutanan.go.id/identifikasi-spesies-kunci-sulawesi-maleo-si-burung-anti-poligami",
+        "published_on": "2024-01-25",
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "traits",
+        "notes": "Source claim: Macrocephalon maleo identity, head casque, dark upperparts, pale pink underparts, lowland forest habitat and egg collection threats. Original agency page includes unsupported fainting/faithfulness explanations and mismatched anoa references; excludes those claims and undated EN label. Casque heat-detection function explicitly unproven and omitted. Terms: no open license verified; independently worded factual summary/reference only; no text/photo reproduction; rights review pending. taxon_rank=species."
+      },
+      {
+        "organization": "University of Michigan, Animal Diversity Web",
+        "title": "Macrocephalon maleo — Classification",
+        "url": "https://animaldiversity.org/accounts/Macrocephalon_maleo/classification/",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": "CC BY-NC-SA 3.0 (text; see conditions of use)",
+        "section_key": "taxonomy",
+        "notes": "Verified fact from institutional classification listing: explicitly labeled Species Macrocephalon maleo, family Megapodiidae. Taxonomic reference only; no description derived. Classification currency not independently established. Conditions https://animaldiversity.org/about/use_conditions/; text CC BY-NC-SA 3.0, image licenses separate. No images copied."
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "siamang",
+    "scientific_name": "Symphalangus syndactylus",
+    "taxon_rank": "species",
+    "taxon_group": "mammal",
+    "common_name_id": "Siamang",
+    "summary_id": "Siamang hidup di tajuk hutan tropis dan memiliki kantong tenggorokan yang mengembang ketika bersuara.",
+    "description_id": "Siamang merupakan kera berlengan panjang yang banyak bergerak di pepohonan. Rambutnya berwarna hitam dan tubuhnya tidak memiliki ekor. Kantong tenggorokan yang dapat mengembang membantu memperkuat suaranya. San Diego Zoo Wildlife Alliance menjelaskan bahwa siamang hidup di hutan tropis Indonesia dan Malaysia, sehingga tidak disebut endemik Indonesia. Makanannya mencakup buah serta daun. Sumber yang sama menyoroti kehilangan habitat akibat penebangan dan pertanian, juga perdagangan satwa ilegal. Entri ini tidak menyertakan angka populasi atau kategori penilaian global tanpa rujukan penilaian asli yang bertanggal.",
+    "distinctive_traits_id": "Rambut hitam; tidak berekor; lengan lebih panjang daripada kaki; kantong tenggorokan mengembang ketika bersuara.",
+    "habitat_description_id": "Tajuk hutan tropis di Indonesia dan Malaysia.",
+    "threats_description_id": "San Diego Zoo Wildlife Alliance mengaitkan tekanan terhadap siamang dengan penebangan hutan, perluasan pertanian, dan perdagangan satwa ilegal.",
+    "region_codes": [],
+    "habitat_codes": ["tropical_forest"],
+    "status_code": null,
+    "assessment_year": null,
+    "reviewed_by": "AI-assisted source research; owner review pending",
+    "reviewed_at": "2026-11-03",
+    "sources": [
+      {
+        "organization": "San Diego Zoo Wildlife Alliance",
+        "title": "Siamang",
+        "url": "https://animals.sandiegozoo.org/animals/siamang",
+        "published_on": null,
+        "accessed_on": "2026-11-03",
+        "license": null,
+        "section_key": "profile",
+        "notes": "Source claim: Symphalangus syndactylus species identity; black hair, no tail, long arms, inflatable throat sac; tropical canopy habitat in Indonesia/Malaysia; fruit/leaves; logging/agriculture/pet trade threats. Endangered label undated and not treated as original assessment. No island code inferred, population numbers or generic recycling recommendations imported. Institution cares for siamangs and has fundraising incentive; no outcome claims adopted. Terms: no open license verified, terms direct access HTTP 530; only reference and original factual paraphrase, no copied text/media; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      }
+    ],
+    "media": []
+  }
+]

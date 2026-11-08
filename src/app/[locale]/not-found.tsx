@@ -8,7 +8,7 @@ export default async function NotFound() {
     <main className="site-frame state-page" id="main">
       <h1>{t("notFoundTitle")}</h1>
       <p>{t("notFoundDescription")}</p>
-      <Link href="/">{t("homeLink")}</Link>
+      <Link href="/journal">{t("journalLink")}</Link>
     </main>
   );
 }

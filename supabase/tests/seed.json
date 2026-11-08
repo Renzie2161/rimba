@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "offline-import-fixture",
+    "scientific_name": "Synthetic import fixture",
+    "taxon_group": "test-fixture",
+    "common_name_id": "Fixture impor",
+    "summary_id": "Fixture uji, bukan fakta biodiversitas.",
+    "description_id": "Deskripsi sintetis untuk pengujian impor.",
+    "status_code": null,
+    "assessment_year": null,
+    "sources": [
+      {
+        "title": "Seed fixture reference",
+        "url": "https://example.org/seed-fixture",
+        "organization": "Synthetic fixture",
+        "accessed_on": "2026-01-01"
+      }
+    ],
+    "media": [],
+    "reviewed_by": "Synthetic fixture; owner review pending",
+    "reviewed_at": "2026-01-01"
+  }
+]

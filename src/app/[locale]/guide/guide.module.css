@@ -1,0 +1,168 @@
+.page {
+  display: grid;
+  width: min(calc(100% - var(--content-gutter) - var(--content-gutter)), 732px);
+  min-height: 100%;
+  margin-inline: auto;
+  padding: 40px 0 64px;
+}
+
+.panel {
+  position: relative;
+  padding: 38px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: var(--surface);
+  color: var(--brand-700);
+}
+
+.panelHeader {
+  display: flex;
+  min-height: 80px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.emblem {
+  display: grid;
+  width: 120px;
+  height: 80px;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--surface-green);
+}
+
+.emblemMark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--brand-600);
+}
+
+.backLink {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink-muted);
+  color: var(--surface);
+  text-decoration: none;
+}
+
+.backLink:hover {
+  background: var(--brand-600);
+}
+
+.backLink:focus-visible,
+.catalogLink:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.introLabel {
+  margin: 20px 0 8px;
+  color: var(--brand-800);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.panel h1 {
+  max-width: 22ch;
+  margin: 0;
+  color: var(--brand-700);
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 43.5px;
+  overflow-wrap: break-word;
+}
+
+.introduction {
+  margin: 10px 0 0;
+  color: var(--brand-800);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.rules {
+  display: grid;
+  gap: 16px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rule {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.number {
+  display: grid;
+  width: 36px;
+  min-height: 36px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--surface-alt);
+  color: var(--brand-800);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.rule h2 {
+  margin: 0;
+  color: var(--brand-800);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.rule p {
+  margin: 5px 0 0;
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.catalogLink {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 11px 17px;
+  border-radius: 8px;
+  background: var(--brand-600);
+  color: var(--surface);
+  font-weight: 650;
+  text-align: center;
+  text-decoration: none;
+}
+
+.catalogLink:hover {
+  background: var(--brand-800);
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 24px 0 40px;
+  }
+
+  .panel {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+
+  .introLabel {
+    margin-top: 14px;
+  }
+}

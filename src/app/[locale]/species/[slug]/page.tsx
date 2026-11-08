@@ -1,0 +1,60 @@
+import { cache } from "react";
+import { IBM_Plex_Mono } from "next/font/google";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { speciesRowSchema } from "@/features/species/schemas";
+import { getPublishedSpeciesDetail } from "@/features/species/queries";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+import SpeciesDossier from "@/features/species/species-dossier";
+import styles from "@/features/species/catalog.module.css";
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  style: "italic",
+  display: "swap",
+  variable: "--font-ibm-plex-mono",
+  preload: false,
+});
+
+type PageProps = { params: Promise<{ slug: string; locale: string }> };
+
+const loadSpecies = cache(async (slug: string) => {
+  if (!speciesRowSchema.shape.slug.safeParse(slug).success) notFound();
+  return getPublishedSpeciesDetail(createSupabaseServerClient(), {
+    slug,
+    locale: "id",
+  });
+});
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug, locale } = await params;
+  if (!speciesRowSchema.shape.slug.safeParse(slug).success) return {};
+  const t = await getTranslations({ locale, namespace: "species" });
+  const detail = await loadSpecies(slug);
+  if (!detail) return { title: t("notFoundTitle") };
+  return {
+    title: detail.seoTitle ?? detail.commonName,
+    description: detail.seoDescription ?? detail.summary,
+  };
+}
+
+export default async function SpeciesDetailPage({ params }: PageProps) {
+  const [{ slug }, t] = await Promise.all([params, getTranslations("species")]);
+  const species = await loadSpecies(slug);
+  if (!species) notFound();
+  return (
+    <main
+      className={`${styles.page} ${styles.detailPage} ${ibmPlexMono.variable}`}
+      id="main"
+    >
+      <Link className={styles.backLink} href="/species">
+        {t("backToCatalog")}
+      </Link>
+      <SpeciesDossier species={species} labels={t} />
+    </main>
+  );
+}

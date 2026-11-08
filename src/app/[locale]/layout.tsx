@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk } from "next/font/google";
+import Image from "next/image";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -9,15 +10,13 @@ import {
 } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
-import Image from "next/image";
-import { Link } from "@/i18n/navigation";
+import AppShell from "./app-shell";
 import { routing } from "@/i18n/routing";
-import SiteControls from "./site-controls";
 import "../globals.css";
 
-const hankenGrotesk = Hanken_Grotesk({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-hanken-grotesk",
+  variable: "--font-plus-jakarta-sans",
   display: "swap",
 });
 
@@ -51,48 +50,79 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  const [messages, navigationT, footerT] = await Promise.all([
-    getMessages(),
-    getTranslations("navigation"),
-    getTranslations("footer"),
-  ]);
+  const [messages, navigationT, footerT, journalT, guideT, aboutT, donateT] =
+    await Promise.all([
+      getMessages(),
+      getTranslations("navigation"),
+      getTranslations("footer"),
+      getTranslations("journal"),
+      getTranslations("guide"),
+      getTranslations("about"),
+      getTranslations("donate"),
+    ]);
 
   return (
     <html lang={locale} data-theme="light">
-      <body className={hankenGrotesk.variable}>
+      <body className={plusJakartaSans.variable}>
         <NextIntlClientProvider messages={messages}>
           <a className="skip-link" href="#main">
             {navigationT("skipToMain")}
           </a>
-          <div className="site-frame">
-            <header className="site-header">
-              <nav
-                className="site-navigation"
-                aria-label={navigationT("label")}
-              >
-                <Link
-                  className="wordmark"
-                  href="/"
-                  aria-label={navigationT("homeLink")}
-                >
+          <AppShell
+            identificationLabel={navigationT("identificationDestination")}
+            identificationUnavailable={navigationT("identificationUnavailable")}
+            strapline={navigationT("strapline")}
+            missionEyebrow={navigationT("missionEyebrow")}
+            missionHeadline={navigationT("missionHeadline")}
+            missionDescription={navigationT("missionDescription")}
+            missionLink={navigationT("missionLink")}
+            destinations={[
+              {
+                href: "/journal",
+                label: journalT("title"),
+                breadcrumbLabel: journalT("breadcrumbLabel"),
+                group: "explore",
+              },
+              {
+                href: "/species",
+                label: navigationT("encyclopediaDestination"),
+                group: "explore",
+              },
+              {
+                href: "/guide",
+                label: guideT("title"),
+                group: "resources",
+              },
+              {
+                href: "/about",
+                label: aboutT("title"),
+                group: "resources",
+              },
+              {
+                href: "/donate",
+                label: donateT("title"),
+                group: "resources",
+              },
+            ]}
+            footer={
+              <div className="site-footer-content">
+                <div className="site-footer-brand">
                   <Image
-                    className="wordmark-logo"
-                    src="/favicon.png"
+                    className="site-footer-logo"
+                    src="/rimba-mark.png"
                     alt=""
-                    width={32}
-                    height={32}
-                    priority
+                    width={24}
+                    height={24}
                   />
-                  <span>Rimba</span>
-                </Link>
-                <SiteControls />
-              </nav>
-            </header>
+                  <strong>RIMBA</strong>
+                  <span>{footerT("motto")}</span>
+                </div>
+                <p className="site-footer-project">{footerT("project")}</p>
+              </div>
+            }
+          >
             {children}
-            <footer className="site-footer">
-              <p>{footerT("project")}</p>
-            </footer>
-          </div>
+          </AppShell>
         </NextIntlClientProvider>
       </body>
     </html>
