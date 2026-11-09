@@ -5,17 +5,16 @@ import { useTranslations } from "next-intl";
 import { usePathname, Link } from "@/i18n/navigation";
 import {
   ArrowRight,
-  Bell,
-  UserRound,
   Compass,
   HandHeart,
   Heart,
-  Leaf,
   Menu,
   NotebookText,
   ScanLine,
   Sprout,
 } from "lucide-react";
+import HeaderActions from "./header-actions";
+import GuideDialog from "./guide-dialog";
 import {
   useEffect,
   useRef,
@@ -28,7 +27,7 @@ const subscribe = () => () => undefined;
 const getClientSnapshot = () => true;
 const getServerSnapshot = () => false;
 type ShellDestination = {
-  href: "/journal" | "/species" | "/guide" | "/about" | "/donate";
+  href: "/journal" | "/species" | "/about" | "/donate";
   label: string;
   breadcrumbLabel?: string;
   group: "explore" | "resources";
@@ -39,7 +38,7 @@ type AppShellProps = {
   footer: ReactNode;
   destinations: readonly ShellDestination[];
   identificationLabel: string;
-  identificationUnavailable: string;
+  guideLabel: string;
   strapline: string;
   missionEyebrow: string;
   missionHeadline: string;
@@ -54,8 +53,6 @@ function DestinationIcon({ href }: Pick<ShellDestination, "href">): ReactNode {
       return <NotebookText {...props} />;
     case "/species":
       return <Compass {...props} />;
-    case "/guide":
-      return <Leaf {...props} />;
     case "/about":
       return <Heart {...props} />;
     case "/donate":
@@ -70,7 +67,7 @@ export default function AppShell({
   footer,
   destinations,
   identificationLabel,
-  identificationUnavailable,
+  guideLabel,
   strapline,
   missionEyebrow,
   missionHeadline,
@@ -88,6 +85,7 @@ export default function AppShell({
     getServerSnapshot,
   );
   const isDetail = pathname.startsWith("/species/");
+  const isIdentification = pathname === "/identify";
   const isPanelCanvas = pathname === "/about" || pathname === "/donate";
 
   useEffect(() => {
@@ -156,14 +154,17 @@ export default function AppShell({
                 </Link>
               );
             })}
+            {group === "resources" ? <GuideDialog label={guideLabel} /> : null}
             {group === "explore" ? (
-              <div className="shell-destination shell-destination--pending">
+              <Link
+                aria-current={isIdentification ? "page" : undefined}
+                className="shell-destination"
+                href="/identify"
+                onClick={mobile ? closeDrawer : undefined}
+              >
                 <ScanLine size={19} strokeWidth={1.75} aria-hidden="true" />
                 <span>{identificationLabel}</span>
-                <span className="shell-destination-status">
-                  {identificationUnavailable}
-                </span>
-              </div>
+              </Link>
             ) : null}
           </section>
         );
@@ -247,24 +248,7 @@ export default function AppShell({
               "Rimba"
             )}
           </p>
-          <div className="shell-header-actions">
-            <button
-              className="shell-header-action"
-              type="button"
-              disabled
-              aria-label={t("notificationsUnavailable")}
-            >
-              <Bell size={18} strokeWidth={1.75} aria-hidden="true" />
-            </button>
-            <button
-              className="shell-header-action shell-header-action--account"
-              type="button"
-              disabled
-              aria-label={t("accountUnavailable")}
-            >
-              <UserRound size={19} strokeWidth={1.75} aria-hidden="true" />
-            </button>
-          </div>
+          <HeaderActions />
         </header>
         <div
           className={

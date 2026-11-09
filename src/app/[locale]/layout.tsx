@@ -69,8 +69,8 @@ export default async function LocaleLayout({
             {navigationT("skipToMain")}
           </a>
           <AppShell
+            guideLabel={guideT("title")}
             identificationLabel={navigationT("identificationDestination")}
-            identificationUnavailable={navigationT("identificationUnavailable")}
             strapline={navigationT("strapline")}
             missionEyebrow={navigationT("missionEyebrow")}
             missionHeadline={navigationT("missionHeadline")}
@@ -87,11 +87,6 @@ export default async function LocaleLayout({
                 href: "/species",
                 label: navigationT("encyclopediaDestination"),
                 group: "explore",
-              },
-              {
-                href: "/guide",
-                label: guideT("title"),
-                group: "resources",
               },
               {
                 href: "/about",
