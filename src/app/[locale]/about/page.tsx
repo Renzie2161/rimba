@@ -26,7 +26,6 @@ export default async function AboutPage() {
           <p>{t("paragraphOne")}</p>
           <p>{t("paragraphTwo")}</p>
         </div>
-        <p className={styles.prototypeNote}>{t("prototypeDisclaimer")}</p>
         <ForestMedia className={styles.banner} labelledBy="about-banner-title">
           <h2 id="about-banner-title">{t("bannerTitle")}</h2>
         </ForestMedia>

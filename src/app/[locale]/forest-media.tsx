@@ -27,7 +27,7 @@ export default async function ForestMedia({
         fill
         loading="eager"
         sizes="(max-width: 767px) 100vw, 1129px"
-        src="/images/forest-canopy.jpg"
+        src="/images/forest-hero.jpg"
       />
       <span className={styles.scrim} aria-hidden="true" />
       <div className={styles.content}>{children}</div>
