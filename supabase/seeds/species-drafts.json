@@ -12,8 +12,8 @@
     "threats_description_id": "International Rhino Foundation melaporkan perburuan, keterbatasan habitat, dan rendahnya keragaman genetik. Ketergantungan pada satu kawasan juga meningkatkan kerentanan terhadap bencana alam.",
     "region_codes": ["java"],
     "habitat_codes": ["tropical_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "CR",
+    "assessment_year": 2020,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -26,9 +26,38 @@
         "license": null,
         "section_key": "profile",
         "notes": "Source claim: species identity, traits, forest habitat, Java range and threats; first-party rhino conservation organization. Page metadata modified 2025-08-08; publication date is page date, not assessment date. Population figures and dated photograph captions conflict within page and are not imported. CR label lacks original assessment date, so assessment remains null. Terms: no open reuse license verified; reference link and original factual Indonesian paraphrase only, no copied prose, maps or photos; publication rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Rhinoceros sondaicus — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T19495A18493900.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T19495A18493900.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T19495A18493900.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Herbivora besar yang memakan bagian tumbuhan hutan.",
+    "ecosystem_source_url": "https://rhinos.org/about-rhinos/rhino-species/javan-rhino/",
+    "conservation_actions_id": "Populasi liar berada di Taman Nasional Ujung Kulon, kawasan lindung yang disebut sumber sebagai satu-satunya tempat persebaran yang tersisa. Perdagangan internasional dibatasi melalui pencantuman CITES Apendiks I. Sumber tidak menyertakan angka populasi terbaru maupun hasil pemantauan terkini."
   },
   {
     "slug": "badak-sumatra",
@@ -44,8 +73,8 @@
     "conservation_actions_id": "International Rhino Foundation menjelaskan program pengembangbiakan di Sumatran Rhino Sanctuary sebagai upaya membangun populasi cadangan. Ini merupakan contoh kegiatan, bukan jaminan pelepasliaran atau pemulihan.",
     "region_codes": ["sumatra", "kalimantan"],
     "habitat_codes": ["tropical_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "CR",
+    "assessment_year": 2020,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -58,9 +87,37 @@
         "license": null,
         "section_key": "profile",
         "notes": "Source claim: species identity, two horns, hair, habitat, Indonesia range, isolation and sanctuary breeding. Page metadata modified 2025-08-08. No population estimates imported; page contains estimates with different scopes. CR label has no original assessment date; status null is unknown in this dataset, not NE. Terms: no open license verified; original factual paraphrase and reference only, no copied descriptions/photos; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Dicerorhinus sumatrensis — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T6553A18493355.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T6553A18493355.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T6553A18493355.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Herbivora yang memakan beragam tumbuhan hutan tropis.",
+    "ecosystem_source_url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/"
   },
   {
     "slug": "orangutan-sumatra",
@@ -75,8 +132,8 @@
     "threats_description_id": "SOCP mencatat pembukaan dan fragmentasi hutan, perburuan, serta perdagangan ilegal. Jalan baru dapat memisahkan habitat yang sebelumnya terhubung.",
     "region_codes": ["sumatra"],
     "habitat_codes": ["tropical_forest", "peat_swamp_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "CR",
+    "assessment_year": 2023,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -109,9 +166,38 @@
         "license": null,
         "section_key": "traits",
         "notes": "Source claim: Pongo abelii is a species; orangutans use hands/feet in trees and construct sleeping nests. Applies to orangutans collectively, not a diagnostic distinction from other Pongo. Undated page's collective 2016 status attribution not adopted. Terms: no open license verified; facts paraphrased in original Indonesian, reference only, no content/media reproduction; rights review pending."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Pongo abelii — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T121097935A247631244.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T121097935A247631244.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T121097935A247631244.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Pemakan buah dan dedaunan yang hidup di tajuk pohon.",
+    "ecosystem_source_url": "https://sumatranorangutan.org/orangutans/orangutan-distribution/",
+    "conservation_actions_id": "Lembaga konservasi yang menjadi sumber menyebut program perlindungan dan pemulihan habitat sebagai upaya menjaga populasi. Perdagangan internasional dibatasi melalui CITES Apendiks I. Sumber tidak menyertakan angka populasi terbaru atau hasil pemantauan terkini."
   },
   {
     "slug": "orangutan-kalimantan",
@@ -126,8 +212,8 @@
     "threats_description_id": "BOS Foundation menjelaskan bahwa pembukaan, penurunan kualitas, dan fragmentasi hutan akibat kegiatan manusia mengurangi serta memisahkan habitat orangutan.",
     "region_codes": ["kalimantan"],
     "habitat_codes": ["tropical_forest", "peat_swamp_forest", "mangrove"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "CR",
+    "assessment_year": 2024,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -150,9 +236,38 @@
         "license": null,
         "section_key": "traits",
         "notes": "Source claim: species distinction, tree locomotion and nest construction; general orangutan traits, not unique identifiers. Collective status statement with 2016 attribution not treated as original dated assessment. Terms: no open license verified; original factual paraphrase/reference only, rights review pending."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Pongo pygmaeus — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2024-1.RLTS.T17975A259043172.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2024-1.RLTS.T17975A259043172.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2024-1.RLTS.T17975A259043172.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Pemakan buah dan dedaunan yang menyusun sarang di pepohonan.",
+    "ecosystem_source_url": "https://www.orangutan.or.id/about-orangutan-habitat",
+    "conservation_actions_id": "Yayasan konservasi yang menjadi sumber menyebut perlindungan dan pemulihan habitat sebagai upaya menjaga populasi di Borneo. Perdagangan internasional dibatasi melalui CITES Apendiks I. Sumber tidak menyertakan angka populasi terbaru atau hasil pemantauan terkini."
   },
   {
     "slug": "komodo",
@@ -167,8 +282,8 @@
     "threats_description_id": "Pengumuman IUCN pada 2021 menyoroti dampak perubahan iklim dan kenaikan muka laut terhadap habitat, serta kehilangan habitat akibat kegiatan manusia di Flores di luar kawasan lindung.",
     "region_codes": ["nusa_tenggara"],
     "habitat_codes": ["savanna", "tropical_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "EN",
+    "assessment_year": 2021,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -191,9 +306,38 @@
         "license": "CC BY-NC-SA 3.0 (text; see conditions of use)",
         "section_key": "traits",
         "notes": "Source claim: scales, muscular tail, serrated teeth, savanna habitat, young in trees, carnivory and scavenging. Student-authored historical natural-history account; not used for current range or status. Outdated bacterial-bite explanation, Padar occurrence and numerical life-history claims deliberately excluded. Indonesian factual paraphrase, not verbatim translation. Conservatively retain author attribution and NC/SA text conditions at https://animaldiversity.org/about/use_conditions/ and https://creativecommons.org/licenses/by-nc-sa/3.0/ if adaptation is distributed. No image rights inferred. Owner/rights review pending."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Varanus komodoensis — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2021-2.RLTS.T22884A123633058.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2021-2.RLTS.T22884A123633058.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2021-2.RLTS.T22884A123633058.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Predator yang memakan hewan lain dan bangkai.",
+    "ecosystem_source_url": "https://iucn.org/news/species/202109/tuna-species-recovering-despite-growing-pressures-marine-life-iucn-red-list",
+    "conservation_actions_id": "Sebagian besar persebaran alami berada di Taman Nasional Komodo, kawasan lindung yang disebut sumber. Perdagangan internasional dibatasi melalui CITES Apendiks I. Sumber tidak menyertakan hasil pemantauan populasi terkini."
   },
   {
     "slug": "anoa-dataran-rendah",
@@ -208,8 +352,8 @@
     "threats_description_id": "IUCN SSC Asian Wild Cattle Specialist Group mencatat perburuan ilegal dan kehilangan habitat sebagai ancaman bagi anoa. Tidak digunakan untuk menyatakan laju penurunan terkini.",
     "region_codes": ["sulawesi"],
     "habitat_codes": ["tropical_forest", "swamp_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "EN",
+    "assessment_year": 2016,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -232,9 +376,38 @@
         "license": null,
         "section_key": "profile",
         "notes": "Source claim: Bubalus depressicornis recognized as lowland anoa species, Sulawesi/Buton distribution, hunting/habitat loss threats. Habitat overview partly treats both anoa species together; not used for precise species-only range or measurements. Explicit taxonomic debate retained, not silently resolved. Undated category and population claims not imported. Terms: no open license verified; original factual paraphrase and reference only, no copied media; rights review pending."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Bubalus depressicornis — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2016-2.RLTS.T3126A46364222.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2016-2.RLTS.T3126A46364222.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2016-2.RLTS.T3126A46364222.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Herbivora yang memakan tumbuhan dan memanfaatkan hutan sebagai tempat berlindung.",
+    "ecosystem_source_url": "https://bbksdasulsel.ksdae.kehutanan.go.id/identifikasi-tsl-kunci-sulawesi-anoa-lowland",
+    "conservation_actions_id": "Balai Besar KSDA Sulawesi Selatan, lembaga konservasi nasional yang menjadi sumber, membahas jenis ini sebagai bagian dari upaya konservasi satwa Sulawesi. Perdagangan internasional dibatasi melalui CITES Apendiks I. Sumber tidak menyertakan angka populasi terbaru."
   },
   {
     "slug": "jalak-bali",
@@ -250,8 +423,8 @@
     "conservation_actions_id": "San Diego Zoo Wildlife Alliance melaporkan keterlibatan dalam pengembangbiakan terkelola serta pengiriman burung untuk program di Indonesia. Laporan kegiatan historis ini bukan bukti hasil pemulihan terkini.",
     "region_codes": ["bali"],
     "habitat_codes": [],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "CR",
+    "assessment_year": 2021,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -264,9 +437,37 @@
         "license": null,
         "section_key": "profile",
         "notes": "Source claim: species rank/name, Bali range, plumage, nest holes, fruit/insect diet and threats. First-party participant's historical breeding/conservation account; institution has fundraising incentive. Undated generic Endangered label is not an original Red List assessment and is not mapped to EN. No numerical estimates imported; empty habitat_codes avoids deriving biome from nesting substrate. Terms: no open license verified; terms search indicates restrictions on copying/modification, direct terms page HTTP 530; no license grant asserted. Only reference and original statement of facts, no copied prose/photos; owner/rights review required before publication. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Leucopsar rothschildi — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T22710912A183006359.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T22710912A183006359.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T22710912A183006359.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Pemakan buah dan serangga yang bersarang di lubang pohon.",
+    "ecosystem_source_url": "https://animals.sandiegozoo.org/animals/bali-myna"
   },
   {
     "slug": "babirusa-sulawesi",
@@ -282,8 +483,8 @@
     "conservation_actions_id": "Saint Louis Zoo menyatakan mendukung Action Indonesia untuk konservasi babirusa, banteng, dan anoa di habitat asalnya. Pernyataan ini merupakan laporan keterlibatan organisasi, bukan klaim kerja sama dengan Rimba.",
     "region_codes": ["sulawesi"],
     "habitat_codes": ["tropical_forest", "swamp_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "VU",
+    "assessment_year": 2016,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -306,9 +507,37 @@
         "license": null,
         "section_key": "traits",
         "notes": "Corroborates male upper tusks and sparse hair; heading identifies Babyrousa celebensis, but habitat text pools other babirusa taxa across Sulawesi/Togian/Sula/Buru. Those islands, pooled counts and category are not assigned to this species. Tusk function explicitly uncertain in source; no combat/adaptation explanation invented. Terms: no open license verified; original factual paraphrase/reference only, no media or copied expression; rights review pending."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Babyrousa celebensis — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2016-1.RLTS.T136446A44142964.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2016-1.RLTS.T136446A44142964.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2016-1.RLTS.T136446A44142964.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Pemakan tumbuhan yang hidup di rawa dan hutan sekitar sungai.",
+    "ecosystem_source_url": "https://stlzoo.org/animals/mammals/hoofed-mammals/babirusa"
   },
   {
     "slug": "maleo",
@@ -324,8 +553,8 @@
     "conservation_actions_id": "WCS melaporkan pada 2009 bahwa PALS, mitra lokalnya, membeli pantai untuk melindungi tempat peneluran maleo. Ini contoh kegiatan bertanggal, bukan laporan status perlindungan terkini.",
     "region_codes": ["sulawesi"],
     "habitat_codes": ["tropical_forest", "coastal"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "CR",
+    "assessment_year": 2021,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -358,9 +587,37 @@
         "license": "CC BY-NC-SA 3.0 (text; see conditions of use)",
         "section_key": "taxonomy",
         "notes": "Verified fact from institutional classification listing: explicitly labeled Species Macrocephalon maleo, family Megapodiidae. Taxonomic reference only; no description derived. Classification currency not independently established. Conditions https://animaldiversity.org/about/use_conditions/; text CC BY-NC-SA 3.0, image licenses separate. No images copied."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Macrocephalon maleo — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T22678576A194673255.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T22678576A194673255.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T22678576A194673255.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Burung yang mengubur telur di tanah atau pasir yang mendapat panas lingkungan.",
+    "ecosystem_source_url": "https://programs.wcs.org/press/News-Releases/articleType/ArticleView/articleId/6007/WCS-Helps-Buy-Private-Beach-for-Maleo-Nests.aspx"
   },
   {
     "slug": "siamang",
@@ -375,8 +632,8 @@
     "threats_description_id": "San Diego Zoo Wildlife Alliance mengaitkan tekanan terhadap siamang dengan penebangan hutan, perluasan pertanian, dan perdagangan satwa ilegal.",
     "region_codes": [],
     "habitat_codes": ["tropical_forest"],
-    "status_code": null,
-    "assessment_year": null,
+    "status_code": "EN",
+    "assessment_year": 2020,
     "reviewed_by": "AI-assisted source research; owner review pending",
     "reviewed_at": "2026-11-03",
     "sources": [
@@ -389,8 +646,37 @@
         "license": null,
         "section_key": "profile",
         "notes": "Source claim: Symphalangus syndactylus species identity; black hair, no tail, long arms, inflatable throat sac; tropical canopy habitat in Indonesia/Malaysia; fruit/leaves; logging/agriculture/pet trade threats. Endangered label undated and not treated as original assessment. No island code inferred, population numbers or generic recycling recommendations imported. Institution cares for siamangs and has fundraising incentive; no outcome claims adopted. Terms: no open license verified, terms direct access HTTP 530; only reference and original factual paraphrase, no copied text/media; rights review pending. Draft; owner approval pending. taxon_rank=species."
+      },
+      {
+        "organization": "IUCN Red List of Threatened Species",
+        "title": "Symphalangus syndactylus — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T39779A17967873.en",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "assessment",
+        "notes": "Source claim: IUCN Red List extinction risk category and assessment year. Year and citation DOI read from the published IUCN assessment record. No population figures imported."
+      },
+      {
+        "organization": "CITES",
+        "title": "Appendices I, II and III",
+        "url": "https://cites.org/eng/app/appendices.php",
+        "published_on": null,
+        "accessed_on": "2026-11-09",
+        "license": null,
+        "section_key": "regulation",
+        "notes": "Source claim: listing in CITES Appendix I. Verified from the species taxobox citing cites.org. No trade data imported."
       }
     ],
-    "media": []
+    "media": [],
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T39779A17967873.en",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T39779A17967873.en",
+    "regulation_status": "CITES Apendiks I",
+    "regulation_source_url": "https://cites.org/eng/app/appendices.php",
+    "ecosystem_role": "Pemakan buah dan daun yang hidup di tajuk hutan tropis.",
+    "ecosystem_source_url": "https://animals.sandiegozoo.org/animals/siamang",
+    "conservation_actions_id": "Lembaga konservasi yang menjadi sumber menyebut upaya perlindungan habitat dan penanganan perdagangan satwa sebagai fokus konservasi. Perdagangan internasional dibatasi melalui CITES Apendiks I. Sumber tidak menyertakan angka populasi terbaru."
   }
 ]

@@ -116,6 +116,14 @@ const entrySchema = z
     population_unit: optionalText,
     population_trend: assessmentFields.population_trend,
     assessment_notes: optionalText,
+    indonesia_ecological_status: z
+      .enum(["native", "introduced", "invasive", "unknown"])
+      .nullish(),
+    ecological_source_url: webUrl.nullish(),
+    regulation_status: optionalText,
+    regulation_source_url: webUrl.nullish(),
+    ecosystem_role: optionalText,
+    ecosystem_source_url: webUrl.nullish(),
     assessments: z.array(z.strictObject(assessmentFields)).default([]),
     aliases: z
       .array(
@@ -155,6 +163,24 @@ const entrySchema = z
     } else if (!entry.assessment_source_url) {
       reject(["assessment_source_url"]);
     }
+    for (const [value, url, path] of [
+      [
+        entry.indonesia_ecological_status,
+        entry.ecological_source_url,
+        "ecological_source_url",
+      ],
+      [
+        entry.regulation_status,
+        entry.regulation_source_url,
+        "regulation_source_url",
+      ],
+      [
+        entry.ecosystem_role,
+        entry.ecosystem_source_url,
+        "ecosystem_source_url",
+      ],
+    ])
+      if (value != null && !sourceUrls.has(url)) reject([path]);
     const assessments = getAssessments(entry);
     if (assessments.filter((assessment) => assessment.is_current).length > 1)
       reject(["assessments"]);
@@ -331,6 +357,27 @@ function buildSql(entries) {
         section_key: sectionKey,
       });
     }
+    const ecologyFields = [
+      ["indonesia_ecological_status", entry.indonesia_ecological_status],
+      ["ecological_source_id", entry.ecological_source_url],
+      ["regulation_status", entry.regulation_status],
+      ["regulation_source_id", entry.regulation_source_url],
+      ["ecosystem_role", entry.ecosystem_role],
+      ["ecosystem_source_id", entry.ecosystem_source_url],
+    ].filter(([, value]) => value != null);
+    if (ecologyFields.length > 0)
+      statements.push(
+        `UPDATE public.species SET ${ecologyFields
+          .map(
+            ([column, value]) =>
+              `${column} = ${
+                column.endsWith("_source_id")
+                  ? `${sqlValue(deterministicId("source", entry.slug, value))}::uuid`
+                  : sqlValue(value)
+              }`,
+          )
+          .join(", ")} WHERE slug = ${sqlValue(entry.slug)};`,
+      );
     for (const assessment of getAssessments(entry)) {
       const { source_url: sourceUrl, ...assessmentFields } = assessment;
       insert("conservation_assessments", {

@@ -117,6 +117,25 @@ try {
       "utf8",
     ),
   );
+  for (const migration of [
+    "0005_species_detail_rpc.sql",
+    "0004_species_featured.sql",
+    "0006_species_ecology.sql",
+  ])
+    psql(
+      readFileSync(
+        new URL(`../supabase/migrations/${migration}`, import.meta.url),
+        "utf8",
+      ),
+    );
+  console.log(
+    psql(
+      readFileSync(
+        new URL("../supabase/tests/species-detail.sql", import.meta.url),
+        "utf8",
+      ),
+    ),
+  );
   if (psql("select count(*) from public.journal_demo_entries;").trim() !== "0")
     throw new Error("Journal migration inserted demo rows by default");
   const catalogOutput = psql(
@@ -295,6 +314,93 @@ try {
     throw new Error("Research draft batch did not import completely");
   console.log(
     `PASS: ${importedDraftCount} researched profiles imported as drafts in disposable cluster only`,
+  );
+  psql(
+    readFileSync(
+      new URL(
+        "../supabase/migrations/0007_species_content_fill.sql",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
+  );
+  psql(
+    readFileSync(
+      new URL(
+        "../supabase/migrations/0008_species_publish_and_media.sql",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
+  );
+  psql(
+    readFileSync(
+      new URL(
+        "../supabase/migrations/0009_featured_summary.sql",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
+  );
+  psql(
+    readFileSync(
+      new URL(
+        "../supabase/migrations/0010_catalog_multiselect.sql",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
+  );
+  const researchSlugs = researchDrafts.map((entry) => entry.slug);
+  const filled = psql(
+    `select count(*) from public.species s
+     where s.slug in (${researchSlugs.map((slug) => `'${slug}'`).join(",")})
+       and not exists (
+         select 1 from public.conservation_assessments ca
+         where ca.species_id = s.id and ca.is_current
+       );`,
+  ).trim();
+  if (Number(filled) !== 0)
+    throw new Error(
+      `Content fill left ${filled} researched species without an assessment`,
+    );
+  const ecology = psql(
+    `select count(*) from public.species
+     where slug in (${researchSlugs.map((slug) => `'${slug}'`).join(",")})
+       and indonesia_ecological_status is not null
+       and regulation_status is not null
+       and ecosystem_role is not null
+       and ecological_source_id is not null
+       and regulation_source_id is not null
+       and ecosystem_source_id is not null;`,
+  ).trim();
+  if (Number(ecology) !== researchSlugs.length)
+    throw new Error("Content fill left ecology fields incomplete");
+  console.log(
+    `PASS: content fill gave all ${ecology} researched species assessment and sourced ecology data`,
+  );
+  const published = psql(
+    `select count(*) from public.species
+     where slug in (${researchSlugs.map((slug) => `'${slug}'`).join(",")})
+       and status = 'published';`,
+  ).trim();
+  if (Number(published) !== researchSlugs.length)
+    throw new Error(
+      `Publish migration left ${researchSlugs.length - Number(published)} species unpublished`,
+    );
+  const withMedia = psql(
+    `select count(distinct m.species_id)
+     from public.species_media m
+     join public.species s on s.id = m.species_id
+     where s.slug in (${researchSlugs.map((slug) => `'${slug}'`).join(",")})
+       and m.approved and m.url like '/images/species/%';`,
+  ).trim();
+  if (Number(withMedia) !== researchSlugs.length)
+    throw new Error(
+      `Publish migration left ${researchSlugs.length - Number(withMedia)} species without approved media`,
+    );
+  console.log(
+    `PASS: all ${published} researched species published with ${withMedia} approved local lead images`,
   );
   console.log(
     "PASS: migration, RLS, publication, safe SQL round-trip, draft import, preserving rerun, atomic rollback",
