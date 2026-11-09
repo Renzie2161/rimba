@@ -1,0 +1,322 @@
+.page {
+  width: min(
+    calc(100% - var(--content-gutter) - var(--content-gutter)),
+    1124px
+  );
+  margin-inline: auto;
+  padding: 34px 0 64px;
+  color: var(--brand-700);
+}
+
+.intro {
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--nav-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+}
+
+.intro h1 {
+  margin: 0;
+  color: var(--brand-700);
+  font-size: 34px;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.24;
+}
+
+.titleDot {
+  color: var(--brand-500);
+}
+
+.subtitle {
+  max-width: 62ch;
+  margin: 8px 0 0;
+  color: var(--ink-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* File inputs stay out of the layout without a utility class. */
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+.uploader {
+  width: 100%;
+}
+
+.dropzone {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 56px 24px;
+  border: 1.5px dashed var(--control-border);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--ink-muted);
+  text-align: center;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.dropzone:hover {
+  border-color: var(--brand-600);
+  background: var(--surface-green);
+}
+
+.dropzone:focus-within {
+  border-color: var(--brand-600);
+  background: var(--surface-green);
+}
+
+/* Active drop target: clear visual and tactile feedback. */
+.dropzoneActive {
+  border-color: var(--brand-600);
+  border-style: solid;
+  background: var(--surface-green);
+  transform: scale(1.012);
+  box-shadow: 0 14px 30px -20px rgb(14 59 44 / 42%);
+}
+
+.dropzoneActive .dropIcon {
+  color: var(--brand-600);
+  transform: translateY(-3px) scale(1.06);
+}
+
+.dropIcon {
+  color: var(--ink-muted);
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.dropTitle {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.dropHelp {
+  margin: 0;
+  max-width: 46ch;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* No camera on this device: one centred primary action instead of a dead pair. */
+.actionsSingle {
+  width: 100%;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.primary {
+  border: 1px solid var(--brand-600);
+  background: var(--brand-600);
+  color: #ffffff;
+}
+
+.primary:hover {
+  background: var(--nav-active);
+}
+
+.secondary {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--brand-800);
+}
+
+.secondary:hover {
+  border-color: var(--brand-600);
+  background: var(--surface-green);
+}
+
+.primary:focus-visible,
+.secondary:focus-visible,
+.remove:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.preview {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+}
+
+.previewImage {
+  width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-alt);
+}
+
+.remove {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 94%);
+  color: var(--brand-800);
+  cursor: pointer;
+}
+
+.fileName {
+  margin: 0;
+  overflow: hidden;
+  max-width: 100%;
+  color: var(--ink-muted);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.error {
+  margin: 12px 0 0;
+  color: var(--danger);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.result {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-alt);
+}
+
+.result h2 {
+  margin: 0 0 8px;
+  color: var(--brand-800);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.result p {
+  margin: 0;
+  max-width: 68ch;
+  color: var(--ink-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.fallback {
+  margin-top: 18px;
+}
+
+.searchLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.searchRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.searchRow input {
+  min-width: 0;
+  min-height: 46px;
+  flex: 1 1 260px;
+  padding: 0 16px;
+  border: 1px solid var(--control-border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+}
+
+.searchRow input:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.trySearch {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.limits {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--divider);
+}
+
+.limits h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.limits p {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--ink-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding-block: 24px 40px;
+  }
+
+  .dropzone {
+    padding: 40px 18px;
+  }
+}
