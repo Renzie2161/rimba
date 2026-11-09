@@ -1,4 +1,3 @@
-import { createClient } from "@supabase/supabase-js";
 import { describe, expect, it } from "vitest";
 import {
   getPublishedSpeciesCatalog,
@@ -9,6 +8,7 @@ import {
   serializeCatalogSearchParams,
 } from "@/features/species/catalog-params";
 import { resolveContentLocale } from "@/features/species/schemas";
+import type { SpeciesCatalogOptions } from "@/features/species/schemas";
 
 const speciesId = "11111111-1111-4111-8111-111111111111";
 const sourceId = "22222222-2222-4222-8222-222222222222";
@@ -86,56 +86,6 @@ const source = {
   license: "Fixture reuse terms",
   notes: "Fixture provenance",
 };
-function responses(): Record<string, unknown> {
-  return {
-    species: [species],
-    species_translations: [translation("id"), translation("en")],
-    conservation_assessments: [assessment],
-    species_media: [media],
-    species_sources: [
-      { species_id: speciesId, source_id: sourceId, section_key: "habitat" },
-      { species_id: speciesId, source_id: sourceId, section_key: "threats" },
-    ],
-    sources: [source],
-  };
-}
-function httpClient(payloads = responses(), errorTable?: string) {
-  const requests: Request[] = [];
-  const fetchStub: typeof fetch = async (input, init) => {
-    const request = new Request(input, init);
-    requests.push(request);
-    const table = new URL(request.url).pathname.split("/").at(-1) ?? "";
-    if (!(table in payloads))
-      throw new Error(`Unexpected HTTP request: ${table}`);
-    return new Response(
-      JSON.stringify(
-        table === errorTable
-          ? {
-              message: "Database read denied",
-              code: "42501",
-              details: null,
-              hint: null,
-            }
-          : payloads[table],
-      ),
-      {
-        status: table === errorTable ? 403 : 200,
-        headers: { "Content-Type": "application/json" },
-      },
-    );
-  };
-  return {
-    client: createClient("https://fixture.supabase.co", "fixture-anon-key", {
-      auth: {
-        persistSession: false,
-        autoRefreshToken: false,
-        detectSessionInUrl: false,
-      },
-      global: { fetch: fetchStub },
-    }),
-    requests,
-  };
-}
 const options = { slug: "fixture-species", locale: "en" } as const;
 const proseFields = [
   "common_name",
@@ -159,18 +109,17 @@ function rpcClient(payload: unknown, error?: unknown) {
     } as never,
   };
 }
-const catalogOptions = {
+const catalogOptions: SpeciesCatalogOptions = {
   locale: "id",
   query: "",
-  status: null,
-  threatened: false,
-  taxon: null,
-  region: null,
-  habitat: null,
+  statuses: [],
+  taxa: [],
+  regions: [],
+  habitats: [],
   sort: "name",
   page: 1,
   pageSize: 12,
-} as const;
+};
 function catalogBundle() {
   return {
     species: { ...species, updated_at: "2026-01-02T03:04:05+00:00" },
@@ -202,9 +151,22 @@ describe("species content locale", () => {
   });
 });
 
-describe("published species HTTP query", () => {
-  it("returns complete profile, assessment, media, provenance through GET-only requests", async () => {
-    const { client, requests } = httpClient();
+describe("published species detail RPC", () => {
+  type LooseBundle = {
+    species: Record<string, unknown>;
+    translations: Array<Record<string, unknown>>;
+    assessment: Record<string, unknown> | null;
+    media: Array<Record<string, unknown>>;
+    links: Array<Record<string, unknown>>;
+    sources: Array<Record<string, unknown>>;
+    updatedAt: string;
+  };
+  const bundle = (): LooseBundle => ({
+    ...catalogBundle(),
+    translations: [translation("id"), translation("en")],
+  });
+  it("maps one RPC bundle into a complete localized profile", async () => {
+    const { client, calls } = rpcClient(bundle());
     const detail = await getPublishedSpeciesDetail(client, options);
     expect(detail).toMatchObject({
       id: speciesId,
@@ -223,29 +185,30 @@ describe("published species HTTP query", () => {
       media: [{ id: mediaId, alt: "en image description" }],
       sources: [{ id: sourceId, sectionKeys: ["habitat", "threats"] }],
     });
-    const urls = requests.map((request) => new URL(request.url));
-    expect(urls.map((url) => url.pathname)).toEqual([
-      "/rest/v1/species",
-      "/rest/v1/species_translations",
-      "/rest/v1/conservation_assessments",
-      "/rest/v1/species_media",
-      "/rest/v1/species_sources",
-      "/rest/v1/sources",
+    expect(calls).toEqual([
+      { name: "get_published_species_detail", args: { p_slug: species.slug } },
     ]);
-    expect(requests.every((request) => request.method === "GET")).toBe(true);
-    expect(urls[0]?.searchParams.get("slug")).toBe("eq.fixture-species");
-    expect(urls[0]?.searchParams.get("status")).toBe("eq.published");
-    expect(urls[1]?.searchParams.get("translation_status")).toBe(
-      "eq.published",
-    );
-    expect(urls[2]?.searchParams.get("is_current")).toBe("eq.true");
-    expect(urls[3]?.searchParams.get("approved")).toBe("eq.true");
-    expect(urls[3]?.searchParams.get("order")).toBe("sort_order.asc,id.asc");
-    for (const url of urls.slice(1, 5))
-      expect(url.searchParams.get("species_id")).toBe(`eq.${speciesId}`);
-    expect(urls[5]?.searchParams.get("id")).toBe(`in.(${sourceId})`);
   });
-
+  it("rejects a bundle describing a different species", async () => {
+    const payload = bundle();
+    payload.species = { ...payload.species, slug: "another-species" };
+    await expect(
+      getPublishedSpeciesDetail(rpcClient(payload).client, options),
+    ).rejects.toThrow("Detail bundle returned another species");
+  });
+  it("returns null when the RPC reports no published record", async () => {
+    for (const empty of [null, undefined]) {
+      await expect(
+        getPublishedSpeciesDetail(rpcClient(empty).client, options),
+      ).resolves.toBeNull();
+    }
+  });
+  it("propagates the RPC error instead of rendering an empty profile", async () => {
+    const failure = { message: "Database read denied", code: "42501" };
+    await expect(
+      getPublishedSpeciesDetail(rpcClient(null, failure).client, options),
+    ).rejects.toMatchObject({ message: "Database read denied", code: "42501" });
+  });
   it.each(
     proseFields.flatMap((field) =>
       [null, "", " \n "].map((value) => ({ field, value })),
@@ -253,19 +216,19 @@ describe("published species HTTP query", () => {
   )(
     "falls back as whole entry for incomplete English $field ($value)",
     async ({ field, value }) => {
-      const payloads = responses();
-      payloads.species_translations = [
+      const payload = bundle();
+      payload.translations = [
         translation("id"),
         { ...translation("en"), [field]: value },
       ];
       const fallback = await getPublishedSpeciesDetail(
-        httpClient(payloads).client,
+        rpcClient(payload).client,
         options,
       );
-      const idDetail = await getPublishedSpeciesDetail(httpClient().client, {
-        ...options,
-        locale: "id",
-      });
+      const idDetail = await getPublishedSpeciesDetail(
+        rpcClient(bundle()).client,
+        { ...options, locale: "id" },
+      );
       expect(fallback).toEqual({
         ...idDetail,
         requestedLocale: "en",
@@ -277,10 +240,10 @@ describe("published species HTTP query", () => {
   it.each([null, "", " "])(
     "falls back when English media alt is %s",
     async (alt) => {
-      const payloads = responses();
-      payloads.species_media = [{ ...media, alt_en: alt }];
+      const payload = bundle();
+      payload.media = [{ ...media, alt_en: alt }];
       expect(
-        await getPublishedSpeciesDetail(httpClient(payloads).client, options),
+        await getPublishedSpeciesDetail(rpcClient(payload).client, options),
       ).toMatchObject({
         locale: "id",
         isFallback: true,
@@ -289,115 +252,190 @@ describe("published species HTTP query", () => {
       });
     },
   );
-  it("returns null for incomplete Indonesian or missing species", async () => {
-    for (const field of proseFields) {
-      const payloads = responses();
-      payloads.species_translations = [
+  it.each(proseFields)(
+    "returns null when Indonesian %s is blank",
+    async (field) => {
+      const payload = bundle();
+      payload.translations = [
         { ...translation("id"), [field]: " " },
         translation("en"),
       ];
       await expect(
-        getPublishedSpeciesDetail(httpClient(payloads).client, options),
+        getPublishedSpeciesDetail(rpcClient(payload).client, options),
       ).resolves.toBeNull();
-    }
-    const payloads = responses();
-    payloads.species = [];
-    const { client, requests } = httpClient(payloads);
-    await expect(
-      getPublishedSpeciesDetail(client, options),
-    ).resolves.toBeNull();
-    expect(requests).toHaveLength(1);
-  });
-  it("preserves missing assessments/media and separate assessment provenance", async () => {
-    const payloads = responses();
-    payloads.conservation_assessments = [];
-    payloads.species_media = [];
+    },
+  );
+  it("preserves missing assessments and media", async () => {
+    const payload = bundle();
+    payload.assessment = null;
+    payload.media = [];
     expect(
-      await getPublishedSpeciesDetail(httpClient(payloads).client, options),
+      await getPublishedSpeciesDetail(rpcClient(payload).client, options),
     ).toMatchObject({ status: null, assessmentYear: null, media: [] });
-    const assessmentPayloads = responses();
-    assessmentPayloads.conservation_assessments = [
-      { ...assessment, source_id: assessmentSourceId },
-    ];
-    assessmentPayloads.sources = [
+  });
+  it("keeps assessment provenance separate from section sources", async () => {
+    const payload = bundle();
+    payload.assessment = { ...assessment, source_id: assessmentSourceId };
+    payload.sources = [
       source,
       { ...source, id: assessmentSourceId, title: "Assessment reference" },
     ];
     expect(
-      await getPublishedSpeciesDetail(
-        httpClient(assessmentPayloads).client,
-        options,
-      ),
+      await getPublishedSpeciesDetail(rpcClient(payload).client, options),
     ).toMatchObject({
       assessmentSourceId,
       sources: [{ id: sourceId }, { id: assessmentSourceId, sectionKeys: [] }],
     });
   });
   it.each([
-    "species",
-    "species_translations",
-    "conservation_assessments",
-    "species_media",
-    "species_sources",
-    "sources",
-  ])("propagates database errors from %s", async (table) => {
-    await expect(
-      getPublishedSpeciesDetail(httpClient(responses(), table).client, options),
-    ).rejects.toMatchObject({ message: "Database read denied", code: "42501" });
-  });
-  it.each([
-    ["species", [{ ...species, id: "not-a-uuid" }]],
-    ["species", [{ ...species, status: "draft" }]],
     [
-      "species_translations",
-      [translation("id"), { ...translation("en"), summary: 123 }],
+      "species",
+      (b: LooseBundle) => {
+        b.species = { ...b.species, id: "not-a-uuid" };
+      },
     ],
     [
-      "species_translations",
-      [{ ...translation("id"), translation_status: "draft" }],
-    ],
-    ["species_translations", [translation("id"), translation("id")]],
-    ["species_translations", [{ ...translation("id"), species_id: sourceId }]],
-    ["species_media", [{ ...media, url: "javascript:alert(1)" }]],
-    ["species_media", [{ ...media, source_url: "not-a-url" }]],
-    ["species_media", [{ ...media, license_url: "ftp://example.org/license" }]],
-    ["species_media", [{ ...media, alt_id: " " }]],
-    ["species_media", [{ ...media, photographer: null }]],
-    ["species_media", [{ ...media, license_code: "" }]],
-    ["species_media", [{ ...media, attribution_text: null }]],
-    ["species_media", [{ ...media, approved: false }]],
-    ["species_media", [{ ...media, species_id: sourceId }]],
-    ["conservation_assessments", [{ ...assessment, source_id: null }]],
-    ["conservation_assessments", [{ ...assessment, assessment_year: 2024.5 }]],
-    [
-      "conservation_assessments",
-      [{ ...assessment, assessed_on: "2023-02-29" }],
+      "species status",
+      (b: LooseBundle) => {
+        b.species = { ...b.species, status: "draft" };
+      },
     ],
     [
-      "conservation_assessments",
-      [
-        {
+      "translation type",
+      (b: LooseBundle) => {
+        b.translations = [
+          translation("id"),
+          { ...translation("en"), summary: 123 },
+        ];
+      },
+    ],
+    [
+      "duplicate locale",
+      (b: LooseBundle) => {
+        b.translations = [translation("id"), translation("id")];
+      },
+    ],
+    [
+      "foreign translation",
+      (b: LooseBundle) => {
+        b.translations = [{ ...translation("id"), species_id: sourceId }];
+      },
+    ],
+    [
+      "javascript media url",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, url: "javascript:alert(1)" }];
+      },
+    ],
+    [
+      "relative media source",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, source_url: "not-a-url" }];
+      },
+    ],
+    [
+      "ftp license url",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, license_url: "ftp://example.org/license" }];
+      },
+    ],
+    [
+      "blank media alt",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, alt_id: " " }];
+      },
+    ],
+    [
+      "missing photographer",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, photographer: null }];
+      },
+    ],
+    [
+      "blank license",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, license_code: "" }];
+      },
+    ],
+    [
+      "missing attribution",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, attribution_text: null }];
+      },
+    ],
+    [
+      "foreign media",
+      (b: LooseBundle) => {
+        b.media = [{ ...media, species_id: sourceId }];
+      },
+    ],
+    [
+      "null assessment source",
+      (b: LooseBundle) => {
+        b.assessment = { ...assessment, source_id: null };
+      },
+    ],
+    [
+      "fractional year",
+      (b: LooseBundle) => {
+        b.assessment = { ...assessment, assessment_year: 2024.5 };
+      },
+    ],
+    [
+      "impossible date",
+      (b: LooseBundle) => {
+        b.assessment = { ...assessment, assessed_on: "2023-02-29" };
+      },
+    ],
+    [
+      "inverted population",
+      (b: LooseBundle) => {
+        b.assessment = {
           ...assessment,
           population_estimate_min: 10,
           population_estimate_max: 1,
-        },
-      ],
+        };
+      },
     ],
     [
-      "species_sources",
-      [{ species_id: speciesId, source_id: 123, section_key: "" }],
+      "numeric section key",
+      (b: LooseBundle) => {
+        b.links = [
+          { species_id: speciesId, source_id: sourceId, section_key: 123 },
+        ];
+      },
     ],
-    ["species_sources", []],
-    ["sources", [{ ...source, url: "file:///reference" }]],
-    ["sources", [{ ...source, accessed_on: "2026-02-30" }]],
-    ["sources", []],
-  ] as Array<[string, unknown]>)(
-    "rejects malformed %s rows",
-    async (table, rows) => {
-      const payloads = responses();
-      payloads[table] = rows;
+    [
+      "no source links",
+      (b: LooseBundle) => {
+        b.links = [];
+      },
+    ],
+    [
+      "file reference url",
+      (b: LooseBundle) => {
+        b.sources = [{ ...source, url: "file:///reference" }];
+      },
+    ],
+    [
+      "impossible access date",
+      (b: LooseBundle) => {
+        b.sources = [{ ...source, accessed_on: "2026-02-30" }];
+      },
+    ],
+    [
+      "no sources",
+      (b: LooseBundle) => {
+        b.sources = [];
+      },
+    ],
+  ] as Array<[string, (b: LooseBundle) => void]>)(
+    "rejects malformed bundle: %s",
+    async (_label, mutate) => {
+      const payload = bundle();
+      mutate(payload);
       await expect(
-        getPublishedSpeciesDetail(httpClient(payloads).client, options),
+        getPublishedSpeciesDetail(rpcClient(payload).client, options),
       ).rejects.toThrow();
     },
   );
@@ -552,7 +590,7 @@ describe("catalog URL parser", () => {
     expect(parseCatalogSearchParams({ q: "😀".repeat(100) }).ok).toBe(true);
     const nativeForm = Object.fromEntries(
       new URLSearchParams(
-        "q=CatalogFixture&status=&taxon=&region=&habitat=&sort=name&threatened=&page=1&view=grid",
+        "q=CatalogFixture&statuses=&taxa=&regions=&habitats=&sort=name&page=1&view=grid",
       ),
     );
     const normalized = parseCatalogSearchParams(nativeForm);
@@ -560,11 +598,10 @@ describe("catalog URL parser", () => {
       ok: true,
       value: {
         query: "CatalogFixture",
-        status: null,
-        threatened: false,
-        taxon: null,
-        region: null,
-        habitat: null,
+        statuses: [],
+        taxa: [],
+        regions: [],
+        habitats: [],
         sort: "name",
         page: 1,
         view: "grid",
@@ -575,7 +612,19 @@ describe("catalog URL parser", () => {
     expect(serializeCatalogSearchParams(normalized.value)).toBe(
       "q=CatalogFixture",
     );
-    for (const key of ["taxon", "region", "habitat"]) {
+    // Multiple values serialize as one comma list, order preserved.
+    const multi = parseCatalogSearchParams({
+      statuses: "CR,EN",
+      regions: "sumatra,java",
+    });
+    expect(multi.ok).toBe(true);
+    if (!multi.ok) throw new Error("Expected multi-select to parse");
+    expect(multi.value.statuses).toEqual(["CR", "EN"]);
+    expect(multi.value.regions).toEqual(["sumatra", "java"]);
+    expect(serializeCatalogSearchParams(multi.value)).toBe(
+      "statuses=CR%2CEN&regions=sumatra%2Cjava",
+    );
+    for (const key of ["taxa", "regions", "habitats"]) {
       const params = Object.fromEntries(
         new URLSearchParams(`${key}=%20%C2%A0`),
       );
@@ -585,11 +634,11 @@ describe("catalog URL parser", () => {
   it.each([
     { status: ["CR", "EN"] },
     { surprise: "1" },
-    { status: "CR", threatened: "1" },
+    { statuses: "CR,BOGUS" },
+    { statuses: "CR,CR" },
     { page: "01" },
     { q: "x".repeat(101) },
     { sort: "random" },
-    { threatened: "true" },
   ])("rejects invalid URL input %#", (params) =>
     expect(parseCatalogSearchParams(params).ok).toBe(false),
   );

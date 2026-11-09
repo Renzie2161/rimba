@@ -1,45 +1,29 @@
 import { expect, test } from "@playwright/test";
 
-test("guide is directly reachable and catalog links use delivered route", async ({
-  page,
-}) => {
-  await page.goto("/id/guide");
+test("field guide opens as a dialog from the sidebar", async ({ page }) => {
+  await page.goto("/id/journal");
 
-  const main = page.locator("main#main");
-  await expect(main).toHaveCount(1);
+  const trigger = page.getByRole("button", { name: "Panduan Lapangan" });
+  await expect(trigger).toBeVisible();
+  await trigger.click();
+
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toBeVisible();
   await expect(
-    main.getByRole("heading", {
-      level: 1,
+    dialog.getByRole("heading", {
       name: "Penasaran boleh. Mengganggu jangan.",
     }),
   ).toBeVisible();
-  await expect(main.getByRole("list")).toHaveCount(1);
-  await expect(main.getByRole("list").getByRole("listitem")).toHaveCount(3);
-  await expect(main.getByRole("listitem").nth(0)).toHaveAttribute(
-    "aria-posinset",
-    "1",
-  );
-  await expect(main.getByRole("listitem").nth(1)).toHaveAttribute(
-    "aria-posinset",
-    "2",
-  );
-  await expect(main.getByRole("listitem").nth(2)).toHaveAttribute(
-    "aria-posinset",
-    "3",
-  );
-  const backLink = main.getByRole("link", { name: "Kembali ke ensiklopedia" });
-  await expect(backLink).toHaveAttribute("href", "/id/species");
-  await expect(backLink).toHaveCSS("width", "44px");
-  await expect(backLink).toHaveCSS("height", "44px");
-  await expect(
-    main.getByRole("link", { name: "Siap menjelajah" }),
-  ).toHaveAttribute("href", "/id/species");
-  await backLink.click();
-  await expect(page).toHaveURL(/\/id\/species$/);
-  await page.goto("/id/guide");
-  await main.getByRole("link", { name: "Siap menjelajah" }).click();
-  await expect(page).toHaveURL(/\/id\/species$/);
-  await expect(page.locator("main#main")).toBeVisible();
+  await expect(dialog.getByRole("listitem")).toHaveCount(3);
+
+  // The guide is no longer a route of its own.
+  await expect(page).toHaveURL(/\/id\/journal$/);
+
+  // Closing uses the primary action, not a dismiss X.
+  const primary = dialog.getByRole("button", { name: "Siap menjelajah" });
+  await expect(primary).toBeVisible();
+  await primary.click();
+  await expect(dialog).toBeHidden();
 });
 
 test("about page uses exact source copy and preserved banner line break", async ({
@@ -64,12 +48,7 @@ test("about page uses exact source copy and preserved banner line break", async 
       { exact: true },
     ),
   ).toBeVisible();
-  await expect(
-    main.getByText(
-      "Fitur jurnal pribadi, identifikasi kamera, dan pembayaran belum tersedia dalam prototipe.",
-      { exact: true },
-    ),
-  ).toBeVisible();
+  await expect(main.getByText(/belum tersedia dalam prototipe/)).toHaveCount(0);
   const bannerHeading = main.getByRole("heading", { level: 2 });
   await expect(bannerHeading).toHaveText(
     "Mengenal tentang kami,\nmengenal tentang alam",
