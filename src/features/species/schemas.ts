@@ -16,8 +16,22 @@ export const conservationStatusSchema = z.enum([
 ]);
 export type ConservationStatus = z.infer<typeof conservationStatusSchema>;
 
+// Ecological status is separate from IUCN threat status: a species can be
+// LC and invasive at once, so these are never merged into one badge.
+export const invasiveStatusSchema = z.enum([
+  "native",
+  "introduced",
+  "invasive",
+]);
+export type InvasiveStatus = z.infer<typeof invasiveStatusSchema>;
+
 const textSchema = z.string().regex(/\S/, "Must not be blank");
 const httpUrlSchema = z.url({ protocol: /^https?$/ });
+// Lead media may be served from the app itself, so a root-relative path is allowed.
+const mediaUrlSchema = z.union([
+  httpUrlSchema,
+  z.string().regex(/^\/images\/(?:[a-z0-9_-]+\/)*[a-z0-9_-]+\.[a-z]+$/),
+]);
 const slugSchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const yearSchema = z.int().min(1).max(9999);
 const populationSchema = z.int().nonnegative();
@@ -42,6 +56,10 @@ export const speciesRowSchema = z.object({
   region_codes: z.array(textSchema),
   habitat_codes: z.array(textSchema),
   featured_rank: z.int().nullable(),
+  invasive_status: invasiveStatusSchema.nullish(),
+  indonesia_ecological_status: invasiveStatusSchema.nullish(),
+  regulation_status: z.string().nullish(),
+  ecosystem_role: z.string().nullish(),
   status: z.literal("published"),
 });
 export type SpeciesRow = z.infer<typeof speciesRowSchema>;
@@ -102,7 +120,7 @@ export type AssessmentRow = z.infer<typeof assessmentRowSchema>;
 export const mediaRowSchema = z.object({
   id: z.uuid(),
   species_id: z.uuid(),
-  url: httpUrlSchema,
+  url: mediaUrlSchema,
   storage_path: textSchema.nullable(),
   alt_id: textSchema,
   alt_en: z.string().nullable(),
@@ -149,6 +167,10 @@ export const speciesDetailSchema = z.object({
   iucnTaxonId: z.string().nullable(),
   regionCodes: z.array(textSchema),
   habitatCodes: z.array(textSchema),
+  invasiveStatus: invasiveStatusSchema.nullable(),
+  indonesiaEcologicalStatus: invasiveStatusSchema.nullable(),
+  regulationStatus: z.string().nullable(),
+  ecosystemRole: z.string().nullable(),
   requestedLocale: localeSchema,
   locale: localeSchema,
   isFallback: z.boolean(),
@@ -174,7 +196,7 @@ export const speciesDetailSchema = z.object({
   media: z.array(
     z.object({
       id: z.uuid(),
-      url: httpUrlSchema,
+      url: mediaUrlSchema,
       storagePath: textSchema.nullable(),
       alt: textSchema,
       photographer: textSchema,
@@ -216,11 +238,10 @@ export const speciesCatalogOptionsSchema = z
   .object({
     locale: localeSchema,
     query: z.string(),
-    status: conservationStatusSchema.nullable(),
-    threatened: z.boolean(),
-    taxon: catalogTextSchema.nullable(),
-    region: catalogTextSchema.nullable(),
-    habitat: catalogTextSchema.nullable(),
+    statuses: conservationStatusSchema.array().max(9),
+    taxa: catalogTextSchema.array().max(32),
+    regions: catalogTextSchema.array().max(32),
+    habitats: catalogTextSchema.array().max(32),
     sort: catalogSortSchema,
     page: z.int().min(1).max(1_000_000),
     pageSize: z.literal(12),
@@ -228,10 +249,6 @@ export const speciesCatalogOptionsSchema = z
   .refine(
     (value) => Array.from(value.query).length <= 100,
     "Search query is too long",
-  )
-  .refine(
-    (value) => !(value.status && value.threatened),
-    "Choose status or threatened",
   );
 export type SpeciesCatalogOptions = z.infer<typeof speciesCatalogOptionsSchema>;
 
@@ -267,6 +284,22 @@ export const speciesCatalogResponseSchema = z
     page: z.int().min(1).max(1_000_000),
     pageSize: z.literal(12),
     facets: speciesCatalogFacetsSchema,
+  })
+  .strict();
+
+export const featuredSpeciesSummarySchema = z
+  .object({
+    total: z.int().nonnegative().max(Number.MAX_SAFE_INTEGER),
+    flora: z.int().nonnegative().max(Number.MAX_SAFE_INTEGER),
+    fauna: z.int().nonnegative().max(Number.MAX_SAFE_INTEGER),
+    attention: z.int().nonnegative().max(Number.MAX_SAFE_INTEGER),
+  })
+  .strict();
+
+export const featuredSpeciesResponseSchema = z
+  .object({
+    rows: speciesCatalogBundleSchema.array().max(24),
+    summary: featuredSpeciesSummarySchema,
   })
   .strict();
 
