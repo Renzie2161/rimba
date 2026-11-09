@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RotateCcw, SearchX } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import {
   parseCatalogSearchParams,
@@ -8,7 +9,6 @@ import { getPublishedSpeciesCatalog } from "@/features/species/queries";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { getSupabaseEnvironment } from "@/lib/env";
 import { Link } from "@/i18n/navigation";
-import ForestMedia from "../../forest-media";
 import CatalogControls, {
   CatalogPagination,
 } from "@/features/species/catalog-controls";
@@ -32,23 +32,6 @@ export async function generateMetadata({
 export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
   const t = await getTranslations("catalog");
   const parsed = parseCatalogSearchParams(await searchParams);
-  const hero = (
-    <ForestMedia
-      className={styles.catalogHero}
-      labelledBy="species-catalog-hero-title"
-    >
-      <div className={styles.catalogHeroCopy}>
-        <p className={styles.catalogHeroLabel}>{t("heroLabel")}</p>
-        <h2 className={styles.catalogHeroTitle} id="species-catalog-hero-title">
-          <span>{t("heroTitleLineOne")}</span>
-          <span className={styles.catalogHeroAccent}>
-            {t("heroTitleLineTwo")}
-          </span>
-        </h2>
-        <p className={styles.catalogHeroDescription}>{t("heroDescription")}</p>
-      </div>
-    </ForestMedia>
-  );
   if (!parsed.ok) {
     return (
       <main className={styles.page} id="main">
@@ -56,7 +39,6 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
           <h1>{t("title")}</h1>
           <p>{t("description")}</p>
         </header>
-        {hero}
         <section
           className={styles.state}
           aria-labelledby="catalog-invalid-title"
@@ -92,14 +74,13 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
   const pageOutOfRange = Boolean(
     catalog && parsed.value.page > Math.max(1, pageCount),
   );
-  const emptyUnfilteredCatalog =
-    catalog?.total === 0 &&
-    !parsed.value.query &&
-    !parsed.value.status &&
-    !parsed.value.threatened &&
-    !parsed.value.taxon &&
-    !parsed.value.region &&
-    !parsed.value.habitat;
+  const hasAnyFilter =
+    parsed.value.query.length > 0 ||
+    parsed.value.statuses.length > 0 ||
+    parsed.value.taxa.length > 0 ||
+    parsed.value.regions.length > 0 ||
+    parsed.value.habitats.length > 0;
+  const emptyUnfilteredCatalog = catalog?.total === 0 && !hasAnyFilter;
 
   return (
     <main className={styles.page} id="main">
@@ -107,7 +88,6 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
         <h1>{t("title")}</h1>
         <p>{t("description")}</p>
       </header>
-      {hero}
       {unconfigured || failed || !catalog ? (
         <section className={styles.state} aria-labelledby="catalog-error-title">
           <h2 id="catalog-error-title">
@@ -131,7 +111,12 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
             <div className={styles.resultsHeading}>
               <div>
                 <h2 id="catalog-results-title">{t("resultsTitle")}</h2>
-                <p>{t("resultCount", { count: catalog.total })}</p>
+                <p>
+                  {t("resultSummary", {
+                    shown: catalog.items.length,
+                    total: catalog.total,
+                  })}
+                </p>
               </div>
             </div>
             <CatalogControls
@@ -150,7 +135,10 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
                 ))}
               </div>
             ) : (
-              <section className={styles.state} aria-live="polite">
+              <section className={styles.emptyState} aria-live="polite">
+                <span aria-hidden="true" className={styles.emptyIcon}>
+                  <SearchX size={30} strokeWidth={1.6} />
+                </span>
                 <h3>
                   {t(
                     pageOutOfRange
@@ -170,7 +158,13 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
                   )}
                 </p>
                 {!emptyUnfilteredCatalog && (
-                  <Link href="/species">{t("reset")}</Link>
+                  <>
+                    <p className={styles.emptyHint}>{t("emptyHint")}</p>
+                    <Link className={styles.emptyAction} href="/species">
+                      <RotateCcw aria-hidden="true" size={16} strokeWidth={2} />
+                      {t("emptyAction")}
+                    </Link>
+                  </>
                 )}
               </section>
             )}

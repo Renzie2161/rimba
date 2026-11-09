@@ -1,0 +1,49 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.inline {
+  padding: 3px 9px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.chip {
+  padding: 5px 11px;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgb(12 32 24 / 26%);
+  backdrop-filter: blur(2px);
+}
+
+.threat {
+  background: var(--surface-green);
+  color: var(--brand-800);
+}
+
+.chip.threat {
+  background: rgb(255 255 255 / 94%);
+  color: var(--brand-800);
+}
+
+.ecological {
+  background: var(--surface-alt);
+  color: var(--brand-700);
+}
+
+/* Amber is reserved for contextual risk, always paired with text. */
+.invasive {
+  background: #fbe8d4;
+  color: #7a4413;
+}
+
+.chip.invasive {
+  background: rgb(255 240 226 / 96%);
+  color: #7a4413;
+}

@@ -2,6 +2,7 @@ import {
   catalogSortSchema,
   conservationStatusSchema,
   speciesCatalogOptionsSchema,
+  type ConservationStatus,
   type SpeciesCatalogOptions,
 } from "./schemas";
 
@@ -13,15 +14,32 @@ type CatalogParams = Record<string, string | string[] | undefined>;
 
 const allowed: Record<string, true> = {
   q: true,
-  status: true,
-  threatened: true,
-  taxon: true,
-  region: true,
-  habitat: true,
+  statuses: true,
+  taxa: true,
+  regions: true,
+  habitats: true,
   sort: true,
   page: true,
   view: true,
 };
+
+/** A facet list is a comma-separated set; order is irrelevant and blanks drop. */
+function readList(
+  raw: string | undefined,
+  issues: string[],
+  label: string,
+): string[] {
+  if (!raw) return [];
+  const items = raw
+    .split(",")
+    .map((item) => item.trim())
+    .filter((item) => item.length > 0);
+  if (items.length === 0) issues.push(`Empty ${label} filter`);
+  if (items.length > 32) issues.push(`Too many ${label} filters`);
+  const unique = [...new Set(items)];
+  if (unique.length !== items.length) issues.push(`Duplicate ${label} filter`);
+  return unique;
+}
 
 export function parseCatalogSearchParams(
   params: CatalogParams,
@@ -34,42 +52,39 @@ export function parseCatalogSearchParams(
   if (issues.length) return { ok: false, issues };
   const get = (key: string) => params[key] as string | undefined;
   const query = (get("q") ?? "").trim().replace(/\s+/gu, " ");
-  const statusValue = get("status") || undefined;
-  const status = statusValue
-    ? conservationStatusSchema.safeParse(statusValue)
-    : null;
-  if (status && !status.success) issues.push("Invalid status");
-  const threatenedValue = get("threatened");
-  if (
-    threatenedValue !== undefined &&
-    threatenedValue !== "" &&
-    threatenedValue !== "1"
-  )
-    issues.push("Invalid threatened filter");
-  const sortValue = get("sort") ?? "name";
-  const sort = catalogSortSchema.safeParse(sortValue);
+
+  const statusValues = readList(get("statuses"), issues, "status");
+  const statuses: ConservationStatus[] = [];
+  for (const status of statusValues) {
+    const parsedStatus = conservationStatusSchema.safeParse(status);
+    if (parsedStatus.success) statuses.push(parsedStatus.data);
+    else issues.push("Invalid status");
+  }
+
+  const sort = catalogSortSchema.safeParse(get("sort") ?? "name");
   if (!sort.success) issues.push("Invalid sort");
+
   const viewValue = get("view") ?? "grid";
   if (viewValue !== "grid" && viewValue !== "list") issues.push("Invalid view");
+
   const pageValue = get("page") ?? "1";
-  if (!/^[1-9]\d*$/.test(pageValue) || Number(pageValue) > 1_000_000)
-    issues.push("Invalid page");
+  const pageValid =
+    /^[1-9]\d*$/.test(pageValue) && Number(pageValue) <= 1_000_000;
+  if (!pageValid) issues.push("Invalid page");
   if (Array.from(query).length > 100) issues.push("Search query is too long");
+
   const value: CatalogSearchValue = {
     query,
-    status: status?.success ? status.data : null,
-    threatened: threatenedValue === "1",
-    taxon: get("taxon") || null,
-    region: get("region") || null,
-    habitat: get("habitat") || null,
+    statuses,
+    taxa: readList(get("taxa"), issues, "taxon"),
+    regions: readList(get("regions"), issues, "region"),
+    habitats: readList(get("habitats"), issues, "habitat"),
     sort: sort.success ? sort.data : "name",
-    page:
-      /^[1-9]\d*$/.test(pageValue) && Number(pageValue) <= 1_000_000
-        ? Number(pageValue)
-        : 1,
+    page: pageValid ? Number(pageValue) : 1,
     pageSize: 12,
     view: viewValue === "list" ? "list" : "grid",
   };
+
   const parsed = speciesCatalogOptionsSchema.safeParse({
     ...value,
     locale: "id",
@@ -85,11 +100,10 @@ export function serializeCatalogSearchParams(
 ): string {
   const params = new URLSearchParams();
   if (value.query) params.set("q", value.query);
-  if (value.status) params.set("status", value.status);
-  if (value.threatened) params.set("threatened", "1");
-  if (value.taxon) params.set("taxon", value.taxon);
-  if (value.region) params.set("region", value.region);
-  if (value.habitat) params.set("habitat", value.habitat);
+  if (value.statuses.length) params.set("statuses", value.statuses.join(","));
+  if (value.taxa.length) params.set("taxa", value.taxa.join(","));
+  if (value.regions.length) params.set("regions", value.regions.join(","));
+  if (value.habitats.length) params.set("habitats", value.habitats.join(","));
   if (value.sort !== "name") params.set("sort", value.sort);
   if (value.page !== 1) params.set("page", String(value.page));
   if (value.view !== "grid") params.set("view", value.view);
