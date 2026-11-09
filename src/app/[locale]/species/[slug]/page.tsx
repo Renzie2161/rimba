@@ -3,6 +3,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { speciesRowSchema } from "@/features/species/schemas";
 import { getPublishedSpeciesDetail } from "@/features/species/queries";
@@ -52,6 +53,7 @@ export default async function SpeciesDetailPage({ params }: PageProps) {
       id="main"
     >
       <Link className={styles.backLink} href="/species">
+        <ArrowLeft aria-hidden="true" size={17} strokeWidth={2} />
         {t("backToCatalog")}
       </Link>
       <SpeciesDossier species={species} labels={t} />

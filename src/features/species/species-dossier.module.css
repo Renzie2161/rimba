@@ -1,0 +1,269 @@
+.dossier {
+  display: grid;
+  gap: 22px;
+}
+
+.dossierHeader {
+  display: grid;
+  gap: 4px;
+}
+
+.dossierEyebrow {
+  margin: 0;
+  color: var(--nav-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dossierHeader h1 {
+  margin: 0;
+  color: var(--brand-700);
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.scientificName {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.dossierColumns {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.dossierAside {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.dossierBody {
+  display: grid;
+  gap: 16px;
+}
+
+/* Status hero: IUCN and ecological stay visually separate by design. */
+.statusHero {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-green);
+}
+
+.statusHeroRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusHero h2 {
+  margin: 0;
+  color: var(--brand-800);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.statusHeroMeta {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.panel {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.panelTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  color: var(--brand-800);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.panelIcon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--surface-green);
+  color: var(--brand-600);
+}
+
+.panelBody {
+  display: grid;
+  gap: 10px;
+}
+
+.panelEmpty {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.panelBody p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.panelBody dl {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.panelBody dl > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.panelBody dt {
+  min-width: 120px;
+  color: var(--ink-muted);
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.panelBody dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.prosePanel {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.prosePanel h2 {
+  margin: 0 0 10px;
+  color: var(--brand-800);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.prosePanel p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.prosePanel details {
+  margin-top: 10px;
+}
+
+.prosePanel summary {
+  cursor: pointer;
+  color: var(--brand-600);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.prosePanel summary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.summary {
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.inlineSources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inlineSources li a {
+  color: var(--brand-600);
+  font-size: 13px;
+}
+
+.sources {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-alt);
+}
+
+.sources h2 {
+  margin: 0 0 12px;
+  color: var(--brand-800);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.sources ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sources li {
+  color: var(--ink-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sources a {
+  color: var(--brand-600);
+  font-weight: 600;
+}
+
+.sources span,
+.sources small {
+  display: block;
+  font-size: 12px;
+}
+
+@media (max-width: 1023px) {
+  .dossierColumns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dossierAside {
+    position: static;
+  }
+}

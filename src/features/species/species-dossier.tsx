@@ -1,6 +1,8 @@
 import type { SpeciesDetail } from "./schemas";
+import DossierPanel, { panelIcons } from "./dossier-panel";
+import StatusTag from "./status-tag";
 import SpeciesMedia from "./species-media";
-import styles from "./catalog.module.css";
+import styles from "./species-dossier.module.css";
 
 type LabelKey =
   | "section.summary"
@@ -29,8 +31,19 @@ type LabelKey =
   | "threats"
   | "conservationActions"
   | "sources"
+  | "iucnGlobal"
+  | "ecologicalIndonesia"
+  | "habitatDistribution"
+  | "regulationStatus"
+  | "ecosystemRole"
+  | "notAvailable"
+  | "iucnScope"
+  | "iucnYear"
+  | "seeFull"
+  | `ecological.${NonNullable<SpeciesDetail["invasiveStatus"]>}`
   | `status.${NonNullable<SpeciesDetail["status"]>}`
   | `rank.${SpeciesDetail["taxonRank"]}`;
+
 type Props = { species: SpeciesDetail; labels: (key: LabelKey) => string };
 
 function SectionSources({
@@ -68,9 +81,10 @@ export default function SpeciesDossier({ species, labels }: Props) {
     threats_description: labels("section.threats_description"),
     conservation_actions: labels("section.conservation_actions"),
   };
-  const statusLabel = species.status
-    ? labels(`status.${species.status}`)
-    : labels("unknown");
+  const ecologicalLabel = species.indonesiaEcologicalStatus
+    ? labels(`ecological.${species.indonesiaEcologicalStatus}`)
+    : null;
+
   return (
     <div className={styles.dossier}>
       <header className={styles.dossierHeader}>
@@ -78,14 +92,14 @@ export default function SpeciesDossier({ species, labels }: Props) {
         <h1>{species.commonName}</h1>
         <p className={styles.scientificName}>{species.scientificName}</p>
       </header>
+
       <div className={styles.dossierColumns}>
         <aside className={styles.dossierAside}>
           <SpeciesMedia species={species} labels={labels} />
-          <section
-            className={styles.factPanel}
-            aria-labelledby="taxonomy-heading"
-          >
-            <h2 id="taxonomy-heading">{labels("taxonomy")}</h2>
+          <section className={styles.panel} aria-labelledby="taxonomy-heading">
+            <h2 className={styles.panelTitle} id="taxonomy-heading">
+              {labels("taxonomy")}
+            </h2>
             <dl>
               <div>
                 <dt>{labels("taxonGroup")}</dt>
@@ -105,53 +119,122 @@ export default function SpeciesDossier({ species, labels }: Props) {
               </div>
             </dl>
           </section>
-          <section
-            className={styles.factPanel}
-            aria-labelledby="habitat-heading"
-          >
-            <h2 id="habitat-heading">{labels("habitat")}</h2>
-            <p>{species.habitatDescription}</p>
-            <SectionSources
-              sources={species.sources}
-              section="habitat_description"
-            />
-            {species.regionCodes.length > 0 && (
-              <p>
-                {labels("regions")}: {species.regionCodes.join(", ")}
-              </p>
-            )}
-            {species.habitatCodes.length > 0 && (
-              <p>
-                {labels("habitats")}: {species.habitatCodes.join(", ")}
-              </p>
-            )}
-          </section>
         </aside>
+
         <div className={styles.dossierBody}>
-          <section
-            className={styles.statusPanel}
-            aria-labelledby="assessment-heading"
-          >
-            <div>
-              <h2 id="assessment-heading">{labels("assessment")}</h2>
-              <p className={styles.status}>{statusLabel}</p>
+          <div className={styles.statusHero}>
+            <div className={styles.statusHeroRow}>
+              <StatusTag
+                invasiveStatus={species.invasiveStatus}
+                status={species.status}
+              />
             </div>
-            <p>
+            <p className={styles.statusHeroMeta}>
               {species.status
                 ? [species.assessmentScope, species.assessmentYear]
                     .filter(Boolean)
                     .join(" · ")
                 : labels("noAssessment")}
             </p>
-            {assessmentSource && (
+          </div>
+
+          <DossierPanel
+            empty={!species.status}
+            icon={panelIcons.iucn}
+            id="iucn-heading"
+            title={labels("iucnGlobal")}
+          >
+            {species.status ? (
+              <dl>
+                <div>
+                  <dt>{labels("assessment")}</dt>
+                  <dd>
+                    {species.status} · {labels(`status.${species.status}`)}
+                  </dd>
+                </div>
+                {species.assessmentScope ? (
+                  <div>
+                    <dt>{labels("iucnScope")}</dt>
+                    <dd>{species.assessmentScope}</dd>
+                  </div>
+                ) : null}
+                {species.assessmentYear ? (
+                  <div>
+                    <dt>{labels("iucnYear")}</dt>
+                    <dd>{species.assessmentYear}</dd>
+                  </div>
+                ) : null}
+              </dl>
+            ) : (
+              labels("noAssessment")
+            )}
+            {assessmentSource ? (
               <p>
                 <a href={assessmentSource.url} target="_blank" rel="noreferrer">
                   {labels("assessmentSource")}: {assessmentSource.title}
                 </a>
               </p>
+            ) : null}
+            {species.assessmentNotes ? <p>{species.assessmentNotes}</p> : null}
+          </DossierPanel>
+
+          <DossierPanel
+            empty={!ecologicalLabel}
+            icon={panelIcons.ecological}
+            id="ecological-heading"
+            title={labels("ecologicalIndonesia")}
+          >
+            {ecologicalLabel ? (
+              <p>{ecologicalLabel}</p>
+            ) : (
+              labels("notAvailable")
             )}
-            {species.assessmentNotes && <p>{species.assessmentNotes}</p>}
-          </section>
+          </DossierPanel>
+
+          <DossierPanel
+            icon={panelIcons.habitat}
+            id="habitat-heading"
+            title={labels("habitatDistribution")}
+          >
+            <p>{species.habitatDescription}</p>
+            <dl>
+              {species.regionCodes.length > 0 ? (
+                <div>
+                  <dt>{labels("regions")}</dt>
+                  <dd>{species.regionCodes.join(" · ")}</dd>
+                </div>
+              ) : null}
+              {species.habitatCodes.length > 0 ? (
+                <div>
+                  <dt>{labels("habitats")}</dt>
+                  <dd>{species.habitatCodes.join(" · ")}</dd>
+                </div>
+              ) : null}
+            </dl>
+            <SectionSources
+              sources={species.sources}
+              section="habitat_description"
+            />
+          </DossierPanel>
+
+          <DossierPanel
+            empty={!species.regulationStatus}
+            icon={panelIcons.regulation}
+            id="regulation-heading"
+            title={labels("regulationStatus")}
+          >
+            {species.regulationStatus ?? labels("notAvailable")}
+          </DossierPanel>
+
+          <DossierPanel
+            empty={!species.ecosystemRole}
+            icon={panelIcons.ecosystem}
+            id="ecosystem-heading"
+            title={labels("ecosystemRole")}
+          >
+            {species.ecosystemRole ?? labels("notAvailable")}
+          </DossierPanel>
+
           <section className={styles.prosePanel}>
             <h2>{labels("summary")}</h2>
             <p className={styles.summary}>{species.summary}</p>
@@ -186,6 +269,7 @@ export default function SpeciesDossier({ species, labels }: Props) {
               section="conservation_actions"
             />
           </section>
+
           <section className={styles.sources} aria-labelledby="sources-heading">
             <h2 id="sources-heading">{labels("sources")}</h2>
             <ol>
