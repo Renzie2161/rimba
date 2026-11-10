@@ -205,6 +205,27 @@ export default function SpeciesDossier({ species, labels }: Props) {
             <p className={styles.summary}>{species.summary}</p>
             <p>{species.description}</p>
           </section>
+          <DossierPanel
+            icon={panelIcons.ecosystem}
+            id="traits-heading"
+            title={labels("distinctiveTraits")}
+          >
+            <p>{species.distinctiveTraits}</p>
+          </DossierPanel>
+          <DossierPanel
+            icon={panelIcons.regulation}
+            id="threats-heading"
+            title={labels("threats")}
+          >
+            <p>{species.threatsDescription}</p>
+          </DossierPanel>
+          <DossierPanel
+            icon={panelIcons.habitat}
+            id="conservation-actions-heading"
+            title={labels("conservationActions")}
+          >
+            <p>{species.conservationActions}</p>
+          </DossierPanel>
           <div className={styles.resourcesSection}>
             <Link className={styles.journalLink} href="/journal">
               <NotebookText size={16} strokeWidth={1.7} aria-hidden="true" />
