@@ -13,7 +13,7 @@ import styles from "@/features/species/catalog.module.css";
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: "400",
-  style: "italic",
+  style: ["normal", "italic"],
   display: "swap",
   variable: "--font-ibm-plex-mono",
   preload: false,

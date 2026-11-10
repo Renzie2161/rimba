@@ -13,6 +13,7 @@ import type { ReactNode } from "react";
 import AppShell from "./app-shell";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import { getAccount } from "@/features/account/server";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -69,6 +70,15 @@ export default async function LocaleLayout({
             {navigationT("skipToMain")}
           </a>
           <AppShell
+            account={await getAccount().then((account) =>
+              account
+                ? {
+                    displayName:
+                      account.profile?.display_name || "Penjelajah alam",
+                    username: account.profile?.username ?? null,
+                  }
+                : null,
+            )}
             guideLabel={guideT("title")}
             identificationLabel={navigationT("identificationDestination")}
             strapline={navigationT("strapline")}

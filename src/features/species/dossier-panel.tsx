@@ -1,11 +1,4 @@
-import {
-  MapPin,
-  Network,
-  Scale,
-  ShieldCheck,
-  Sprout,
-  type LucideIcon,
-} from "lucide-react";
+import { Waves, ShieldCheck, Sprout, type LucideIcon } from "lucide-react";
 import type { SpeciesDetail } from "./schemas";
 import styles from "./species-dossier.module.css";
 
@@ -29,11 +22,14 @@ export default function DossierPanel({
   empty = false,
 }: PanelProps) {
   return (
-    <section className={styles.panel} aria-labelledby={id}>
+    <section
+      className={`${styles.panel} ${styles.infoPanel}`}
+      aria-labelledby={id}
+    >
+      <span aria-hidden="true" className={styles.panelIcon}>
+        <Icon size={20} strokeWidth={1.75} />
+      </span>
       <h2 className={styles.panelTitle} id={id}>
-        <span aria-hidden="true" className={styles.panelIcon}>
-          <Icon size={20} strokeWidth={1.75} />
-        </span>
         {title}
       </h2>
       <div className={empty ? styles.panelEmpty : styles.panelBody}>
@@ -46,9 +42,9 @@ export default function DossierPanel({
 export const panelIcons = {
   iucn: ShieldCheck,
   ecological: Sprout,
-  habitat: MapPin,
-  regulation: Scale,
-  ecosystem: Network,
+  habitat: Waves,
+  regulation: ShieldCheck,
+  ecosystem: Sprout,
 } as const;
 
 export type EcologyFields = Pick<

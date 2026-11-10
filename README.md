@@ -60,7 +60,7 @@ flowchart LR
 
 `/id/species` reads published catalog entries through a server-side RPC. `/id/journal` reads demo rows through the server-side anonymous client. Zod validates database responses. No browser query uses privileged credentials.
 
-Editors prepare and review sourced content outside the visitor app. The app has no editor interface, public write path, account, or personal journal history.
+Editors prepare and review sourced content outside the visitor app. The app has no editor interface or personal journal history. Google-only accounts support private profile creation and editing; see [account setup](docs/accounts-setup.md) for the required database migration and Auth provider configuration.
 
 The app also has `Panduan Lapangan`, `Tentang Rimba`, and `Donasi` pages. These pages do not read Supabase. Donation is a static, non-payable demonstration with no QRIS payload or payment flow.
 
@@ -83,7 +83,7 @@ Threatened and invasive controls stay disabled because demo rows have no sourced
 
 ## Technology
 
-The app uses Next.js App Router, React, TypeScript, Tailwind CSS, and next-intl. Supabase handles anonymous server-side reads. Zod validates data at the database boundary. Vitest and Playwright are installed for unit and browser tests.
+The app uses Next.js App Router, React, TypeScript, Tailwind CSS, and next-intl. Supabase handles anonymous server-side catalog reads and cookie-based Google account sessions. Zod validates data at the database boundary. Vitest and Playwright are installed for unit and browser tests.
 
 Indonesian is the only active locale. English messages remain dormant until routing enables that locale.
 
@@ -151,7 +151,7 @@ The species detail resolver requires complete Indonesian content and validates s
 - Do not infer conservation or invasive status from a Journal review flag. The threatened and invasive controls stay disabled until sourced data exists.
 - Keep `Identifikasi Spesies` paused. Do not add AI calls, fake camera progress, or fabricated results.
 - Keep `Donasi` static and non-payable. Do not add QRIS payloads, payment actions, payer data, or claimed totals.
-- Do not add fake authentication, accounts, personal history, or editor flows.
+- Keep account authentication real and Google-only. Do not fabricate personal history, activity totals, levels, badges, or editor flows.
 - Keep `.env.local` and working credentials out of tracked files.
 
 ## Contributing
