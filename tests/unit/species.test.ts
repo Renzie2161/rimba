@@ -1,4 +1,7 @@
-import { describe, expect, it } from "vitest";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { describe, expect, it, vi } from "vitest";
+import SpeciesDossier from "@/features/species/species-dossier";
 import {
   getPublishedSpeciesCatalog,
   getPublishedSpeciesDetail,
@@ -10,6 +13,13 @@ import {
 import { resolveContentLocale } from "@/features/species/schemas";
 import type { SpeciesCatalogOptions } from "@/features/species/schemas";
 
+vi.mock("@/i18n/navigation", () => ({
+  Link: ({ children, ...props }: { children: React.ReactNode; href: string }) =>
+    createElement("a", props, children),
+}));
+vi.mock("@/features/species/status-tag", () => ({
+  default: () => createElement("span", null, "Status"),
+}));
 const speciesId = "11111111-1111-4111-8111-111111111111";
 const sourceId = "22222222-2222-4222-8222-222222222222";
 const mediaId = "33333333-3333-4333-8333-333333333333";
@@ -27,6 +37,8 @@ const species = {
   region_codes: ["ID-SM"],
   habitat_codes: ["forest"],
   featured_rank: null,
+  kingdom: "Animalia",
+  order: "Primates",
   status: "published",
 };
 function translation(locale: "id" | "en") {
@@ -173,6 +185,8 @@ describe("published species detail RPC", () => {
       slug: species.slug,
       scientificName: species.scientific_name,
       taxonGroup: "mammal",
+      kingdom: "Animalia",
+      taxonOrder: "Primates",
       taxonRank: "subspecies",
       requestedLocale: "en",
       locale: "en",
@@ -188,6 +202,61 @@ describe("published species detail RPC", () => {
     expect(calls).toEqual([
       { name: "get_published_species_detail", args: { p_slug: species.slug } },
     ]);
+  });
+  it("renders published traits, threats, and conservation actions", async () => {
+    const payload = bundle();
+    payload.translations = [
+      {
+        ...translation("id"),
+        distinctive_traits: "Distinctive test traits",
+        threats_description: "Distinctive test threats",
+        conservation_actions: "Distinctive test actions",
+      },
+    ];
+    const speciesDetail = await getPublishedSpeciesDetail(
+      rpcClient(payload).client,
+      { ...options, locale: "id" },
+    );
+    expect(speciesDetail).not.toBeNull();
+    const labelText: Record<string, string> = {
+      summary: "Summary",
+      distinctiveTraits: "Traits heading",
+      threats: "Threats heading",
+      conservationActions: "Conservation heading",
+      exploreJournal: "Explore journal",
+      discoveryLabel: "Species",
+      taxonomy: "Taxonomy",
+      kingdom: "Kingdom",
+      taxonOrder: "Order",
+      family: "Family",
+      genus: "Genus",
+      observeTitle: "Observe",
+      observeDescription: "Observe carefully",
+      habitatDistribution: "Habitat",
+      regulationStatus: "Regulation",
+      ecosystemRole: "Ecosystem",
+      iucnGlobal: "Global status",
+      ecologicalIndonesia: "Ecological status",
+      noAssessment: "No assessment",
+      notAvailable: "Not available",
+      unknown: "Unknown",
+      assessment: "Assessment",
+    };
+    const markup = renderToStaticMarkup(
+      createElement(SpeciesDossier, {
+        species: speciesDetail!,
+        labels: (key) => labelText[key] ?? key,
+      }),
+    );
+    for (const content of [
+      "Traits heading",
+      "Distinctive test traits",
+      "Threats heading",
+      "Distinctive test threats",
+      "Conservation heading",
+      "Distinctive test actions",
+    ])
+      expect(markup).toContain(content);
   });
   it("rejects a bundle describing a different species", async () => {
     const payload = bundle();

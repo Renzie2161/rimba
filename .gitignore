@@ -22,6 +22,7 @@
 !.env.example
 
 # local tooling output
+/supabase/.temp/
 .vercel
 .DS_Store
 *.pem

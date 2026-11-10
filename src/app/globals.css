@@ -3,7 +3,6 @@
    resolve from a bare @import. The relative path bypasses the exports map; drop it when
    the package ships a default or import condition. */
 @import "../../node_modules/tw-animate-css/dist/tw-animate.css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is([data-theme="dark"] *));
 
@@ -325,6 +324,55 @@ button:focus-visible,
   flex-direction: column;
 }
 
+.shell-account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+}
+.shell-account-avatar {
+  display: grid;
+  flex: 0 0 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  color: var(--brand-600);
+  font-size: 14px;
+  font-weight: 700;
+}
+.shell-account > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.shell-account strong,
+.shell-account small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.shell-account strong {
+  color: var(--brand-800);
+  font-size: 10px;
+  font-weight: 650;
+}
+.shell-account small {
+  color: var(--ink-muted);
+  font-size: 9px;
+}
+.shell-account-logout {
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: var(--danger);
+  font: inherit;
+  cursor: pointer;
+}
+
 .shell-topbar {
   display: flex;
   min-height: 77px;
@@ -339,6 +387,10 @@ button:focus-visible,
 .app-shell--detail .shell-topbar {
   min-height: 80px;
   padding-inline: 32px;
+}
+
+.app-shell--detail {
+  --canvas: var(--surface);
 }
 
 .shell-breadcrumb {

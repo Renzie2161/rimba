@@ -9,15 +9,18 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import styles from "./header-actions.module.css";
+import type { AccountSummary } from "@/features/account/schemas";
+import { signOut } from "@/features/account/actions";
 
 /**
- * Header actions for notifications and account.
- *
- * No notification backend exists yet, so the panel shows a designed empty state
- * rather than fabricated items or an invented unread count. The account control
- * is a labelled sign-in link because nobody is signed in.
+ * Account actions reflect the verified server session. Notifications remain an
+ * empty state until the app has a notification source.
  */
-export default function HeaderActions() {
+export default function HeaderActions({
+  account,
+}: {
+  account: AccountSummary | null;
+}) {
   const t = useTranslations("navigation");
 
   return (
@@ -58,10 +61,12 @@ export default function HeaderActions() {
 
       <Link
         className="shell-header-action shell-header-action--signin"
-        href="/login"
+        href={
+          account ? (account.username ? "/profile" : "/onboarding") : "/login"
+        }
       >
         <LogIn aria-hidden="true" size={16} strokeWidth={2} />
-        {t("signIn")}
+        {account ? "Lihat profil" : t("signIn")}
       </Link>
 
       <Popover>
@@ -81,12 +86,32 @@ export default function HeaderActions() {
             </span>
             <div>
               <h2 className={styles.panelTitle}>{t("account")}</h2>
-              <p className={styles.panelSubtitle}>{t("accountSignedOut")}</p>
+              <p className={styles.panelSubtitle}>
+                {account?.displayName || t("accountSignedOut")}
+              </p>
             </div>
           </header>
 
           <div className={styles.emptyBody}>
-            <p className={styles.emptyText}>{t("accountSignedOutHelp")}</p>
+            {account ? (
+              <>
+                <Link href={account.username ? "/profile" : "/onboarding"}>
+                  {account.username
+                    ? `@${account.username} · Lihat profil`
+                    : "Lengkapi profil"}
+                </Link>
+                <form action={signOut}>
+                  <button className="shell-account-logout" type="submit">
+                    Keluar
+                  </button>
+                </form>
+              </>
+            ) : (
+              <>
+                <p className={styles.emptyText}>{t("accountSignedOutHelp")}</p>
+                <Link href="/login">Masuk dengan Google →</Link>
+              </>
+            )}
           </div>
 
           <footer className={styles.panelFooter}>{t("accountNote")}</footer>

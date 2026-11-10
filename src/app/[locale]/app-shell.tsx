@@ -14,6 +14,7 @@ import {
   Sprout,
 } from "lucide-react";
 import HeaderActions from "./header-actions";
+import type { AccountSummary } from "@/features/account/schemas";
 import GuideDialog from "./guide-dialog";
 import {
   useEffect,
@@ -34,6 +35,7 @@ type ShellDestination = {
 };
 
 type AppShellProps = {
+  account: AccountSummary | null;
   children: ReactNode;
   footer: ReactNode;
   destinations: readonly ShellDestination[];
@@ -63,6 +65,7 @@ function DestinationIcon({ href }: Pick<ShellDestination, "href">): ReactNode {
 }
 
 export default function AppShell({
+  account,
   children,
   footer,
   destinations,
@@ -207,6 +210,29 @@ export default function AppShell({
             <ArrowRight size={16} aria-hidden="true" />
           </Link>
         </section>
+        <Link
+          className="shell-account"
+          href={
+            account ? (account.username ? "/profile" : "/onboarding") : "/login"
+          }
+        >
+          <span className="shell-account-avatar" aria-hidden="true">
+            {account
+              ? Array.from(account.displayName)[0]?.toLocaleUpperCase("id-ID")
+              : "A"}
+          </span>
+          <span>
+            <strong>{account?.displayName || "Penjelajah alam"}</strong>
+            <small>
+              {account?.username
+                ? `@${account.username}`
+                : account
+                  ? "Lengkapi profil"
+                  : "Masuk dengan Google"}
+            </small>
+          </span>
+          <ArrowRight size={15} aria-hidden="true" />
+        </Link>
       </aside>
       <div className="shell-workspace">
         <div className="shell-mobile-fallback">{navigation()}</div>
@@ -248,7 +274,7 @@ export default function AppShell({
               "Rimba"
             )}
           </p>
-          <HeaderActions />
+          <HeaderActions account={account} />
         </header>
         <div
           className={

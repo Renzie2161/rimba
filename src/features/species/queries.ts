@@ -95,6 +95,8 @@ function assembleSpeciesDetail({
     scientificName: species.scientific_name,
     taxonGroup: species.taxon_group,
     taxonRank: species.taxon_rank,
+    kingdom: species.kingdom ?? null,
+    taxonOrder: species.order ?? null,
     family: species.family,
     genus: species.genus,
     gbifTaxonKey: species.gbif_taxon_key,

@@ -32,19 +32,23 @@ end $$;
 
 insert into public.sources(id,title,organization,url,accessed_on) values
  ('30000000-0000-4000-8000-000000000010','Detail source A','Fixture','https://example.org/da',current_date),
- ('30000000-0000-4000-8000-000000000011','Detail source B','Fixture','https://example.org/db',current_date);
-insert into public.species(id,slug,scientific_name,taxon_group,region_codes,habitat_codes,featured_rank,updated_at,status) values
- ('30000000-0000-4000-8000-000000000001','detail-alpha','DetailFixture Alpha','fixture-mammal',array['fixture-region'],array['fixture-forest'],1,'2026-02-01T00:00:00Z','draft'),
- ('30000000-0000-4000-8000-000000000002','detail-draft','DetailFixture Draft','fixture-bird',array['fixture-region'],array['fixture-forest'],null,'2026-02-02T00:00:00Z','draft'),
- ('30000000-0000-4000-8000-000000000003','detail-nosource','DetailFixture NoSource','fixture-bird',array['fixture-region'],array['fixture-forest'],null,'2026-02-03T00:00:00Z','draft');
+ ('30000000-0000-4000-8000-000000000011','Detail source B','Fixture','https://example.org/db',current_date),
+ ('30000000-0000-4000-8000-000000000012','Detail source C','Fixture','https://example.org/dc',current_date);
+insert into public.species(id,slug,scientific_name,taxon_group,region_codes,habitat_codes,featured_rank,updated_at,status,kingdom,"order") values
+ ('30000000-0000-4000-8000-000000000001','detail-alpha','DetailFixture Alpha','fixture-mammal',array['fixture-region'],array['fixture-forest'],1,'2026-02-01T00:00:00Z','draft','Animalia','Marsupialia'),
+ ('30000000-0000-4000-8000-000000000002','detail-draft','DetailFixture Draft','fixture-bird',array['fixture-region'],array['fixture-forest'],null,'2026-02-02T00:00:00Z','draft',null,null),
+ ('30000000-0000-4000-8000-000000000003','detail-nosource','DetailFixture NoSource','fixture-bird',array['fixture-region'],array['fixture-forest'],null,'2026-02-03T00:00:00Z','draft',null,null),
+ ('30000000-0000-4000-8000-000000000004','detail-null-taxonomy','DetailFixture Null','fixture-plant',array['fixture-region'],array['fixture-forest'],null,'2026-02-04T00:00:00Z','draft',null,null);
 insert into public.species_translations(species_id,locale,common_name,summary,description,distinctive_traits,habitat_description,threats_description,conservation_actions,seo_title,seo_description,translation_status) values
  ('30000000-0000-4000-8000-000000000001','id','Detail fixture','s','d','t','h','th','a','seo','desc','published'),
  ('30000000-0000-4000-8000-000000000002','id','Detail draft','s','d','t','h','th','a',null,null,'published'),
- ('30000000-0000-4000-8000-000000000003','id','Detail orphan','s','d','t','h','th','a',null,null,'published');
+ ('30000000-0000-4000-8000-000000000003','id','Detail orphan','s','d','t','h','th','a',null,null,'published'),
+ ('30000000-0000-4000-8000-000000000004','id','Detail null taxonomy','s','d','t','h','th','a',null,null,'published');
 insert into public.species_sources(species_id,source_id,section_key) values
  ('30000000-0000-4000-8000-000000000001','30000000-0000-4000-8000-000000000010','summary'),
  ('30000000-0000-4000-8000-000000000001','30000000-0000-4000-8000-000000000011','description'),
- ('30000000-0000-4000-8000-000000000002','30000000-0000-4000-8000-000000000010','summary');
+ ('30000000-0000-4000-8000-000000000002','30000000-0000-4000-8000-000000000010','summary'),
+ ('30000000-0000-4000-8000-000000000004','30000000-0000-4000-8000-000000000012','summary');
 insert into public.conservation_assessments(species_id,status_code,assessment_year,assessment_scope,source_id,is_current) values
  ('30000000-0000-4000-8000-000000000001','EN',2025,'fixture','30000000-0000-4000-8000-000000000010',true);
 insert into public.species_media(species_id,url,alt_id,attribution_text,photographer,source_url,license_code,sort_order,approved) values
@@ -53,6 +57,7 @@ insert into public.species_media(species_id,url,alt_id,attribution_text,photogra
  ('30000000-0000-4000-8000-000000000001','https://example.org/c.jpg','Alt C','Fixture C','Fixture Photographer','https://example.org/source-c','CC0',0,false);
 begin;
 update public.species set status='published' where slug = 'detail-alpha';
+update public.species set status='published' where slug='detail-null-taxonomy';
 commit;
 
 do $$
@@ -65,6 +70,10 @@ begin
  if r#>>'{species,featured_rank}' <> '1' then raise exception 'Detail omitted featured_rank'; end if;
  if jsonb_array_length(r->'translations') <> 1 then raise exception 'Detail translation count wrong'; end if;
  if r#>>'{assessment,status_code}' <> 'EN' then raise exception 'Detail assessment missing'; end if;
+ if r#>>'{species,kingdom}' <> 'Animalia'
+   or r#>>'{species,order}' <> 'Marsupialia' then
+   raise exception 'Detail RPC taxonomy values missing';
+ end if;
 
  -- 2. Unapproved media must not leak; approved media ordered by sort_order.
  if jsonb_array_length(r->'media') <> 2 then raise exception 'Detail media leaked unapproved rows'; end if;
@@ -89,6 +98,12 @@ begin
  if public.get_published_species_detail('no-such-slug') is not null then
    raise exception 'Detail RPC returned a bundle for an unknown slug';
  end if;
+ -- Nullable taxonomy stays null rather than being inferred.
+ r := public.get_published_species_detail('detail-null-taxonomy');
+ if r#>'{species,kingdom}' <> 'null'::jsonb
+   or r#>'{species,order}' <> 'null'::jsonb then
+   raise exception 'Detail RPC did not preserve null taxonomy';
+ end if;
 end $$;
 
 select public.test_detail_denied($q$select public.get_published_species_detail('')$q$, '22023');
@@ -111,6 +126,6 @@ set request.jwt.claim.sub='';
 delete from public.species where slug like 'detail-%';
 delete from public.sources where id in (
  '30000000-0000-4000-8000-000000000010',
- '30000000-0000-4000-8000-000000000011'
+ '30000000-0000-4000-8000-000000000011',
+ '30000000-0000-4000-8000-000000000012'
 );
-select 'PASS: single-round-trip detail RPC, published-only, provenance, media, sources, anon/auth RLS and bounds';
