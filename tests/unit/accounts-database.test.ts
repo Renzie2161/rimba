@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { PGlite } from "@electric-sql/pglite";
-import { afterAll, beforeAll, describe, expect, it } from "vitest";
+import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
 
 const first = "10000000-0000-4000-8000-000000000001";
 const second = "10000000-0000-4000-8000-000000000002";
@@ -46,6 +46,14 @@ beforeAll(async () => {
     ),
   );
 }, 30000);
+beforeEach(async () => {
+  await db.exec("reset role");
+  await db.query(
+    "select set_config('app.uid', '', false), set_config('app.jwt', '{}', false)",
+  );
+  await db.exec("truncate public.account_profiles");
+});
+
 afterAll(async () => {
   await db?.close();
 });
@@ -75,6 +83,8 @@ describe("profile database authorization and username cooldown", () => {
     expect(updated.username_changed_at).toEqual(initial.username_changed_at);
   });
   it("prevents duplicate usernames and hides another user's profile", async () => {
+    await asUser(first);
+    await save("penjelajah_satu");
     await asUser(second);
     await db.query("select public.ensure_my_account_profile()");
     await expect(save("penjelajah_satu")).rejects.toMatchObject({
@@ -112,16 +122,22 @@ describe("profile database authorization and username cooldown", () => {
     ).rejects.toMatchObject({ code: "42501" });
   });
   it("allows a username change after seven days, preserving its creation time", async () => {
-    await db.exec(
-      "reset role; alter table public.account_profiles disable trigger guard_account_username",
-    );
-    await db.query(
-      "update public.account_profiles set username_created_at = now() - interval '8 days', username_changed_at = now() - interval '7 days' where id = $1",
-      [first],
-    );
-    await db.exec(
-      "alter table public.account_profiles enable trigger guard_account_username",
-    );
+    await asUser(first);
+    await save("penjelajah_lama");
+    await db.exec("reset role");
+    try {
+      await db.exec(
+        "alter table public.account_profiles disable trigger guard_account_username",
+      );
+      await db.query(
+        "update public.account_profiles set username_created_at = now() - interval '8 days', username_changed_at = now() - interval '7 days' where id = $1",
+        [first],
+      );
+    } finally {
+      await db.exec(
+        "alter table public.account_profiles enable trigger guard_account_username",
+      );
+    }
     await asUser(first);
     const updated = (await save("username_baru")).rows[0]!;
     expect(updated.username).toBe("username_baru");
