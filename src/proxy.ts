@@ -19,6 +19,7 @@ export default async function proxy(request: NextRequest) {
   }> = [];
   const client = createServerClient(env.url, env.anonKey, {
     cookies: {
+      encode: "tokens-only",
       getAll: () => request.cookies.getAll(),
       setAll(values) {
         values.forEach((cookie) => {

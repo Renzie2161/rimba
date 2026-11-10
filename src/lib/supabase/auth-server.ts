@@ -8,6 +8,7 @@ export async function createAuthClient() {
   const { url, anonKey } = getSupabaseEnvironment();
   return createServerClient(url, anonKey, {
     cookies: {
+      encode: "tokens-only",
       getAll: () => store.getAll(),
       setAll(values) {
         try {
