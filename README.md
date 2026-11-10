@@ -123,7 +123,7 @@ The checked-in `.env.example` contains placeholders. For Journal and species rou
 
 Next.js App Router serves the Indonesian pages. The server renders catalog and Journal data from anonymous Supabase reads. Row-level security limits catalog reads to published records and Journal reads to demo rows.
 
-The species detail resolver requires complete Indonesian content and validates source links and approved media. Incomplete English content, including media alt text, falls back as a complete Indonesian entry. Do not assemble partial records or fetch each card separately.
+The species detail resolver requires complete Indonesian content, source links, and approved media. Its single published-detail RPC also returns taxonomy; locale fallback, including media alt text, stays at the complete Indonesian entry when English is incomplete. Do not assemble partial records or fetch each card separately.
 
 ## Project layout
 

@@ -121,6 +121,8 @@ try {
     "0005_species_detail_rpc.sql",
     "0004_species_featured.sql",
     "0006_species_ecology.sql",
+    "0011_species_taxonomy.sql",
+    "0013_species_detail_taxonomy.sql",
   ])
     psql(
       readFileSync(

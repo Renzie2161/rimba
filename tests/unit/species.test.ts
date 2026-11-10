@@ -27,6 +27,8 @@ const species = {
   region_codes: ["ID-SM"],
   habitat_codes: ["forest"],
   featured_rank: null,
+  kingdom: "Animalia",
+  order: "Primates",
   status: "published",
 };
 function translation(locale: "id" | "en") {
@@ -102,26 +104,6 @@ function rpcClient(payload: unknown, error?: unknown) {
   return {
     calls,
     client: {
-      from(table: string) {
-        expect(table).toBe("species");
-        const query = {
-          select(columns: string) {
-            expect(columns).toBe("kingdom,order");
-            return query;
-          },
-          eq(column: string, value: string) {
-            expect({ id: speciesId, status: "published" }[column]).toBe(value);
-            return query;
-          },
-          maybeSingle() {
-            return Promise.resolve({
-              data: { kingdom: "Animalia", order: "Primates" },
-              error: null,
-            });
-          },
-        };
-        return query;
-      },
       rpc(name: string, args: Record<string, unknown>) {
         calls.push({ name, args });
         return Promise.resolve({ data: payload, error: error ?? null });

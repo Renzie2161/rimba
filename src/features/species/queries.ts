@@ -173,20 +173,6 @@ export async function getPublishedSpeciesDetail(
   if (bundle.species.slug !== slug) {
     throw new Error("Detail bundle returned another species");
   }
-  // The deployed detail RPC omits these newer taxonomy columns.
-  // Read them once for this published detail, never once per catalog card.
-  const { data: taxonomy, error: taxonomyError } = await client
-    .from("species")
-    .select("kingdom,order")
-    .eq("id", bundle.species.id)
-    .eq("status", "published")
-    .maybeSingle();
-  if (taxonomyError) throw taxonomyError;
-  if (!taxonomy) return null;
-  bundle.species.kingdom = speciesRowSchema.shape.kingdom.parse(
-    taxonomy.kingdom,
-  );
-  bundle.species.order = speciesRowSchema.shape.order.parse(taxonomy.order);
   return assembleSpeciesDetail({
     species: bundle.species,
     locale,
