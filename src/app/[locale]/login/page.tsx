@@ -1,51 +1,74 @@
+import type { Metadata } from "next";
+import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
-import { Leaf } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { getAccount } from "@/features/account/server";
-import { signInWithGoogle } from "@/features/account/actions";
-import styles from "@/features/account/profile.module.css";
 import AccountUnavailable from "@/features/account/account-unavailable";
+import GoogleSignInForm from "./google-sign-in-form";
+import styles from "./login.module.css";
 
-export const metadata = {
-  title: "Masuk ke Rimba",
-  robots: { index: false, follow: false },
-};
-export default async function LoginPage({
-  searchParams,
-}: {
+type LoginPageProps = {
+  params: Promise<{ locale: string }>;
   searchParams: Promise<{ error?: string }>;
-}) {
+};
+
+export async function generateMetadata({
+  params,
+}: Pick<LoginPageProps, "params">): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "login" });
+
+  return {
+    title: t("metadataTitle"),
+    robots: { index: false, follow: false },
+  };
+}
+
+export default async function LoginPage({
+  params,
+  searchParams,
+}: LoginPageProps) {
+  const [{ locale }, { error }] = await Promise.all([params, searchParams]);
+  const t = await getTranslations({ locale, namespace: "login" });
   const account = await getAccount();
   if (account?.unavailable) return <AccountUnavailable />;
   if (account)
     redirect(account.profile?.username ? "/id/profile" : "/id/onboarding");
-  const { error } = await searchParams;
+
   return (
-    <main id="main" className={styles.formPage}>
-      <Leaf size={30} color="var(--brand-600)" aria-hidden="true" />
-      <h1>Selamat datang di Rimba.</h1>
-      <p>
-        Satu akun untuk melanjutkan perjalananmu mengenal alam. Masuk atau
-        daftar dengan akun Google, lalu pilih username milikmu.
-      </p>
-      {error ? (
-        <p role="alert" className={styles.error}>
-          Login Google belum berhasil. Coba lagi atau hubungi pengelola Rimba
-          jika kendala berlanjut.
-        </p>
-      ) : null}
-      <form action={signInWithGoogle}>
-        <button className={styles.primary} type="submit">
-          Lanjutkan dengan Google <span aria-hidden="true">↗</span>
-        </button>
-      </form>
-      <p>
-        Dengan melanjutkan, kamu menggunakan Google untuk memverifikasi akunmu.
-        Rimba tidak meminta kata sandi Google.
-      </p>
-      <Link className={styles.textLink} href="/journal">
-        Kembali menjelajah
-      </Link>
+    <main id="main" className={styles.page}>
+      <section className={styles.card} aria-labelledby="login-title">
+        <div className={styles.brand}>
+          <Image
+            className={styles.brandLogo}
+            src="/rimba-mark.png"
+            alt=""
+            width={40}
+            height={40}
+            priority
+          />
+          <span className={styles.brandName}>{t("brand")}</span>
+        </div>
+        <p className={styles.eyebrow}>{t("eyebrow")}</p>
+        <h1 id="login-title">{t("heading")}</h1>
+        <p className={styles.body}>{t("description")}</p>
+        {error ? (
+          <p role="alert" className={styles.error}>
+            {t("error")}
+          </p>
+        ) : null}
+        <GoogleSignInForm
+          label={t("googleButton")}
+          pendingLabel={t("googlePending")}
+        />
+        <p className={styles.note}>{t("privacyNote")}</p>
+        <Link className={styles.back} href="/journal">
+          <ArrowLeft size={16} aria-hidden="true" />
+          {t("returnToJournal")}
+        </Link>
+      </section>
     </main>
   );
 }

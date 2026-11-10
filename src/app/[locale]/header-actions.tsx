@@ -69,54 +69,45 @@ export default function HeaderActions({
         {account ? "Lihat profil" : t("signIn")}
       </Link>
 
-      <Popover>
-        <PopoverTrigger asChild>
-          <button
-            aria-label={t("account")}
-            className={`shell-header-action ${styles.accountButton}`}
-            type="button"
-          >
-            <UserRound aria-hidden="true" size={18} strokeWidth={1.75} />
-          </button>
-        </PopoverTrigger>
-        <PopoverContent align="end" className={styles.panel}>
-          <header className={styles.panelHeader}>
-            <span aria-hidden="true" className={styles.panelIcon}>
-              <UserRound size={16} strokeWidth={2} />
-            </span>
-            <div>
-              <h2 className={styles.panelTitle}>{t("account")}</h2>
-              <p className={styles.panelSubtitle}>
-                {account?.displayName || t("accountSignedOut")}
-              </p>
+      {account ? (
+        <Popover>
+          <PopoverTrigger asChild>
+            <button
+              aria-label={t("account")}
+              className={`shell-header-action ${styles.accountButton}`}
+              type="button"
+            >
+              <UserRound aria-hidden="true" size={18} strokeWidth={1.75} />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent align="end" className={styles.panel}>
+            <header className={styles.panelHeader}>
+              <span aria-hidden="true" className={styles.panelIcon}>
+                <UserRound size={16} strokeWidth={2} />
+              </span>
+              <div>
+                <h2 className={styles.panelTitle}>{t("account")}</h2>
+                <p className={styles.panelSubtitle}>{account.displayName}</p>
+              </div>
+            </header>
+
+            <div className={styles.emptyBody}>
+              <Link href={account.username ? "/profile" : "/onboarding"}>
+                {account.username
+                  ? `@${account.username} · Lihat profil`
+                  : "Lengkapi profil"}
+              </Link>
+              <form action={signOut}>
+                <button className="shell-account-logout" type="submit">
+                  Keluar
+                </button>
+              </form>
             </div>
-          </header>
 
-          <div className={styles.emptyBody}>
-            {account ? (
-              <>
-                <Link href={account.username ? "/profile" : "/onboarding"}>
-                  {account.username
-                    ? `@${account.username} · Lihat profil`
-                    : "Lengkapi profil"}
-                </Link>
-                <form action={signOut}>
-                  <button className="shell-account-logout" type="submit">
-                    Keluar
-                  </button>
-                </form>
-              </>
-            ) : (
-              <>
-                <p className={styles.emptyText}>{t("accountSignedOutHelp")}</p>
-                <Link href="/login">Masuk dengan Google →</Link>
-              </>
-            )}
-          </div>
-
-          <footer className={styles.panelFooter}>{t("accountNote")}</footer>
-        </PopoverContent>
-      </Popover>
+            <footer className={styles.panelFooter}>{t("accountNote")}</footer>
+          </PopoverContent>
+        </Popover>
+      ) : null}
     </div>
   );
 }

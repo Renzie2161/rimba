@@ -29,8 +29,6 @@
     "notificationsEmpty": "No notifications yet.",
     "notificationsEmptyHelp": "Updates from the Rimba team will appear here.",
     "account": "Account",
-    "accountSignedOut": "Not signed in",
-    "accountSignedOutHelp": "Sign in with Google to create and manage your explorer profile.",
     "accountNote": "Your profile is saved to your Rimba account.",
     "close": "Close",
     "signIn": "Sign in",
@@ -294,11 +292,16 @@
     "dropActive": "Release to upload"
   },
   "login": {
-    "title": "Sign in",
-    "eyebrow": "COMING SOON",
-    "body": "Explorer accounts are not available in this prototype. Personal journals, automatic identification and exploration history will arrive together with accounts.",
-    "back": "Back to the journal",
-    "note": "No data is collected at this time.",
+    "metadataTitle": "Sign in to RIMBA",
+    "brand": "RIMBA",
+    "eyebrow": "EXPLORER ACCOUNT",
+    "heading": "Sign in and keep exploring.",
+    "description": "Use your Google account to sign in or create your RIMBA explorer profile.",
+    "googleButton": "Sign in with Google",
+    "googlePending": "Connecting to Google…",
+    "privacyNote": "Google verifies your account. RIMBA never receives your Google password.",
+    "error": "Could not start Google sign-in. Try again or contact the RIMBA team if the issue continues.",
+    "returnToJournal": "Back to the RIMBA journal",
     "loading": "Loading sign-in page…"
   }
 }

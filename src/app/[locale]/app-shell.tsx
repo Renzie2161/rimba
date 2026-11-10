@@ -175,6 +175,7 @@ export default function AppShell({
     </nav>
   );
 
+  if (pathname === "/login") return children;
   return (
     <div
       className={`app-shell${isDetail ? " app-shell--detail" : ""}${

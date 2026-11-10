@@ -1,10 +1,11 @@
 .page {
   display: grid;
-  min-height: 62vh;
+  min-height: 100vh;
+  min-height: 100svh;
   place-items: center;
   width: min(calc(100% - var(--content-gutter) - var(--content-gutter)), 640px);
   margin-inline: auto;
-  padding: 48px 0 64px;
+  padding: 24px 0;
 }
 
 .card {
@@ -12,7 +13,7 @@
   justify-items: center;
   gap: 10px;
   width: 100%;
-  padding: 44px 32px;
+  padding: clamp(24px, 6vw, 44px) clamp(20px, 5vw, 32px);
   border: 1px solid var(--line);
   border-radius: 20px;
   background: var(--surface);
@@ -20,18 +21,26 @@
   box-shadow: 0 24px 50px -40px rgb(14 59 44 / 46%);
 }
 
-.icon {
-  display: grid;
-  width: 64px;
-  height: 64px;
-  place-items: center;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.brandLogo {
   border-radius: 50%;
-  background: var(--surface-green);
-  color: var(--brand-600);
+}
+
+.brandName {
+  color: var(--brand-800);
+  font-size: 15px;
+  font-weight: 750;
+  letter-spacing: 0.16em;
 }
 
 .eyebrow {
-  margin: 8px 0 0;
+  margin: 0;
   color: var(--nav-muted);
   font-size: 12px;
   font-weight: 700;
@@ -41,50 +50,104 @@
 .card h1 {
   margin: 0;
   color: var(--brand-800);
-  font-size: clamp(26px, 3vw, 32px);
+  font-size: clamp(25px, 5vw, 32px);
   font-weight: 750;
   letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 .body {
   max-width: 46ch;
-  margin: 4px 0 0;
+  margin: 0;
   color: var(--ink-muted);
   font-size: 15px;
   line-height: 1.65;
 }
 
-.note {
+.form {
+  width: 100%;
+  margin: 8px 0 0;
+}
+
+.googleButton {
   display: inline-flex;
+  min-height: 48px;
   align-items: center;
-  gap: 6px;
-  margin: 6px 0 0;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0 12px;
+  border: 1px solid #747775;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: var(--font-plus-jakarta-sans), Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.googleButton:hover {
+  border-color: #5f6368;
+  background: #f8f9fa;
+}
+
+.googleButton:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.googleButton:focus-visible,
+.back:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.googleButton svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+
+.note {
+  max-width: 48ch;
+  margin: 2px 0 0;
   color: var(--ink-muted);
   font-size: 13px;
+  line-height: 1.55;
+}
+
+.error {
+  width: 100%;
+  margin: 0;
+  color: #a53242;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .back {
   display: inline-flex;
-  min-height: 46px;
+  min-height: 44px;
   align-items: center;
   gap: 8px;
-  margin-top: 14px;
-  padding: 0 22px;
-  border: 1px solid var(--brand-600);
-  border-radius: 999px;
-  background: var(--brand-600);
-  color: #ffffff;
-  font-size: 15px;
+  margin-top: 4px;
+  color: var(--brand-600);
+  font-size: 14px;
   font-weight: 650;
   text-decoration: none;
-  transition: background-color 160ms ease;
 }
 
 .back:hover {
-  background: var(--nav-active);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.back:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 3px;
+@media (prefers-reduced-motion: reduce) {
+  .googleButton {
+    transition: none;
+  }
 }

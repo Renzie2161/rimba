@@ -50,7 +50,8 @@ server-controlled app metadata.
 
 ## Acceptance checks against the real project
 
-1. Open `/id/login`. Only the Google button should appear.
+1. Open `/id/login`. Confirm shared navigation is absent and Google is the
+   only sign-in option.
 2. Sign in with a new Google account. Callback must reach `/id/onboarding`.
 3. Confirm other app routes redirect to onboarding until a username is saved.
 4. Save a valid username. `/id/profile` and sidebar must reflect the database row.

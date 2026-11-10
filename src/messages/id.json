@@ -29,8 +29,6 @@
     "notificationsEmpty": "Belum ada notifikasi.",
     "notificationsEmptyHelp": "Kabar dari tim Rimba akan muncul di sini.",
     "account": "Akun",
-    "accountSignedOut": "Belum masuk",
-    "accountSignedOutHelp": "Masuk dengan Google untuk membuat dan mengelola profil penjelajahmu.",
     "accountNote": "Profil tersimpan di akun Rimba milikmu.",
     "close": "Tutup",
     "signIn": "Masuk",
@@ -294,11 +292,16 @@
     "dropActive": "Lepaskan untuk mengunggah"
   },
   "login": {
-    "title": "Masuk",
-    "eyebrow": "SEGERA HADIR",
-    "body": "Akun penjelajah belum tersedia pada prototipe ini. Jurnal pribadi, identifikasi otomatis, dan riwayat eksplorasi akan hadir bersama akun.",
-    "back": "Kembali ke jurnal",
-    "note": "Tidak ada data yang dikumpulkan saat ini.",
+    "metadataTitle": "Masuk ke RIMBA",
+    "brand": "RIMBA",
+    "eyebrow": "AKUN PENJELAJAH",
+    "heading": "Masuk dan jelajahi lebih jauh.",
+    "description": "Gunakan akun Google untuk masuk atau membuat profil penjelajah RIMBA.",
+    "googleButton": "Masuk dengan Google",
+    "googlePending": "Menghubungkan ke Google…",
+    "privacyNote": "Google membantu memverifikasi akunmu. Kata sandi Google tidak dibagikan kepada RIMBA.",
+    "error": "Tidak dapat memulai masuk dengan Google. Coba lagi atau hubungi pengelola RIMBA jika kendala berlanjut.",
+    "returnToJournal": "Kembali ke jurnal RIMBA",
     "loading": "Memuat halaman masuk…"
   }
 }

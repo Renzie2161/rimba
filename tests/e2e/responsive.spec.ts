@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-for (const width of [320, 390, 768]) {
+for (const width of [320, 390, 768, 1440]) {
   test(`public pages fit ${width}px screens`, async ({ page }) => {
     test.setTimeout(120_000);
     await page.setViewportSize({ width, height: 844 });
@@ -25,6 +25,7 @@ for (const width of [320, 390, 768]) {
         `${path} overflows at ${width}px`,
       ).toBeLessThanOrEqual(overflow.width);
     }
+    await page.goto("/id/journal");
     const menu = page.getByRole("button", { name: "Buka menu" });
     await menu.click();
     const drawer = page.getByRole("dialog", { name: "Navigasi utama" });
