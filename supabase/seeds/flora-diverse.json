@@ -1,0 +1,234 @@
+[
+  {
+    "slug": "eceng-gondok",
+    "scientific_name": "Pontederia crassipes",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Liliopsida",
+    "order": "Commelinales",
+    "family": "Pontederiaceae",
+    "genus": "Pontederia",
+    "specific_epithet": "crassipes",
+    "gbif_taxon_key": "2765942",
+    "region_codes": ["papua"],
+    "habitat_codes": ["freshwater"],
+    "common_name_id": "Eceng gondok",
+    "summary_id": "Tumbuhan air mengapung berbunga ungu yang dapat membentuk hamparan rapat dan mengganggu ekosistem perairan.",
+    "description_id": "Eceng gondok merupakan tumbuhan air menahun asal Amerika Selatan tropis. Nama ilmiah yang diterima adalah Pontederia crassipes; Eichhornia crassipes merupakan sinonim yang banyak dijumpai dalam pustaka. Daunnya tersusun dalam roset dengan tangkai berongga seperti spons yang membantu tumbuhan mengapung. Bunga ungu kebiruan memiliki tanda kuning pada bagian atasnya. Tumbuhan ini memperbanyak diri melalui stolon dan biji. Laporan USFWS mencatatnya sebagai tumbuhan asing yang telah menetap di Indonesia, termasuk Papua. Hamparan rapat dapat mengurangi cahaya serta mengubah kondisi oksigen perairan. Kew melaporkan status NE (Belum Dievaluasi); Indonesia mencantumkannya sebagai jenis invasif dalam Permen LHK P.94/2016.",
+    "distinctive_traits_id": "Daun membulat, licin, dan mengilap; tangkai daun dapat menggembung dengan jaringan spons; akar serabut menggantung; bunga ungu kebiruan dengan bercak kuning pada tepal atas.",
+    "habitat_description_id": "Mengapung di danau, kolam, rawa, saluran, dan sungai berarus lambat. Laporan USFWS mencatat keberadaan asing yang menetap di Indonesia, termasuk Papua; daftar wilayah ini bukan peta sebaran lengkap.",
+    "threats_description_id": "Perhatian utama adalah dampaknya terhadap ekosistem penerima: hamparan rapat membatasi cahaya dan dapat menurunkan oksigen sehingga menggeser organisme asli. Ini bukan klaim bahwa eceng gondok terancam punah.",
+    "conservation_actions_id": "Pengelolaan diarahkan pada pencegahan penyebaran dan pengendalian infestasi, bukan penambahan populasi. Laporan USFWS mendokumentasikan pengendalian serta pemantauan di wilayah yang terinvasi. Jangan memindahkan tanaman atau sisa tanaman ke perairan lain.",
+    "status_code": "NE",
+    "assessment_year": null,
+    "assessment_source_url": "https://www.kew.org/plants/water-hyacinth",
+    "assessment_notes": "NE (Not Evaluated) reported explicitly by Kew; not a completed Red List assessment, so no assessment year/date is invented. Verified via indexed Kew text; direct fetch blocked.",
+    "indonesia_ecological_status": "invasive",
+    "ecological_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P.94.pdf",
+    "regulation_status": "Jenis invasif yang sudah ada di Indonesia — Permen LHK P.94/2016, Lampiran I nomor 121 (Eichhornia crassipes).",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P.94.pdf",
+    "ecosystem_role": "Produsen primer perairan; hamparan rapat membatasi cahaya dan dapat menurunkan oksigen sehingga menggeser organisme asli. Bunganya menarik lebah.",
+    "ecosystem_source_url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/9/1984",
+    "aliases": [
+      {
+        "locale": "id",
+        "name": "Eichhornia crassipes",
+        "kind": "scientific_synonym"
+      }
+    ],
+    "reviewed_by": "AI-assisted source review; Kew NE and Indonesian invasive regulation verified",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Water hyacinth — Kew plant profile",
+        "url": "https://www.kew.org/plants/water-hyacinth",
+        "organization": "Royal Botanic Gardens, Kew",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Explicit indexed source text: IUCN Red List status Not Evaluated. No assessment date/year exists for NE; direct fetch blocked by bot protection. Not confused with regional LC assessments."
+      },
+      {
+        "title": "Permen LHK P.94/2016 — Jenis Invasif",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P.94.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "accessed_on": "2026-11-10",
+        "section_key": "regulation",
+        "notes": "Full official PDF inspected: Lampiran I no.121, printed p.16 lists Eichhornia crassipes (synonym of Pontederia crassipes). Scope: invasive species already in Indonesia. JDIH regulation record reports Berlaku; not a protected-species designation."
+      },
+      {
+        "title": "Pontederia crassipes — Flora & Fauna Web",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/9/1984",
+        "organization": "National Parks Board Singapore",
+        "accessed_on": "2026-11-10",
+        "section_key": "profile",
+        "notes": "Supports morphology, floating freshwater habitat, South American origin and ecological effects. Singapore local status is not an Indonesian or global Red List assessment. Original Indonesian factual paraphrase; no NParks photo copied."
+      },
+      {
+        "title": "Pontederia crassipes — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/2765942",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Exact accepted match; Tracheophyta, Liliopsida, Commelinales, Pontederiaceae. Uses GBIF class convention; higher seed-plant grouping supported by USFWS ITIS hierarchy."
+      },
+      {
+        "title": "Water Hyacinth — Ecological Risk Screening Summary",
+        "url": "https://www.fws.gov/sites/default/files/documents/2025-06/ecological-risk-screening-summary-water-hyacinth-april-2025.pdf",
+        "organization": "U.S. Fish and Wildlife Service",
+        "accessed_on": "2026-11-10",
+        "section_key": "ecology",
+        "notes": "Web version 2025-04-08; supports Spermatophytina, synonym, ecology, control context, and alien/established Indonesia including Papua (p.9). Risk screening is not IUCN extinction category; no invented category or population imported."
+      },
+      {
+        "title": "Pontederia crassipes (Pontederiaceae).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Pontederia_crassipes_(Pontederiaceae).jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "license": "CC BY-SA 4.0",
+        "section_key": "image",
+        "notes": "Species identity and photographer Juan Carlos Fonseca Mata verified using Commons imageinfo metadata. Local resized copy with metadata stripped; no location inferred."
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/eceng-gondok.jpg",
+        "alt_id": "Bunga ungu eceng gondok, Pontederia crassipes",
+        "photographer": "Juan Carlos Fonseca Mata",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pontederia_crassipes_(Pontederiaceae).jpg",
+        "license_code": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution_text": "Juan Carlos Fonseca Mata / Wikimedia Commons, CC BY-SA 4.0; resized, metadata removed",
+        "taxon_scientific_name": "Pontederia crassipes"
+      }
+    ]
+  },
+  {
+    "slug": "pakis-pedang",
+    "scientific_name": "Nephrolepis exaltata",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Polypodiophytina",
+    "class": "Polypodiopsida",
+    "order": "Polypodiales",
+    "family": "Nephrolepidaceae",
+    "genus": "Nephrolepis",
+    "specific_epithet": "exaltata",
+    "gbif_taxon_key": "2650927",
+    "region_codes": [],
+    "habitat_codes": ["garden"],
+    "common_name_id": "Pakis pedang",
+    "summary_id": "Paku berdaun panjang menyerupai pedang dengan sorus membulat pada sisi bawah anak daunnya.",
+    "description_id": "Pakis pedang dalam entri ini merujuk khusus pada Nephrolepis exaltata, yang juga dikenal sebagai Boston fern. Nama umum pakis pedang tidak boleh digunakan sendirian untuk memastikan identitas semua Nephrolepis. Tumbuhan paku ini memiliki helaian panjang dengan anak daun berseling dan pertumbuhan agak tegak hingga melengkung. Spora dihasilkan dalam sorus membulat dekat tepi anak daun, bukan melalui bunga atau buah. NParks menjelaskan pemanfaatannya sebagai tanaman hias taman dan dalam ruang dengan cahaya setengah teduh serta media lembap berdrainase baik. Kew dan WFO melaporkan LC untuk catatan IUCN edisi 2021; asal maupun status invasif Indonesia tidak disimpulkan dari kategori global tersebut.",
+    "distinctive_traits_id": "Helaian memanjang menyerupai pedang dan agak menjuntai; anak daun berseling dengan tepi utuh hingga sedikit bergerigi; sorus membulat tersusun dua baris dekat tepi anak daun; berkembang biak melalui spora.",
+    "habitat_description_id": "Paku terestrial yang dibudidayakan di taman dan ruang dalam, pada tempat setengah teduh dengan media lembap berdrainase baik. Status asal dan invasif di Indonesia belum dapat dipastikan: revisi taksonomi dunia memperingatkan bahwa nama Nephrolepis exaltata sering keliru diterapkan pada spesimen dari berbagai wilayah. Karena itu, keberadaan tanaman bernama pakis pedang bukan bukti otomatis spesies asli ataupun invasif Indonesia.",
+    "threats_description_id": "Kategori global LC (Risiko Rendah) dilaporkan oleh Kew dan WFO untuk catatan IUCN yang diterbitkan pada 2021. Rincian bagian ancaman dan tanggal penilaian persis belum berhasil diperoleh; tidak ada angka atau tren populasi yang diasumsikan.",
+    "conservation_actions_id": "NParks mendokumentasikan perbanyakan melalui spora dan pembagian rumpun untuk budidaya. Kegiatan ini tidak dianggap program pemulihan populasi liar. Identifikasi spesies perlu diperiksa sebelum menyimpulkan status ekologis dari nama umum pakis pedang.",
+    "status_code": "LC",
+    "assessment_year": 2021,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T192003740A192138518.en",
+    "assessment_notes": "Global LC corroborated by Kew POWO and WFO; cited IUCN edition is 2021 (Barrios & Copeland). Year records citation edition; exact Date Assessed not retrieved and assessed_on remains null. CrossRef metadata gives 2020-12-02, which is not treated as Date Assessed. Detailed threats unverified.",
+    "iucn_taxon_id": "192003740",
+    "indonesia_ecological_status": null,
+    "ecological_source_url": "https://repository.naturalis.nl/pub/525219/BLUM2005050002005.pdf",
+    "regulation_status": "Tidak tercantum dalam daftar jenis invasif Permen LHK P.94/2016 yang diperiksa; bukan kesimpulan bebas seluruh pembatasan hukum.",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P.94.pdf",
+    "ecosystem_role": "Paku penutup tanah di tempat lembap dan teduh, menyebar melalui rimpang. Peran ini bersumber dari profil habitat Florida, bukan penetapan status asli Indonesia.",
+    "ecosystem_source_url": "https://www.fnps.org/plant/nephrolepis-exaltata",
+    "reviewed_by": "AI-assisted source review; LC citation corroborated, exact assessment date and Indonesian origin unresolved",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "A conspectus of native and naturalized Nephrolepis in the world",
+        "url": "https://repository.naturalis.nl/pub/525219/BLUM2005050002005.pdf",
+        "organization": "Blumea / Naturalis",
+        "accessed_on": "2026-11-10",
+        "section_key": "ecology",
+        "notes": "Hovenkamp & Miyamoto (2005), pp.279–322, p.302 warns N. exaltata name widely mistakenly applied worldwide. Combined with absence of explicit Indonesian native/introduced range in Kew, Indonesian status retained unknown; this is unresolved evidence, not positive absence or non-invasive designation."
+      },
+      {
+        "title": "Nephrolepis exaltata — IUCN Red List 2021",
+        "url": "https://doi.org/10.2305/IUCN.UK.2021-3.RLTS.T192003740A192138518.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Barrios & Copeland (2021), e.T192003740A192138518. DOI identity resolved via CrossRef; LC corroborated independently by Kew POWO and WFO indexed records. Exact assessment date/section text unavailable; year is citation edition, not invented date."
+      },
+      {
+        "title": "Nephrolepis exaltata — Kew POWO conservation data",
+        "url": "https://powo.science.kew.org/taxon/17160830-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Indexed conservation field reports LC, linked to IUCN taxon 192003740 / assessment 192138518; direct site fetch blocked."
+      },
+      {
+        "title": "Permen LHK P.94/2016 — Jenis Invasif",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P.94.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "accessed_on": "2026-11-10",
+        "section_key": "regulation",
+        "notes": "Official full annex reviewed; no Nephrolepis/exaltata entry. Negative claim restricted to this regulation only; no blanket claim about protection, CITES, import permission or other Indonesian law."
+      },
+      {
+        "title": "Nephrolepis exaltata — wild Boston fern",
+        "url": "https://www.fnps.org/plant/nephrolepis-exaltata",
+        "organization": "Florida Native Plant Society",
+        "accessed_on": "2026-11-10",
+        "section_key": "ecosystem",
+        "notes": "Supports groundcover in moist shady places and spread by rhizomes. Habitat and nativity statements refer to Florida and are not generalized to Indonesia; warns of confusion with N. cordifolia."
+      },
+      {
+        "title": "Nephrolepis exaltata — Flora & Fauna Web",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/1/5/1557",
+        "organization": "National Parks Board Singapore",
+        "accessed_on": "2026-11-10",
+        "section_key": "profile",
+        "notes": "Supports frond/pinna/sorus morphology, terrestrial growth, garden/indoor uses and cultivation requirements. Singapore non-native label not transferred to Indonesia. Original Indonesian factual paraphrase only."
+      },
+      {
+        "title": "Nephrolepis exaltata — ITIS TSN 17605",
+        "url": "https://www.itis.gov/servlet/SingleRpt?search_topic=TSN&search_value=17605",
+        "organization": "Integrated Taxonomic Information System",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species. Tracheophyta, Polypodiophytina, Polypodiopsida, Polypodiales, Nephrolepidaceae; follows ITIS/GBIF family rather than differing Kew placement."
+      },
+      {
+        "title": "Nephrolepis exaltata — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/2650927",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Exact accepted species match; Polypodiopsida, Polypodiales, Nephrolepidaceae. Secondary Red List badges are not imported as verified assessments."
+      },
+      {
+        "title": "Helecho de Boston (Nephrolepis exaltata).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Helecho_de_Boston_(Nephrolepis_exaltata).jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "license": "CC0 1.0",
+        "section_key": "image",
+        "notes": "Exact taxon and creator Nathaly 1106 verified using Commons imageinfo metadata. Local resized copy, metadata removed."
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/pakis-pedang.jpg",
+        "alt_id": "Helaian dan anak daun pakis pedang, Nephrolepis exaltata",
+        "photographer": "Nathaly 1106",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Helecho_de_Boston_(Nephrolepis_exaltata).jpg",
+        "license_code": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution_text": "Nathaly 1106 / Wikimedia Commons, CC0 1.0; resized, metadata removed",
+        "taxon_scientific_name": "Nephrolepis exaltata"
+      }
+    ]
+  }
+]

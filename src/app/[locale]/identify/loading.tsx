@@ -3,5 +3,5 @@ import PageSkeleton from "@/components/page-skeleton";
 
 export default async function IdentifyLoading() {
   const t = await getTranslations("identify");
-  return <PageSkeleton cards={2} label={t("loading")} />;
+  return <PageSkeleton variant="identify" label={t("loading")} />;
 }

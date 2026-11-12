@@ -1,0 +1,5409 @@
+[
+  {
+    "classIndex": 0,
+    "plantnetSpeciesId": "1355868",
+    "scientificName": "Lactuca virosa L."
+  },
+  {
+    "classIndex": 1,
+    "plantnetSpeciesId": "1355920",
+    "scientificName": "Pelargonium capitatum (L.) L'Hér."
+  },
+  {
+    "classIndex": 2,
+    "plantnetSpeciesId": "1355932",
+    "scientificName": "Pelargonium graveolens L'Hér."
+  },
+  {
+    "classIndex": 3,
+    "plantnetSpeciesId": "1355936",
+    "scientificName": "Cirsium arvense (L.) Scop."
+  },
+  {
+    "classIndex": 4,
+    "plantnetSpeciesId": "1355937",
+    "scientificName": "Cirsium vulgare (Savi) Ten."
+  },
+  {
+    "classIndex": 5,
+    "plantnetSpeciesId": "1355955",
+    "scientificName": "Pelargonium odoratissimum (L.) L'Hér."
+  },
+  {
+    "classIndex": 6,
+    "plantnetSpeciesId": "1355959",
+    "scientificName": "Pelargonium peltatum (L.) L'Hér."
+  },
+  {
+    "classIndex": 7,
+    "plantnetSpeciesId": "1355961",
+    "scientificName": "Pelargonium quercifolium (L. f.) L'Hér."
+  },
+  {
+    "classIndex": 8,
+    "plantnetSpeciesId": "1355978",
+    "scientificName": "Pelargonium zonale (L.) L'Hér."
+  },
+  {
+    "classIndex": 9,
+    "plantnetSpeciesId": "1355990",
+    "scientificName": "Mercurialis annua L."
+  },
+  {
+    "classIndex": 10,
+    "plantnetSpeciesId": "1356003",
+    "scientificName": "Phyllanthus tenellus Roxb."
+  },
+  {
+    "classIndex": 11,
+    "plantnetSpeciesId": "1356022",
+    "scientificName": "Hypericum perforatum L."
+  },
+  {
+    "classIndex": 12,
+    "plantnetSpeciesId": "1356037",
+    "scientificName": "Egeria densa Planch."
+  },
+  {
+    "classIndex": 13,
+    "plantnetSpeciesId": "1356055",
+    "scientificName": "Ibicella lutea (Lindl.) Van Eselt."
+  },
+  {
+    "classIndex": 14,
+    "plantnetSpeciesId": "1356075",
+    "scientificName": "Tradescantia fluminensis Vell."
+  },
+  {
+    "classIndex": 15,
+    "plantnetSpeciesId": "1356076",
+    "scientificName": "Tradescantia zebrina Heynh. ex Bosse"
+  },
+  {
+    "classIndex": 16,
+    "plantnetSpeciesId": "1356111",
+    "scientificName": "Lamium amplexicaule L."
+  },
+  {
+    "classIndex": 17,
+    "plantnetSpeciesId": "1356126",
+    "scientificName": "Lavandula dentata L."
+  },
+  {
+    "classIndex": 18,
+    "plantnetSpeciesId": "1356138",
+    "scientificName": "Striga asiatica (L.) Kuntze"
+  },
+  {
+    "classIndex": 19,
+    "plantnetSpeciesId": "1356257",
+    "scientificName": "Melilotus albus Medik."
+  },
+  {
+    "classIndex": 20,
+    "plantnetSpeciesId": "1356278",
+    "scientificName": "Trifolium fragiferum L."
+  },
+  {
+    "classIndex": 21,
+    "plantnetSpeciesId": "1356279",
+    "scientificName": "Asystasia gangetica (L.) T. Anderson"
+  },
+  {
+    "classIndex": 22,
+    "plantnetSpeciesId": "1356309",
+    "scientificName": "Nymphaea nouchali Burm. f."
+  },
+  {
+    "classIndex": 23,
+    "plantnetSpeciesId": "1356379",
+    "scientificName": "Dryopteris aemula (Aiton) Kuntze"
+  },
+  {
+    "classIndex": 24,
+    "plantnetSpeciesId": "1356380",
+    "scientificName": "Dryopteris affinis (Lowe) Fraser-Jenk."
+  },
+  {
+    "classIndex": 25,
+    "plantnetSpeciesId": "1356382",
+    "scientificName": "Dryopteris filix-mas (L.) Schott"
+  },
+  {
+    "classIndex": 26,
+    "plantnetSpeciesId": "1356420",
+    "scientificName": "Nephrolepis cordifolia (L.) C. Presl"
+  },
+  {
+    "classIndex": 27,
+    "plantnetSpeciesId": "1356421",
+    "scientificName": "Nephrolepis exaltata (L.) Schott",
+    "canonicalTaxonId": "2650927"
+  },
+  {
+    "classIndex": 28,
+    "plantnetSpeciesId": "1356428",
+    "scientificName": "Osmunda regalis L."
+  },
+  {
+    "classIndex": 29,
+    "plantnetSpeciesId": "1356469",
+    "scientificName": "Achyranthes aspera L."
+  },
+  {
+    "classIndex": 30,
+    "plantnetSpeciesId": "1356692",
+    "scientificName": "Lithodora fruticosa (L.) Griseb."
+  },
+  {
+    "classIndex": 31,
+    "plantnetSpeciesId": "1356781",
+    "scientificName": "Humulus lupulus L."
+  },
+  {
+    "classIndex": 32,
+    "plantnetSpeciesId": "1356816",
+    "scientificName": "Vaccaria hispanica (Mill.) Rauschert"
+  },
+  {
+    "classIndex": 33,
+    "plantnetSpeciesId": "1356847",
+    "scientificName": "Spergularia rubra (L.) J. Presl & C. Presl"
+  },
+  {
+    "classIndex": 34,
+    "plantnetSpeciesId": "1356901",
+    "scientificName": "Moehringia trinervia (L.) Clairv."
+  },
+  {
+    "classIndex": 35,
+    "plantnetSpeciesId": "1357330",
+    "scientificName": "Calendula officinalis L."
+  },
+  {
+    "classIndex": 36,
+    "plantnetSpeciesId": "1357331",
+    "scientificName": "Calendula stellata Cav."
+  },
+  {
+    "classIndex": 37,
+    "plantnetSpeciesId": "1357367",
+    "scientificName": "Carthamus caeruleus L."
+  },
+  {
+    "classIndex": 38,
+    "plantnetSpeciesId": "1357379",
+    "scientificName": "Carthamus lanatus L."
+  },
+  {
+    "classIndex": 39,
+    "plantnetSpeciesId": "1357506",
+    "scientificName": "Cirsium monspessulanum (L.) Hill"
+  },
+  {
+    "classIndex": 40,
+    "plantnetSpeciesId": "1357635",
+    "scientificName": "Helminthotheca echioides (L.) Holub"
+  },
+  {
+    "classIndex": 41,
+    "plantnetSpeciesId": "1357652",
+    "scientificName": "Hyoseris radiata L."
+  },
+  {
+    "classIndex": 42,
+    "plantnetSpeciesId": "1357677",
+    "scientificName": "Lactuca muralis (L.) Gaertn."
+  },
+  {
+    "classIndex": 43,
+    "plantnetSpeciesId": "1357681",
+    "scientificName": "Lactuca saligna L."
+  },
+  {
+    "classIndex": 44,
+    "plantnetSpeciesId": "1357682",
+    "scientificName": "Lactuca tenerrima Pourr."
+  },
+  {
+    "classIndex": 45,
+    "plantnetSpeciesId": "1357705",
+    "scientificName": "Limbarda crithmoides (L.) Dumort."
+  },
+  {
+    "classIndex": 46,
+    "plantnetSpeciesId": "1358094",
+    "scientificName": "Sedum acre L."
+  },
+  {
+    "classIndex": 47,
+    "plantnetSpeciesId": "1358095",
+    "scientificName": "Sedum album L."
+  },
+  {
+    "classIndex": 48,
+    "plantnetSpeciesId": "1358096",
+    "scientificName": "Sedum amplexicaule DC."
+  },
+  {
+    "classIndex": 49,
+    "plantnetSpeciesId": "1358097",
+    "scientificName": "Sedum andegavense (DC.) Desv."
+  },
+  {
+    "classIndex": 50,
+    "plantnetSpeciesId": "1358099",
+    "scientificName": "Sedum brevifolium DC."
+  },
+  {
+    "classIndex": 51,
+    "plantnetSpeciesId": "1358101",
+    "scientificName": "Sedum caeruleum L."
+  },
+  {
+    "classIndex": 52,
+    "plantnetSpeciesId": "1358102",
+    "scientificName": "Sedum caespitosum (Cav.) DC."
+  },
+  {
+    "classIndex": 53,
+    "plantnetSpeciesId": "1358103",
+    "scientificName": "Sedum cepaea L."
+  },
+  {
+    "classIndex": 54,
+    "plantnetSpeciesId": "1358105",
+    "scientificName": "Sedum dasyphyllum L."
+  },
+  {
+    "classIndex": 55,
+    "plantnetSpeciesId": "1358108",
+    "scientificName": "Sedum forsterianum Sm."
+  },
+  {
+    "classIndex": 56,
+    "plantnetSpeciesId": "1358112",
+    "scientificName": "Sedum hirsutum All."
+  },
+  {
+    "classIndex": 57,
+    "plantnetSpeciesId": "1358119",
+    "scientificName": "Sedum litoreum Guss."
+  },
+  {
+    "classIndex": 58,
+    "plantnetSpeciesId": "1358127",
+    "scientificName": "Sedum multiceps Coss. & Durieu"
+  },
+  {
+    "classIndex": 59,
+    "plantnetSpeciesId": "1358132",
+    "scientificName": "Sedum rubens L."
+  },
+  {
+    "classIndex": 60,
+    "plantnetSpeciesId": "1358133",
+    "scientificName": "Sedum sediforme (Jacq.) Pau"
+  },
+  {
+    "classIndex": 61,
+    "plantnetSpeciesId": "1358150",
+    "scientificName": "Alliaria petiolata (M. Bieb.) Cavara & Grande"
+  },
+  {
+    "classIndex": 62,
+    "plantnetSpeciesId": "1358193",
+    "scientificName": "Boscia angustifolia A. Rich."
+  },
+  {
+    "classIndex": 63,
+    "plantnetSpeciesId": "1358302",
+    "scientificName": "Fibigia clypeata (L.) Medik."
+  },
+  {
+    "classIndex": 64,
+    "plantnetSpeciesId": "1358365",
+    "scientificName": "Maerua angolensis DC."
+  },
+  {
+    "classIndex": 65,
+    "plantnetSpeciesId": "1358519",
+    "scientificName": "Acalypha virginica L."
+  },
+  {
+    "classIndex": 66,
+    "plantnetSpeciesId": "1358605",
+    "scientificName": "Mercurialis perennis L."
+  },
+  {
+    "classIndex": 67,
+    "plantnetSpeciesId": "1358608",
+    "scientificName": "Phyllanthus reticulatus Poir."
+  },
+  {
+    "classIndex": 68,
+    "plantnetSpeciesId": "1358689",
+    "scientificName": "Hypericum androsaemum L."
+  },
+  {
+    "classIndex": 69,
+    "plantnetSpeciesId": "1358690",
+    "scientificName": "Hypericum australe Ten."
+  },
+  {
+    "classIndex": 70,
+    "plantnetSpeciesId": "1358691",
+    "scientificName": "Hypericum canariense L."
+  },
+  {
+    "classIndex": 71,
+    "plantnetSpeciesId": "1358695",
+    "scientificName": "Hypericum empetrifolium Willd."
+  },
+  {
+    "classIndex": 72,
+    "plantnetSpeciesId": "1358699",
+    "scientificName": "Hypericum hircinum L."
+  },
+  {
+    "classIndex": 73,
+    "plantnetSpeciesId": "1358700",
+    "scientificName": "Hypericum hirsutum L."
+  },
+  {
+    "classIndex": 74,
+    "plantnetSpeciesId": "1358701",
+    "scientificName": "Hypericum humifusum L."
+  },
+  {
+    "classIndex": 75,
+    "plantnetSpeciesId": "1358703",
+    "scientificName": "Hypericum linariifolium Vahl"
+  },
+  {
+    "classIndex": 76,
+    "plantnetSpeciesId": "1358704",
+    "scientificName": "Hypericum montanum L."
+  },
+  {
+    "classIndex": 77,
+    "plantnetSpeciesId": "1358706",
+    "scientificName": "Hypericum perfoliatum L."
+  },
+  {
+    "classIndex": 78,
+    "plantnetSpeciesId": "1358710",
+    "scientificName": "Hypericum tetrapterum Fr."
+  },
+  {
+    "classIndex": 79,
+    "plantnetSpeciesId": "1358711",
+    "scientificName": "Hypericum tomentosum L."
+  },
+  {
+    "classIndex": 80,
+    "plantnetSpeciesId": "1358748",
+    "scientificName": "Lamium bifidum Cirillo"
+  },
+  {
+    "classIndex": 81,
+    "plantnetSpeciesId": "1358749",
+    "scientificName": "Lamium flexuosum Ten."
+  },
+  {
+    "classIndex": 82,
+    "plantnetSpeciesId": "1358750",
+    "scientificName": "Lamium garganicum L."
+  },
+  {
+    "classIndex": 83,
+    "plantnetSpeciesId": "1358751",
+    "scientificName": "Lamium hybridum Vill."
+  },
+  {
+    "classIndex": 84,
+    "plantnetSpeciesId": "1358752",
+    "scientificName": "Lamium purpureum L."
+  },
+  {
+    "classIndex": 85,
+    "plantnetSpeciesId": "1358755",
+    "scientificName": "Lavandula canariensis Mill."
+  },
+  {
+    "classIndex": 86,
+    "plantnetSpeciesId": "1358759",
+    "scientificName": "Lavandula minutolii Bolle"
+  },
+  {
+    "classIndex": 87,
+    "plantnetSpeciesId": "1358760",
+    "scientificName": "Lavandula multifida L."
+  },
+  {
+    "classIndex": 88,
+    "plantnetSpeciesId": "1358766",
+    "scientificName": "Lavandula stoechas L."
+  },
+  {
+    "classIndex": 89,
+    "plantnetSpeciesId": "1359060",
+    "scientificName": "Acacia mellifera (Vahl) Benth."
+  },
+  {
+    "classIndex": 90,
+    "plantnetSpeciesId": "1359064",
+    "scientificName": "Acacia seyal Delile"
+  },
+  {
+    "classIndex": 91,
+    "plantnetSpeciesId": "1359065",
+    "scientificName": "Acacia tortilis (Forssk.) Hayne"
+  },
+  {
+    "classIndex": 92,
+    "plantnetSpeciesId": "1359197",
+    "scientificName": "Galega officinalis L."
+  },
+  {
+    "classIndex": 93,
+    "plantnetSpeciesId": "1359331",
+    "scientificName": "Lupinus cosentinii Guss."
+  },
+  {
+    "classIndex": 94,
+    "plantnetSpeciesId": "1359332",
+    "scientificName": "Lupinus micranthus Guss."
+  },
+  {
+    "classIndex": 95,
+    "plantnetSpeciesId": "1359359",
+    "scientificName": "Melilotus italicus (L.) Lam."
+  },
+  {
+    "classIndex": 96,
+    "plantnetSpeciesId": "1359364",
+    "scientificName": "Melilotus sulcatus Desf."
+  },
+  {
+    "classIndex": 97,
+    "plantnetSpeciesId": "1359483",
+    "scientificName": "Trifolium angustifolium L."
+  },
+  {
+    "classIndex": 98,
+    "plantnetSpeciesId": "1359485",
+    "scientificName": "Trifolium arvense L."
+  },
+  {
+    "classIndex": 99,
+    "plantnetSpeciesId": "1359486",
+    "scientificName": "Trifolium aureum Pollich"
+  },
+  {
+    "classIndex": 100,
+    "plantnetSpeciesId": "1359488",
+    "scientificName": "Trifolium campestre Schreb."
+  },
+  {
+    "classIndex": 101,
+    "plantnetSpeciesId": "1359489",
+    "scientificName": "Trifolium cherleri L."
+  },
+  {
+    "classIndex": 102,
+    "plantnetSpeciesId": "1359495",
+    "scientificName": "Trifolium hirtum All."
+  },
+  {
+    "classIndex": 103,
+    "plantnetSpeciesId": "1359497",
+    "scientificName": "Trifolium hybridum L."
+  },
+  {
+    "classIndex": 104,
+    "plantnetSpeciesId": "1359498",
+    "scientificName": "Trifolium incarnatum L."
+  },
+  {
+    "classIndex": 105,
+    "plantnetSpeciesId": "1359502",
+    "scientificName": "Trifolium lappaceum L."
+  },
+  {
+    "classIndex": 106,
+    "plantnetSpeciesId": "1359505",
+    "scientificName": "Trifolium michelianum Savi"
+  },
+  {
+    "classIndex": 107,
+    "plantnetSpeciesId": "1359506",
+    "scientificName": "Trifolium micranthum Viv."
+  },
+  {
+    "classIndex": 108,
+    "plantnetSpeciesId": "1359508",
+    "scientificName": "Trifolium montanum L."
+  },
+  {
+    "classIndex": 109,
+    "plantnetSpeciesId": "1359510",
+    "scientificName": "Trifolium ochroleucon Huds."
+  },
+  {
+    "classIndex": 110,
+    "plantnetSpeciesId": "1359513",
+    "scientificName": "Trifolium pannonicum Jacq."
+  },
+  {
+    "classIndex": 111,
+    "plantnetSpeciesId": "1359514",
+    "scientificName": "Trifolium patens Schreb."
+  },
+  {
+    "classIndex": 112,
+    "plantnetSpeciesId": "1359517",
+    "scientificName": "Trifolium pratense L."
+  },
+  {
+    "classIndex": 113,
+    "plantnetSpeciesId": "1359518",
+    "scientificName": "Trifolium purpureum Loisel."
+  },
+  {
+    "classIndex": 114,
+    "plantnetSpeciesId": "1359519",
+    "scientificName": "Trifolium resupinatum L."
+  },
+  {
+    "classIndex": 115,
+    "plantnetSpeciesId": "1359521",
+    "scientificName": "Trifolium scabrum L."
+  },
+  {
+    "classIndex": 116,
+    "plantnetSpeciesId": "1359523",
+    "scientificName": "Trifolium spumosum L."
+  },
+  {
+    "classIndex": 117,
+    "plantnetSpeciesId": "1359524",
+    "scientificName": "Trifolium squamosum L."
+  },
+  {
+    "classIndex": 118,
+    "plantnetSpeciesId": "1359525",
+    "scientificName": "Trifolium stellatum L."
+  },
+  {
+    "classIndex": 119,
+    "plantnetSpeciesId": "1359526",
+    "scientificName": "Trifolium striatum L."
+  },
+  {
+    "classIndex": 120,
+    "plantnetSpeciesId": "1359528",
+    "scientificName": "Trifolium subterraneum L."
+  },
+  {
+    "classIndex": 121,
+    "plantnetSpeciesId": "1359530",
+    "scientificName": "Trifolium tomentosum L."
+  },
+  {
+    "classIndex": 122,
+    "plantnetSpeciesId": "1359616",
+    "scientificName": "Punica granatum L."
+  },
+  {
+    "classIndex": 123,
+    "plantnetSpeciesId": "1359620",
+    "scientificName": "Alcea rosea L."
+  },
+  {
+    "classIndex": 124,
+    "plantnetSpeciesId": "1359622",
+    "scientificName": "Althaea cannabina L."
+  },
+  {
+    "classIndex": 125,
+    "plantnetSpeciesId": "1359625",
+    "scientificName": "Althaea officinalis L."
+  },
+  {
+    "classIndex": 126,
+    "plantnetSpeciesId": "1359669",
+    "scientificName": "Nymphaea alba L."
+  },
+  {
+    "classIndex": 127,
+    "plantnetSpeciesId": "1359806",
+    "scientificName": "Hunnemannia fumariifolia Sweet"
+  },
+  {
+    "classIndex": 128,
+    "plantnetSpeciesId": "1359815",
+    "scientificName": "Papaver atlanticum (Ball) Coss."
+  },
+  {
+    "classIndex": 129,
+    "plantnetSpeciesId": "1359821",
+    "scientificName": "Papaver rupifragum Boiss. & Reut."
+  },
+  {
+    "classIndex": 130,
+    "plantnetSpeciesId": "1360004",
+    "scientificName": "Goniolimon tataricum (L.) Boiss."
+  },
+  {
+    "classIndex": 131,
+    "plantnetSpeciesId": "1360147",
+    "scientificName": "Adonis aestivalis L."
+  },
+  {
+    "classIndex": 132,
+    "plantnetSpeciesId": "1360148",
+    "scientificName": "Adonis annua L."
+  },
+  {
+    "classIndex": 133,
+    "plantnetSpeciesId": "1360150",
+    "scientificName": "Adonis flammea Jacq."
+  },
+  {
+    "classIndex": 134,
+    "plantnetSpeciesId": "1360152",
+    "scientificName": "Adonis microcarpa DC."
+  },
+  {
+    "classIndex": 135,
+    "plantnetSpeciesId": "1360153",
+    "scientificName": "Anemone coronaria L."
+  },
+  {
+    "classIndex": 136,
+    "plantnetSpeciesId": "1360154",
+    "scientificName": "Anemone palmata L."
+  },
+  {
+    "classIndex": 137,
+    "plantnetSpeciesId": "1360427",
+    "scientificName": "Oldenlandia corymbosa L."
+  },
+  {
+    "classIndex": 138,
+    "plantnetSpeciesId": "1360550",
+    "scientificName": "Hyoscyamus albus L."
+  },
+  {
+    "classIndex": 139,
+    "plantnetSpeciesId": "1360555",
+    "scientificName": "Hyoscyamus niger L."
+  },
+  {
+    "classIndex": 140,
+    "plantnetSpeciesId": "1360588",
+    "scientificName": "Daphne gnidium L."
+  },
+  {
+    "classIndex": 141,
+    "plantnetSpeciesId": "1360590",
+    "scientificName": "Daphne laureola L."
+  },
+  {
+    "classIndex": 142,
+    "plantnetSpeciesId": "1360591",
+    "scientificName": "Daphne oleoides Schreb."
+  },
+  {
+    "classIndex": 143,
+    "plantnetSpeciesId": "1360618",
+    "scientificName": "Berula erecta (Huds.) Coville"
+  },
+  {
+    "classIndex": 144,
+    "plantnetSpeciesId": "1360671",
+    "scientificName": "Chaerophyllum temulum L."
+  },
+  {
+    "classIndex": 145,
+    "plantnetSpeciesId": "1360687",
+    "scientificName": "Daucus muricatus (L.) L."
+  },
+  {
+    "classIndex": 146,
+    "plantnetSpeciesId": "1360759",
+    "scientificName": "Meum athamanticum Jacq."
+  },
+  {
+    "classIndex": 147,
+    "plantnetSpeciesId": "1360808",
+    "scientificName": "Thapsia garganica L."
+  },
+  {
+    "classIndex": 148,
+    "plantnetSpeciesId": "1360811",
+    "scientificName": "Thapsia villosa L."
+  },
+  {
+    "classIndex": 149,
+    "plantnetSpeciesId": "1360835",
+    "scientificName": "Centranthus calcitrapae (L.) Dufr."
+  },
+  {
+    "classIndex": 150,
+    "plantnetSpeciesId": "1360838",
+    "scientificName": "Fedia cornucopiae (L.) Gaertn."
+  },
+  {
+    "classIndex": 151,
+    "plantnetSpeciesId": "1360976",
+    "scientificName": "Pancratium canariense Ker Gawl."
+  },
+  {
+    "classIndex": 152,
+    "plantnetSpeciesId": "1360978",
+    "scientificName": "Pancratium maritimum L."
+  },
+  {
+    "classIndex": 153,
+    "plantnetSpeciesId": "1360998",
+    "scientificName": "Anthericum liliago L."
+  },
+  {
+    "classIndex": 154,
+    "plantnetSpeciesId": "1361024",
+    "scientificName": "Butomus umbellatus L."
+  },
+  {
+    "classIndex": 155,
+    "plantnetSpeciesId": "1361233",
+    "scientificName": "Danthonia decumbens (L.) DC."
+  },
+  {
+    "classIndex": 156,
+    "plantnetSpeciesId": "1361316",
+    "scientificName": "Leersia oryzoides (L.) Sw."
+  },
+  {
+    "classIndex": 157,
+    "plantnetSpeciesId": "1361357",
+    "scientificName": "Phalaris coerulescens Desf."
+  },
+  {
+    "classIndex": 158,
+    "plantnetSpeciesId": "1361507",
+    "scientificName": "Oncostema elongata (Parl.) Speta"
+  },
+  {
+    "classIndex": 159,
+    "plantnetSpeciesId": "1361508",
+    "scientificName": "Oncostema peruviana (L.) Speta"
+  },
+  {
+    "classIndex": 160,
+    "plantnetSpeciesId": "1361524",
+    "scientificName": "Elodea canadensis Michx."
+  },
+  {
+    "classIndex": 161,
+    "plantnetSpeciesId": "1361655",
+    "scientificName": "Neotinea maculata (Desf.) Stearn"
+  },
+  {
+    "classIndex": 162,
+    "plantnetSpeciesId": "1361656",
+    "scientificName": "Ophrys apifera Huds."
+  },
+  {
+    "classIndex": 163,
+    "plantnetSpeciesId": "1361658",
+    "scientificName": "Ophrys bombyliflora Link"
+  },
+  {
+    "classIndex": 164,
+    "plantnetSpeciesId": "1361660",
+    "scientificName": "Ophrys fusca Link"
+  },
+  {
+    "classIndex": 165,
+    "plantnetSpeciesId": "1361663",
+    "scientificName": "Ophrys lutea Cav."
+  },
+  {
+    "classIndex": 166,
+    "plantnetSpeciesId": "1361666",
+    "scientificName": "Ophrys scolopax Cav."
+  },
+  {
+    "classIndex": 167,
+    "plantnetSpeciesId": "1361668",
+    "scientificName": "Ophrys speculum Link"
+  },
+  {
+    "classIndex": 168,
+    "plantnetSpeciesId": "1361672",
+    "scientificName": "Ophrys tenthredinifera Willd."
+  },
+  {
+    "classIndex": 169,
+    "plantnetSpeciesId": "1361704",
+    "scientificName": "Groenlandia densa (L.) Fourr."
+  },
+  {
+    "classIndex": 170,
+    "plantnetSpeciesId": "1361745",
+    "scientificName": "Myosoton aquaticum (L.) Moench"
+  },
+  {
+    "classIndex": 171,
+    "plantnetSpeciesId": "1361759",
+    "scientificName": "Cirsium palustre (L.) Scop."
+  },
+  {
+    "classIndex": 172,
+    "plantnetSpeciesId": "1361823",
+    "scientificName": "Lamium galeobdolon (L.) L."
+  },
+  {
+    "classIndex": 173,
+    "plantnetSpeciesId": "1361824",
+    "scientificName": "Lavandula angustifolia Mill."
+  },
+  {
+    "classIndex": 174,
+    "plantnetSpeciesId": "1361847",
+    "scientificName": "Casuarina cunninghamiana Miq."
+  },
+  {
+    "classIndex": 175,
+    "plantnetSpeciesId": "1361850",
+    "scientificName": "Trifolium rubens L."
+  },
+  {
+    "classIndex": 176,
+    "plantnetSpeciesId": "1361891",
+    "scientificName": "Falcaria vulgaris Bernh."
+  },
+  {
+    "classIndex": 177,
+    "plantnetSpeciesId": "1362024",
+    "scientificName": "Hypericum triquetrifolium Turra"
+  },
+  {
+    "classIndex": 178,
+    "plantnetSpeciesId": "1362064",
+    "scientificName": "Wigandia caracasana Kunth"
+  },
+  {
+    "classIndex": 179,
+    "plantnetSpeciesId": "1362080",
+    "scientificName": "Nymphaea lotus L."
+  },
+  {
+    "classIndex": 180,
+    "plantnetSpeciesId": "1362192",
+    "scientificName": "Sedum villosum L."
+  },
+  {
+    "classIndex": 181,
+    "plantnetSpeciesId": "1362294",
+    "scientificName": "Epipactis helleborine (L.) Crantz"
+  },
+  {
+    "classIndex": 182,
+    "plantnetSpeciesId": "1362385",
+    "scientificName": "Thesium humifusum DC."
+  },
+  {
+    "classIndex": 183,
+    "plantnetSpeciesId": "1362398",
+    "scientificName": "Acacia etbaica Schweinf."
+  },
+  {
+    "classIndex": 184,
+    "plantnetSpeciesId": "1362434",
+    "scientificName": "Centranthus angustifolius (Mill.) DC."
+  },
+  {
+    "classIndex": 185,
+    "plantnetSpeciesId": "1362435",
+    "scientificName": "Centranthus lecoqii Jord."
+  },
+  {
+    "classIndex": 186,
+    "plantnetSpeciesId": "1362489",
+    "scientificName": "Sedum anglicum Huds."
+  },
+  {
+    "classIndex": 187,
+    "plantnetSpeciesId": "1362490",
+    "scientificName": "Sedum rupestre L."
+  },
+  {
+    "classIndex": 188,
+    "plantnetSpeciesId": "1362516",
+    "scientificName": "Ophrys insectifera L."
+  },
+  {
+    "classIndex": 189,
+    "plantnetSpeciesId": "1362582",
+    "scientificName": "Freesia refracta (Jacq.) Klatt"
+  },
+  {
+    "classIndex": 190,
+    "plantnetSpeciesId": "1362834",
+    "scientificName": "Diatelia tuberaria (L.) Demoly"
+  },
+  {
+    "classIndex": 191,
+    "plantnetSpeciesId": "1362927",
+    "scientificName": "Tradescantia pallida (Rose) D.R. Hunt"
+  },
+  {
+    "classIndex": 192,
+    "plantnetSpeciesId": "1362928",
+    "scientificName": "Cenchrus longispinus (Hack.) Fernald"
+  },
+  {
+    "classIndex": 193,
+    "plantnetSpeciesId": "1362954",
+    "scientificName": "Schefflera actinophylla (Endl.) Harms"
+  },
+  {
+    "classIndex": 194,
+    "plantnetSpeciesId": "1363016",
+    "scientificName": "Cenchrus clandestinus (Hochst. ex Chiov.) Morrone"
+  },
+  {
+    "classIndex": 195,
+    "plantnetSpeciesId": "1363019",
+    "scientificName": "Cenchrus purpureus (Schumach.) Morrone"
+  },
+  {
+    "classIndex": 196,
+    "plantnetSpeciesId": "1363021",
+    "scientificName": "Cenchrus setaceus (Forssk.) Morrone"
+  },
+  {
+    "classIndex": 197,
+    "plantnetSpeciesId": "1363110",
+    "scientificName": "Anemone hortensis L."
+  },
+  {
+    "classIndex": 198,
+    "plantnetSpeciesId": "1363117",
+    "scientificName": "Tradescantia cerinthoides Kunth"
+  },
+  {
+    "classIndex": 199,
+    "plantnetSpeciesId": "1363126",
+    "scientificName": "Papaver argemone L."
+  },
+  {
+    "classIndex": 200,
+    "plantnetSpeciesId": "1363127",
+    "scientificName": "Papaver hybridum L."
+  },
+  {
+    "classIndex": 201,
+    "plantnetSpeciesId": "1363128",
+    "scientificName": "Papaver rhoeas L."
+  },
+  {
+    "classIndex": 202,
+    "plantnetSpeciesId": "1363129",
+    "scientificName": "Papaver dubium L."
+  },
+  {
+    "classIndex": 203,
+    "plantnetSpeciesId": "1363130",
+    "scientificName": "Papaver somniferum L."
+  },
+  {
+    "classIndex": 204,
+    "plantnetSpeciesId": "1363227",
+    "scientificName": "Daucus carota L."
+  },
+  {
+    "classIndex": 205,
+    "plantnetSpeciesId": "1363336",
+    "scientificName": "Smilax aspera L."
+  },
+  {
+    "classIndex": 206,
+    "plantnetSpeciesId": "1363343",
+    "scientificName": "Aizoon canariense L."
+  },
+  {
+    "classIndex": 207,
+    "plantnetSpeciesId": "1363359",
+    "scientificName": "Zannichellia palustris L."
+  },
+  {
+    "classIndex": 208,
+    "plantnetSpeciesId": "1363451",
+    "scientificName": "Secale cereale L."
+  },
+  {
+    "classIndex": 209,
+    "plantnetSpeciesId": "1363463",
+    "scientificName": "Cenchrus ciliaris L."
+  },
+  {
+    "classIndex": 210,
+    "plantnetSpeciesId": "1363464",
+    "scientificName": "Cenchrus echinatus L."
+  },
+  {
+    "classIndex": 211,
+    "plantnetSpeciesId": "1363489",
+    "scientificName": "Phalaris aquatica L."
+  },
+  {
+    "classIndex": 212,
+    "plantnetSpeciesId": "1363490",
+    "scientificName": "Phalaris arundinacea L."
+  },
+  {
+    "classIndex": 213,
+    "plantnetSpeciesId": "1363491",
+    "scientificName": "Phalaris canariensis L."
+  },
+  {
+    "classIndex": 214,
+    "plantnetSpeciesId": "1363492",
+    "scientificName": "Phalaris minor Retz."
+  },
+  {
+    "classIndex": 215,
+    "plantnetSpeciesId": "1363493",
+    "scientificName": "Phalaris paradoxa L."
+  },
+  {
+    "classIndex": 216,
+    "plantnetSpeciesId": "1363613",
+    "scientificName": "Sedum hispanicum L."
+  },
+  {
+    "classIndex": 217,
+    "plantnetSpeciesId": "1363688",
+    "scientificName": "Crotalaria juncea L."
+  },
+  {
+    "classIndex": 218,
+    "plantnetSpeciesId": "1363699",
+    "scientificName": "Lupinus angustifolius L."
+  },
+  {
+    "classIndex": 219,
+    "plantnetSpeciesId": "1363700",
+    "scientificName": "Lupinus luteus L."
+  },
+  {
+    "classIndex": 220,
+    "plantnetSpeciesId": "1363701",
+    "scientificName": "Lupinus pilosus L."
+  },
+  {
+    "classIndex": 221,
+    "plantnetSpeciesId": "1363703",
+    "scientificName": "Lupinus albus L."
+  },
+  {
+    "classIndex": 222,
+    "plantnetSpeciesId": "1363735",
+    "scientificName": "Trifolium alexandrinum L."
+  },
+  {
+    "classIndex": 223,
+    "plantnetSpeciesId": "1363737",
+    "scientificName": "Trifolium dubium Sibth."
+  },
+  {
+    "classIndex": 224,
+    "plantnetSpeciesId": "1363738",
+    "scientificName": "Trifolium glomeratum L."
+  },
+  {
+    "classIndex": 225,
+    "plantnetSpeciesId": "1363739",
+    "scientificName": "Trifolium nigrescens Viv."
+  },
+  {
+    "classIndex": 226,
+    "plantnetSpeciesId": "1363740",
+    "scientificName": "Trifolium repens L."
+  },
+  {
+    "classIndex": 227,
+    "plantnetSpeciesId": "1363743",
+    "scientificName": "Dalbergia melanoxylon Guill. & Perr."
+  },
+  {
+    "classIndex": 228,
+    "plantnetSpeciesId": "1363749",
+    "scientificName": "Melilotus indicus (L.) All."
+  },
+  {
+    "classIndex": 229,
+    "plantnetSpeciesId": "1363750",
+    "scientificName": "Melilotus officinalis (L.) Pall."
+  },
+  {
+    "classIndex": 230,
+    "plantnetSpeciesId": "1363764",
+    "scientificName": "Acacia dealbata Link"
+  },
+  {
+    "classIndex": 231,
+    "plantnetSpeciesId": "1363769",
+    "scientificName": "Acacia longifolia (Andrews) Willd."
+  },
+  {
+    "classIndex": 232,
+    "plantnetSpeciesId": "1363770",
+    "scientificName": "Acacia mearnsii De Wild."
+  },
+  {
+    "classIndex": 233,
+    "plantnetSpeciesId": "1363772",
+    "scientificName": "Acacia pycnantha Benth."
+  },
+  {
+    "classIndex": 234,
+    "plantnetSpeciesId": "1363778",
+    "scientificName": "Acacia retinodes Schltdl."
+  },
+  {
+    "classIndex": 235,
+    "plantnetSpeciesId": "1363871",
+    "scientificName": "Barbarea verna (Mill.) Asch."
+  },
+  {
+    "classIndex": 236,
+    "plantnetSpeciesId": "1363872",
+    "scientificName": "Barbarea intermedia Boreau"
+  },
+  {
+    "classIndex": 237,
+    "plantnetSpeciesId": "1363970",
+    "scientificName": "Myosurus minimus L."
+  },
+  {
+    "classIndex": 238,
+    "plantnetSpeciesId": "1363991",
+    "scientificName": "Fragaria vesca L."
+  },
+  {
+    "classIndex": 239,
+    "plantnetSpeciesId": "1364000",
+    "scientificName": "Duchesnea indica (Jacks.) Focke"
+  },
+  {
+    "classIndex": 240,
+    "plantnetSpeciesId": "1364099",
+    "scientificName": "Centranthus ruber (L.) DC."
+  },
+  {
+    "classIndex": 241,
+    "plantnetSpeciesId": "1364112",
+    "scientificName": "Guizotia abyssinica (L. f.) Cass."
+  },
+  {
+    "classIndex": 242,
+    "plantnetSpeciesId": "1364158",
+    "scientificName": "Tagetes minuta L."
+  },
+  {
+    "classIndex": 243,
+    "plantnetSpeciesId": "1364159",
+    "scientificName": "Tagetes patula L."
+  },
+  {
+    "classIndex": 244,
+    "plantnetSpeciesId": "1364161",
+    "scientificName": "Calendula arvensis (Vaill.) L."
+  },
+  {
+    "classIndex": 245,
+    "plantnetSpeciesId": "1364164",
+    "scientificName": "Lapsana communis L."
+  },
+  {
+    "classIndex": 246,
+    "plantnetSpeciesId": "1364165",
+    "scientificName": "Carthamus tinctorius L."
+  },
+  {
+    "classIndex": 247,
+    "plantnetSpeciesId": "1364172",
+    "scientificName": "Lactuca sativa L."
+  },
+  {
+    "classIndex": 248,
+    "plantnetSpeciesId": "1364173",
+    "scientificName": "Lactuca serriola L."
+  },
+  {
+    "classIndex": 249,
+    "plantnetSpeciesId": "1364440",
+    "scientificName": "Arthraxon hispidus (Thunb.) Makino"
+  },
+  {
+    "classIndex": 250,
+    "plantnetSpeciesId": "1364512",
+    "scientificName": "Microchloa kunthii Desv."
+  },
+  {
+    "classIndex": 251,
+    "plantnetSpeciesId": "1365712",
+    "scientificName": "Harpachne schimperi Hochst. ex A. Rich."
+  },
+  {
+    "classIndex": 252,
+    "plantnetSpeciesId": "1365961",
+    "scientificName": "Cedrela odorata L."
+  },
+  {
+    "classIndex": 253,
+    "plantnetSpeciesId": "1366875",
+    "scientificName": "Aeschynomene americana L."
+  },
+  {
+    "classIndex": 254,
+    "plantnetSpeciesId": "1366898",
+    "scientificName": "Prosopis alba Griseb."
+  },
+  {
+    "classIndex": 255,
+    "plantnetSpeciesId": "1366899",
+    "scientificName": "Prosopis juliflora (Sw.) DC."
+  },
+  {
+    "classIndex": 256,
+    "plantnetSpeciesId": "1366997",
+    "scientificName": "Crotalaria spectabilis Roth"
+  },
+  {
+    "classIndex": 257,
+    "plantnetSpeciesId": "1367060",
+    "scientificName": "Crotalaria chrysochlora Baker f. ex Harms"
+  },
+  {
+    "classIndex": 258,
+    "plantnetSpeciesId": "1367087",
+    "scientificName": "Crotalaria deflersii Schweinf."
+  },
+  {
+    "classIndex": 259,
+    "plantnetSpeciesId": "1367267",
+    "scientificName": "Crotalaria polysperma Kotschy"
+  },
+  {
+    "classIndex": 260,
+    "plantnetSpeciesId": "1367343",
+    "scientificName": "Crotalaria uguenensis Taub."
+  },
+  {
+    "classIndex": 261,
+    "plantnetSpeciesId": "1367369",
+    "scientificName": "Crotalaria verrucosa L."
+  },
+  {
+    "classIndex": 262,
+    "plantnetSpeciesId": "1367431",
+    "scientificName": "Lupinus perennis L."
+  },
+  {
+    "classIndex": 263,
+    "plantnetSpeciesId": "1367432",
+    "scientificName": "Lupinus polyphyllus Lindl."
+  },
+  {
+    "classIndex": 264,
+    "plantnetSpeciesId": "1367781",
+    "scientificName": "Dalbergia latifolia Roxb."
+  },
+  {
+    "classIndex": 265,
+    "plantnetSpeciesId": "1367784",
+    "scientificName": "Cordyla africana Lour."
+  },
+  {
+    "classIndex": 266,
+    "plantnetSpeciesId": "1367921",
+    "scientificName": "Acacia xanthophloea Benth."
+  },
+  {
+    "classIndex": 267,
+    "plantnetSpeciesId": "1367938",
+    "scientificName": "Acacia drepanolobium Harms ex Y. Sjöstedt"
+  },
+  {
+    "classIndex": 268,
+    "plantnetSpeciesId": "1367949",
+    "scientificName": "Acacia hockii De Wild."
+  },
+  {
+    "classIndex": 269,
+    "plantnetSpeciesId": "1367998",
+    "scientificName": "Acacia angustissima (Mill.) Kuntze"
+  },
+  {
+    "classIndex": 270,
+    "plantnetSpeciesId": "1369472",
+    "scientificName": "Gomphocarpus integer (N.E. Br.) Bullock"
+  },
+  {
+    "classIndex": 271,
+    "plantnetSpeciesId": "1369887",
+    "scientificName": "Trachelospermum jasminoides (Lindl.) Lem."
+  },
+  {
+    "classIndex": 272,
+    "plantnetSpeciesId": "1369960",
+    "scientificName": "Tradescantia spathacea Sw."
+  },
+  {
+    "classIndex": 273,
+    "plantnetSpeciesId": "1370279",
+    "scientificName": "Gymnosporia putterlickioides Loes."
+  },
+  {
+    "classIndex": 274,
+    "plantnetSpeciesId": "1370991",
+    "scientificName": "Conostomium kenyense Bremek."
+  },
+  {
+    "classIndex": 275,
+    "plantnetSpeciesId": "1370993",
+    "scientificName": "Conostomium quadrangulare (Rendle) Cufod."
+  },
+  {
+    "classIndex": 276,
+    "plantnetSpeciesId": "1371680",
+    "scientificName": "Mussaenda frondosa L."
+  },
+  {
+    "classIndex": 277,
+    "plantnetSpeciesId": "1371691",
+    "scientificName": "Mussaenda erythrophylla Schumach. & Thonn."
+  },
+  {
+    "classIndex": 278,
+    "plantnetSpeciesId": "1372016",
+    "scientificName": "Morinda citrifolia L."
+  },
+  {
+    "classIndex": 279,
+    "plantnetSpeciesId": "1372602",
+    "scientificName": "Pilocarpus racemosus Vahl"
+  },
+  {
+    "classIndex": 280,
+    "plantnetSpeciesId": "1373151",
+    "scientificName": "Pelargonium alchemilloides (L.) L'Hér."
+  },
+  {
+    "classIndex": 281,
+    "plantnetSpeciesId": "1373231",
+    "scientificName": "Pelargonium quinquelobatum Hochst. ex A. Rich."
+  },
+  {
+    "classIndex": 282,
+    "plantnetSpeciesId": "1373259",
+    "scientificName": "Pelargonium glechomoides A. Rich."
+  },
+  {
+    "classIndex": 283,
+    "plantnetSpeciesId": "1373530",
+    "scientificName": "Gynura aurantiaca (Blume) DC."
+  },
+  {
+    "classIndex": 284,
+    "plantnetSpeciesId": "1373535",
+    "scientificName": "Gynura procumbens (Lour.) Merr."
+  },
+  {
+    "classIndex": 285,
+    "plantnetSpeciesId": "1374048",
+    "scientificName": "Tagetes erecta L."
+  },
+  {
+    "classIndex": 286,
+    "plantnetSpeciesId": "1374448",
+    "scientificName": "Aspilia mossambicensis (Oliv.) Wild"
+  },
+  {
+    "classIndex": 287,
+    "plantnetSpeciesId": "1374450",
+    "scientificName": "Aspilia pluriseta Schweinf."
+  },
+  {
+    "classIndex": 288,
+    "plantnetSpeciesId": "1374466",
+    "scientificName": "Schkuhria pinnata (Lam.) Thell."
+  },
+  {
+    "classIndex": 289,
+    "plantnetSpeciesId": "1374933",
+    "scientificName": "Montanoa hibiscifolia Benth."
+  },
+  {
+    "classIndex": 290,
+    "plantnetSpeciesId": "1375776",
+    "scientificName": "Acalypha crenata Hochst. ex A. Rich."
+  },
+  {
+    "classIndex": 291,
+    "plantnetSpeciesId": "1375797",
+    "scientificName": "Acalypha hispida Burm. f."
+  },
+  {
+    "classIndex": 292,
+    "plantnetSpeciesId": "1375895",
+    "scientificName": "Phyllanthus fischeri Pax"
+  },
+  {
+    "classIndex": 293,
+    "plantnetSpeciesId": "1375954",
+    "scientificName": "Phyllanthus suffrutescens Pax"
+  },
+  {
+    "classIndex": 294,
+    "plantnetSpeciesId": "1375965",
+    "scientificName": "Phyllanthus acidus (L.) Skeels"
+  },
+  {
+    "classIndex": 295,
+    "plantnetSpeciesId": "1375966",
+    "scientificName": "Phyllanthus amarus Schumach. & Thonn."
+  },
+  {
+    "classIndex": 296,
+    "plantnetSpeciesId": "1376366",
+    "scientificName": "Triadica sebifera (L.) Small"
+  },
+  {
+    "classIndex": 297,
+    "plantnetSpeciesId": "1376703",
+    "scientificName": "Petiveria alliacea L."
+  },
+  {
+    "classIndex": 298,
+    "plantnetSpeciesId": "1376726",
+    "scientificName": "Peperomia pellucida (L.) Kunth"
+  },
+  {
+    "classIndex": 299,
+    "plantnetSpeciesId": "1379303",
+    "scientificName": "Guaiacum officinale L."
+  },
+  {
+    "classIndex": 300,
+    "plantnetSpeciesId": "1379513",
+    "scientificName": "Hypericum annulatum Moris"
+  },
+  {
+    "classIndex": 301,
+    "plantnetSpeciesId": "1379556",
+    "scientificName": "Mussaenda philippica A. Rich."
+  },
+  {
+    "classIndex": 302,
+    "plantnetSpeciesId": "1379585",
+    "scientificName": "Wigandia urens (Ruiz & Pav.) Kunth"
+  },
+  {
+    "classIndex": 303,
+    "plantnetSpeciesId": "1380874",
+    "scientificName": "Boscia mossambicensis Klotzsch"
+  },
+  {
+    "classIndex": 304,
+    "plantnetSpeciesId": "1380904",
+    "scientificName": "Boscia coriacea Pax"
+  },
+  {
+    "classIndex": 305,
+    "plantnetSpeciesId": "1381173",
+    "scientificName": "Mecardonia procumbens (Mill.) Small"
+  },
+  {
+    "classIndex": 306,
+    "plantnetSpeciesId": "1381468",
+    "scientificName": "Browallia americana L."
+  },
+  {
+    "classIndex": 307,
+    "plantnetSpeciesId": "1382099",
+    "scientificName": "Acacia mangium Willd."
+  },
+  {
+    "classIndex": 308,
+    "plantnetSpeciesId": "1383149",
+    "scientificName": "Casuarina equisetifolia L."
+  },
+  {
+    "classIndex": 309,
+    "plantnetSpeciesId": "1383772",
+    "scientificName": "Aristea abyssinica Pax"
+  },
+  {
+    "classIndex": 310,
+    "plantnetSpeciesId": "1383774",
+    "scientificName": "Aristea ecklonii Baker"
+  },
+  {
+    "classIndex": 311,
+    "plantnetSpeciesId": "1384199",
+    "scientificName": "Erianthemum dregei (Eckl. & Zeyh.) Tiegh."
+  },
+  {
+    "classIndex": 312,
+    "plantnetSpeciesId": "1384482",
+    "scientificName": "Cucurbita ficifolia Bouché"
+  },
+  {
+    "classIndex": 313,
+    "plantnetSpeciesId": "1384485",
+    "scientificName": "Cucurbita pepo L."
+  },
+  {
+    "classIndex": 314,
+    "plantnetSpeciesId": "1384497",
+    "scientificName": "Luffa acutangula (L.) Roxb."
+  },
+  {
+    "classIndex": 315,
+    "plantnetSpeciesId": "1384499",
+    "scientificName": "Lagenaria siceraria (Molina) Standl."
+  },
+  {
+    "classIndex": 316,
+    "plantnetSpeciesId": "1384500",
+    "scientificName": "Lagenaria sphaerica (Sond.) Naudin"
+  },
+  {
+    "classIndex": 317,
+    "plantnetSpeciesId": "1384760",
+    "scientificName": "Asystasia riparia Lindau"
+  },
+  {
+    "classIndex": 318,
+    "plantnetSpeciesId": "1385700",
+    "scientificName": "Barringtonia asiatica (L.) Kurz"
+  },
+  {
+    "classIndex": 319,
+    "plantnetSpeciesId": "1385701",
+    "scientificName": "Couroupita guianensis Aubl."
+  },
+  {
+    "classIndex": 320,
+    "plantnetSpeciesId": "1385749",
+    "scientificName": "Asystasia charmian S. Moore"
+  },
+  {
+    "classIndex": 321,
+    "plantnetSpeciesId": "1385853",
+    "scientificName": "Raphia farinifera (Gaertn.) Hyl."
+  },
+  {
+    "classIndex": 322,
+    "plantnetSpeciesId": "1385937",
+    "scientificName": "Zamioculcas zamiifolia (Lodd.) Engl."
+  },
+  {
+    "classIndex": 323,
+    "plantnetSpeciesId": "1387107",
+    "scientificName": "Kniphofia linearifolia Baker"
+  },
+  {
+    "classIndex": 324,
+    "plantnetSpeciesId": "1387284",
+    "scientificName": "Smilax anceps Willd."
+  },
+  {
+    "classIndex": 325,
+    "plantnetSpeciesId": "1387687",
+    "scientificName": "Vanilla planifolia Andrews"
+  },
+  {
+    "classIndex": 326,
+    "plantnetSpeciesId": "1387727",
+    "scientificName": "Ansellia africana Lindl."
+  },
+  {
+    "classIndex": 327,
+    "plantnetSpeciesId": "1388905",
+    "scientificName": "Hypericum balearicum L."
+  },
+  {
+    "classIndex": 328,
+    "plantnetSpeciesId": "1388911",
+    "scientificName": "Ophrys druentica P.Delforge & Viglione"
+  },
+  {
+    "classIndex": 329,
+    "plantnetSpeciesId": "1389016",
+    "scientificName": "Macrosyringion longiflorum (Vohl) Rothm."
+  },
+  {
+    "classIndex": 330,
+    "plantnetSpeciesId": "1389031",
+    "scientificName": "Pyracantha koidzumii (Hayata) Rehder"
+  },
+  {
+    "classIndex": 331,
+    "plantnetSpeciesId": "1389044",
+    "scientificName": "Lactuca plumieri (L.) Gren. & Godr."
+  },
+  {
+    "classIndex": 332,
+    "plantnetSpeciesId": "1389078",
+    "scientificName": "Aizoanthemum hispanicum (L.) H.E.K.Hartmann"
+  },
+  {
+    "classIndex": 333,
+    "plantnetSpeciesId": "1389230",
+    "scientificName": "Phedimus aizoon (L.) 't Hart"
+  },
+  {
+    "classIndex": 334,
+    "plantnetSpeciesId": "1389231",
+    "scientificName": "Phedimus spurius (M.Bieb) 't Hart"
+  },
+  {
+    "classIndex": 335,
+    "plantnetSpeciesId": "1389294",
+    "scientificName": "Nephrolepis cordifolia (L.) C.Presl"
+  },
+  {
+    "classIndex": 336,
+    "plantnetSpeciesId": "1389297",
+    "scientificName": "Cereus jamacaru DC."
+  },
+  {
+    "classIndex": 337,
+    "plantnetSpeciesId": "1389307",
+    "scientificName": "Sedum pachyphyllum Rose"
+  },
+  {
+    "classIndex": 338,
+    "plantnetSpeciesId": "1389308",
+    "scientificName": "Sedum dendroideum Moc. & Sessé ex DC."
+  },
+  {
+    "classIndex": 339,
+    "plantnetSpeciesId": "1389426",
+    "scientificName": "Liriodendron chinensis (Hemsl.) Sarg."
+  },
+  {
+    "classIndex": 340,
+    "plantnetSpeciesId": "1389442",
+    "scientificName": "Atocion rupestre (L.) B.Oxelman"
+  },
+  {
+    "classIndex": 341,
+    "plantnetSpeciesId": "1389492",
+    "scientificName": "Tagetes tenuifolia Cav."
+  },
+  {
+    "classIndex": 342,
+    "plantnetSpeciesId": "1389510",
+    "scientificName": "Aegopodium podagraria L."
+  },
+  {
+    "classIndex": 343,
+    "plantnetSpeciesId": "1389553",
+    "scientificName": "Acacia melanoxylon R.Br."
+  },
+  {
+    "classIndex": 344,
+    "plantnetSpeciesId": "1389567",
+    "scientificName": "Acacia saligna (Labill.) H.L.Wendl."
+  },
+  {
+    "classIndex": 345,
+    "plantnetSpeciesId": "1389628",
+    "scientificName": "Patzkea paniculata (L.) G.H.Loos"
+  },
+  {
+    "classIndex": 346,
+    "plantnetSpeciesId": "1389630",
+    "scientificName": "Perovskia abrotanoides Kar."
+  },
+  {
+    "classIndex": 347,
+    "plantnetSpeciesId": "1389633",
+    "scientificName": "Ophrys occidentalis (Scappaticci) Scappaticci & M.Demange"
+  },
+  {
+    "classIndex": 348,
+    "plantnetSpeciesId": "1389921",
+    "scientificName": "Erechtites hieraciifolius (L.) Raf. ex DC."
+  },
+  {
+    "classIndex": 349,
+    "plantnetSpeciesId": "1389966",
+    "scientificName": "Cenchrus longisetus M.C.Johnst."
+  },
+  {
+    "classIndex": 350,
+    "plantnetSpeciesId": "1390617",
+    "scientificName": "Nothofagus obliqua (Mirb.) Oerst."
+  },
+  {
+    "classIndex": 351,
+    "plantnetSpeciesId": "1390637",
+    "scientificName": "Calendula arvensis L."
+  },
+  {
+    "classIndex": 352,
+    "plantnetSpeciesId": "1390956",
+    "scientificName": "Carthamus carduncellus L."
+  },
+  {
+    "classIndex": 353,
+    "plantnetSpeciesId": "1390957",
+    "scientificName": "Carthamus mitissimus L."
+  },
+  {
+    "classIndex": 354,
+    "plantnetSpeciesId": "1391110",
+    "scientificName": "Chaerophyllum aureum L."
+  },
+  {
+    "classIndex": 355,
+    "plantnetSpeciesId": "1391112",
+    "scientificName": "Chaerophyllum hirsutum L."
+  },
+  {
+    "classIndex": 356,
+    "plantnetSpeciesId": "1391113",
+    "scientificName": "Chaerophyllum villarsii W.D.J.Koch"
+  },
+  {
+    "classIndex": 357,
+    "plantnetSpeciesId": "1391167",
+    "scientificName": "Cirsium alsophilum (Pollini) Greuter"
+  },
+  {
+    "classIndex": 358,
+    "plantnetSpeciesId": "1391184",
+    "scientificName": "Cirsium canum (L.) All."
+  },
+  {
+    "classIndex": 359,
+    "plantnetSpeciesId": "1391190",
+    "scientificName": "Cirsium dissectum (L.) Hill"
+  },
+  {
+    "classIndex": 360,
+    "plantnetSpeciesId": "1391192",
+    "scientificName": "Cirsium eriophorum (L.) Scop."
+  },
+  {
+    "classIndex": 361,
+    "plantnetSpeciesId": "1391193",
+    "scientificName": "Cirsium erisithales (Jacq.) Scop."
+  },
+  {
+    "classIndex": 362,
+    "plantnetSpeciesId": "1391197",
+    "scientificName": "Cirsium ferox (L.) DC."
+  },
+  {
+    "classIndex": 363,
+    "plantnetSpeciesId": "1391198",
+    "scientificName": "Cirsium filipendulum Lange"
+  },
+  {
+    "classIndex": 364,
+    "plantnetSpeciesId": "1391206",
+    "scientificName": "Cirsium glabrum DC."
+  },
+  {
+    "classIndex": 365,
+    "plantnetSpeciesId": "1391209",
+    "scientificName": "Cirsium heterophyllum (L.) Hill"
+  },
+  {
+    "classIndex": 366,
+    "plantnetSpeciesId": "1391221",
+    "scientificName": "Cirsium morisianum Rchb.f."
+  },
+  {
+    "classIndex": 367,
+    "plantnetSpeciesId": "1391226",
+    "scientificName": "Cirsium oleraceum (L.) Scop."
+  },
+  {
+    "classIndex": 368,
+    "plantnetSpeciesId": "1391235",
+    "scientificName": "Cirsium rivulare (Jacq.) All."
+  },
+  {
+    "classIndex": 369,
+    "plantnetSpeciesId": "1391250",
+    "scientificName": "Cirsium tuberosum (L.) All."
+  },
+  {
+    "classIndex": 370,
+    "plantnetSpeciesId": "1391326",
+    "scientificName": "Collomia grandiflora Douglas ex Lindl."
+  },
+  {
+    "classIndex": 371,
+    "plantnetSpeciesId": "1391483",
+    "scientificName": "Cucurbita maxima Duchesne"
+  },
+  {
+    "classIndex": 372,
+    "plantnetSpeciesId": "1391498",
+    "scientificName": "Cymbalaria aequitriloba (Viv.) A.Chev."
+  },
+  {
+    "classIndex": 373,
+    "plantnetSpeciesId": "1391499",
+    "scientificName": "Cymbalaria hepaticifolia (Poir.) Wettst."
+  },
+  {
+    "classIndex": 374,
+    "plantnetSpeciesId": "1391529",
+    "scientificName": "Cytinus hypocistis (L.) L."
+  },
+  {
+    "classIndex": 375,
+    "plantnetSpeciesId": "1391530",
+    "scientificName": "Cytinus ruber Fritsch"
+  },
+  {
+    "classIndex": 376,
+    "plantnetSpeciesId": "1391648",
+    "scientificName": "Daphne alpina L."
+  },
+  {
+    "classIndex": 377,
+    "plantnetSpeciesId": "1391649",
+    "scientificName": "Daphne cneorum L."
+  },
+  {
+    "classIndex": 378,
+    "plantnetSpeciesId": "1391652",
+    "scientificName": "Daphne mezereum L."
+  },
+  {
+    "classIndex": 379,
+    "plantnetSpeciesId": "1391654",
+    "scientificName": "Daphne striata Tratt."
+  },
+  {
+    "classIndex": 380,
+    "plantnetSpeciesId": "1391762",
+    "scientificName": "Dorotheanthus bellidiformis (Burm.f.) N.E.Br."
+  },
+  {
+    "classIndex": 381,
+    "plantnetSpeciesId": "1391797",
+    "scientificName": "Dryas octopetala L."
+  },
+  {
+    "classIndex": 382,
+    "plantnetSpeciesId": "1391805",
+    "scientificName": "Dryopteris carthusiana (Vill.) H.P.Fuchs"
+  },
+  {
+    "classIndex": 383,
+    "plantnetSpeciesId": "1391807",
+    "scientificName": "Dryopteris cristata (L.) A.Gray"
+  },
+  {
+    "classIndex": 384,
+    "plantnetSpeciesId": "1391809",
+    "scientificName": "Dryopteris dilatata (Hoffm.) A.Gray"
+  },
+  {
+    "classIndex": 385,
+    "plantnetSpeciesId": "1391810",
+    "scientificName": "Dryopteris expansa (C.Presl) Fraser-Jenk. & Jermy"
+  },
+  {
+    "classIndex": 386,
+    "plantnetSpeciesId": "1391821",
+    "scientificName": "Dryopteris villarii (Bellardi) Woyn. ex Schinz & Thell."
+  },
+  {
+    "classIndex": 387,
+    "plantnetSpeciesId": "1391868",
+    "scientificName": "Empetrum nigrum L."
+  },
+  {
+    "classIndex": 388,
+    "plantnetSpeciesId": "1391953",
+    "scientificName": "Epipactis atrorubens (Hoffm.) Besser"
+  },
+  {
+    "classIndex": 389,
+    "plantnetSpeciesId": "1391960",
+    "scientificName": "Epipactis leptochila (Godfery) Godfery"
+  },
+  {
+    "classIndex": 390,
+    "plantnetSpeciesId": "1391961",
+    "scientificName": "Epipactis microphylla (Ehrh.) Sw."
+  },
+  {
+    "classIndex": 391,
+    "plantnetSpeciesId": "1391962",
+    "scientificName": "Epipactis muelleri Godfery"
+  },
+  {
+    "classIndex": 392,
+    "plantnetSpeciesId": "1391963",
+    "scientificName": "Epipactis palustris (L.) Crantz"
+  },
+  {
+    "classIndex": 393,
+    "plantnetSpeciesId": "1391964",
+    "scientificName": "Epipactis phyllanthes G.E.Sm."
+  },
+  {
+    "classIndex": 394,
+    "plantnetSpeciesId": "1391967",
+    "scientificName": "Epipactis purpurata Sm."
+  },
+  {
+    "classIndex": 395,
+    "plantnetSpeciesId": "1392093",
+    "scientificName": "Erucastrum gallicum (Willd.) O.E.Schulz"
+  },
+  {
+    "classIndex": 396,
+    "plantnetSpeciesId": "1392094",
+    "scientificName": "Erucastrum incanum (L.) W.D.J.Koch"
+  },
+  {
+    "classIndex": 397,
+    "plantnetSpeciesId": "1392096",
+    "scientificName": "Erucastrum nasturtiifolium (Poir.) O.E.Schulz"
+  },
+  {
+    "classIndex": 398,
+    "plantnetSpeciesId": "1392254",
+    "scientificName": "Fedia graciliflora Fisch. & C.A.Mey."
+  },
+  {
+    "classIndex": 399,
+    "plantnetSpeciesId": "1392361",
+    "scientificName": "Fragaria moschata Weston"
+  },
+  {
+    "classIndex": 400,
+    "plantnetSpeciesId": "1392365",
+    "scientificName": "Freesia x hybrida L.H.Bailey"
+  },
+  {
+    "classIndex": 401,
+    "plantnetSpeciesId": "1392418",
+    "scientificName": "Galega orientalis Lam."
+  },
+  {
+    "classIndex": 402,
+    "plantnetSpeciesId": "1392475",
+    "scientificName": "Alliaria petiolata (M.Bieb.) Cavara & Grande"
+  },
+  {
+    "classIndex": 403,
+    "plantnetSpeciesId": "1392601",
+    "scientificName": "Geropogon hybridus (L.) Sch.Bip."
+  },
+  {
+    "classIndex": 404,
+    "plantnetSpeciesId": "1392653",
+    "scientificName": "Gomphocarpus fruticosus (L.) R.Br."
+  },
+  {
+    "classIndex": 405,
+    "plantnetSpeciesId": "1392654",
+    "scientificName": "Gomphocarpus physocarpus E.Mey."
+  },
+  {
+    "classIndex": 406,
+    "plantnetSpeciesId": "1392658",
+    "scientificName": "Guizotia abyssinica (L.f.) Cass."
+  },
+  {
+    "classIndex": 407,
+    "plantnetSpeciesId": "1392689",
+    "scientificName": "Hebe andersonii (Lindl. & Paxton) Cockayne"
+  },
+  {
+    "classIndex": 408,
+    "plantnetSpeciesId": "1392690",
+    "scientificName": "Hebe brachysiphon Summerh."
+  },
+  {
+    "classIndex": 409,
+    "plantnetSpeciesId": "1392691",
+    "scientificName": "Hebe ochracea Ashwin"
+  },
+  {
+    "classIndex": 410,
+    "plantnetSpeciesId": "1392695",
+    "scientificName": "Hebe salicifolia (G.Forst.) Pennell"
+  },
+  {
+    "classIndex": 411,
+    "plantnetSpeciesId": "1392730",
+    "scientificName": "Helicodiceros muscivorus (L.f.) Engl."
+  },
+  {
+    "classIndex": 412,
+    "plantnetSpeciesId": "1392777",
+    "scientificName": "Hippophae rhamnoides L."
+  },
+  {
+    "classIndex": 413,
+    "plantnetSpeciesId": "1393241",
+    "scientificName": "Hypericum calycinum L."
+  },
+  {
+    "classIndex": 414,
+    "plantnetSpeciesId": "1393242",
+    "scientificName": "Hypericum coris L."
+  },
+  {
+    "classIndex": 415,
+    "plantnetSpeciesId": "1393245",
+    "scientificName": "Hypericum elodes L."
+  },
+  {
+    "classIndex": 416,
+    "plantnetSpeciesId": "1393248",
+    "scientificName": "Hypericum x inodorum Mill."
+  },
+  {
+    "classIndex": 417,
+    "plantnetSpeciesId": "1393250",
+    "scientificName": "Hypericum maculatum Crantz"
+  },
+  {
+    "classIndex": 418,
+    "plantnetSpeciesId": "1393253",
+    "scientificName": "Hypericum nummularium L."
+  },
+  {
+    "classIndex": 419,
+    "plantnetSpeciesId": "1393254",
+    "scientificName": "Hypericum pulchrum L."
+  },
+  {
+    "classIndex": 420,
+    "plantnetSpeciesId": "1393257",
+    "scientificName": "Hypericum richeri Vill."
+  },
+  {
+    "classIndex": 421,
+    "plantnetSpeciesId": "1393294",
+    "scientificName": "Dierama pulcherrimum (Hook.f.) Baker"
+  },
+  {
+    "classIndex": 422,
+    "plantnetSpeciesId": "1393322",
+    "scientificName": "Iva xanthiifolia Nutt."
+  },
+  {
+    "classIndex": 423,
+    "plantnetSpeciesId": "1393393",
+    "scientificName": "Kniphofia uvaria (L.) Hook."
+  },
+  {
+    "classIndex": 424,
+    "plantnetSpeciesId": "1393414",
+    "scientificName": "Lactuca alpina (L.) Benth. & Hook.f."
+  },
+  {
+    "classIndex": 425,
+    "plantnetSpeciesId": "1393416",
+    "scientificName": "Lactuca macrophylla (Willd.) A.Gray"
+  },
+  {
+    "classIndex": 426,
+    "plantnetSpeciesId": "1393418",
+    "scientificName": "Lactuca viminea (L.) J.Presl & C.Presl"
+  },
+  {
+    "classIndex": 427,
+    "plantnetSpeciesId": "1393423",
+    "scientificName": "Lamium album L."
+  },
+  {
+    "classIndex": 428,
+    "plantnetSpeciesId": "1393425",
+    "scientificName": "Lamium maculatum (L.) L."
+  },
+  {
+    "classIndex": 429,
+    "plantnetSpeciesId": "1393449",
+    "scientificName": "Lathraea clandestina L."
+  },
+  {
+    "classIndex": 430,
+    "plantnetSpeciesId": "1393450",
+    "scientificName": "Lathraea squamaria L."
+  },
+  {
+    "classIndex": 431,
+    "plantnetSpeciesId": "1393465",
+    "scientificName": "Lavandula x intermedia Emeric ex Loisel."
+  },
+  {
+    "classIndex": 432,
+    "plantnetSpeciesId": "1393466",
+    "scientificName": "Lavandula latifolia Medik."
+  },
+  {
+    "classIndex": 433,
+    "plantnetSpeciesId": "1393537",
+    "scientificName": "Limnanthes douglasii R.Br."
+  },
+  {
+    "classIndex": 434,
+    "plantnetSpeciesId": "1393614",
+    "scientificName": "Liriodendron tulipifera L."
+  },
+  {
+    "classIndex": 435,
+    "plantnetSpeciesId": "1393654",
+    "scientificName": "Lupinus arboreus Sims"
+  },
+  {
+    "classIndex": 436,
+    "plantnetSpeciesId": "1393656",
+    "scientificName": "Lupinus x regalis Bergmans"
+  },
+  {
+    "classIndex": 437,
+    "plantnetSpeciesId": "1393725",
+    "scientificName": "Maianthemum bifolium (L.) F.W.Schmidt"
+  },
+  {
+    "classIndex": 438,
+    "plantnetSpeciesId": "1393789",
+    "scientificName": "Melilotus altissimus Thuill."
+  },
+  {
+    "classIndex": 439,
+    "plantnetSpeciesId": "1393792",
+    "scientificName": "Melilotus officinalis (L.) Lam."
+  },
+  {
+    "classIndex": 440,
+    "plantnetSpeciesId": "1393796",
+    "scientificName": "Melilotus spicatus (Sm.) Breistr."
+  },
+  {
+    "classIndex": 441,
+    "plantnetSpeciesId": "1393818",
+    "scientificName": "Mercurialis ambigua L.f."
+  },
+  {
+    "classIndex": 442,
+    "plantnetSpeciesId": "1393823",
+    "scientificName": "Mercurialis tomentosa L."
+  },
+  {
+    "classIndex": 443,
+    "plantnetSpeciesId": "1393846",
+    "scientificName": "Moehringia ciliata (Scop.) Dalla Torre"
+  },
+  {
+    "classIndex": 444,
+    "plantnetSpeciesId": "1393850",
+    "scientificName": "Moehringia muscosa L."
+  },
+  {
+    "classIndex": 445,
+    "plantnetSpeciesId": "1393851",
+    "scientificName": "Moehringia pentandra J.Gay"
+  },
+  {
+    "classIndex": 446,
+    "plantnetSpeciesId": "1393933",
+    "scientificName": "Narthecium ossifragum (L.) Huds."
+  },
+  {
+    "classIndex": 447,
+    "plantnetSpeciesId": "1393945",
+    "scientificName": "Neotinea lactea (Poir.) R.M.Bateman, Pridgeon & M.W.Chase"
+  },
+  {
+    "classIndex": 448,
+    "plantnetSpeciesId": "1393946",
+    "scientificName": "Neotinea ustulata (L.) R.M.Bateman, Pridgeon & M.W.Chase"
+  },
+  {
+    "classIndex": 449,
+    "plantnetSpeciesId": "1393965",
+    "scientificName": "Noccaea caerulescens (J.Presl & C.Presl) F.K.Mey."
+  },
+  {
+    "classIndex": 450,
+    "plantnetSpeciesId": "1393967",
+    "scientificName": "Noccaea montana (L.) F.K.Mey."
+  },
+  {
+    "classIndex": 451,
+    "plantnetSpeciesId": "1393968",
+    "scientificName": "Noccaea rotundifolia (L.) Moench"
+  },
+  {
+    "classIndex": 452,
+    "plantnetSpeciesId": "1393980",
+    "scientificName": "Nymphaea candida C.Presl"
+  },
+  {
+    "classIndex": 453,
+    "plantnetSpeciesId": "1393981",
+    "scientificName": "Nymphoides peltata (S.G.Gmel.) Kuntze"
+  },
+  {
+    "classIndex": 454,
+    "plantnetSpeciesId": "1394072",
+    "scientificName": "Ophrys arachnitiformis Gren. & M.Philippe"
+  },
+  {
+    "classIndex": 455,
+    "plantnetSpeciesId": "1394073",
+    "scientificName": "Ophrys aranifera Huds."
+  },
+  {
+    "classIndex": 456,
+    "plantnetSpeciesId": "1394077",
+    "scientificName": "Ophrys aveyronensis (J.J.Wood) P.Delforge"
+  },
+  {
+    "classIndex": 457,
+    "plantnetSpeciesId": "1394078",
+    "scientificName": "Ophrys aymoninii (Breistr.) Buttler"
+  },
+  {
+    "classIndex": 458,
+    "plantnetSpeciesId": "1394082",
+    "scientificName": "Ophrys bertolonii Moretti"
+  },
+  {
+    "classIndex": 459,
+    "plantnetSpeciesId": "1394088",
+    "scientificName": "Ophrys catalaunica O.Danesch & E.Danesch"
+  },
+  {
+    "classIndex": 460,
+    "plantnetSpeciesId": "1394114",
+    "scientificName": "Ophrys exaltata Ten."
+  },
+  {
+    "classIndex": 461,
+    "plantnetSpeciesId": "1394120",
+    "scientificName": "Ophrys fuciflora (F.W.Schmidt) Moench"
+  },
+  {
+    "classIndex": 462,
+    "plantnetSpeciesId": "1394128",
+    "scientificName": "Ophrys incubacea Bianca"
+  },
+  {
+    "classIndex": 463,
+    "plantnetSpeciesId": "1394143",
+    "scientificName": "Ophrys lupercalis Devillers & Devillers-Tersch."
+  },
+  {
+    "classIndex": 464,
+    "plantnetSpeciesId": "1394153",
+    "scientificName": "Ophrys morisii (Martelli) Soó"
+  },
+  {
+    "classIndex": 465,
+    "plantnetSpeciesId": "1394164",
+    "scientificName": "Ophrys passionis Sennen"
+  },
+  {
+    "classIndex": 466,
+    "plantnetSpeciesId": "1394169",
+    "scientificName": "Ophrys provincialis (Baumann & Künkele) Paulus"
+  },
+  {
+    "classIndex": 467,
+    "plantnetSpeciesId": "1394183",
+    "scientificName": "Ophrys saratoi E.G.Camus"
+  },
+  {
+    "classIndex": 468,
+    "plantnetSpeciesId": "1394189",
+    "scientificName": "Ophrys sulcata Devillers & Devillers-Tersch."
+  },
+  {
+    "classIndex": 469,
+    "plantnetSpeciesId": "1394313",
+    "scientificName": "Oreopteris limbosperma (Bellardi ex All.) Holub"
+  },
+  {
+    "classIndex": 470,
+    "plantnetSpeciesId": "1394378",
+    "scientificName": "Anemone x hybrida Paxton"
+  },
+  {
+    "classIndex": 471,
+    "plantnetSpeciesId": "1394382",
+    "scientificName": "Anemone alpina L."
+  },
+  {
+    "classIndex": 472,
+    "plantnetSpeciesId": "1394383",
+    "scientificName": "Pancratium illyricum L."
+  },
+  {
+    "classIndex": 473,
+    "plantnetSpeciesId": "1394394",
+    "scientificName": "Anemone apennina L."
+  },
+  {
+    "classIndex": 474,
+    "plantnetSpeciesId": "1394396",
+    "scientificName": "Anemone baldensis L."
+  },
+  {
+    "classIndex": 475,
+    "plantnetSpeciesId": "1394399",
+    "scientificName": "Papaver alpinum L."
+  },
+  {
+    "classIndex": 476,
+    "plantnetSpeciesId": "1394401",
+    "scientificName": "Papaver croceum Ledeb."
+  },
+  {
+    "classIndex": 477,
+    "plantnetSpeciesId": "1394404",
+    "scientificName": "Papaver orientale L."
+  },
+  {
+    "classIndex": 478,
+    "plantnetSpeciesId": "1394405",
+    "scientificName": "Papaver pseudoorientale (Fedde) Medw."
+  },
+  {
+    "classIndex": 479,
+    "plantnetSpeciesId": "1394406",
+    "scientificName": "Papaver rhaeticum Leresche"
+  },
+  {
+    "classIndex": 480,
+    "plantnetSpeciesId": "1394418",
+    "scientificName": "Anemone halleri All."
+  },
+  {
+    "classIndex": 481,
+    "plantnetSpeciesId": "1394420",
+    "scientificName": "Anemone hepatica L."
+  },
+  {
+    "classIndex": 482,
+    "plantnetSpeciesId": "1394453",
+    "scientificName": "Pelargonium x hybridum (L.) Aiton"
+  },
+  {
+    "classIndex": 483,
+    "plantnetSpeciesId": "1394454",
+    "scientificName": "Pelargonium inquinans (L.) Aiton"
+  },
+  {
+    "classIndex": 484,
+    "plantnetSpeciesId": "1394455",
+    "scientificName": "Pelargonium peltatum (L.) Aiton"
+  },
+  {
+    "classIndex": 485,
+    "plantnetSpeciesId": "1394457",
+    "scientificName": "Anemone montana Hoppe"
+  },
+  {
+    "classIndex": 486,
+    "plantnetSpeciesId": "1394460",
+    "scientificName": "Anemone nemorosa L."
+  },
+  {
+    "classIndex": 487,
+    "plantnetSpeciesId": "1394489",
+    "scientificName": "Anemone pulsatilla L."
+  },
+  {
+    "classIndex": 488,
+    "plantnetSpeciesId": "1394498",
+    "scientificName": "Anemone rubra Lam."
+  },
+  {
+    "classIndex": 489,
+    "plantnetSpeciesId": "1394502",
+    "scientificName": "Phedimus stellatus (L.) Raf."
+  },
+  {
+    "classIndex": 490,
+    "plantnetSpeciesId": "1394504",
+    "scientificName": "Anemone sylvestris L."
+  },
+  {
+    "classIndex": 491,
+    "plantnetSpeciesId": "1394508",
+    "scientificName": "Anemone trifolia L."
+  },
+  {
+    "classIndex": 492,
+    "plantnetSpeciesId": "1394513",
+    "scientificName": "Anemone vernalis L."
+  },
+  {
+    "classIndex": 493,
+    "plantnetSpeciesId": "1394549",
+    "scientificName": "Angelica heterocarpa J.Lloyd"
+  },
+  {
+    "classIndex": 494,
+    "plantnetSpeciesId": "1394580",
+    "scientificName": "Angelica razulii Gouan"
+  },
+  {
+    "classIndex": 495,
+    "plantnetSpeciesId": "1394591",
+    "scientificName": "Angelica sylvestris L."
+  },
+  {
+    "classIndex": 496,
+    "plantnetSpeciesId": "1394648",
+    "scientificName": "Pleurospermum austriacum (L.) Hoffm."
+  },
+  {
+    "classIndex": 497,
+    "plantnetSpeciesId": "1394714",
+    "scientificName": "Sasa palmata (Burb.) Camus"
+  },
+  {
+    "classIndex": 498,
+    "plantnetSpeciesId": "1394759",
+    "scientificName": "Anthericum ramosum L."
+  },
+  {
+    "classIndex": 499,
+    "plantnetSpeciesId": "1394994",
+    "scientificName": "Pyracantha coccinea M.Roem."
+  },
+  {
+    "classIndex": 500,
+    "plantnetSpeciesId": "1394995",
+    "scientificName": "Pyracantha rogersiana (A.B.Jacks.) Coltm.-Rog."
+  },
+  {
+    "classIndex": 501,
+    "plantnetSpeciesId": "1395391",
+    "scientificName": "Holodiscus discolor (Pursh) Maxim."
+  },
+  {
+    "classIndex": 502,
+    "plantnetSpeciesId": "1395720",
+    "scientificName": "Sagittaria graminea Michx."
+  },
+  {
+    "classIndex": 503,
+    "plantnetSpeciesId": "1395721",
+    "scientificName": "Sagittaria latifolia Willd."
+  },
+  {
+    "classIndex": 504,
+    "plantnetSpeciesId": "1395722",
+    "scientificName": "Sagittaria sagittifolia L."
+  },
+  {
+    "classIndex": 505,
+    "plantnetSpeciesId": "1396133",
+    "scientificName": "Diascia rigescens E.Mey. ex Benth."
+  },
+  {
+    "classIndex": 506,
+    "plantnetSpeciesId": "1396134",
+    "scientificName": "Diascia vigilis Hilliard & Burtt"
+  },
+  {
+    "classIndex": 507,
+    "plantnetSpeciesId": "1396143",
+    "scientificName": "Sedum sarmentosum Bunge"
+  },
+  {
+    "classIndex": 508,
+    "plantnetSpeciesId": "1396144",
+    "scientificName": "Sedum alpestre Vill."
+  },
+  {
+    "classIndex": 509,
+    "plantnetSpeciesId": "1396145",
+    "scientificName": "Sedum annuum L."
+  },
+  {
+    "classIndex": 510,
+    "plantnetSpeciesId": "1396156",
+    "scientificName": "Sedum kamtschaticum Fisch. & C.A.Mey."
+  },
+  {
+    "classIndex": 511,
+    "plantnetSpeciesId": "1396159",
+    "scientificName": "Sedum mexicanum Britton"
+  },
+  {
+    "classIndex": 512,
+    "plantnetSpeciesId": "1396161",
+    "scientificName": "Sedum ochroleucum Chaix"
+  },
+  {
+    "classIndex": 513,
+    "plantnetSpeciesId": "1396165",
+    "scientificName": "Sedum sexangulare L."
+  },
+  {
+    "classIndex": 514,
+    "plantnetSpeciesId": "1396708",
+    "scientificName": "Metasequoia glyptostroboides Hu & W.C.Cheng"
+  },
+  {
+    "classIndex": 515,
+    "plantnetSpeciesId": "1396713",
+    "scientificName": "Telekia speciosa (Schreb.) Baumg."
+  },
+  {
+    "classIndex": 516,
+    "plantnetSpeciesId": "1396754",
+    "scientificName": "Thesium alpinum L."
+  },
+  {
+    "classIndex": 517,
+    "plantnetSpeciesId": "1396758",
+    "scientificName": "Thesium linophyllon L."
+  },
+  {
+    "classIndex": 518,
+    "plantnetSpeciesId": "1396823",
+    "scientificName": "Tradescantia x andersoniana F.Ludw. & Rohweder"
+  },
+  {
+    "classIndex": 519,
+    "plantnetSpeciesId": "1396824",
+    "scientificName": "Tradescantia virginiana L."
+  },
+  {
+    "classIndex": 520,
+    "plantnetSpeciesId": "1396842",
+    "scientificName": "Trifolium alpestre L."
+  },
+  {
+    "classIndex": 521,
+    "plantnetSpeciesId": "1396843",
+    "scientificName": "Trifolium alpinum L."
+  },
+  {
+    "classIndex": 522,
+    "plantnetSpeciesId": "1396858",
+    "scientificName": "Trifolium pallescens Schreb."
+  },
+  {
+    "classIndex": 523,
+    "plantnetSpeciesId": "1396867",
+    "scientificName": "Trifolium spadiceum L."
+  },
+  {
+    "classIndex": 524,
+    "plantnetSpeciesId": "1396869",
+    "scientificName": "Trifolium thalii Vill."
+  },
+  {
+    "classIndex": 525,
+    "plantnetSpeciesId": "1397208",
+    "scientificName": "Viscaria alpina (L.) G.Don"
+  },
+  {
+    "classIndex": 526,
+    "plantnetSpeciesId": "1397209",
+    "scientificName": "Viscaria vulgaris Bernh."
+  },
+  {
+    "classIndex": 527,
+    "plantnetSpeciesId": "1397268",
+    "scientificName": "Anemone hupehensis (Lemoine) Lemoine"
+  },
+  {
+    "classIndex": 528,
+    "plantnetSpeciesId": "1397269",
+    "scientificName": "Anemone vitifolia Buch.-Ham. ex DC."
+  },
+  {
+    "classIndex": 529,
+    "plantnetSpeciesId": "1397303",
+    "scientificName": "Adenostyles alpina (L.) Bluff & Fingerh."
+  },
+  {
+    "classIndex": 530,
+    "plantnetSpeciesId": "1397305",
+    "scientificName": "Alcea biennis Winterl"
+  },
+  {
+    "classIndex": 531,
+    "plantnetSpeciesId": "1397311",
+    "scientificName": "Anemone narcissiflora L."
+  },
+  {
+    "classIndex": 532,
+    "plantnetSpeciesId": "1397312",
+    "scientificName": "Anemone ranunculoides L."
+  },
+  {
+    "classIndex": 533,
+    "plantnetSpeciesId": "1397313",
+    "scientificName": "Angelica archangelica L."
+  },
+  {
+    "classIndex": 534,
+    "plantnetSpeciesId": "1397349",
+    "scientificName": "Chaerophyllum bulbosum L."
+  },
+  {
+    "classIndex": 535,
+    "plantnetSpeciesId": "1397351",
+    "scientificName": "Cirsium acaulon (L.) Scop."
+  },
+  {
+    "classIndex": 536,
+    "plantnetSpeciesId": "1397352",
+    "scientificName": "Cirsium spinosissimum (L.) Scop."
+  },
+  {
+    "classIndex": 537,
+    "plantnetSpeciesId": "1397364",
+    "scientificName": "Cymbalaria muralis P.Gaertn., B.Mey. & Scherb."
+  },
+  {
+    "classIndex": 538,
+    "plantnetSpeciesId": "1397379",
+    "scientificName": "Eritrichium nanum (L.) Schrad. ex Gaudin"
+  },
+  {
+    "classIndex": 539,
+    "plantnetSpeciesId": "1397387",
+    "scientificName": "Fragaria viridis Weston"
+  },
+  {
+    "classIndex": 540,
+    "plantnetSpeciesId": "1397403",
+    "scientificName": "Honckenya peploides (L.) Ehrh."
+  },
+  {
+    "classIndex": 541,
+    "plantnetSpeciesId": "1397407",
+    "scientificName": "Hypericum hyssopifolium Chaix"
+  },
+  {
+    "classIndex": 542,
+    "plantnetSpeciesId": "1397408",
+    "scientificName": "Hypericum mutilum L."
+  },
+  {
+    "classIndex": 543,
+    "plantnetSpeciesId": "1397420",
+    "scientificName": "Lactuca perennis L."
+  },
+  {
+    "classIndex": 544,
+    "plantnetSpeciesId": "1397491",
+    "scientificName": "Sedum atratum L."
+  },
+  {
+    "classIndex": 545,
+    "plantnetSpeciesId": "1397510",
+    "scientificName": "Thesium pyrenaicum Pourr."
+  },
+  {
+    "classIndex": 546,
+    "plantnetSpeciesId": "1397514",
+    "scientificName": "Trifolium medium L."
+  },
+  {
+    "classIndex": 547,
+    "plantnetSpeciesId": "1397515",
+    "scientificName": "Trinia glauca (L.) Dumort."
+  },
+  {
+    "classIndex": 548,
+    "plantnetSpeciesId": "1397550",
+    "scientificName": "Sedum montanum Perrier & Songeon"
+  },
+  {
+    "classIndex": 549,
+    "plantnetSpeciesId": "1397551",
+    "scientificName": "Trifolium badium Schreb."
+  },
+  {
+    "classIndex": 550,
+    "plantnetSpeciesId": "1397556",
+    "scientificName": "Freesia refracta (Jacq.) Eckl. ex Klatt"
+  },
+  {
+    "classIndex": 551,
+    "plantnetSpeciesId": "1397585",
+    "scientificName": "Freesia alba (G.L.Mey.) Grumbleton"
+  },
+  {
+    "classIndex": 552,
+    "plantnetSpeciesId": "1397598",
+    "scientificName": "Cobaea scandens Cav."
+  },
+  {
+    "classIndex": 553,
+    "plantnetSpeciesId": "1397613",
+    "scientificName": "Fragaria virginiana Duchesne"
+  },
+  {
+    "classIndex": 554,
+    "plantnetSpeciesId": "1397841",
+    "scientificName": "Anemone pratensis L."
+  },
+  {
+    "classIndex": 555,
+    "plantnetSpeciesId": "1397959",
+    "scientificName": "Sagittaria lancifolia L."
+  },
+  {
+    "classIndex": 556,
+    "plantnetSpeciesId": "1398041",
+    "scientificName": "Neotinea tridentata (Scop.) R.M.Bateman, Pridgeon & M.W.Chase"
+  },
+  {
+    "classIndex": 557,
+    "plantnetSpeciesId": "1398111",
+    "scientificName": "Adenostyles alliariae (Gouan) A.Kern."
+  },
+  {
+    "classIndex": 558,
+    "plantnetSpeciesId": "1398125",
+    "scientificName": "Ophrys pseudoscolopax (Moggr.) Paulus & Gack"
+  },
+  {
+    "classIndex": 559,
+    "plantnetSpeciesId": "1398128",
+    "scientificName": "Sedum palmeri S.Watson"
+  },
+  {
+    "classIndex": 560,
+    "plantnetSpeciesId": "1398130",
+    "scientificName": "Hypericum olympicum L."
+  },
+  {
+    "classIndex": 561,
+    "plantnetSpeciesId": "1398178",
+    "scientificName": "Tradescantia zebrina Bosse"
+  },
+  {
+    "classIndex": 562,
+    "plantnetSpeciesId": "1398196",
+    "scientificName": "Dryopteris erythrosora (Eaton) Kuntze"
+  },
+  {
+    "classIndex": 563,
+    "plantnetSpeciesId": "1398274",
+    "scientificName": "Adenostyles leucophylla (Willd.) Rchb."
+  },
+  {
+    "classIndex": 564,
+    "plantnetSpeciesId": "1398326",
+    "scientificName": "Calycanthus floridus L."
+  },
+  {
+    "classIndex": 565,
+    "plantnetSpeciesId": "1398333",
+    "scientificName": "Phyllanthus niruri L."
+  },
+  {
+    "classIndex": 566,
+    "plantnetSpeciesId": "1398355",
+    "scientificName": "Ophrys araneola sensu auct.plur."
+  },
+  {
+    "classIndex": 567,
+    "plantnetSpeciesId": "1398444",
+    "scientificName": "Anemone blanda Schott & Kotschy"
+  },
+  {
+    "classIndex": 568,
+    "plantnetSpeciesId": "1398447",
+    "scientificName": "Aralia elata (Miq.) Seem."
+  },
+  {
+    "classIndex": 569,
+    "plantnetSpeciesId": "1398469",
+    "scientificName": "Ophrys virescens Philippe"
+  },
+  {
+    "classIndex": 570,
+    "plantnetSpeciesId": "1398480",
+    "scientificName": "Clethra alnifolia L."
+  },
+  {
+    "classIndex": 571,
+    "plantnetSpeciesId": "1398494",
+    "scientificName": "Corispermum pallasii Steven"
+  },
+  {
+    "classIndex": 572,
+    "plantnetSpeciesId": "1398513",
+    "scientificName": "Hypericum patulum Thunb."
+  },
+  {
+    "classIndex": 573,
+    "plantnetSpeciesId": "1398515",
+    "scientificName": "Hypericum x hidcoteense Hilling ex Geerinck"
+  },
+  {
+    "classIndex": 574,
+    "plantnetSpeciesId": "1398526",
+    "scientificName": "Lupinus nootkatensis Donn ex Sims"
+  },
+  {
+    "classIndex": 575,
+    "plantnetSpeciesId": "1398567",
+    "scientificName": "Smilax rotundifolia L."
+  },
+  {
+    "classIndex": 576,
+    "plantnetSpeciesId": "1398592",
+    "scientificName": "Perovskia atriplicifolia Benth."
+  },
+  {
+    "classIndex": 577,
+    "plantnetSpeciesId": "1398608",
+    "scientificName": "Nothofagus antarctica (G.Forst.) Oerst."
+  },
+  {
+    "classIndex": 578,
+    "plantnetSpeciesId": "1398615",
+    "scientificName": "Iva annua L."
+  },
+  {
+    "classIndex": 579,
+    "plantnetSpeciesId": "1398700",
+    "scientificName": "Dryopteris fragrans (L.) Schott"
+  },
+  {
+    "classIndex": 580,
+    "plantnetSpeciesId": "1398805",
+    "scientificName": "Neotinea conica (Willd.) R.M.Bateman"
+  },
+  {
+    "classIndex": 581,
+    "plantnetSpeciesId": "1398830",
+    "scientificName": "Tetraclinis articulata (Vahl) Mast."
+  },
+  {
+    "classIndex": 582,
+    "plantnetSpeciesId": "1399063",
+    "scientificName": "Alcea setosa (Boiss.) Alef."
+  },
+  {
+    "classIndex": 583,
+    "plantnetSpeciesId": "1399141",
+    "scientificName": "Chaerophyllum aromaticum L."
+  },
+  {
+    "classIndex": 584,
+    "plantnetSpeciesId": "1399145",
+    "scientificName": "Cucurbita moschata Duchesne"
+  },
+  {
+    "classIndex": 585,
+    "plantnetSpeciesId": "1399157",
+    "scientificName": "Daphne sericea Vahl"
+  },
+  {
+    "classIndex": 586,
+    "plantnetSpeciesId": "1399231",
+    "scientificName": "Lamium orvala L."
+  },
+  {
+    "classIndex": 587,
+    "plantnetSpeciesId": "1399338",
+    "scientificName": "Paederota bonarota (L.) L."
+  },
+  {
+    "classIndex": 588,
+    "plantnetSpeciesId": "1399384",
+    "scientificName": "Rhodothamnus chamaecistus (L.) Rchb."
+  },
+  {
+    "classIndex": 589,
+    "plantnetSpeciesId": "1399667",
+    "scientificName": "Ophrys lunulata Parl."
+  },
+  {
+    "classIndex": 590,
+    "plantnetSpeciesId": "1399783",
+    "scientificName": "Schefflera actinophylla Harms"
+  },
+  {
+    "classIndex": 591,
+    "plantnetSpeciesId": "1399803",
+    "scientificName": "Astydamia latifolia Baill."
+  },
+  {
+    "classIndex": 592,
+    "plantnetSpeciesId": "1399804",
+    "scientificName": "Lavandula pinnata Moench"
+  },
+  {
+    "classIndex": 593,
+    "plantnetSpeciesId": "1399920",
+    "scientificName": "Angelica atropurpurea L."
+  },
+  {
+    "classIndex": 594,
+    "plantnetSpeciesId": "1400060",
+    "scientificName": "Acacia pravissima F.Muell."
+  },
+  {
+    "classIndex": 595,
+    "plantnetSpeciesId": "1400080",
+    "scientificName": "Adonis pyrenaica DC."
+  },
+  {
+    "classIndex": 596,
+    "plantnetSpeciesId": "1400081",
+    "scientificName": "Adonis vernalis L."
+  },
+  {
+    "classIndex": 597,
+    "plantnetSpeciesId": "1400096",
+    "scientificName": "Barbarea rupicola Moris"
+  },
+  {
+    "classIndex": 598,
+    "plantnetSpeciesId": "1400100",
+    "scientificName": "Barbarea vulgaris R.Br."
+  },
+  {
+    "classIndex": 599,
+    "plantnetSpeciesId": "1400104",
+    "scientificName": "Acacia baileyana F.Muell."
+  },
+  {
+    "classIndex": 600,
+    "plantnetSpeciesId": "1400110",
+    "scientificName": "Bellium bellidioides L."
+  },
+  {
+    "classIndex": 601,
+    "plantnetSpeciesId": "1400471",
+    "scientificName": "Bocoa prouacensis Aubl."
+  },
+  {
+    "classIndex": 602,
+    "plantnetSpeciesId": "1400478",
+    "scientificName": "Nephrolepis biserrata (Sw.) Schott"
+  },
+  {
+    "classIndex": 603,
+    "plantnetSpeciesId": "1400798",
+    "scientificName": "Vanilla pompona Schiede"
+  },
+  {
+    "classIndex": 604,
+    "plantnetSpeciesId": "1400844",
+    "scientificName": "Guatteria anteridifera Scharf & Maas"
+  },
+  {
+    "classIndex": 605,
+    "plantnetSpeciesId": "1401141",
+    "scientificName": "Caraipa densifolia Mart."
+  },
+  {
+    "classIndex": 606,
+    "plantnetSpeciesId": "1401148",
+    "scientificName": "Caraipa punctulata Ducke"
+  },
+  {
+    "classIndex": 607,
+    "plantnetSpeciesId": "1401211",
+    "scientificName": "Vismia cayennensis (Jacq.) Pers."
+  },
+  {
+    "classIndex": 608,
+    "plantnetSpeciesId": "1401216",
+    "scientificName": "Vismia macrophylla Kunth"
+  },
+  {
+    "classIndex": 609,
+    "plantnetSpeciesId": "1401222",
+    "scientificName": "Vismia sessilifolia (Aubl.) Choisy"
+  },
+  {
+    "classIndex": 610,
+    "plantnetSpeciesId": "1401242",
+    "scientificName": "Dryopteris wallichiana (Spreng.) Hyl."
+  },
+  {
+    "classIndex": 611,
+    "plantnetSpeciesId": "1401701",
+    "scientificName": "Xylopia frutescens Aubl."
+  },
+  {
+    "classIndex": 612,
+    "plantnetSpeciesId": "1401711",
+    "scientificName": "Xylopia nitida Dunal"
+  },
+  {
+    "classIndex": 613,
+    "plantnetSpeciesId": "1401718",
+    "scientificName": "Xylopia sericea A.St.-Hil."
+  },
+  {
+    "classIndex": 614,
+    "plantnetSpeciesId": "1401735",
+    "scientificName": "Phyllanthus urinaria L."
+  },
+  {
+    "classIndex": 615,
+    "plantnetSpeciesId": "1401736",
+    "scientificName": "Pogonophora schomburgkiana Miers ex Benth."
+  },
+  {
+    "classIndex": 616,
+    "plantnetSpeciesId": "1401737",
+    "scientificName": "Sagotia racemosa Baill."
+  },
+  {
+    "classIndex": 617,
+    "plantnetSpeciesId": "1401883",
+    "scientificName": "Bonafousia undulata (Vahl) A.DC."
+  },
+  {
+    "classIndex": 618,
+    "plantnetSpeciesId": "1402303",
+    "scientificName": "Guarea gomma Pulle"
+  },
+  {
+    "classIndex": 619,
+    "plantnetSpeciesId": "1402356",
+    "scientificName": "Nymphoides indica (L.) Kuntze"
+  },
+  {
+    "classIndex": 620,
+    "plantnetSpeciesId": "1402423",
+    "scientificName": "Anthurium hookeri Kunth"
+  },
+  {
+    "classIndex": 621,
+    "plantnetSpeciesId": "1402433",
+    "scientificName": "Anthurium jenmanii Engl."
+  },
+  {
+    "classIndex": 622,
+    "plantnetSpeciesId": "1402464",
+    "scientificName": "Anthurium scandens (Aubl.) Engl."
+  },
+  {
+    "classIndex": 623,
+    "plantnetSpeciesId": "1402576",
+    "scientificName": "Dracontium polyphyllum L."
+  },
+  {
+    "classIndex": 624,
+    "plantnetSpeciesId": "1402811",
+    "scientificName": "Crotalaria retusa L."
+  },
+  {
+    "classIndex": 625,
+    "plantnetSpeciesId": "1402920",
+    "scientificName": "Peperomia magnoliifolia (Jacq.) A.Dietr."
+  },
+  {
+    "classIndex": 626,
+    "plantnetSpeciesId": "1402921",
+    "scientificName": "Peperomia obtusifolia (L.) A.Dietr."
+  },
+  {
+    "classIndex": 627,
+    "plantnetSpeciesId": "1402924",
+    "scientificName": "Peperomia quadrangularis (J.V.Thomps.) A.Dietr."
+  },
+  {
+    "classIndex": 628,
+    "plantnetSpeciesId": "1402925",
+    "scientificName": "Peperomia rotundifolia (L.) Kunth"
+  },
+  {
+    "classIndex": 629,
+    "plantnetSpeciesId": "1402926",
+    "scientificName": "Peperomia serpens (Sw.) Loudon"
+  },
+  {
+    "classIndex": 630,
+    "plantnetSpeciesId": "1403272",
+    "scientificName": "Declieuxia fruticosa (Willd. ex Roem. & Schult.) Kuntze"
+  },
+  {
+    "classIndex": 631,
+    "plantnetSpeciesId": "1403479",
+    "scientificName": "Mauritia flexuosa L.f."
+  },
+  {
+    "classIndex": 632,
+    "plantnetSpeciesId": "1403654",
+    "scientificName": "Urera baccifera (L.) Gaudich. ex Wedd."
+  },
+  {
+    "classIndex": 633,
+    "plantnetSpeciesId": "1403826",
+    "scientificName": "Pereskia bleo (Kunth) DC."
+  },
+  {
+    "classIndex": 634,
+    "plantnetSpeciesId": "1403967",
+    "scientificName": "Cereus hexagonus (L.) Mill."
+  },
+  {
+    "classIndex": 635,
+    "plantnetSpeciesId": "1404002",
+    "scientificName": "Xylopia crinita R.E.Fr."
+  },
+  {
+    "classIndex": 636,
+    "plantnetSpeciesId": "1404481",
+    "scientificName": "Vanilla planifolia Jacks."
+  },
+  {
+    "classIndex": 637,
+    "plantnetSpeciesId": "1404745",
+    "scientificName": "Aciotis rubricaulis (Mart. ex DC.) Triana"
+  },
+  {
+    "classIndex": 638,
+    "plantnetSpeciesId": "1404776",
+    "scientificName": "Guatteria amplifolia Triana & Planch."
+  },
+  {
+    "classIndex": 639,
+    "plantnetSpeciesId": "1404804",
+    "scientificName": "Luffa cylindrica (L.) M.Roem."
+  },
+  {
+    "classIndex": 640,
+    "plantnetSpeciesId": "1405061",
+    "scientificName": "Cryptostegia madagascariensis Bojer ex Decne."
+  },
+  {
+    "classIndex": 641,
+    "plantnetSpeciesId": "1405088",
+    "scientificName": "Schefflera decaphylla (Seem.) Harms"
+  },
+  {
+    "classIndex": 642,
+    "plantnetSpeciesId": "1405252",
+    "scientificName": "Aphelandra scabra (Vahl) Sm."
+  },
+  {
+    "classIndex": 643,
+    "plantnetSpeciesId": "1405641",
+    "scientificName": "Asystasia gangetica (L.) T.Anderson"
+  },
+  {
+    "classIndex": 644,
+    "plantnetSpeciesId": "1405653",
+    "scientificName": "Piriqueta cistoides (L.) Griseb."
+  },
+  {
+    "classIndex": 645,
+    "plantnetSpeciesId": "1405685",
+    "scientificName": "Acalypha wilkesiana Müll.Arg."
+  },
+  {
+    "classIndex": 646,
+    "plantnetSpeciesId": "1405686",
+    "scientificName": "Breynia disticha J.R.Forst. & G.Forst."
+  },
+  {
+    "classIndex": 647,
+    "plantnetSpeciesId": "1405703",
+    "scientificName": "Crotalaria incana L."
+  },
+  {
+    "classIndex": 648,
+    "plantnetSpeciesId": "1406426",
+    "scientificName": "Crotalaria pallida Aiton"
+  },
+  {
+    "classIndex": 649,
+    "plantnetSpeciesId": "1406486",
+    "scientificName": "Kigelia africana (Lam.) Benth."
+  },
+  {
+    "classIndex": 650,
+    "plantnetSpeciesId": "1406756",
+    "scientificName": "Guatteria citriodora Ducke"
+  },
+  {
+    "classIndex": 651,
+    "plantnetSpeciesId": "1406863",
+    "scientificName": "Acalypha indica L."
+  },
+  {
+    "classIndex": 652,
+    "plantnetSpeciesId": "1407077",
+    "scientificName": "Guatteria punctata (Aubl.) R.A.Howard"
+  },
+  {
+    "classIndex": 653,
+    "plantnetSpeciesId": "1407379",
+    "scientificName": "Anthurium crystallinum Linden & André"
+  },
+  {
+    "classIndex": 654,
+    "plantnetSpeciesId": "1407873",
+    "scientificName": "Cryptopus elatus (Thouars) Lindl."
+  },
+  {
+    "classIndex": 655,
+    "plantnetSpeciesId": "1407874",
+    "scientificName": "Cryptostegia grandiflora R.Br."
+  },
+  {
+    "classIndex": 656,
+    "plantnetSpeciesId": "1408034",
+    "scientificName": "Eranthemum pulchellum Andrews"
+  },
+  {
+    "classIndex": 657,
+    "plantnetSpeciesId": "1408037",
+    "scientificName": "Alocasia cucullata (Lour.) G.Don"
+  },
+  {
+    "classIndex": 658,
+    "plantnetSpeciesId": "1408041",
+    "scientificName": "Alocasia longiloba Miq."
+  },
+  {
+    "classIndex": 659,
+    "plantnetSpeciesId": "1408045",
+    "scientificName": "Alocasia macrorrhizos (L.) G.Don"
+  },
+  {
+    "classIndex": 660,
+    "plantnetSpeciesId": "1408066",
+    "scientificName": "Faujasia salicifolia (Pers.) C.Jeffrey"
+  },
+  {
+    "classIndex": 661,
+    "plantnetSpeciesId": "1408071",
+    "scientificName": "Fernelia buxifolia Lam."
+  },
+  {
+    "classIndex": 662,
+    "plantnetSpeciesId": "1408092",
+    "scientificName": "Fragaria x ananassa Duchesne ex Rozier"
+  },
+  {
+    "classIndex": 663,
+    "plantnetSpeciesId": "1408107",
+    "scientificName": "Geniostoma borbonicum (Lam.) Spreng."
+  },
+  {
+    "classIndex": 664,
+    "plantnetSpeciesId": "1408160",
+    "scientificName": "Hernandia mascarenensis (Meisn.) Kubitzki"
+  },
+  {
+    "classIndex": 665,
+    "plantnetSpeciesId": "1408214",
+    "scientificName": "Hypericum lanceolatum Lam."
+  },
+  {
+    "classIndex": 666,
+    "plantnetSpeciesId": "1408227",
+    "scientificName": "Acacia auriculiformis A.Cunn. ex Benth."
+  },
+  {
+    "classIndex": 667,
+    "plantnetSpeciesId": "1408284",
+    "scientificName": "Leonitis nepetifolia (L.) R.Br."
+  },
+  {
+    "classIndex": 668,
+    "plantnetSpeciesId": "1408386",
+    "scientificName": "Mussaenda arcuata Poir."
+  },
+  {
+    "classIndex": 669,
+    "plantnetSpeciesId": "1408401",
+    "scientificName": "Nephrolepis abrupta (Bory) Mett."
+  },
+  {
+    "classIndex": 670,
+    "plantnetSpeciesId": "1408421",
+    "scientificName": "Acacia heterophylla (Lam.) Willd."
+  },
+  {
+    "classIndex": 671,
+    "plantnetSpeciesId": "1408451",
+    "scientificName": "Paederia foetida L."
+  },
+  {
+    "classIndex": 672,
+    "plantnetSpeciesId": "1408468",
+    "scientificName": "Pelargonium x asperum Ehrh. ex Willd."
+  },
+  {
+    "classIndex": 673,
+    "plantnetSpeciesId": "1408490",
+    "scientificName": "Pereskia grandifolia Haw."
+  },
+  {
+    "classIndex": 674,
+    "plantnetSpeciesId": "1408502",
+    "scientificName": "Antirhea borbonica J.F.Gmel."
+  },
+  {
+    "classIndex": 675,
+    "plantnetSpeciesId": "1408507",
+    "scientificName": "Phyllanthus emblica L."
+  },
+  {
+    "classIndex": 676,
+    "plantnetSpeciesId": "1408508",
+    "scientificName": "Phyllanthus niruroides Müll.Arg."
+  },
+  {
+    "classIndex": 677,
+    "plantnetSpeciesId": "1408509",
+    "scientificName": "Phyllanthus phillyreifolius Poir."
+  },
+  {
+    "classIndex": 678,
+    "plantnetSpeciesId": "1408557",
+    "scientificName": "Pongamia pinnata (L.) Pierre"
+  },
+  {
+    "classIndex": 679,
+    "plantnetSpeciesId": "1408594",
+    "scientificName": "Acacia podalyriifolia A.Cunn. ex G.Don"
+  },
+  {
+    "classIndex": 680,
+    "plantnetSpeciesId": "1408657",
+    "scientificName": "Schefflera actinophylla (F.Muell.) Harms"
+  },
+  {
+    "classIndex": 681,
+    "plantnetSpeciesId": "1408688",
+    "scientificName": "Acalypha hispida Burm.f."
+  },
+  {
+    "classIndex": 682,
+    "plantnetSpeciesId": "1408718",
+    "scientificName": "Acalypha integrifolia Willd."
+  },
+  {
+    "classIndex": 683,
+    "plantnetSpeciesId": "1408727",
+    "scientificName": "Stemodia verticillata (Mill.) Hassl."
+  },
+  {
+    "classIndex": 684,
+    "plantnetSpeciesId": "1408734",
+    "scientificName": "Stoebe passerinoides (Lam.) Willd."
+  },
+  {
+    "classIndex": 685,
+    "plantnetSpeciesId": "1408738",
+    "scientificName": "Strongylodon macrobotrys A.Gray"
+  },
+  {
+    "classIndex": 686,
+    "plantnetSpeciesId": "1408774",
+    "scientificName": "Tradescantia pallida (Rose) D.R.Hunt"
+  },
+  {
+    "classIndex": 687,
+    "plantnetSpeciesId": "1408788",
+    "scientificName": "Trimezia martinicensis (Jacq.) Herb."
+  },
+  {
+    "classIndex": 688,
+    "plantnetSpeciesId": "1408810",
+    "scientificName": "Vangueria madagascariensis J.F.Gmel."
+  },
+  {
+    "classIndex": 689,
+    "plantnetSpeciesId": "1408812",
+    "scientificName": "Vepris lanceolata (Lam.) G.Don"
+  },
+  {
+    "classIndex": 690,
+    "plantnetSpeciesId": "1408845",
+    "scientificName": "Zaleya pentandra (L.) C.Jeffrey"
+  },
+  {
+    "classIndex": 691,
+    "plantnetSpeciesId": "1408869",
+    "scientificName": "Cereus repandus (L.) Mill."
+  },
+  {
+    "classIndex": 692,
+    "plantnetSpeciesId": "1408874",
+    "scientificName": "Bismarckia nobilis Hildebr. & H.Wendl."
+  },
+  {
+    "classIndex": 693,
+    "plantnetSpeciesId": "1408953",
+    "scientificName": "Acacia nilotica (L.) Delile"
+  },
+  {
+    "classIndex": 694,
+    "plantnetSpeciesId": "1408961",
+    "scientificName": "Schefflera arboricola (Hayata) Merr."
+  },
+  {
+    "classIndex": 695,
+    "plantnetSpeciesId": "1408979",
+    "scientificName": "Fragaria chiloensis (L.) Mill."
+  },
+  {
+    "classIndex": 696,
+    "plantnetSpeciesId": "1409185",
+    "scientificName": "Aphelandra squarrosa Nees"
+  },
+  {
+    "classIndex": 697,
+    "plantnetSpeciesId": "1409191",
+    "scientificName": "Gynura aurantiaca (Blume) Sch.Bip. ex DC."
+  },
+  {
+    "classIndex": 698,
+    "plantnetSpeciesId": "1409195",
+    "scientificName": "Pereskia aculeata Mill."
+  },
+  {
+    "classIndex": 699,
+    "plantnetSpeciesId": "1409214",
+    "scientificName": "Peperomia argyreia (Miq.) E.Morren"
+  },
+  {
+    "classIndex": 700,
+    "plantnetSpeciesId": "1409215",
+    "scientificName": "Peperomia caperata Yunck."
+  },
+  {
+    "classIndex": 701,
+    "plantnetSpeciesId": "1409216",
+    "scientificName": "Peperomia obtusifolia (L.) A. Dietr."
+  },
+  {
+    "classIndex": 702,
+    "plantnetSpeciesId": "1409238",
+    "scientificName": "Anthurium andraeanum Linden ex André"
+  },
+  {
+    "classIndex": 703,
+    "plantnetSpeciesId": "1409239",
+    "scientificName": "Anthurium scherzerianum Schott"
+  },
+  {
+    "classIndex": 704,
+    "plantnetSpeciesId": "1409283",
+    "scientificName": "Zamia furfuracea L.f."
+  },
+  {
+    "classIndex": 705,
+    "plantnetSpeciesId": "1409292",
+    "scientificName": "Dendrobium nobile Lindl."
+  },
+  {
+    "classIndex": 706,
+    "plantnetSpeciesId": "1409295",
+    "scientificName": "Nandina domestica Thunb."
+  },
+  {
+    "classIndex": 707,
+    "plantnetSpeciesId": "1409296",
+    "scientificName": "Nymphaea nouchali Burm.f."
+  },
+  {
+    "classIndex": 708,
+    "plantnetSpeciesId": "1409299",
+    "scientificName": "Falcataria moluccana (Miq.) Barneby & J.W.Grimes"
+  },
+  {
+    "classIndex": 709,
+    "plantnetSpeciesId": "1409328",
+    "scientificName": "Acacia tortuosa (L.) Willd."
+  },
+  {
+    "classIndex": 710,
+    "plantnetSpeciesId": "1409407",
+    "scientificName": "Bourreria succulenta Jacq."
+  },
+  {
+    "classIndex": 711,
+    "plantnetSpeciesId": "1409521",
+    "scientificName": "Crotalaria brevidens Benth."
+  },
+  {
+    "classIndex": 712,
+    "plantnetSpeciesId": "1409525",
+    "scientificName": "Crotalaria pumila Ortega"
+  },
+  {
+    "classIndex": 713,
+    "plantnetSpeciesId": "1409550",
+    "scientificName": "Dendrobium chrysotoxum Lindl."
+  },
+  {
+    "classIndex": 714,
+    "plantnetSpeciesId": "1409551",
+    "scientificName": "Dendrobium crumenatum Sw."
+  },
+  {
+    "classIndex": 715,
+    "plantnetSpeciesId": "1409552",
+    "scientificName": "Dendrobium moschatum (Buch.-Ham.) Sw."
+  },
+  {
+    "classIndex": 716,
+    "plantnetSpeciesId": "1409586",
+    "scientificName": "Entada gigas (L.) Fawc. & Rendle"
+  },
+  {
+    "classIndex": 717,
+    "plantnetSpeciesId": "1409642",
+    "scientificName": "Fittonia albivenis (Lindl. ex Veitch) R.K. Brummitt"
+  },
+  {
+    "classIndex": 718,
+    "plantnetSpeciesId": "1409705",
+    "scientificName": "Illicium verum Hook.f."
+  },
+  {
+    "classIndex": 719,
+    "plantnetSpeciesId": "1409746",
+    "scientificName": "Lactuca floridana (L.) Gaertn."
+  },
+  {
+    "classIndex": 720,
+    "plantnetSpeciesId": "1409824",
+    "scientificName": "Mussaenda pubescens Dryand."
+  },
+  {
+    "classIndex": 721,
+    "plantnetSpeciesId": "1409834",
+    "scientificName": "Neolamarckia cadamba (Roxb.) Bosser"
+  },
+  {
+    "classIndex": 722,
+    "plantnetSpeciesId": "1409839",
+    "scientificName": "Nymphaea ampla (Salisb.) DC."
+  },
+  {
+    "classIndex": 723,
+    "plantnetSpeciesId": "1409918",
+    "scientificName": "Phyllanthus epiphyllanthus L."
+  },
+  {
+    "classIndex": 724,
+    "plantnetSpeciesId": "1409919",
+    "scientificName": "Phyllanthus mimosoides Sw."
+  },
+  {
+    "classIndex": 725,
+    "plantnetSpeciesId": "1409932",
+    "scientificName": "Pilosocereus royeni (L.) Byles & G. Rowley"
+  },
+  {
+    "classIndex": 726,
+    "plantnetSpeciesId": "1410024",
+    "scientificName": "Selenicereus anthonyanus (Alexander) D.Hunt"
+  },
+  {
+    "classIndex": 727,
+    "plantnetSpeciesId": "1410025",
+    "scientificName": "Selenicereus grandiflorus (L.) Britton & Rose"
+  },
+  {
+    "classIndex": 728,
+    "plantnetSpeciesId": "1410147",
+    "scientificName": "Zamia pumila L."
+  },
+  {
+    "classIndex": 729,
+    "plantnetSpeciesId": "1410168",
+    "scientificName": "Acalypha aristata Kunth"
+  },
+  {
+    "classIndex": 730,
+    "plantnetSpeciesId": "1411423",
+    "scientificName": "Chamerion latifolium (L.) Holub"
+  },
+  {
+    "classIndex": 731,
+    "plantnetSpeciesId": "1411462",
+    "scientificName": "Cirsium discolor (Muhl. ex Willd.) Spreng."
+  },
+  {
+    "classIndex": 732,
+    "plantnetSpeciesId": "1411466",
+    "scientificName": "Cirsium foliosum (Hook.) DC."
+  },
+  {
+    "classIndex": 733,
+    "plantnetSpeciesId": "1411469",
+    "scientificName": "Cirsium muticum Michx."
+  },
+  {
+    "classIndex": 734,
+    "plantnetSpeciesId": "1411472",
+    "scientificName": "Cirsium undulatum (Nutt.) Spreng."
+  },
+  {
+    "classIndex": 735,
+    "plantnetSpeciesId": "1411520",
+    "scientificName": "Comptonia peregrina (L.) J.M. Coult."
+  },
+  {
+    "classIndex": 736,
+    "plantnetSpeciesId": "1411524",
+    "scientificName": "Conoclinium coelestinum (L.) DC."
+  },
+  {
+    "classIndex": 737,
+    "plantnetSpeciesId": "1411687",
+    "scientificName": "Dalea purpurea Vent."
+  },
+  {
+    "classIndex": 738,
+    "plantnetSpeciesId": "1411700",
+    "scientificName": "Daucus pusillus Michx."
+  },
+  {
+    "classIndex": 739,
+    "plantnetSpeciesId": "1411760",
+    "scientificName": "Diervilla lonicera Mill."
+  },
+  {
+    "classIndex": 740,
+    "plantnetSpeciesId": "1411827",
+    "scientificName": "Dryopteris carthusiana (Vill.) H.P. Fuchs"
+  },
+  {
+    "classIndex": 741,
+    "plantnetSpeciesId": "1411829",
+    "scientificName": "Dryopteris cristata (L.) A. Gray"
+  },
+  {
+    "classIndex": 742,
+    "plantnetSpeciesId": "1411832",
+    "scientificName": "Dryopteris intermedia (Muhl. ex Willd.) A. Gray"
+  },
+  {
+    "classIndex": 743,
+    "plantnetSpeciesId": "1411833",
+    "scientificName": "Dryopteris marginalis (L.) A. Gray"
+  },
+  {
+    "classIndex": 744,
+    "plantnetSpeciesId": "1411834",
+    "scientificName": "Duchesnea indica (Andrews) Teschem."
+  },
+  {
+    "classIndex": 745,
+    "plantnetSpeciesId": "1411925",
+    "scientificName": "Epipactis gigantea Douglas ex Hook."
+  },
+  {
+    "classIndex": 746,
+    "plantnetSpeciesId": "1412311",
+    "scientificName": "Hypericum kalmianum L."
+  },
+  {
+    "classIndex": 747,
+    "plantnetSpeciesId": "1412313",
+    "scientificName": "Hypericum prolificum L."
+  },
+  {
+    "classIndex": 748,
+    "plantnetSpeciesId": "1412314",
+    "scientificName": "Hypericum punctatum Lam."
+  },
+  {
+    "classIndex": 749,
+    "plantnetSpeciesId": "1412337",
+    "scientificName": "Anemone canadensis L."
+  },
+  {
+    "classIndex": 750,
+    "plantnetSpeciesId": "1412344",
+    "scientificName": "Iva frutescens L."
+  },
+  {
+    "classIndex": 751,
+    "plantnetSpeciesId": "1412368",
+    "scientificName": "Anemone multifida Poir."
+  },
+  {
+    "classIndex": 752,
+    "plantnetSpeciesId": "1412410",
+    "scientificName": "Anemone virginiana L."
+  },
+  {
+    "classIndex": 753,
+    "plantnetSpeciesId": "1412412",
+    "scientificName": "Lactuca biennis (Moench) Fernald"
+  },
+  {
+    "classIndex": 754,
+    "plantnetSpeciesId": "1412413",
+    "scientificName": "Lactuca canadensis L."
+  },
+  {
+    "classIndex": 755,
+    "plantnetSpeciesId": "1412418",
+    "scientificName": "Lamium maculatum L."
+  },
+  {
+    "classIndex": 756,
+    "plantnetSpeciesId": "1412444",
+    "scientificName": "Leersia virginica Willd."
+  },
+  {
+    "classIndex": 757,
+    "plantnetSpeciesId": "1412445",
+    "scientificName": "Angelica lucida L."
+  },
+  {
+    "classIndex": 758,
+    "plantnetSpeciesId": "1412595",
+    "scientificName": "Lupinus argenteus Pursh"
+  },
+  {
+    "classIndex": 759,
+    "plantnetSpeciesId": "1412596",
+    "scientificName": "Lupinus bicolor Lindl."
+  },
+  {
+    "classIndex": 760,
+    "plantnetSpeciesId": "1412659",
+    "scientificName": "Maianthemum canadense Desf."
+  },
+  {
+    "classIndex": 761,
+    "plantnetSpeciesId": "1412661",
+    "scientificName": "Maianthemum racemosum (L.) Link"
+  },
+  {
+    "classIndex": 762,
+    "plantnetSpeciesId": "1412662",
+    "scientificName": "Maianthemum stellatum (L.) Link"
+  },
+  {
+    "classIndex": 763,
+    "plantnetSpeciesId": "1412663",
+    "scientificName": "Maianthemum trifolium (L.) Sloboda"
+  },
+  {
+    "classIndex": 764,
+    "plantnetSpeciesId": "1412697",
+    "scientificName": "Mertensia maritima (L.) Gray"
+  },
+  {
+    "classIndex": 765,
+    "plantnetSpeciesId": "1412698",
+    "scientificName": "Mertensia paniculata (Aiton) G. Don"
+  },
+  {
+    "classIndex": 766,
+    "plantnetSpeciesId": "1412699",
+    "scientificName": "Mertensia virginica (L.) Pers. ex Link"
+  },
+  {
+    "classIndex": 767,
+    "plantnetSpeciesId": "1412740",
+    "scientificName": "Mitella diphylla L."
+  },
+  {
+    "classIndex": 768,
+    "plantnetSpeciesId": "1412745",
+    "scientificName": "Moehringia lateriflora (L.) Fenzl"
+  },
+  {
+    "classIndex": 769,
+    "plantnetSpeciesId": "1412831",
+    "scientificName": "Nymphaea mexicana Zucc."
+  },
+  {
+    "classIndex": 770,
+    "plantnetSpeciesId": "1412833",
+    "scientificName": "Nymphaea odorata Aiton"
+  },
+  {
+    "classIndex": 771,
+    "plantnetSpeciesId": "1412834",
+    "scientificName": "Nymphaea tetragona Georgi"
+  },
+  {
+    "classIndex": 772,
+    "plantnetSpeciesId": "1412888",
+    "scientificName": "Osmunda cinnamomea L."
+  },
+  {
+    "classIndex": 773,
+    "plantnetSpeciesId": "1412889",
+    "scientificName": "Osmunda claytoniana L."
+  },
+  {
+    "classIndex": 774,
+    "plantnetSpeciesId": "1412946",
+    "scientificName": "Papaver nudicaule L."
+  },
+  {
+    "classIndex": 775,
+    "plantnetSpeciesId": "1412992",
+    "scientificName": "Aralia hispida Vent."
+  },
+  {
+    "classIndex": 776,
+    "plantnetSpeciesId": "1413002",
+    "scientificName": "Aralia nudicaulis L."
+  },
+  {
+    "classIndex": 777,
+    "plantnetSpeciesId": "1413013",
+    "scientificName": "Aralia racemosa L."
+  },
+  {
+    "classIndex": 778,
+    "plantnetSpeciesId": "1413391",
+    "scientificName": "Pyracantha coccinea M. Roem."
+  },
+  {
+    "classIndex": 779,
+    "plantnetSpeciesId": "1413751",
+    "scientificName": "Sedum divergens S. Watson"
+  },
+  {
+    "classIndex": 780,
+    "plantnetSpeciesId": "1413752",
+    "scientificName": "Sedum lanceolatum Torr."
+  },
+  {
+    "classIndex": 781,
+    "plantnetSpeciesId": "1413753",
+    "scientificName": "Sedum oreganum Nutt."
+  },
+  {
+    "classIndex": 782,
+    "plantnetSpeciesId": "1413755",
+    "scientificName": "Sedum spathulifolium Hook."
+  },
+  {
+    "classIndex": 783,
+    "plantnetSpeciesId": "1413757",
+    "scientificName": "Sedum ternatum Michx."
+  },
+  {
+    "classIndex": 784,
+    "plantnetSpeciesId": "1413832",
+    "scientificName": "Smilax herbacea L."
+  },
+  {
+    "classIndex": 785,
+    "plantnetSpeciesId": "1413835",
+    "scientificName": "Smilax tamnoides L."
+  },
+  {
+    "classIndex": 786,
+    "plantnetSpeciesId": "1414057",
+    "scientificName": "Tradescantia occidentalis (Britton) Smyth"
+  },
+  {
+    "classIndex": 787,
+    "plantnetSpeciesId": "1414058",
+    "scientificName": "Tradescantia ohiensis Raf."
+  },
+  {
+    "classIndex": 788,
+    "plantnetSpeciesId": "1414272",
+    "scientificName": "Balsamorhiza sagittata (Pursh) Nutt."
+  },
+  {
+    "classIndex": 789,
+    "plantnetSpeciesId": "1414275",
+    "scientificName": "Barbarea orthoceras Ledeb."
+  },
+  {
+    "classIndex": 790,
+    "plantnetSpeciesId": "1414276",
+    "scientificName": "Barbarea vulgaris W.T. Aiton"
+  },
+  {
+    "classIndex": 791,
+    "plantnetSpeciesId": "1414397",
+    "scientificName": "Calochortus macrocarpus Douglas"
+  },
+  {
+    "classIndex": 792,
+    "plantnetSpeciesId": "1414746",
+    "scientificName": "Entada phaseoloides (L.) Merr."
+  },
+  {
+    "classIndex": 793,
+    "plantnetSpeciesId": "1414808",
+    "scientificName": "Cerbera manghas L."
+  },
+  {
+    "classIndex": 794,
+    "plantnetSpeciesId": "1414903",
+    "scientificName": "Hernandia cordigera Vieill."
+  },
+  {
+    "classIndex": 795,
+    "plantnetSpeciesId": "1414924",
+    "scientificName": "Acacia simplex (Sparman) Pedley"
+  },
+  {
+    "classIndex": 796,
+    "plantnetSpeciesId": "1415584",
+    "scientificName": "Dubouzetia confusa Guillaumin & Virot"
+  },
+  {
+    "classIndex": 797,
+    "plantnetSpeciesId": "1415593",
+    "scientificName": "Dubouzetia campanulata Pancher ex Brongn. & Gris"
+  },
+  {
+    "classIndex": 798,
+    "plantnetSpeciesId": "1415911",
+    "scientificName": "Acacia spirorbis Labill."
+  },
+  {
+    "classIndex": 799,
+    "plantnetSpeciesId": "1416420",
+    "scientificName": "Atractocarpus platyxylon (Vieill. ex Pancher & Sebert) Guillaumin"
+  },
+  {
+    "classIndex": 800,
+    "plantnetSpeciesId": "1416509",
+    "scientificName": "Nepenthes vieillardii Hook. f."
+  },
+  {
+    "classIndex": 801,
+    "plantnetSpeciesId": "1417117",
+    "scientificName": "Dendrobium closterium Rchb.f."
+  },
+  {
+    "classIndex": 802,
+    "plantnetSpeciesId": "1417506",
+    "scientificName": "Dracophyllum verticillatum Labill."
+  },
+  {
+    "classIndex": 803,
+    "plantnetSpeciesId": "1417546",
+    "scientificName": "Schefflera spp."
+  },
+  {
+    "classIndex": 804,
+    "plantnetSpeciesId": "1417900",
+    "scientificName": "Tagetes lucida Cav."
+  },
+  {
+    "classIndex": 805,
+    "plantnetSpeciesId": "1417916",
+    "scientificName": "Anisocampium niponicum (Mett.) Y.C.Liu, W.L. Chiou & M. Kato"
+  },
+  {
+    "classIndex": 806,
+    "plantnetSpeciesId": "1418033",
+    "scientificName": "Mertensia ciliata (James ex Torr.) G. Don"
+  },
+  {
+    "classIndex": 807,
+    "plantnetSpeciesId": "1418061",
+    "scientificName": "Lithops fulviceps N.E.Br."
+  },
+  {
+    "classIndex": 808,
+    "plantnetSpeciesId": "1418084",
+    "scientificName": "Lithops karasmontana N.E.Br."
+  },
+  {
+    "classIndex": 809,
+    "plantnetSpeciesId": "1418102",
+    "scientificName": "Lithops marmorata N.E.Br."
+  },
+  {
+    "classIndex": 810,
+    "plantnetSpeciesId": "1418140",
+    "scientificName": "Lithops pseudotruncatella N.E.Br."
+  },
+  {
+    "classIndex": 811,
+    "plantnetSpeciesId": "1418146",
+    "scientificName": "Fittonia albivenis (Lindl. ex Veitch) Brummitt"
+  },
+  {
+    "classIndex": 812,
+    "plantnetSpeciesId": "1418191",
+    "scientificName": "Lithops spp."
+  },
+  {
+    "classIndex": 813,
+    "plantnetSpeciesId": "1418192",
+    "scientificName": "Cereus hildmannianus K.Schum."
+  },
+  {
+    "classIndex": 814,
+    "plantnetSpeciesId": "1418295",
+    "scientificName": "Neobuxbaumia polylopha (DC.) Backeb."
+  },
+  {
+    "classIndex": 815,
+    "plantnetSpeciesId": "1418345",
+    "scientificName": "Calycanthus occidentalis Hook. & Arn."
+  },
+  {
+    "classIndex": 816,
+    "plantnetSpeciesId": "1418475",
+    "scientificName": "Tradescantia subaspera Ker Gawl."
+  },
+  {
+    "classIndex": 817,
+    "plantnetSpeciesId": "1418545",
+    "scientificName": "Sedum kamtschaticum Fisch."
+  },
+  {
+    "classIndex": 818,
+    "plantnetSpeciesId": "1418546",
+    "scientificName": "Sedum lineare Thunb."
+  },
+  {
+    "classIndex": 819,
+    "plantnetSpeciesId": "1418547",
+    "scientificName": "Sedum morganianum E.Walther"
+  },
+  {
+    "classIndex": 820,
+    "plantnetSpeciesId": "1418563",
+    "scientificName": "Cucurbita foetidissima Kunth"
+  },
+  {
+    "classIndex": 821,
+    "plantnetSpeciesId": "1418576",
+    "scientificName": "Eucryphia cordifolia Cav."
+  },
+  {
+    "classIndex": 822,
+    "plantnetSpeciesId": "1418653",
+    "scientificName": "Dryopteris cycadina (Franch. & Sav.) C. Chr."
+  },
+  {
+    "classIndex": 823,
+    "plantnetSpeciesId": "1418655",
+    "scientificName": "Dryopteris erythrosora (D.C. Eaton) Kuntze"
+  },
+  {
+    "classIndex": 824,
+    "plantnetSpeciesId": "1418659",
+    "scientificName": "Dryopteris sieboldii (T. Moore) Kuntze"
+  },
+  {
+    "classIndex": 825,
+    "plantnetSpeciesId": "1418665",
+    "scientificName": "Rumohra adiantiformis (G. Forst.) Ching"
+  },
+  {
+    "classIndex": 826,
+    "plantnetSpeciesId": "1418732",
+    "scientificName": "Oxydendrum arboreum (L.) DC."
+  },
+  {
+    "classIndex": 827,
+    "plantnetSpeciesId": "1418984",
+    "scientificName": "Lupinus albifrons Benth."
+  },
+  {
+    "classIndex": 828,
+    "plantnetSpeciesId": "1419077",
+    "scientificName": "Lycoris radiata (L'Hér.) Herb."
+  },
+  {
+    "classIndex": 829,
+    "plantnetSpeciesId": "1419086",
+    "scientificName": "Garrya elliptica Douglas ex Lindl."
+  },
+  {
+    "classIndex": 830,
+    "plantnetSpeciesId": "1419091",
+    "scientificName": "Lycoris squamigera Maxim."
+  },
+  {
+    "classIndex": 831,
+    "plantnetSpeciesId": "1419112",
+    "scientificName": "Pelargonium crispum (P.J. Bergius) L'Hér."
+  },
+  {
+    "classIndex": 832,
+    "plantnetSpeciesId": "1419115",
+    "scientificName": "Pelargonium x hortorum L.H. Bailey"
+  },
+  {
+    "classIndex": 833,
+    "plantnetSpeciesId": "1419173",
+    "scientificName": "Loropetalum chinense (R. Br.) Oliv."
+  },
+  {
+    "classIndex": 834,
+    "plantnetSpeciesId": "1419197",
+    "scientificName": "Hypericum frondosum Michx."
+  },
+  {
+    "classIndex": 835,
+    "plantnetSpeciesId": "1419334",
+    "scientificName": "Liriope muscari (Decne.) L.H.Bailey"
+  },
+  {
+    "classIndex": 836,
+    "plantnetSpeciesId": "1419352",
+    "scientificName": "Limnanthes douglasii R. Br."
+  },
+  {
+    "classIndex": 837,
+    "plantnetSpeciesId": "1419595",
+    "scientificName": "Nothofagus alpina (Poepp. & Endl.) Oerst."
+  },
+  {
+    "classIndex": 838,
+    "plantnetSpeciesId": "1419598",
+    "scientificName": "Nothofagus pumilio (Poepp. & Endl.) Krasser"
+  },
+  {
+    "classIndex": 839,
+    "plantnetSpeciesId": "1419612",
+    "scientificName": "Abeliophyllum distichum Nakai"
+  },
+  {
+    "classIndex": 840,
+    "plantnetSpeciesId": "1419713",
+    "scientificName": "Dendrobium aphyllum (Roxb.) C.E.C.Fisch."
+  },
+  {
+    "classIndex": 841,
+    "plantnetSpeciesId": "1419720",
+    "scientificName": "Dendrobium spp."
+  },
+  {
+    "classIndex": 842,
+    "plantnetSpeciesId": "1419807",
+    "scientificName": "Vanilla planifolia Jacks. ex Andrews"
+  },
+  {
+    "classIndex": 843,
+    "plantnetSpeciesId": "1419864",
+    "scientificName": "Heteromorpha arborescens (Spreng.) Cham. & Schltdl."
+  },
+  {
+    "classIndex": 844,
+    "plantnetSpeciesId": "1419874",
+    "scientificName": "Lapageria rosea Ruiz & Pav."
+  },
+  {
+    "classIndex": 845,
+    "plantnetSpeciesId": "1419923",
+    "scientificName": "Peperomia argyreia (Hook.f.) E.Morren"
+  },
+  {
+    "classIndex": 846,
+    "plantnetSpeciesId": "1419924",
+    "scientificName": "Peperomia dolabriformis Kunth"
+  },
+  {
+    "classIndex": 847,
+    "plantnetSpeciesId": "1419942",
+    "scientificName": "Hebe franciscana (Eastw.) Souster"
+  },
+  {
+    "classIndex": 848,
+    "plantnetSpeciesId": "1419949",
+    "scientificName": "Maurandya barclayana Lindl."
+  },
+  {
+    "classIndex": 849,
+    "plantnetSpeciesId": "1420092",
+    "scientificName": "Sasa palmata (Burb.) E.G.Camus"
+  },
+  {
+    "classIndex": 850,
+    "plantnetSpeciesId": "1420288",
+    "scientificName": "Anemone patens L."
+  },
+  {
+    "classIndex": 851,
+    "plantnetSpeciesId": "1420364",
+    "scientificName": "Fragaria virginiana Mill."
+  },
+  {
+    "classIndex": 852,
+    "plantnetSpeciesId": "1420365",
+    "scientificName": "Fragaria x ananassa (Duchesne ex Weston) Duchesne ex Rozier"
+  },
+  {
+    "classIndex": 853,
+    "plantnetSpeciesId": "1420496",
+    "scientificName": "Mussaenda philippica A.Rich."
+  },
+  {
+    "classIndex": 854,
+    "plantnetSpeciesId": "1420544",
+    "scientificName": "Limonia acidissima Groff"
+  },
+  {
+    "classIndex": 855,
+    "plantnetSpeciesId": "1420653",
+    "scientificName": "Illicium floridanum J. Ellis"
+  },
+  {
+    "classIndex": 856,
+    "plantnetSpeciesId": "1420700",
+    "scientificName": "Browallia speciosa Hook."
+  },
+  {
+    "classIndex": 857,
+    "plantnetSpeciesId": "1420767",
+    "scientificName": "Alocasia cuprea K.Koch"
+  },
+  {
+    "classIndex": 858,
+    "plantnetSpeciesId": "1420781",
+    "scientificName": "Alocasia micholitziana Sander"
+  },
+  {
+    "classIndex": 859,
+    "plantnetSpeciesId": "1420787",
+    "scientificName": "Alocasia odora (Lindl.) K.Koch"
+  },
+  {
+    "classIndex": 860,
+    "plantnetSpeciesId": "1420792",
+    "scientificName": "Daphne odora Thunb."
+  },
+  {
+    "classIndex": 861,
+    "plantnetSpeciesId": "1420795",
+    "scientificName": "Alocasia sanderiana W.Bull"
+  },
+  {
+    "classIndex": 862,
+    "plantnetSpeciesId": "1420796",
+    "scientificName": "Daphne tangutica Maxim."
+  },
+  {
+    "classIndex": 863,
+    "plantnetSpeciesId": "1420863",
+    "scientificName": "Kniphofia uvaria (L.) Oken"
+  },
+  {
+    "classIndex": 864,
+    "plantnetSpeciesId": "1420896",
+    "scientificName": "Zamia furfuracea L.f. ex Aiton"
+  },
+  {
+    "classIndex": 865,
+    "plantnetSpeciesId": "1420929",
+    "scientificName": "Guaiacum sanctum L."
+  },
+  {
+    "classIndex": 866,
+    "plantnetSpeciesId": "1420931",
+    "scientificName": "Nepenthes spp."
+  },
+  {
+    "classIndex": 867,
+    "plantnetSpeciesId": "1421001",
+    "scientificName": "Pelargonium spp."
+  },
+  {
+    "classIndex": 868,
+    "plantnetSpeciesId": "1421011",
+    "scientificName": "Pancratium maritimum L. L."
+  },
+  {
+    "classIndex": 869,
+    "plantnetSpeciesId": "1421021",
+    "scientificName": "Sedum palmeri S. Watson"
+  },
+  {
+    "classIndex": 870,
+    "plantnetSpeciesId": "1421026",
+    "scientificName": "Aphelandra sinclairiana Nees"
+  },
+  {
+    "classIndex": 871,
+    "plantnetSpeciesId": "1421107",
+    "scientificName": "Alocasia macrorrhizos (L.) G. Don"
+  },
+  {
+    "classIndex": 872,
+    "plantnetSpeciesId": "1421386",
+    "scientificName": "Acacia confusa Merr."
+  },
+  {
+    "classIndex": 873,
+    "plantnetSpeciesId": "1421523",
+    "scientificName": "Acacia koaia Hillebr."
+  },
+  {
+    "classIndex": 874,
+    "plantnetSpeciesId": "1421628",
+    "scientificName": "Nephrolepis falcata (Cav.) C. Chr."
+  },
+  {
+    "classIndex": 875,
+    "plantnetSpeciesId": "1422105",
+    "scientificName": "Tradescantia zebrina hort. ex Bosse"
+  },
+  {
+    "classIndex": 876,
+    "plantnetSpeciesId": "1422636",
+    "scientificName": "Calodendrum capense (L.f.) Thunb."
+  },
+  {
+    "classIndex": 877,
+    "plantnetSpeciesId": "1422712",
+    "scientificName": "Pelargonium grandiflorum Willd."
+  },
+  {
+    "classIndex": 878,
+    "plantnetSpeciesId": "1422721",
+    "scientificName": "Hypericum revolutum Vahl"
+  },
+  {
+    "classIndex": 879,
+    "plantnetSpeciesId": "1423286",
+    "scientificName": "Schkuhria pinnata (Lam.) Kuntze ex Thell."
+  },
+  {
+    "classIndex": 880,
+    "plantnetSpeciesId": "1423469",
+    "scientificName": "Maytenus boaria Molina"
+  },
+  {
+    "classIndex": 881,
+    "plantnetSpeciesId": "1423633",
+    "scientificName": "Melampodium perfoliatum (Cav.) Kunth"
+  },
+  {
+    "classIndex": 882,
+    "plantnetSpeciesId": "1423932",
+    "scientificName": "Hernandia nymphaeifolia (J.Presl) Kubitzki"
+  },
+  {
+    "classIndex": 883,
+    "plantnetSpeciesId": "1424003",
+    "scientificName": "Mazus pumilus (Burm.f.) Steenis"
+  },
+  {
+    "classIndex": 884,
+    "plantnetSpeciesId": "1424005",
+    "scientificName": "Melampodium divaricatum (Rich.) DC."
+  },
+  {
+    "classIndex": 885,
+    "plantnetSpeciesId": "1424377",
+    "scientificName": "Breynia vitis-idaea (Burm.f.) C.E.C.Fisch."
+  },
+  {
+    "classIndex": 886,
+    "plantnetSpeciesId": "1425433",
+    "scientificName": "Prosopis farcta (Banks & Sol.) J.F.Macbr."
+  },
+  {
+    "classIndex": 887,
+    "plantnetSpeciesId": "1425899",
+    "scientificName": "Acacia farnesiana Willd."
+  },
+  {
+    "classIndex": 888,
+    "plantnetSpeciesId": "1427043",
+    "scientificName": "Freycinetia cumingiana Gaudich."
+  },
+  {
+    "classIndex": 889,
+    "plantnetSpeciesId": "1427659",
+    "scientificName": "Crotalaria laburnifolia L."
+  },
+  {
+    "classIndex": 890,
+    "plantnetSpeciesId": "1427821",
+    "scientificName": "Dalbergia sissoo DC."
+  },
+  {
+    "classIndex": 891,
+    "plantnetSpeciesId": "1428059",
+    "scientificName": "Dischidia nummularia R.Br."
+  },
+  {
+    "classIndex": 892,
+    "plantnetSpeciesId": "1430280",
+    "scientificName": "Schefflera heptaphylla (L.) Frodin"
+  },
+  {
+    "classIndex": 893,
+    "plantnetSpeciesId": "1430287",
+    "scientificName": "Schinopsis balansae Engl."
+  },
+  {
+    "classIndex": 894,
+    "plantnetSpeciesId": "1430515",
+    "scientificName": "Smilax china L."
+  },
+  {
+    "classIndex": 895,
+    "plantnetSpeciesId": "1431222",
+    "scientificName": "Barringtonia acutangula (L.) Gaertn."
+  },
+  {
+    "classIndex": 896,
+    "plantnetSpeciesId": "1431925",
+    "scientificName": "Maerua triphylla A. Rich."
+  },
+  {
+    "classIndex": 897,
+    "plantnetSpeciesId": "1432545",
+    "scientificName": "Asystasia mysorensis (Roth) T.Anderson"
+  },
+  {
+    "classIndex": 898,
+    "plantnetSpeciesId": "1432783",
+    "scientificName": "Lactuca virosa Habl."
+  },
+  {
+    "classIndex": 899,
+    "plantnetSpeciesId": "1432786",
+    "scientificName": "Calendula arvensis M.Bieb."
+  },
+  {
+    "classIndex": 900,
+    "plantnetSpeciesId": "1432824",
+    "scientificName": "Herbertia lahue (Molina) Goldblatt"
+  },
+  {
+    "classIndex": 901,
+    "plantnetSpeciesId": "1433158",
+    "scientificName": "Hypericum hypericoides (L.) Crantz"
+  },
+  {
+    "classIndex": 902,
+    "plantnetSpeciesId": "1433176",
+    "scientificName": "Hypericum tetrapetalum Lam."
+  },
+  {
+    "classIndex": 903,
+    "plantnetSpeciesId": "1433496",
+    "scientificName": "Keckiella cordifolia (Benth.) Straw"
+  },
+  {
+    "classIndex": 904,
+    "plantnetSpeciesId": "1434011",
+    "scientificName": "Liriope muscari (Decne.) L.H. Bailey"
+  },
+  {
+    "classIndex": 905,
+    "plantnetSpeciesId": "1434232",
+    "scientificName": "Lupinus chamissonis Eschsch."
+  },
+  {
+    "classIndex": 906,
+    "plantnetSpeciesId": "1434249",
+    "scientificName": "Lupinus diffusus Nutt."
+  },
+  {
+    "classIndex": 907,
+    "plantnetSpeciesId": "1434258",
+    "scientificName": "Lupinus formosus Greene"
+  },
+  {
+    "classIndex": 908,
+    "plantnetSpeciesId": "1434267",
+    "scientificName": "Lupinus hirsutissimus Benth."
+  },
+  {
+    "classIndex": 909,
+    "plantnetSpeciesId": "1434320",
+    "scientificName": "Lupinus subcarnosus Hook."
+  },
+  {
+    "classIndex": 910,
+    "plantnetSpeciesId": "1434326",
+    "scientificName": "Lupinus texensis Hook."
+  },
+  {
+    "classIndex": 911,
+    "plantnetSpeciesId": "1434383",
+    "scientificName": "Lyonothamnus floribundus A. Gray"
+  },
+  {
+    "classIndex": 912,
+    "plantnetSpeciesId": "1434584",
+    "scientificName": "Mazus pumilus (Burm. f.) Steenis"
+  },
+  {
+    "classIndex": 913,
+    "plantnetSpeciesId": "1434594",
+    "scientificName": "Melampodium leucanthum Torr. & A. Gray"
+  },
+  {
+    "classIndex": 914,
+    "plantnetSpeciesId": "1434712",
+    "scientificName": "Metasequoia glyptostroboides Hu & W.C. Cheng"
+  },
+  {
+    "classIndex": 915,
+    "plantnetSpeciesId": "1435225",
+    "scientificName": "Aralia californica S. Watson"
+  },
+  {
+    "classIndex": 916,
+    "plantnetSpeciesId": "1435228",
+    "scientificName": "Nyctaginia capitata Choisy"
+  },
+  {
+    "classIndex": 917,
+    "plantnetSpeciesId": "1435260",
+    "scientificName": "Aralia spinosa L."
+  },
+  {
+    "classIndex": 918,
+    "plantnetSpeciesId": "1435709",
+    "scientificName": "Pelargonium panduriforme Eckl. & Zeyh."
+  },
+  {
+    "classIndex": 919,
+    "plantnetSpeciesId": "1435714",
+    "scientificName": "Pelargonium zonale (L.) L'Hér. ex Aiton"
+  },
+  {
+    "classIndex": 920,
+    "plantnetSpeciesId": "1436922",
+    "scientificName": "Prosopis glandulosa Torr."
+  },
+  {
+    "classIndex": 921,
+    "plantnetSpeciesId": "1436923",
+    "scientificName": "Prosopis pubescens Benth."
+  },
+  {
+    "classIndex": 922,
+    "plantnetSpeciesId": "1437724",
+    "scientificName": "Sagittaria montevidensis Cham. & Schltdl."
+  },
+  {
+    "classIndex": 923,
+    "plantnetSpeciesId": "1438033",
+    "scientificName": "Sedum albomarginatum R.T. Clausen"
+  },
+  {
+    "classIndex": 924,
+    "plantnetSpeciesId": "1438041",
+    "scientificName": "Sedum glaucophyllum R.T. Clausen"
+  },
+  {
+    "classIndex": 925,
+    "plantnetSpeciesId": "1438043",
+    "scientificName": "Sedum laxum (Britton) A. Berger"
+  },
+  {
+    "classIndex": 926,
+    "plantnetSpeciesId": "1438045",
+    "scientificName": "Sedum moranense Kunth"
+  },
+  {
+    "classIndex": 927,
+    "plantnetSpeciesId": "1438049",
+    "scientificName": "Sedum niveum Davidson"
+  },
+  {
+    "classIndex": 928,
+    "plantnetSpeciesId": "1438052",
+    "scientificName": "Sedum obtusatum A. Gray"
+  },
+  {
+    "classIndex": 929,
+    "plantnetSpeciesId": "1438056",
+    "scientificName": "Sedum pulchellum Michx."
+  },
+  {
+    "classIndex": 930,
+    "plantnetSpeciesId": "1438352",
+    "scientificName": "Smilax bona-nox L."
+  },
+  {
+    "classIndex": 931,
+    "plantnetSpeciesId": "1438354",
+    "scientificName": "Smilax glauca Walter"
+  },
+  {
+    "classIndex": 932,
+    "plantnetSpeciesId": "1438358",
+    "scientificName": "Smilax laurifolia L."
+  },
+  {
+    "classIndex": 933,
+    "plantnetSpeciesId": "1438616",
+    "scientificName": "Stanleya pinnata (Pursh) Britton"
+  },
+  {
+    "classIndex": 934,
+    "plantnetSpeciesId": "1438868",
+    "scientificName": "Tagetes lemmonii A. Gray"
+  },
+  {
+    "classIndex": 935,
+    "plantnetSpeciesId": "1439145",
+    "scientificName": "Tradescantia crassifolia Cav."
+  },
+  {
+    "classIndex": 936,
+    "plantnetSpeciesId": "1439703",
+    "scientificName": "Xylococcus bicolor Nutt."
+  },
+  {
+    "classIndex": 937,
+    "plantnetSpeciesId": "1440273",
+    "scientificName": "Brodiaea elegans Hoover"
+  },
+  {
+    "classIndex": 938,
+    "plantnetSpeciesId": "1440412",
+    "scientificName": "Calochortus eurycarpus S. Watson"
+  },
+  {
+    "classIndex": 939,
+    "plantnetSpeciesId": "1440416",
+    "scientificName": "Calochortus gunnisonii S. Watson"
+  },
+  {
+    "classIndex": 940,
+    "plantnetSpeciesId": "1440423",
+    "scientificName": "Calochortus leichtlinii Hook. f."
+  },
+  {
+    "classIndex": 941,
+    "plantnetSpeciesId": "1440425",
+    "scientificName": "Calochortus luteus Douglas ex Lindl."
+  },
+  {
+    "classIndex": 942,
+    "plantnetSpeciesId": "1440440",
+    "scientificName": "Calochortus splendens Douglas ex Benth."
+  },
+  {
+    "classIndex": 943,
+    "plantnetSpeciesId": "1440446",
+    "scientificName": "Calochortus tolmiei Hook. & Arn."
+  },
+  {
+    "classIndex": 944,
+    "plantnetSpeciesId": "1440476",
+    "scientificName": "Calylophus hartwegii (Benth.) P.H. Raven"
+  },
+  {
+    "classIndex": 945,
+    "plantnetSpeciesId": "1441099",
+    "scientificName": "Chaerophyllum tainturieri Hook."
+  },
+  {
+    "classIndex": 946,
+    "plantnetSpeciesId": "1441349",
+    "scientificName": "Cirsium altissimum (L.) Hill"
+  },
+  {
+    "classIndex": 947,
+    "plantnetSpeciesId": "1441375",
+    "scientificName": "Cirsium horridulum Michx."
+  },
+  {
+    "classIndex": 948,
+    "plantnetSpeciesId": "1441410",
+    "scientificName": "Cirsium texanum Buckley"
+  },
+  {
+    "classIndex": 949,
+    "plantnetSpeciesId": "1442541",
+    "scientificName": "Diervilla sessilifolia Buckley"
+  },
+  {
+    "classIndex": 950,
+    "plantnetSpeciesId": "1442833",
+    "scientificName": "Acacia berlandieri Benth."
+  },
+  {
+    "classIndex": 951,
+    "plantnetSpeciesId": "1442865",
+    "scientificName": "Elephantopus elatus Bertol."
+  },
+  {
+    "classIndex": 952,
+    "plantnetSpeciesId": "1442930",
+    "scientificName": "Alocasia cucullata (Lour.) G. Don"
+  },
+  {
+    "classIndex": 953,
+    "plantnetSpeciesId": "1444049",
+    "scientificName": "Acacia redolens Maslin"
+  },
+  {
+    "classIndex": 954,
+    "plantnetSpeciesId": "1444156",
+    "scientificName": "Acacia rigidula Benth."
+  },
+  {
+    "classIndex": 955,
+    "plantnetSpeciesId": "1444195",
+    "scientificName": "Hackelia velutina (Piper) I.M. Johnst."
+  },
+  {
+    "classIndex": 956,
+    "plantnetSpeciesId": "1444216",
+    "scientificName": "Haplophyton crooksii (L.D. Benson) L.D. Benson"
+  },
+  {
+    "classIndex": 957,
+    "plantnetSpeciesId": "1447962",
+    "scientificName": "Aextoxicon punctatum Ruiz & Pav."
+  },
+  {
+    "classIndex": 958,
+    "plantnetSpeciesId": "1449139",
+    "scientificName": "Lithops aucampiae L. Bolus"
+  },
+  {
+    "classIndex": 959,
+    "plantnetSpeciesId": "1449149",
+    "scientificName": "Lithops olivacea L. Bolus"
+  },
+  {
+    "classIndex": 960,
+    "plantnetSpeciesId": "1453004",
+    "scientificName": "Cyrtanthus elatus (Jacq.) Traub"
+  },
+  {
+    "classIndex": 961,
+    "plantnetSpeciesId": "1455408",
+    "scientificName": "Guatteria aeruginosa Standl."
+  },
+  {
+    "classIndex": 962,
+    "plantnetSpeciesId": "1460343",
+    "scientificName": "Dischidia ovata Benth."
+  },
+  {
+    "classIndex": 963,
+    "plantnetSpeciesId": "1463177",
+    "scientificName": "Trachelospermum asiaticum (Siebold & Zucc.) Nakai"
+  },
+  {
+    "classIndex": 964,
+    "plantnetSpeciesId": "1464023",
+    "scientificName": "Alocasia baginda Kurniawan & P.C.Boyce"
+  },
+  {
+    "classIndex": 965,
+    "plantnetSpeciesId": "1464054",
+    "scientificName": "Alocasia lauterbachiana (Engl.) A.Hay"
+  },
+  {
+    "classIndex": 966,
+    "plantnetSpeciesId": "1464075",
+    "scientificName": "Alocasia reginula A.Hay"
+  },
+  {
+    "classIndex": 967,
+    "plantnetSpeciesId": "1464086",
+    "scientificName": "Alocasia wentii Engl. & K.Krause"
+  },
+  {
+    "classIndex": 968,
+    "plantnetSpeciesId": "1464088",
+    "scientificName": "Alocasia zebrina Schott ex Van Houtte"
+  },
+  {
+    "classIndex": 969,
+    "plantnetSpeciesId": "1464459",
+    "scientificName": "Anthurium clarinervium Matuda"
+  },
+  {
+    "classIndex": 970,
+    "plantnetSpeciesId": "1464567",
+    "scientificName": "Anthurium faustomirandae Pérez-Farr. & Croat"
+  },
+  {
+    "classIndex": 971,
+    "plantnetSpeciesId": "1465016",
+    "scientificName": "Anthurium salvinii Hemsl."
+  },
+  {
+    "classIndex": 972,
+    "plantnetSpeciesId": "1465026",
+    "scientificName": "Anthurium schlechtendalii Kunth"
+  },
+  {
+    "classIndex": 973,
+    "plantnetSpeciesId": "1465149",
+    "scientificName": "Anthurium veitchii Mast."
+  },
+  {
+    "classIndex": 974,
+    "plantnetSpeciesId": "1465170",
+    "scientificName": "Anthurium warocqueanum T.Moore"
+  },
+  {
+    "classIndex": 975,
+    "plantnetSpeciesId": "1470435",
+    "scientificName": "Wodyetia bifurcata A.K.Irvine"
+  },
+  {
+    "classIndex": 976,
+    "plantnetSpeciesId": "1486475",
+    "scientificName": "Cereus forbesii C.F.Först."
+  },
+  {
+    "classIndex": 977,
+    "plantnetSpeciesId": "1486501",
+    "scientificName": "Cereus uruguayanus R. Kiesling"
+  },
+  {
+    "classIndex": 978,
+    "plantnetSpeciesId": "1486655",
+    "scientificName": "Coryphantha elephantidens (Lem.) Lem."
+  },
+  {
+    "classIndex": 979,
+    "plantnetSpeciesId": "1488001",
+    "scientificName": "Pilosocereus chrysostele (Vaupel) Byles & G.D.Rowley"
+  },
+  {
+    "classIndex": 980,
+    "plantnetSpeciesId": "1488026",
+    "scientificName": "Pilosocereus pachycladus F. Ritter"
+  },
+  {
+    "classIndex": 981,
+    "plantnetSpeciesId": "1488171",
+    "scientificName": "Selenicereus anthonyanus (Alexander) D.R. Hunt"
+  },
+  {
+    "classIndex": 982,
+    "plantnetSpeciesId": "1488206",
+    "scientificName": "Stenocactus multicostatus (Hildm.) A. Berger ex A.W. Hill"
+  },
+  {
+    "classIndex": 983,
+    "plantnetSpeciesId": "1488285",
+    "scientificName": "Tephrocactus geometricus (A. Cast.) Backeb."
+  },
+  {
+    "classIndex": 984,
+    "plantnetSpeciesId": "1491513",
+    "scientificName": "Pterocephalus perennis Coult."
+  },
+  {
+    "classIndex": 985,
+    "plantnetSpeciesId": "1494482",
+    "scientificName": "Maytenus ilicifolia Mart. ex Reissek"
+  },
+  {
+    "classIndex": 986,
+    "plantnetSpeciesId": "1497434",
+    "scientificName": "Cyanotis somaliensis C.B.Clarke"
+  },
+  {
+    "classIndex": 987,
+    "plantnetSpeciesId": "1497630",
+    "scientificName": "Tradescantia × andersoniana W.Ludw. & Rohweder"
+  },
+  {
+    "classIndex": 988,
+    "plantnetSpeciesId": "1497667",
+    "scientificName": "Tradescantia sillamontana Matuda"
+  },
+  {
+    "classIndex": 989,
+    "plantnetSpeciesId": "1503981",
+    "scientificName": "Cirsium palustre (L.) Coss. ex Scop."
+  },
+  {
+    "classIndex": 990,
+    "plantnetSpeciesId": "1506976",
+    "scientificName": "Erechtites minima (Poir.) DC."
+  },
+  {
+    "classIndex": 991,
+    "plantnetSpeciesId": "1513142",
+    "scientificName": "Lactuca alpina (L.) A.Gray"
+  },
+  {
+    "classIndex": 992,
+    "plantnetSpeciesId": "1513780",
+    "scientificName": "Leptinella potentillina F.Muell."
+  },
+  {
+    "classIndex": 993,
+    "plantnetSpeciesId": "1514035",
+    "scientificName": "Leucophyta brownii Cass."
+  },
+  {
+    "classIndex": 994,
+    "plantnetSpeciesId": "1514627",
+    "scientificName": "Melampodium divaricatum (Rich. ex Rich.) DC."
+  },
+  {
+    "classIndex": 995,
+    "plantnetSpeciesId": "1516297",
+    "scientificName": "Othonna capensis L.H.Bailey"
+  },
+  {
+    "classIndex": 996,
+    "plantnetSpeciesId": "1518683",
+    "scientificName": "Rhodanthe chlorocephala (Turcz.) Paul G.Wilson"
+  },
+  {
+    "classIndex": 997,
+    "plantnetSpeciesId": "1522375",
+    "scientificName": "Tagetes lemmonii A.Gray"
+  },
+  {
+    "classIndex": 998,
+    "plantnetSpeciesId": "1522377",
+    "scientificName": "Tagetes lunulata Ortega"
+  },
+  {
+    "classIndex": 999,
+    "plantnetSpeciesId": "1529081",
+    "scientificName": "Sedum adolphii Raym.-Hamet"
+  },
+  {
+    "classIndex": 1000,
+    "plantnetSpeciesId": "1529084",
+    "scientificName": "Sedum allantoides Rose"
+  },
+  {
+    "classIndex": 1001,
+    "plantnetSpeciesId": "1529107",
+    "scientificName": "Sedum burrito Moran"
+  },
+  {
+    "classIndex": 1002,
+    "plantnetSpeciesId": "1529124",
+    "scientificName": "Sedum clavatum R.T. Clausen"
+  },
+  {
+    "classIndex": 1003,
+    "plantnetSpeciesId": "1529128",
+    "scientificName": "Sedum compressum Rose"
+  },
+  {
+    "classIndex": 1004,
+    "plantnetSpeciesId": "1529144",
+    "scientificName": "Sedum cyaneum J. Rudolph"
+  },
+  {
+    "classIndex": 1005,
+    "plantnetSpeciesId": "1529148",
+    "scientificName": "Sedum decumbens R.T. Clausen"
+  },
+  {
+    "classIndex": 1006,
+    "plantnetSpeciesId": "1529179",
+    "scientificName": "Sedum furfuraceum Moran"
+  },
+  {
+    "classIndex": 1007,
+    "plantnetSpeciesId": "1529205",
+    "scientificName": "Sedum hernandezii J. Meyrán"
+  },
+  {
+    "classIndex": 1008,
+    "plantnetSpeciesId": "1529212",
+    "scientificName": "Sedum japonicum Siebold ex Miq."
+  },
+  {
+    "classIndex": 1009,
+    "plantnetSpeciesId": "1529242",
+    "scientificName": "Sedum makinoi Maxim."
+  },
+  {
+    "classIndex": 1010,
+    "plantnetSpeciesId": "1529265",
+    "scientificName": "Sedum nussbaumerianum Bitter"
+  },
+  {
+    "classIndex": 1011,
+    "plantnetSpeciesId": "1529305",
+    "scientificName": "Sedum praealtum A.DC."
+  },
+  {
+    "classIndex": 1012,
+    "plantnetSpeciesId": "1529328",
+    "scientificName": "Sedum rubrotinctum R.T. Clausen"
+  },
+  {
+    "classIndex": 1013,
+    "plantnetSpeciesId": "1535203",
+    "scientificName": "Uncinia rubra Colenso ex Boott"
+  },
+  {
+    "classIndex": 1014,
+    "plantnetSpeciesId": "1538569",
+    "scientificName": "Empetrum rubrum Vahl ex Willd."
+  },
+  {
+    "classIndex": 1015,
+    "plantnetSpeciesId": "1542499",
+    "scientificName": "Acalypha macrostachya Jacq."
+  },
+  {
+    "classIndex": 1016,
+    "plantnetSpeciesId": "1550658",
+    "scientificName": "Pelargonium echinatum Curtis"
+  },
+  {
+    "classIndex": 1017,
+    "plantnetSpeciesId": "1550692",
+    "scientificName": "Pelargonium × hortorum L.H. Bailey"
+  },
+  {
+    "classIndex": 1018,
+    "plantnetSpeciesId": "1550785",
+    "scientificName": "Pelargonium sidoides DC."
+  },
+  {
+    "classIndex": 1019,
+    "plantnetSpeciesId": "1550799",
+    "scientificName": "Pelargonium tomentosum Jacq."
+  },
+  {
+    "classIndex": 1020,
+    "plantnetSpeciesId": "1560405",
+    "scientificName": "Lavandula canariensis (L.) Mill."
+  },
+  {
+    "classIndex": 1021,
+    "plantnetSpeciesId": "1567995",
+    "scientificName": "Acacia auriculiformis Benth."
+  },
+  {
+    "classIndex": 1022,
+    "plantnetSpeciesId": "1568056",
+    "scientificName": "Acacia brevispica Harms"
+  },
+  {
+    "classIndex": 1023,
+    "plantnetSpeciesId": "1568102",
+    "scientificName": "Acacia caven (Molina) Molina"
+  },
+  {
+    "classIndex": 1024,
+    "plantnetSpeciesId": "1568134",
+    "scientificName": "Acacia cognata Domin"
+  },
+  {
+    "classIndex": 1025,
+    "plantnetSpeciesId": "1568144",
+    "scientificName": "Acacia confluens Maiden & Blakeley"
+  },
+  {
+    "classIndex": 1026,
+    "plantnetSpeciesId": "1568799",
+    "scientificName": "Acacia podalyriifolia G.Don"
+  },
+  {
+    "classIndex": 1027,
+    "plantnetSpeciesId": "1568914",
+    "scientificName": "Acacia saligna (Labill.) Wendl."
+  },
+  {
+    "classIndex": 1028,
+    "plantnetSpeciesId": "1576296",
+    "scientificName": "Dalbergia retusa Hemsl."
+  },
+  {
+    "classIndex": 1029,
+    "plantnetSpeciesId": "1580985",
+    "scientificName": "Lupinus nootkatensis Sims"
+  },
+  {
+    "classIndex": 1030,
+    "plantnetSpeciesId": "1584568",
+    "scientificName": "Prosopis pallida (Willd.) Kunth"
+  },
+  {
+    "classIndex": 1031,
+    "plantnetSpeciesId": "1600531",
+    "scientificName": "Cedrela fissilis Vell."
+  },
+  {
+    "classIndex": 1032,
+    "plantnetSpeciesId": "1608001",
+    "scientificName": "Nepenthes mirabilis (Lour.) Druce",
+    "canonicalTaxonId": "3190712"
+  },
+  {
+    "classIndex": 1033,
+    "plantnetSpeciesId": "1608003",
+    "scientificName": "Nepenthes × neglecta Macfarl."
+  },
+  {
+    "classIndex": 1034,
+    "plantnetSpeciesId": "1608023",
+    "scientificName": "Nothofagus betuloides (Mirb.) Oerst."
+  },
+  {
+    "classIndex": 1035,
+    "plantnetSpeciesId": "1608027",
+    "scientificName": "Nothofagus dombeyi (Mirb.) Oerst."
+  },
+  {
+    "classIndex": 1036,
+    "plantnetSpeciesId": "1608034",
+    "scientificName": "Nothofagus nitida (Phil.) Krasser"
+  },
+  {
+    "classIndex": 1037,
+    "plantnetSpeciesId": "1608440",
+    "scientificName": "Nymphaea rubra Roxb. ex Andrews"
+  },
+  {
+    "classIndex": 1038,
+    "plantnetSpeciesId": "1617292",
+    "scientificName": "Dendrobium anosmum Lindl."
+  },
+  {
+    "classIndex": 1039,
+    "plantnetSpeciesId": "1617904",
+    "scientificName": "Dendrobium kingianum Bidwill ex Lindl."
+  },
+  {
+    "classIndex": 1040,
+    "plantnetSpeciesId": "1618100",
+    "scientificName": "Dendrobium munificum (Finet) Schltr."
+  },
+  {
+    "classIndex": 1041,
+    "plantnetSpeciesId": "1618570",
+    "scientificName": "Dendrobium thyrsiflorum B.S.Williams"
+  },
+  {
+    "classIndex": 1042,
+    "plantnetSpeciesId": "1618661",
+    "scientificName": "Dendrobium victoriae-reginae Loher"
+  },
+  {
+    "classIndex": 1043,
+    "plantnetSpeciesId": "1621823",
+    "scientificName": "Erycina pusilla (L.) N.H.Williams & M.W.Chase"
+  },
+  {
+    "classIndex": 1044,
+    "plantnetSpeciesId": "1638998",
+    "scientificName": "Adlumia fungosa (Aiton) Britton, Sterns & Poggenb."
+  },
+  {
+    "classIndex": 1045,
+    "plantnetSpeciesId": "1643184",
+    "scientificName": "Peperomia albovittata C. DC."
+  },
+  {
+    "classIndex": 1046,
+    "plantnetSpeciesId": "1643341",
+    "scientificName": "Peperomia clusiifolia (Jacq.) Hook."
+  },
+  {
+    "classIndex": 1047,
+    "plantnetSpeciesId": "1643349",
+    "scientificName": "Peperomia columella Rauh & Hutchison"
+  },
+  {
+    "classIndex": 1048,
+    "plantnetSpeciesId": "1643491",
+    "scientificName": "Peperomia ferreyrae Yunck."
+  },
+  {
+    "classIndex": 1049,
+    "plantnetSpeciesId": "1643553",
+    "scientificName": "Peperomia graveolens Rauh & Barthlott"
+  },
+  {
+    "classIndex": 1050,
+    "plantnetSpeciesId": "1643690",
+    "scientificName": "Peperomia maculosa (L.) Hook."
+  },
+  {
+    "classIndex": 1051,
+    "plantnetSpeciesId": "1643819",
+    "scientificName": "Peperomia pecuniifolia Trel. & Standl."
+  },
+  {
+    "classIndex": 1052,
+    "plantnetSpeciesId": "1643866",
+    "scientificName": "Peperomia polybotrya Kunth"
+  },
+  {
+    "classIndex": 1053,
+    "plantnetSpeciesId": "1643887",
+    "scientificName": "Peperomia prostrata B.S. Williams"
+  },
+  {
+    "classIndex": 1054,
+    "plantnetSpeciesId": "1644145",
+    "scientificName": "Peperomia tetragona Ruiz & Pav."
+  },
+  {
+    "classIndex": 1055,
+    "plantnetSpeciesId": "1644223",
+    "scientificName": "Peperomia verticillata (L.) A.Dietr."
+  },
+  {
+    "classIndex": 1056,
+    "plantnetSpeciesId": "1646149",
+    "scientificName": "Hebe andersonii (Lindl. & J. Paxton) Cockayne"
+  },
+  {
+    "classIndex": 1057,
+    "plantnetSpeciesId": "1662426",
+    "scientificName": "Lomatia ferruginea R. Br."
+  },
+  {
+    "classIndex": 1058,
+    "plantnetSpeciesId": "1663341",
+    "scientificName": "Anemone pavoniana Boiss."
+  },
+  {
+    "classIndex": 1059,
+    "plantnetSpeciesId": "1663381",
+    "scientificName": "Anemone tomentosa (Maxim.) C.Pei"
+  },
+  {
+    "classIndex": 1060,
+    "plantnetSpeciesId": "1664348",
+    "scientificName": "Hepatica nobilis Mill."
+  },
+  {
+    "classIndex": 1061,
+    "plantnetSpeciesId": "1667445",
+    "scientificName": "Fragaria × ananassa (Duchesne ex Weston) Duchesne ex Rozier"
+  },
+  {
+    "classIndex": 1062,
+    "plantnetSpeciesId": "1675513",
+    "scientificName": "Margaritopsis haematocarpa (Standl.) C.M.Taylor"
+  },
+  {
+    "classIndex": 1063,
+    "plantnetSpeciesId": "1682159",
+    "scientificName": "Angostura granulosa (Kallunki) Kallunki"
+  },
+  {
+    "classIndex": 1064,
+    "plantnetSpeciesId": "1689963",
+    "scientificName": "Smilax excelsa L."
+  },
+  {
+    "classIndex": 1065,
+    "plantnetSpeciesId": "1694631",
+    "scientificName": "Coussapoa villosa Poepp. & Endl."
+  },
+  {
+    "classIndex": 1066,
+    "plantnetSpeciesId": "1697960",
+    "scientificName": "Cyphostemma cyphopetalum (Fresen.) Desc. ex Wild & R.B.Drumm."
+  },
+  {
+    "classIndex": 1067,
+    "plantnetSpeciesId": "1697991",
+    "scientificName": "Cyphostemma juttae (Dinter & Gilg) Desc."
+  },
+  {
+    "classIndex": 1068,
+    "plantnetSpeciesId": "1698065",
+    "scientificName": "Cyphostemma serpens (Hochst. ex A.Rich.) Desc."
+  },
+  {
+    "classIndex": 1069,
+    "plantnetSpeciesId": "1711751",
+    "scientificName": "Nepenthes alata Blanco"
+  },
+  {
+    "classIndex": 1070,
+    "plantnetSpeciesId": "1711753",
+    "scientificName": "Nepenthes truncata Macfarl."
+  },
+  {
+    "classIndex": 1071,
+    "plantnetSpeciesId": "1711775",
+    "scientificName": "Lavandula spp."
+  },
+  {
+    "classIndex": 1072,
+    "plantnetSpeciesId": "1711787",
+    "scientificName": "Cymbalaria muralis P.Gaertn."
+  },
+  {
+    "classIndex": 1073,
+    "plantnetSpeciesId": "1711873",
+    "scientificName": "Aphelandra aurantiaca Lindl."
+  },
+  {
+    "classIndex": 1074,
+    "plantnetSpeciesId": "1712003",
+    "scientificName": "Guatteria dolichopoda Donn. Sm."
+  },
+  {
+    "classIndex": 1075,
+    "plantnetSpeciesId": "1712019",
+    "scientificName": "Stenanona costaricensis R.E. Fr."
+  },
+  {
+    "classIndex": 1076,
+    "plantnetSpeciesId": "1712365",
+    "scientificName": "Schefflera morototoni (Aubl.) Maguire"
+  },
+  {
+    "classIndex": 1077,
+    "plantnetSpeciesId": "1713198",
+    "scientificName": "Bourreria andrieuxii (DC.) Hemsl."
+  },
+  {
+    "classIndex": 1078,
+    "plantnetSpeciesId": "1713199",
+    "scientificName": "Bourreria costaricensis (Standl.) A.H. Gentry"
+  },
+  {
+    "classIndex": 1079,
+    "plantnetSpeciesId": "1717570",
+    "scientificName": "Alibertia edulis (Rich.) A. Rich."
+  },
+  {
+    "classIndex": 1080,
+    "plantnetSpeciesId": "1718287",
+    "scientificName": "Acacia senegalensis (Houtt.) Roberty"
+  }
+]

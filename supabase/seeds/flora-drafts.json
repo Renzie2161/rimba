@@ -1,0 +1,1277 @@
+[
+  {
+    "slug": "nepenthes-aristolochioides",
+    "scientific_name": "Nepenthes aristolochioides",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "aristolochioides",
+    "gbif_taxon_key": "3702095",
+    "iucn_taxon_id": "39644",
+    "region_codes": ["sumatra"],
+    "habitat_codes": ["montane_forest"],
+    "common_name_id": "Kantong semar aristolochioides",
+    "summary_id": "Kantong semar endemik Sumatra; status global Kritis (CR) dalam penilaian IUCN 2013.",
+    "description_id": "Nepenthes aristolochioides tercatat dari Sumatra. IUCN menilai spesies ini Kritis (CR) pada 2013 dan menandai penilaian perlu diperbarui. Ringkasan IUCN mencatat habitat hutan dan pengumpulan tumbuhan liar sebagai ancaman. Tidak ada angka populasi yang disalin ke entri ini.",
+    "distinctive_traits_id": "Kantong atas berbentuk buli-buli; mulut oval terletak di sisi dan menghadap hampir tegak, bukan di puncak; tutup membulat tanpa apendiks; sayap kantong atas tidak berkembang.",
+    "habitat_description_id": "Hutan berlumut pegunungan Sumatra pada elevasi sekitar 2.000–2.200 m. Lokasi diringkas ke tingkat pulau; koordinat maupun titik koleksi spesifik tidak ditampilkan.",
+    "threats_description_id": "IUCN mencatat pengumpulan tumbuhan terestrial sebagai ancaman dan penggunaan untuk hortikultura/perdagangan internasional.",
+    "conservation_actions_id": "Penilaian IUCN 2013 menyebut kawasan konservasi telah diidentifikasi di seluruh sebaran, sebagian besar populasi berada di kawasan lindung, serta perdagangan internasional dikendalikan. Penilaian diberi anotasi perlu diperbarui.",
+    "status_code": "CR",
+    "assessment_year": 2013,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2013-2.RLTS.T39644A19630981.en",
+    "assessment_scope": "global",
+    "assessed_on": "2013-06-10",
+    "population_trend": "decreasing",
+    "assessment_notes": "IUCN annotation: assessment needs updating.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes aristolochioides — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2013-2.RLTS.T39644A19630981.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global CR; assessed 2013-06-10; IUCN marks assessment as needing update. Species page also reports forest habitat, decreasing trend, and gathering of terrestrial plants as a threat."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana Foundation",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), account pp. 36–38: upper pitcher with lateral, nearly vertical mouth; mossy forest at 2,000–2,200 m. Supports summarized morphology and habitat only."
+      },
+      {
+        "title": "Nepenthes aristolochioides — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3702095",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 3702095; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes aristolochioides 4.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File:Nepenthes_aristolochioides_4.JPG",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Exact taxon in image description; author Shawn Mayes; CC BY-SA 3.0."
+      },
+      {
+        "title": "Nepenthes aristolochioides — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:995703-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species listed at 805.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-aristolochioides.jpg",
+        "alt_id": "Kantong Nepenthes aristolochioides",
+        "photographer": "Shawn Mayes",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nepenthes_aristolochioides_4.JPG",
+        "license_code": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution_text": "Shawn Mayes / Wikimedia Commons, CC BY-SA 3.0",
+        "taxon_scientific_name": "Nepenthes aristolochioides"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:995703-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Dilindungi Indonesia dalam Permen LHK P.106/2018, nomor 805.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-clipeata",
+    "scientific_name": "Nepenthes clipeata",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "clipeata",
+    "gbif_taxon_key": "3702027",
+    "iucn_taxon_id": "39652",
+    "region_codes": ["kalimantan"],
+    "habitat_codes": ["rocky_outcrop"],
+    "common_name_id": "Kantong semar clipeata",
+    "summary_id": "Kantong semar dari Kalimantan; status global Kritis (CR) dalam penilaian IUCN 2014.",
+    "description_id": "Nepenthes clipeata tercatat dari Kalimantan. IUCN menilai spesies ini Kritis (CR) pada 2014 dan menandai penilaian perlu diperbarui. Ringkasan penilaian mencatat area berbatu, pengumpulan tumbuhan liar, kebakaran, dan perdagangan hortikultura sebagai konteks konservasi.",
+    "distinctive_traits_id": "Daun tebal membulat seperti perisai; tangkai melekat pada sisi bawah helai daun sebelum mencapai ujung; kantong atas beralih tajam dari bagian bawah membulat ke bagian atas berbentuk corong.",
+    "habitat_description_id": "Celah pada dinding granit terjal di Kalimantan, sekitar 600–800 m. Habitat diringkas sebagai singkapan batu; koordinat dan titik koleksi spesifik tidak ditampilkan.",
+    "threats_description_id": "IUCN mencatat pengumpulan tumbuhan terestrial serta kebakaran dan pemadaman kebakaran sebagai ancaman.",
+    "conservation_actions_id": "IUCN mencatat konservasi ex situ dan pengendalian perdagangan internasional; penilaian 2014 menyebut spesies tidak terdapat di kawasan lindung.",
+    "status_code": "CR",
+    "assessment_year": 2013,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T39652A19631488.en",
+    "assessment_scope": "global",
+    "assessed_on": "2013-12-10",
+    "population_trend": "stable",
+    "assessment_notes": "IUCN annotation: assessment needs updating.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes clipeata — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T39652A19631488.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global CR; assessed 2013-12-10 and published 2014; IUCN marks assessment as needing update. Kalimantan, rocky habitat, stable trend, gathering and fire are recorded."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana Foundation",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), account pp. 49–51: orbicular, peltate leaves; upper pitchers constricted above a globose base; granite cliff crevices at 600–800 m."
+      },
+      {
+        "title": "Nepenthes clipeata — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3702027",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 3702027; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes clipeata 22758.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Nepenthes_clipeata_22758.jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image description identifies cultivated Nepenthes clipeata; author Michael Wolf; CC BY-SA 3.0."
+      },
+      {
+        "title": "Nepenthes clipeata — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603676-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species listed at 810.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-clipeata.jpg",
+        "alt_id": "Spesimen budidaya Nepenthes clipeata",
+        "photographer": "Michael Wolf",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nepenthes_clipeata_22758.jpg",
+        "license_code": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution_text": "Michael Wolf / Wikimedia Commons, CC BY-SA 3.0",
+        "taxon_scientific_name": "Nepenthes clipeata"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603676-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Dilindungi Indonesia dalam Permen LHK P.106/2018, nomor 810.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-rigidifolia",
+    "scientific_name": "Nepenthes rigidifolia",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "rigidifolia",
+    "gbif_taxon_key": "3702101",
+    "iucn_taxon_id": "49002226",
+    "region_codes": ["sumatra"],
+    "habitat_codes": ["montane_forest", "rocky_outcrop"],
+    "common_name_id": "Kantong semar rigidifolia",
+    "summary_id": "Kantong semar endemik Sumatra; status global Kritis (CR) dalam penilaian IUCN 2014.",
+    "description_id": "Nepenthes rigidifolia tercatat dari Sumatra. IUCN menilai spesies ini Kritis (CR) pada 2014 dan menandai penilaian perlu diperbarui. Penilaian menyebut tren menurun, habitat hutan dan area berbatu, serta tekanan dari jalan, pengumpulan tumbuhan, dan penebangan.",
+    "distinctive_traits_id": "Daun kaku dan tebal; kantong bawah melebar, dengan sayap berjumbai; kantong atas lebih panjang, sayapnya menyusut menjadi rusuk, dan bibirnya melebar.",
+    "habitat_description_id": "Tumbuh di hutan pegunungan bawah Sumatra, pada batu, sekitar 1.000–1.500 m. Sebaran dan elevasi diringkas; titik koleksi spesifik tidak ditampilkan.",
+    "threats_description_id": "IUCN mencatat jalan, pengumpulan tumbuhan terestrial, dan penebangan/pemanenan kayu.",
+    "conservation_actions_id": "IUCN mencatat perdagangan internasional berada dalam pengendalian, tetapi spesies tidak tercatat berada di kawasan lindung pada penilaian 2014. Penilaian ditandai perlu diperbarui.",
+    "status_code": "CR",
+    "assessment_year": 2013,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T49002226A49009927.en",
+    "assessment_scope": "global",
+    "assessed_on": "2013-12-06",
+    "population_trend": "decreasing",
+    "assessment_notes": "IUCN annotation: assessment needs updating.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes rigidifolia — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T49002226A49009927.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global CR; assessed 2013-12-06 and published 2014; IUCN marks assessment as needing update. Sumatra, decreasing trend, forest/rocky habitat, roads, gathering and logging are recorded."
+      },
+      {
+        "title": "A new species of Nepenthes (Nepenthaceae) from Sumatra",
+        "url": "https://download.garuda.kemdikbud.go.id/article.php?article=466040&title=A+NEW+SPECIES+OF+NEPENTHES+NEPENTHACEAE+FROM++SUMATRA&val=9631",
+        "organization": "Reinwardtia",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Akhriadi, Hernawati & Tamin (2004), pp. 141–144: original description of N. rigidifolia, including stiff leaves, pitcher form and lower-montane rocky habitat."
+      },
+      {
+        "title": "Nepenthes rigidifolia — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3702101",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 3702101; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes Rigidifolia.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File:Nepenthes_Rigidifolia.JPG",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image category identifies Nepenthes rigidifolia; author Januar Utomo; CC BY-SA 3.0."
+      },
+      {
+        "title": "Nepenthes rigidifolia — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77065024-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species listed at 849.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-rigidifolia.jpg",
+        "alt_id": "Kantong atas Nepenthes rigidifolia",
+        "photographer": "Januar Utomo",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nepenthes_Rigidifolia.JPG",
+        "license_code": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution_text": "Januar Utomo / Wikimedia Commons, CC BY-SA 3.0",
+        "taxon_scientific_name": "Nepenthes rigidifolia"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77065024-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Dilindungi Indonesia dalam Permen LHK P.106/2018, nomor 849.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-sumatrana",
+    "scientific_name": "Nepenthes sumatrana",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "sumatrana",
+    "gbif_taxon_key": "4930502",
+    "iucn_taxon_id": "39700",
+    "region_codes": ["sumatra"],
+    "habitat_codes": ["tropical_forest"],
+    "common_name_id": "Kantong semar Sumatra",
+    "summary_id": "Kantong semar dari Sumatra; status global Kritis (CR) dalam penilaian IUCN 2014.",
+    "description_id": "Nepenthes sumatrana tercatat dari Sumatra. IUCN menilai spesies ini Kritis (CR) pada 2014 dan menandai penilaian perlu diperbarui. Ringkasan penilaian mencatat tren menurun dan habitat hutan.",
+    "distinctive_traits_id": "Daun bertangkai dengan pangkal yang memeluk batang; tangkai dapat berlanjut sebagai rusuk di batang; kantong bawah membulat lalu menyempit ke mulut, sedangkan kantong atas berbentuk corong dan tanpa sayap.",
+    "habitat_description_id": "Catatan flora mencatat hutan sekunder Sumatra dari permukaan laut hingga sekitar 1.000 m; penyebutan tipe hutan bersifat tentatif dalam sumber. Tidak ditampilkan lokasi koleksi spesifik.",
+    "threats_description_id": "IUCN mencatat tanaman tahunan/perenial untuk pertanian dan penebangan/pemanenan kayu sebagai ancaman.",
+    "conservation_actions_id": "Penilaian IUCN 2014 mencatat spesies tidak berada di kawasan lindung dan perdagangan internasional dikendalikan. Penilaian ditandai perlu diperbarui.",
+    "status_code": "CR",
+    "assessment_year": 2013,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T39700A21845285.en",
+    "assessment_scope": "global",
+    "assessed_on": "2013-12-08",
+    "population_trend": "decreasing",
+    "assessment_notes": "IUCN annotation: assessment needs updating.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes sumatrana — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T39700A21845285.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global CR; assessed 2013-12-08 and published 2014; IUCN marks assessment as needing update. Sumatra, decreasing trend, forest habitat and recorded threats linked."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana Foundation",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), account pp. 142–143: petiolate, stem-clasping leaves; lower and upper pitcher differences; tentative secondary-forest habitat from sea level to 1,000 m."
+      },
+      {
+        "title": "Nepenthes sumatrana — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/4930502",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 4930502; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes sumatrana 1.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File:Nepenthes_sumatrana_1.JPG",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Exact taxon in image description; author Shawn Mayes; CC BY-SA 3.0."
+      },
+      {
+        "title": "Nepenthes sumatrana — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77162539-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species listed at 854.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-sumatrana.jpg",
+        "alt_id": "Kantong Nepenthes sumatrana",
+        "photographer": "Shawn Mayes",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nepenthes_sumatrana_1.JPG",
+        "license_code": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution_text": "Shawn Mayes / Wikimedia Commons, CC BY-SA 3.0",
+        "taxon_scientific_name": "Nepenthes sumatrana"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77162539-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Dilindungi Indonesia dalam Permen LHK P.106/2018, nomor 854.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-bicalcarata",
+    "scientific_name": "Nepenthes bicalcarata",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "bicalcarata",
+    "gbif_taxon_key": "3702248",
+    "iucn_taxon_id": "39624",
+    "region_codes": ["kalimantan"],
+    "habitat_codes": ["peat_swamp_forest", "heath_forest"],
+    "common_name_id": "Kantong semar bicalcarata",
+    "summary_id": "Kantong semar dari Kalimantan; status global Rentan (VU) dalam penilaian IUCN 2000.",
+    "description_id": "Nepenthes bicalcarata tercatat dari Kalimantan dan habitat hutan. IUCN menilai spesies ini Rentan (VU) pada 2000; penilaian lama tersebut ditandai perlu diperbarui. Entri tidak mengubah kategori historis menjadi klaim status terkini.",
+    "distinctive_traits_id": "Dua taji panjang menyerupai taring tumbuh di bawah tutup; kantong bawah memiliki dua sayap berjumbai; daun besar dan kaku.",
+    "habitat_description_id": "Hutan rawa gambut dan hutan kerangas berpasir di Borneo; catatan botani mendukung kedua tipe habitat tersebut. Entri tidak memuat titik lokasi spesifik.",
+    "threats_description_id": "Ringkasan IUCN 2000 tidak mencantumkan ancaman spesifik.",
+    "conservation_actions_id": "IUCN mencatat status VU global pada 2000; penilaian ditandai perlu diperbarui. Informasi tindakan konservasi spesifik tidak tersedia pada ringkasan tersebut.",
+    "status_code": "VU",
+    "assessment_year": 2000,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2000.RLTS.T39624A10252393.en",
+    "assessment_scope": "global",
+    "assessed_on": "2000-06-30",
+    "assessment_notes": "IUCN annotation: assessment needs updating.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes bicalcarata — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2000.RLTS.T39624A10252393.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global VU; assessed and published 2000-06-30; Kalimantan and forest habitat recorded. IUCN marks assessment as needing update."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), species account and identification key; supports paired fang-like spurs, lower-pitcher wings, and Bornean peat-swamp/heath-forest habitat."
+      },
+      {
+        "title": "Nepenthes bicalcarata — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3702248",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 3702248; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Bicalcarata-pitchers.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Bicalcarata-pitchers.jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image description identifies Nepenthes bicalcarata lower pitchers; author David Sucianto (jaxsprout); CC BY 2.0."
+      },
+      {
+        "title": "Nepenthes bicalcarata — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603661-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species listed at 806.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-bicalcarata.jpg",
+        "alt_id": "Kantong bawah Nepenthes bicalcarata",
+        "photographer": "David Sucianto (aka jaxsprout)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bicalcarata-pitchers.jpg",
+        "license_code": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "attribution_text": "David Sucianto (aka jaxsprout) / Wikimedia Commons, CC BY 2.0",
+        "taxon_scientific_name": "Nepenthes bicalcarata"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603661-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Dilindungi Indonesia dalam Permen LHK P.106/2018, nomor 806.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-ampullaria",
+    "scientific_name": "Nepenthes ampullaria",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "ampullaria",
+    "gbif_taxon_key": "7167254",
+    "iucn_taxon_id": "39640",
+    "region_codes": ["kalimantan", "papua", "sumatra"],
+    "habitat_codes": ["tropical_forest", "swamp_forest"],
+    "common_name_id": "Kantong semar ampullaria",
+    "summary_id": "Kantong semar yang tersebar di Indonesia; status global Risiko Rendah (LC) dalam penilaian IUCN 2018.",
+    "description_id": "Nepenthes ampullaria tercatat di Kalimantan, Papua, dan Sumatra. IUCN menilai spesies ini Risiko Rendah (LC) pada 2018 dan menandai penilaian perlu diperbarui. Ringkasan penilaian mencatat hutan, semak, lahan basah pedalaman, serta ancaman pembangunan, pertanian, pengumpulan tumbuhan, dan kebakaran.",
+    "distinctive_traits_id": "Kantong berbentuk hampir bulat dengan tutup relatif sempit; sisi bawah tutup memiliki sedikit kelenjar; ciri ini membantu membedakannya dalam kunci Nepenthes regional.",
+    "habitat_description_id": "Hutan, semak, dan lahan basah pedalaman di sebaran Malesia. Ringkasan IUCN menyebut habitat tersebut tanpa merinci tipe hutan atau kondisi mikrohabitat.",
+    "threats_description_id": "IUCN mencatat pembangunan permukiman/komersial, tanaman pertanian tahunan, pengumpulan tumbuhan terestrial, serta kebakaran dan pemadaman kebakaran.",
+    "conservation_actions_id": "IUCN mencatat sebaran melintasi beberapa negara dan kategori global LC pada penilaian 2018; penilaian ditandai perlu diperbarui.",
+    "status_code": "LC",
+    "assessment_year": 2014,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2018-1.RLTS.T39640A143958546.en",
+    "assessment_scope": "global",
+    "assessed_on": "2014-11-18",
+    "population_trend": "unknown",
+    "assessment_notes": "IUCN annotation: assessment needs updating; errata version published in 2019.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes ampullaria — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2018-1.RLTS.T39640A143958546.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global LC, published 2018; assessed 2014-11-18; errata version 2019; IUCN marks assessment as needing update. Indonesia range and habitat/threat summaries linked."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana Foundation",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), species account and identification key: globose pitchers and relatively narrow lid; used for morphology. IUCN source remains basis for broad habitat summary."
+      },
+      {
+        "title": "Nepenthes ampullaria — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/7167254",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 7167254; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nep amp 295.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Nep_amp_295.jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image description/category identifies Nepenthes ampullaria; author attribution on page is NepGrower~commonswiki (assumed own work); CC BY-SA 2.5."
+      },
+      {
+        "title": "Nepenthes ampullaria — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603652-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species absent from reviewed list; no blanket legal exemption.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Leaf litter utilization by Nepenthes ampullaria",
+        "url": "https://www.viurrspace.ca/server/api/core/bitstreams/0875d528-8e7d-4b20-afdf-7135143e929d/content",
+        "organization": "International Journal of Plant Sciences",
+        "section_key": "ecosystem",
+        "notes": "Moran et al. (2003), DOI 10.1086/375422; full text read; partial detritivory, no numerical estimate generalized.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-ampullaria.jpg",
+        "alt_id": "Kantong Nepenthes ampullaria",
+        "photographer": "NepGrower~commonswiki (assumed own work)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nep_amp_295.jpg",
+        "license_code": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "attribution_text": "NepGrower~commonswiki / Wikimedia Commons, CC BY-SA 2.5",
+        "taxon_scientific_name": "Nepenthes ampullaria"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603652-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Tidak tercantum dalam daftar Nepenthes P.106/2018 yang diperiksa; bukan kesimpulan bebas seluruh aturan.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Memanfaatkan nutrien dari serasah daun yang masuk ke kantong, selain mangsa invertebrata. Penelitian di Borneo menunjukkan strategi sebagian detritivor; bukan hanya pemangsa serangga.",
+    "ecosystem_source_url": "https://www.viurrspace.ca/server/api/core/bitstreams/0875d528-8e7d-4b20-afdf-7135143e929d/content"
+  },
+  {
+    "slug": "nepenthes-rafflesiana",
+    "scientific_name": "Nepenthes rafflesiana",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "rafflesiana",
+    "gbif_taxon_key": "7167256",
+    "iucn_taxon_id": "39689",
+    "region_codes": ["kalimantan", "sumatra"],
+    "habitat_codes": ["tropical_forest", "peat_swamp_forest"],
+    "common_name_id": "Kantong semar rafflesiana",
+    "summary_id": "Kantong semar dari Kalimantan dan Sumatra; status global Risiko Rendah (LC) dalam penilaian IUCN 2018.",
+    "description_id": "Nepenthes rafflesiana tercatat dari Kalimantan dan Sumatra. IUCN menilai spesies ini Risiko Rendah (LC) pada 2018 dan menandai penilaian perlu diperbarui. Ringkasan penilaian mencatat hutan, semak, lahan basah, pembangunan, pertanian, serta pengumpulan tumbuhan.",
+    "distinctive_traits_id": "Kantong bawah dan atas berbeda nyata bentuknya; kantong bawah cenderung lebih besar dan berperistom lebar; kantong atas lebih ramping dan berbentuk corong.",
+    "habitat_description_id": "Hutan tropis dataran rendah, termasuk hutan kerangas dan rawa gambut; sebaran mencakup Sumatra, Semenanjung Malaya, Singapura, dan Borneo. Habitat dirangkum tanpa titik lokasi.",
+    "threats_description_id": "IUCN mencatat pembangunan komersial, tanaman pertanian tahunan, dan pengumpulan tumbuhan terestrial.",
+    "conservation_actions_id": "IUCN mencatat spesies berada di kawasan lindung dan berada dalam pengendalian perdagangan internasional pada penilaian 2018; penilaian ditandai perlu diperbarui.",
+    "status_code": "LC",
+    "assessment_year": 2014,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2018-1.RLTS.T39689A143963510.en",
+    "assessment_scope": "global",
+    "assessed_on": "2014-11-20",
+    "population_trend": "unknown",
+    "assessment_notes": "IUCN annotation: assessment needs updating; errata version published in 2019.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes rafflesiana — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2018-1.RLTS.T39689A143963510.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global LC, published 2018; assessed 2014-11-20; errata version 2019; IUCN marks assessment as needing update. Indonesia range and recorded habitats/threats linked."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), species account and identification key; supports lower/upper pitcher differences and the range/habitat summary."
+      },
+      {
+        "title": "Nepenthes rafflesiana — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/7167256",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 7167256; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "RaffKal.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:RaffKal.jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image description identifies Nepenthes rafflesiana; author Gaspard513; CC BY 4.0."
+      },
+      {
+        "title": "Nepenthes rafflesiana — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603790-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species absent from reviewed list; no blanket legal exemption.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-rafflesiana.jpg",
+        "alt_id": "Kantong Nepenthes rafflesiana dari Kalimantan",
+        "photographer": "Gaspard513",
+        "source_url": "https://commons.wikimedia.org/wiki/File:RaffKal.jpg",
+        "license_code": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution_text": "Gaspard513 / Wikimedia Commons, CC BY 4.0",
+        "taxon_scientific_name": "Nepenthes rafflesiana"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603790-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Tidak tercantum dalam daftar Nepenthes P.106/2018 yang diperiksa; bukan kesimpulan bebas seluruh aturan.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-mirabilis",
+    "scientific_name": "Nepenthes mirabilis",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "mirabilis",
+    "gbif_taxon_key": "3190712",
+    "iucn_taxon_id": "49122515",
+    "region_codes": [
+      "java",
+      "kalimantan",
+      "maluku",
+      "papua",
+      "sulawesi",
+      "sumatra"
+    ],
+    "habitat_codes": ["grassland", "swamp_forest"],
+    "common_name_id": "Kantong semar mirabilis",
+    "summary_id": "Kantong semar dengan sebaran luas di Indonesia; status global Risiko Rendah (LC) dalam penilaian IUCN 2014.",
+    "description_id": "Nepenthes mirabilis tercatat dari Jawa, Kalimantan, Maluku, Papua, Sulawesi, dan Sumatra. IUCN menilai spesies ini Risiko Rendah (LC) pada 2014 dan mencatat tren populasi meningkat. Ringkasan habitat menyebut padang rumput dan lahan basah pedalaman.",
+    "distinctive_traits_id": "Kantong umumnya ramping; bibir kantong relatif sederhana; bentuknya bervariasi antar fase tumbuh dan lokasi, sehingga satu ciri foto saja tidak cukup untuk identifikasi.",
+    "habitat_description_id": "Padang rumput dan lahan basah pedalaman tercatat dalam ringkasan IUCN; spesies memiliki sebaran luas di Indonesia. Rincian mikrohabitat tidak disimpulkan dari foto budidaya.",
+    "threats_description_id": "IUCN mencatat modifikasi ekosistem sebagai ancaman umum; ringkasan tidak menguraikan penyebab lebih lanjut.",
+    "conservation_actions_id": "IUCN mencatat keberadaan di kawasan lindung dan pengendalian perdagangan internasional pada penilaian 2014.",
+    "status_code": "LC",
+    "assessment_year": 2014,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T49122515A21844202.en",
+    "assessment_scope": "global",
+    "assessed_on": "2014-04-17",
+    "population_trend": "increasing",
+    "assessment_notes": "IUCN annotation: assessment needs updating.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes mirabilis — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2014-1.RLTS.T49122515A21844202.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global LC; assessed and published 2014-04-17; IUCN marks assessment as needing update. Indonesia range, increasing trend, grassland/wetland habitat and ecosystem-modification threat recorded."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana Foundation",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), species account and identification key used for variable pitcher/leaf characters; IUCN source supports grassland and inland-wetland habitat summary."
+      },
+      {
+        "title": "Nepenthes mirabilis — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3190712",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 3190712; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Common swamp pitcher plant.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Common_swamp_pitcher_plant.jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image description identifies Nepenthes mirabilis; author Dandy1022; CC BY-SA 4.0. Captured specimen location is Japan, not wild Indonesian range."
+      },
+      {
+        "title": "Nepenthes mirabilis — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603761-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species absent from reviewed list; no blanket legal exemption.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-mirabilis.jpg",
+        "alt_id": "Nepenthes mirabilis, kantong semar rawa",
+        "photographer": "Dandy1022",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Common_swamp_pitcher_plant.jpg",
+        "license_code": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution_text": "Dandy1022 / Wikimedia Commons, CC BY-SA 4.0",
+        "taxon_scientific_name": "Nepenthes mirabilis"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603761-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Tidak tercantum dalam daftar Nepenthes P.106/2018 yang diperiksa; bukan kesimpulan bebas seluruh aturan.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-gracilis",
+    "scientific_name": "Nepenthes gracilis",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "gracilis",
+    "gbif_taxon_key": "3702049",
+    "iucn_taxon_id": "39663",
+    "region_codes": ["kalimantan", "sulawesi", "sumatra"],
+    "habitat_codes": ["tropical_forest", "swamp_forest", "rocky_outcrop"],
+    "common_name_id": "Kantong semar gracilis",
+    "summary_id": "Kantong semar dari Kalimantan, Sulawesi, dan Sumatra; status global Risiko Rendah (LC) dalam penilaian IUCN 2018.",
+    "description_id": "Nepenthes gracilis tercatat dari Kalimantan, Sulawesi, dan Sumatra. IUCN menilai spesies ini Risiko Rendah (LC) pada 2018 dan mencatat tren populasi meningkat. Ringkasan habitat mencakup semak, lahan basah, dan area berbatu.",
+    "distinctive_traits_id": "Batang berpenampang segitiga; daun duduk tanpa tangkai dengan pangkal memanjang menuruni batang; kantong bawah bersayap, sementara sayap kantong atas tereduksi menjadi rusuk.",
+    "habitat_description_id": "IUCN mencatat semak, lahan basah pedalaman, dan area berbatu. Habitat diringkas pada tingkat umum; foto Malaysia hanya menunjukkan spesimen dan tidak dipakai untuk menyimpulkan sebaran liar Indonesia.",
+    "threats_description_id": "Ringkasan IUCN tidak mencantumkan ancaman spesifik.",
+    "conservation_actions_id": "IUCN mencatat spesies berada di kawasan lindung dan berada dalam pengendalian perdagangan internasional pada penilaian 2018; penilaian ditandai perlu diperbarui.",
+    "status_code": "LC",
+    "assessment_year": 2014,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2018-1.RLTS.T39663A143960417.en",
+    "assessment_scope": "global",
+    "assessed_on": "2014-11-23",
+    "population_trend": "increasing",
+    "assessment_notes": "IUCN annotation: assessment needs updating; errata version published in 2019.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes gracilis — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2018-1.RLTS.T39663A143960417.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global LC, published 2018; assessed 2014-11-23; errata version 2019; IUCN marks assessment as needing update. Indonesia range, increasing trend and habitat recorded."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), species account and key; supports triangular stem, sessile/decurrent leaves, pitcher wings/ribs, and habitat information."
+      },
+      {
+        "title": "Nepenthes gracilis — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3702049",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted exact species match key 3702049; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "N. gracilis1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:N._gracilis1.jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Image description identifies Nepenthes gracilis; author Robert Tan Hung Huat; VRT-confirmed permission; CC BY-SA 3.0."
+      },
+      {
+        "title": "Nepenthes gracilis — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603714-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species absent from reviewed list; no blanket legal exemption.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-gracilis.jpg",
+        "alt_id": "Kantong Nepenthes gracilis",
+        "photographer": "Robert Tan Hung Huat",
+        "source_url": "https://commons.wikimedia.org/wiki/File:N._gracilis1.jpg",
+        "license_code": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution_text": "Robert Tan Hung Huat / Wikimedia Commons, CC BY-SA 3.0",
+        "taxon_scientific_name": "Nepenthes gracilis"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603714-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Tidak tercantum dalam daftar Nepenthes P.106/2018 yang diperiksa; bukan kesimpulan bebas seluruh aturan.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  },
+  {
+    "slug": "nepenthes-boschiana",
+    "scientific_name": "Nepenthes boschiana",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Nepenthaceae",
+    "genus": "Nepenthes",
+    "specific_epithet": "boschiana",
+    "gbif_taxon_key": "7167258",
+    "iucn_taxon_id": "40104",
+    "region_codes": ["kalimantan"],
+    "habitat_codes": ["tropical_forest"],
+    "common_name_id": "Kantong semar boschiana",
+    "summary_id": "Kantong semar dari Kalimantan; status global Genting (EN) dalam penilaian IUCN 2000.",
+    "description_id": "Nepenthes boschiana tercatat dari Kalimantan. IUCN menilai spesies ini Genting (EN) pada 2000; penilaian lama tersebut diberi anotasi perlu diperbarui. Ringkasan penilaian tidak merinci habitat, ancaman, atau tindakan konservasi.",
+    "distinctive_traits_id": "Daun bertangkai dengan helai lanset; kantong bawah membulat hingga berbentuk telur lalu menyempit menjadi silinder; kantong memiliki dua sayap berjumbai dan mulut hampir bulat.",
+    "habitat_description_id": "Hutan Kalimantan selatan; sumber taksonomi menjelaskan tipe hutan dan ciri morfologi, sedangkan ringkasan IUCN hanya menggeneralisasi sebaran ke Kalimantan.",
+    "threats_description_id": "Ringkasan IUCN 2000 tidak merinci ancaman.",
+    "conservation_actions_id": "Ringkasan IUCN 2000 tidak merinci tindakan konservasi; status EN perlu ditinjau terhadap penilaian yang lebih baru.",
+    "status_code": "EN",
+    "assessment_year": 2000,
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2000.RLTS.T40104A10314124.en",
+    "assessment_scope": "global",
+    "assessed_on": "2000-06-30",
+    "assessment_notes": "IUCN annotation: assessment needs updating; no later assessment verified.",
+    "reviewed_by": "AI-assisted source verification; owner review pending",
+    "reviewed_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Nepenthes boschiana — IUCN Red List assessment",
+        "url": "https://doi.org/10.2305/IUCN.UK.2000.RLTS.T40104A10314124.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "accessed_on": "2026-11-10",
+        "section_key": "assessment",
+        "notes": "Global EN; assessed and published 2000-06-30; Kalimantan recorded. IUCN marks assessment as needing update; threat and habitat detail absent from the record."
+      },
+      {
+        "title": "Nepenthaceae — Flora Malesiana, Series I 15(1)",
+        "url": "https://repository.naturalis.nl/pub/532692/FM1S2001015001001.pdf",
+        "organization": "Flora Malesiana Foundation",
+        "accessed_on": "2026-11-10",
+        "section_key": "morphology",
+        "notes": "Cheek & Jebb (2001), species account and identification key used for leaf and pitcher morphology and Bornean range/habitat."
+      },
+      {
+        "title": "Nepenthes boschiana — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/7167258",
+        "organization": "Global Biodiversity Information Facility",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Accepted species match key 7167258; Plantae, Tracheophyta, Magnoliopsida, Caryophyllales, Nepenthaceae, Nepenthes."
+      },
+      {
+        "title": "Nepenthes L. — NZOR classification",
+        "url": "https://nzor.org.nz/names/b464e174-d2b5-4f43-be1b-1123b66fbfcf",
+        "organization": "New Zealand Organisms Register (NZOR)",
+        "accessed_on": "2026-11-10",
+        "section_key": "taxonomy",
+        "notes": "Genus-level classification lists Eukaryota, Plantae, Tracheophyta, Spermatophytina, Magnoliopsida, Caryophyllales, Nepenthes."
+      },
+      {
+        "title": "Nepenthes boschiana (Bogor botanical park).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Nepenthes_boschiana_(Bogor_botanical_park).jpg",
+        "organization": "Wikimedia Commons",
+        "accessed_on": "2026-11-10",
+        "section_key": "image",
+        "notes": "Photographed at Bogor Botanical Park; author Andreas Christian; CC BY-SA 4.0."
+      },
+      {
+        "title": "Nepenthes boschiana — native range",
+        "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603664-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "notes": "POWO native range verified species by species; includes Indonesian part of native range, not necessarily endemic solely to Indonesia.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES",
+        "section_key": "regulation",
+        "notes": "Nepenthes spp. Appendix II #4 except N. khasiana and N. rajah (I). Later amendments not verified; listing date explicit.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species",
+        "url": "https://jdih.kehutanan.go.id/new2/home/portfolioDetails3/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf/106/2018/4/949",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "notes": "JDIH reports Berlaku; 59 Nepenthes taxa listed individually. Species listed at 808.",
+        "accessed_on": "2026-11-10"
+      },
+      {
+        "title": "Nepenthes — botanical ecology",
+        "url": "https://plants.ces.ncsu.edu/plants/nepenthes/",
+        "organization": "NC State Extension",
+        "section_key": "ecosystem",
+        "notes": "Genus-level carnivory/nutrient acquisition only; no quantitative pest-control benefit inferred.",
+        "accessed_on": "2026-11-10"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/nepenthes-boschiana.jpg",
+        "alt_id": "Nepenthes boschiana di Kebun Raya Bogor",
+        "photographer": "Andreas Christian",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nepenthes_boschiana_(Bogor_botanical_park).jpg",
+        "license_code": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution_text": "Andreas Christian / Wikimedia Commons, CC BY-SA 4.0",
+        "taxon_scientific_name": "Nepenthes boschiana"
+      }
+    ],
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:603664-1",
+    "regulation_status": "CITES Apendiks II (daftar 7 Februari 2025). Dilindungi Indonesia dalam Permen LHK P.106/2018, nomor 808.",
+    "regulation_source_url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+    "ecosystem_role": "Tumbuhan karnivor; kantong menangkap invertebrata untuk memperoleh nutrien tambahan pada habitat miskin hara. Ini karakter ekologis genus, bukan klaim efektivitas pengendalian hama.",
+    "ecosystem_source_url": "https://plants.ces.ncsu.edu/plants/nepenthes/"
+  }
+]

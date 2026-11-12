@@ -73,6 +73,25 @@ describe("offline draft validation", () => {
     expect(result.stderr).toBe("");
   });
 
+  it.each(["NE", "CR"])(
+    "requires an assessment date except for sourced %s",
+    (category) => {
+      const result = runCli(
+        [
+          {
+            ...entry,
+            status_code: category,
+            assessment_year: null,
+            assessment_source_url: source.url,
+          },
+        ],
+        false,
+        "--validate",
+      );
+      expect(result.status).toBe(category === "NE" ? 0 : 1);
+    },
+  );
+
   const invalidCases: Array<[string, unknown]> = [
     ["out-of-range featured rank", [{ ...entry, featured_rank: 2147483648 }]],
     [

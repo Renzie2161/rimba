@@ -16,6 +16,13 @@
   cursor: pointer;
 }
 
+.trigger span {
+  flex: 1;
+}
+
+.trigger > svg:last-child {
+  margin-left: auto;
+}
 .trigger:hover {
   background: var(--surface-alt);
   color: var(--brand-800);

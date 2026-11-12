@@ -1,0 +1,778 @@
+[
+  {
+    "slug": "kelapa",
+    "scientific_name": "Cocos nucifera",
+    "common_name_id": "Kelapa",
+    "gbif_taxon_key": "2735117",
+    "class": "Liliopsida",
+    "order": "Arecales",
+    "family": "Arecaceae",
+    "region_codes": ["maluku", "java", "sulawesi"],
+    "habitat_codes": ["coastal", "garden"],
+    "status_code": "NE",
+    "assessment_year": null,
+    "assessment_source_url": "https://www.kew.org/plants/coconut-palm",
+    "summary_id": "Palem pesisir berbatang tunggal dengan buah bersabut; berasal antara lain dari Maluku dan telah lama dibudidayakan luas.",
+    "description_id": "Kelapa adalah palem berbatang tunggal dari famili Arecaceae yang dapat mencapai tinggi sekitar 30 meter. Bekas pelepah membentuk cincin pada batang, sedangkan tajuknya tersusun dari daun majemuk menyirip yang panjang. Buah memiliki sabut tebal, tempurung keras, daging putih, dan rongga berisi air. Kew mencatat Maluku dalam wilayah asli, tetapi Jawa dan Sulawesi sebagai wilayah introduksi; karena itu asal kelapa tidak disamakan untuk seluruh pulau Indonesia. Tumbuhan ini cocok dengan lingkungan pesisir yang mendapat matahari penuh dan banyak dibudidayakan. Kew melaporkan kategori NE, yaitu belum dievaluasi, bukan risiko kepunahan rendah yang sudah dinilai.",
+    "distinctive_traits_id": "Batang tunggal dengan cincin bekas pelepah; daun majemuk menyirip hingga sekitar 5 m; bunga krem atau kuning muncul di antara pelepah bawah; buah bersabut dengan tempurung keras dan endosperma putih.",
+    "habitat_description_id": "Pesisir tropis terbuka, terutama pada substrat berpasir, serta kebun. POWO mencatat Maluku sebagai wilayah asli dan Jawa serta Sulawesi sebagai wilayah introduksi; daftar ini bukan sebaran Indonesia yang lengkap.",
+    "threats_description_id": "Kew melaporkan NE (Belum Dievaluasi). Tidak ada penilaian risiko global atau tren populasi yang ditambahkan. Penyebaran luas dalam budidaya tidak dipakai untuk mengarang kategori LC atau menyatakan semua populasi liar aman.",
+    "conservation_actions_id": "NParks mendokumentasikan perbanyakan melalui buah tua untuk budidaya. Gunakan bahan tanam yang asalnya diketahui dan catat apakah individu tumbuh liar atau ditanam; kegiatan budidaya bukan bukti program pemulihan populasi liar.",
+    "ecosystem_role": "Palem penyusun vegetasi pesisir dan tumbuhan inang kupu-kupu menurut profil NParks; peran inang tidak berarti spesies asli pada semua pulau tempat kelapa ditanam.",
+    "assessment_notes": "NE explicitly reported by Kew coconut palm profile; indexed text verified. No completed assessment, year, exact assessment date or IUCN taxon identifier invented.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "genus": "Cocos",
+    "specific_epithet": "nucifera",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/666160-1",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan.",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://www.nparks.gov.sg/florafaunaweb/flora/5/6/5618",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Cocos nucifera — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/2735117",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Cocos nucifera — native distribution",
+        "url": "https://powo.science.kew.org/taxon/666160-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "POWO explicitly lists Maluku as native, Jawa and Sulawesi as introduced. Indonesia-wide native flag means a documented native Indonesian range exists, not that all Indonesian populations are native."
+      },
+      {
+        "title": "Cocos nucifera — morphology, habitat and biology",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/5/6/5618",
+        "organization": "National Parks Board Singapore",
+        "section_key": "profile",
+        "accessed_on": "2026-11-11",
+        "notes": "Source text inspected; original Indonesian factual summary. Local status and foreign regulations not transferred to Indonesia. Cultivation is not claimed as a successful restoration programme."
+      },
+      {
+        "title": "Cocos nucifera — conservation status",
+        "url": "https://www.kew.org/plants/coconut-palm",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "NE explicitly reported by Kew coconut palm profile; indexed text verified. No completed assessment, year, exact assessment date or IUCN taxon identifier invented."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "Cocos nucifera — licensed species photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:Cocos_nucifera_tree.loki.jpg",
+        "organization": "Wikimedia Commons",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 960x1200 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Cocos nucifera (L.) (Arecaceae) is commonly called the “coconut tree” and is the most naturally widespread fruit plant on Earth. Throughout history, humans have used medicinal plants therapeutically, and minerals, plants, and animals have traditionally been the main sources of drugs.",
+        "license": "CC BY 4.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/kelapa.jpg",
+        "alt_id": "Kelapa, Cocos nucifera",
+        "photographer": "Lokeswaran Kaliyappan",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cocos_nucifera_tree.loki.jpg",
+        "license_code": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "attribution_text": "Lokeswaran Kaliyappan / Wikimedia Commons, CC BY 4.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Cocos nucifera"
+      }
+    ]
+  },
+  {
+    "slug": "bakau-kurap",
+    "scientific_name": "Rhizophora mucronata",
+    "common_name_id": "Bakau kurap",
+    "gbif_taxon_key": "3086527",
+    "class": "Magnoliopsida",
+    "order": "Malpighiales",
+    "family": "Rhizophoraceae",
+    "region_codes": ["java"],
+    "habitat_codes": ["mangrove"],
+    "status_code": "LC",
+    "assessment_year": 2010,
+    "iucn_taxon_id": "178825",
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2010-2.RLTS.T178825A7618520.en",
+    "summary_id": "Pohon mangrove dengan akar tunjang dan propagul memanjang yang berkembang saat masih melekat pada induknya.",
+    "description_id": "Bakau kurap merupakan pohon mangrove dari famili Rhizophoraceae yang hidup di kawasan pasang surut. Akar tunjang menyangga batang, sementara daun tebal tersusun berhadapan dengan ujung meruncing. Bunga berwarna putih krem dan memiliki empat mahkota dengan rambut pada tepinya. Biji mulai berkembang ketika buah masih melekat pada pohon, menghasilkan propagul memanjang yang dapat terbawa pasang. Kew memasukkan Jawa dalam wilayah asli spesies ini. Penilaian global IUCN yang dirujuk diterbitkan pada 2010 dengan kategori LC. Status tersebut tidak menggantikan penilaian kondisi suatu kawasan mangrove ataupun berarti habitat pesisir bebas dari tekanan pemanfaatan.",
+    "distinctive_traits_id": "Akar tunjang dari batang dan cabang bawah; daun berhadapan, tebal, elips hingga lonjong; empat mahkota putih dengan tepi berambut; propagul silindris memanjang yang berkembang pada pohon induk.",
+    "habitat_description_id": "Estuari dan tepi alur pasang surut pada bagian bawah hingga tengah hutan mangrove. Jawa merupakan contoh wilayah asli yang dikonfirmasi POWO; daftar wilayah bukan inventaris lengkap sebaran Indonesia.",
+    "threats_description_id": "SANBI mendokumentasikan pemanenan dan degradasi habitat pada populasi Afrika Selatan. Informasi itu menjadi contoh tekanan lokal, bukan klaim tren seluruh Indonesia. Kategori global LC merujuk penilaian IUCN terbitan 2010; angka populasi Indonesia tidak diasumsikan.",
+    "conservation_actions_id": "NParks dan SANBI mendokumentasikan perbanyakan menggunakan propagul. Perbanyakan perlu mengikuti kondisi pasang surut dan habitat yang sesuai; penanaman tidak dianggap otomatis berhasil memulihkan mangrove. Pemantauan tegakan dan pencegahan kerusakan habitat tetap relevan.",
+    "ecosystem_role": "Pohon pembentuk hutan mangrove yang membantu perlindungan garis pantai; serasah daun dimanfaatkan kepiting dalam uraian ekologi SANBI. Sumber ini tidak digunakan untuk menyalin hukum perlindungan Afrika Selatan ke Indonesia.",
+    "assessment_notes": "Global LC and Duke et al. 2010 citation corroborated by IUCN-published GBIF Red List dataset. Year denotes cited Red List edition; exact Date Assessed not retrieved; assessed_on remains null.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "genus": "Rhizophora",
+    "specific_epithet": "mucronata",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/719830-1",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan.",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://pza.sanbi.org/rhizophora-mucronata",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Rhizophora mucronata — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3086527",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Rhizophora mucronata — native distribution",
+        "url": "https://powo.science.kew.org/taxon/719830-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "Jawa explicitly listed native by POWO. Region code is illustrative, not a complete range map."
+      },
+      {
+        "title": "Rhizophora mucronata — morphology, habitat and biology",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/4/6/4639",
+        "organization": "National Parks Board Singapore",
+        "section_key": "profile",
+        "accessed_on": "2026-11-11",
+        "notes": "Source text inspected; original Indonesian factual summary. Local status and foreign regulations not transferred to Indonesia. Cultivation is not claimed as a successful restoration programme."
+      },
+      {
+        "title": "Rhizophora mucronata — conservation status",
+        "url": "https://doi.org/10.2305/IUCN.UK.2010-2.RLTS.T178825A7618520.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Global LC and Duke et al. 2010 citation corroborated by IUCN-published GBIF Red List dataset. Year denotes cited Red List edition; exact Date Assessed not retrieved; assessed_on remains null."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "Rhizophora mucronata — IUCN Red List dataset",
+        "url": "https://www.gbif.org/dataset/19491596-35ae-4a91-9a98-85cf505f1bd3/taxon/178825",
+        "organization": "IUCN / GBIF",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Corroborates global LC and Duke et al. 2010 citation; not confused with SANBI national assessment."
+      },
+      {
+        "title": "Rhizophora mucronata — PlantZAfrica",
+        "url": "https://pza.sanbi.org/rhizophora-mucronata",
+        "organization": "South African National Biodiversity Institute",
+        "section_key": "ecosystem",
+        "accessed_on": "2026-11-11",
+        "notes": "Morphology, litter/crab interaction, shoreline protection and propagation. Decline/protection passages are South African, explicitly not Indonesian law or national population trend."
+      },
+      {
+        "title": "Rhizophora mucronata — licensed species photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:Rhizophora_mucronata_Propagules.jpg",
+        "organization": "Wikimedia Commons",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 960x1280 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Rhizophora mucronata Propagules at Iriomote is. Okinawa, Japan.",
+        "license": "CC BY-SA 3.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/bakau-kurap.jpg",
+        "alt_id": "Bakau kurap, Rhizophora mucronata",
+        "photographer": "Anonymous Powered (own-work uploader; Commons author field: self)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rhizophora_mucronata_Propagules.jpg",
+        "license_code": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "attribution_text": "Anonymous Powered (own-work uploader; Commons author field: self) / Wikimedia Commons, CC BY-SA 3.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Rhizophora mucronata"
+      }
+    ]
+  },
+  {
+    "slug": "angsana",
+    "scientific_name": "Pterocarpus indicus",
+    "common_name_id": "Angsana",
+    "gbif_taxon_key": "5349242",
+    "class": "Magnoliopsida",
+    "order": "Fabales",
+    "family": "Fabaceae",
+    "region_codes": ["java"],
+    "habitat_codes": ["tropical_forest", "garden"],
+    "status_code": "EN",
+    "assessment_year": 2018,
+    "iucn_taxon_id": "33241",
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2018-2.RLTS.T33241A2835450.en",
+    "summary_id": "Pohon bertajuk lebar dengan bunga kuning harum dan polong pipih bersayap; berstatus global EN.",
+    "description_id": "Angsana adalah pohon famili Fabaceae yang dapat mencapai sekitar 40 meter dan dikenal sebagai peneduh. Tajuknya melebar, batang dapat berbanir, dan daunnya majemuk menyirip dengan anak daun berjumlah ganjil. Bunga kuning harum berbentuk khas kacang-kacangan muncul berkelompok. Buah berupa polong pipih membulat dengan sayap yang membantu penyebaran oleh angin. POWO memasukkan Jawa dalam wilayah asli angsana, berbeda dengan status introduksinya di beberapa negara lain. Kategori global EN merujuk penilaian IUCN terbitan 2018. Pohon yang masih sering dijumpai sebagai tanaman jalan tidak membuktikan bahwa populasi liar di seluruh sebarannya berada dalam kondisi aman.",
+    "distinctive_traits_id": "Tajuk lebar dengan cabang agak menjuntai; daun menyirip ganjil dengan 5–11 anak daun; bunga kuning berbentuk kupu-kupu dan harum; polong bulat pipih bersayap, sekitar 3–5 cm.",
+    "habitat_description_id": "Tepi hutan dan bagian terbuka hutan hijau sepanjang tahun, juga ditanam sebagai peneduh. Profil NParks menyebut habitat hingga sekitar 600 m; Jawa tercantum sebagai wilayah asli di POWO, bukan berarti hanya terdapat di Jawa.",
+    "threats_description_id": "Kategori global EN dikonfirmasi POWO untuk penilaian IUCN terbitan 2018. Rincian ancaman dari naskah penilaian belum diperoleh sehingga tidak ditambahkan angka atau tren populasi. NParks mencatat wabah layu Fusarium pada pohon budidaya Singapura; kejadian itu tidak dianggap data nasional Indonesia.",
+    "conservation_actions_id": "NParks mendokumentasikan perbanyakan dengan biji dan stek serta pemeliharaan sebagai pohon peneduh. Gunakan bahan perbanyakan dengan asal jelas, pertahankan pohon liar dan habitatnya, serta pisahkan pencatatan budidaya dari populasi alami. Tidak ada program pemulihan Indonesia yang diklaim telah berjalan.",
+    "ecosystem_role": "Bunga menjadi sumber daya bagi serangga penyerbuk, terutama lebah, dan daun menjadi inang larva beberapa ngengat menurut NParks; tajuk juga memberi naungan.",
+    "assessment_notes": "EN corroborated by Kew POWO; Barstow 2018 citation/DOI independently corroborated in PLN biodiversity management bibliography. Year is publication edition, exact Date Assessed unavailable; population and detailed global threat account not invented.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "genus": "Pterocarpus",
+    "specific_epithet": "indicus",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/516487-1",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan.",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/0/3093",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Pterocarpus indicus — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/5349242",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Pterocarpus indicus — native distribution",
+        "url": "https://powo.science.kew.org/taxon/516487-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "POWO lists Jawa as native. NParks Singapore non-native label is not transferred to Indonesia."
+      },
+      {
+        "title": "Pterocarpus indicus — morphology, habitat and biology",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/0/3093",
+        "organization": "National Parks Board Singapore",
+        "section_key": "profile",
+        "accessed_on": "2026-11-11",
+        "notes": "Source text inspected; original Indonesian factual summary. Local status and foreign regulations not transferred to Indonesia. Cultivation is not claimed as a successful restoration programme."
+      },
+      {
+        "title": "Pterocarpus indicus — conservation status",
+        "url": "https://doi.org/10.2305/IUCN.UK.2018-2.RLTS.T33241A2835450.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "EN corroborated by Kew POWO; Barstow 2018 citation/DOI independently corroborated in PLN biodiversity management bibliography. Year is publication edition, exact Date Assessed unavailable; population and detailed global threat account not invented."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "Upper Cisokan biodiversity management plan — assessment bibliography",
+        "url": "https://web.pln.co.id/statics/uploads/2021/05/%28Final%29ucps-biodiversity-management-plan-pln-disclosure.pdf",
+        "organization": "PT PLN",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Corroborates Barstow 2018 Pterocarpus indicus assessment citation. Does not establish national population counts."
+      },
+      {
+        "title": "Pterocarpus indicus — licensed species photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:%E5%8D%B0%E5%BA%A6%E7%B4%AB%E6%AA%80_Pterocarpus_indicus_20200807191221_09.jpg",
+        "organization": "Wikimedia Commons",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 500x667 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Pterocarpus indicus, Kinmen, Fujian.",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/angsana.jpg",
+        "alt_id": "Angsana, Pterocarpus indicus",
+        "photographer": "Ping an Chang",
+        "source_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%B0%E5%BA%A6%E7%B4%AB%E6%AA%80_Pterocarpus_indicus_20200807191221_09.jpg",
+        "license_code": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution_text": "Ping an Chang / Wikimedia Commons, CC BY-SA 4.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Pterocarpus indicus"
+      }
+    ]
+  },
+  {
+    "slug": "mahoni-daun-besar",
+    "scientific_name": "Swietenia macrophylla",
+    "common_name_id": "Mahoni daun besar",
+    "gbif_taxon_key": "3190484",
+    "class": "Magnoliopsida",
+    "order": "Sapindales",
+    "family": "Meliaceae",
+    "region_codes": ["java"],
+    "habitat_codes": ["garden"],
+    "status_code": "EN",
+    "assessment_year": 2023,
+    "iucn_taxon_id": "32293",
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T32293A68104718.en",
+    "summary_id": "Pohon kayu asal Amerika tropis yang diperkenalkan ke Indonesia; kategori globalnya berubah menjadi EN pada 2023.",
+    "description_id": "Mahoni daun besar adalah pohon famili Meliaceae yang berasal dari Amerika tropis dan diperkenalkan ke Asia, termasuk Jawa. Pohon ini dapat mencapai sekitar 35–40 meter, dengan daun majemuk menyirip dan anak daun yang tidak simetris. Bunga kecil berwarna krem tersusun dalam malai. Buah berkayu membuka ketika matang dan melepaskan biji bersayap yang terbawa angin. IUCN mengumumkan perubahan kategori global dari VU menjadi EN pada Desember 2023 akibat tekanan terhadap populasi asalnya. Keberadaan tanaman mahoni di Indonesia tidak mengubah asal introduksinya. Status introduksi juga tidak otomatis merupakan penetapan invasif di Indonesia.",
+    "distinctive_traits_id": "Pohon tinggi dengan daun majemuk menyirip; anak daun berpangkal tidak simetris; bunga kecil putih krem dalam malai; kapsul berkayu pecah saat matang dan melepaskan biji bersayap.",
+    "habitat_description_id": "Di Indonesia dikenal sebagai pohon tanam; WFO berbasis data WCVP mencatat Jawa sebagai wilayah introduksi. Wilayah asli berada di Amerika tropis. Habitat hutan asal dan tegakan budidaya Indonesia perlu dibedakan ketika membaca status konservasinya.",
+    "threats_description_id": "Siaran IUCN 11 Desember 2023 menyebut pemanenan kayu liar yang tidak berkelanjutan serta perluasan pertanian dan perkotaan di Amerika Tengah dan Selatan. Penurunan yang dilaporkan berlaku pada kawasan asal tersebut, bukan penghitungan pohon mahoni Indonesia.",
+    "conservation_actions_id": "IUCN menyerukan dukungan pengelolaan kawasan lindung dan penanganan perdagangan kayu ilegal di wilayah asal. NParks mendokumentasikan perbanyakan dari biji untuk budidaya. Asal kayu dan cakupan geografis ketentuan CITES harus diperiksa; kebun Indonesia bukan bukti pulihnya populasi liar Amerika.",
+    "ecosystem_role": "Bunga didatangi penyerbuk seperti lebah, kupu-kupu dan ngengat dalam profil NParks. Peran sebagai pohon peneduh budidaya tidak menjadikannya spesies asli Indonesia.",
+    "assessment_notes": "EN and 2023 VU→EN change directly verified in IUCN press release dated 11 December 2023; Barstow & Negrão 2023 citation corroborated. Year denotes edition, exact Date Assessed not retrieved.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "genus": "Swietenia",
+    "specific_epithet": "macrophylla",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "introduced",
+    "ecological_source_url": "https://www.worldfloraonline.org/taxon/wfo-0000505131",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan. CITES Apendiks II anotasi #6 hanya mencakup populasi Neotropis dan kayu bulat, kayu gergajian, lembaran venir serta kayu lapis; bukan otomatis seluruh tegakan Indonesia (daftar 7 Februari 2025).",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3150",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Swietenia macrophylla — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/3190484",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Swietenia macrophylla — native distribution",
+        "url": "https://www.worldfloraonline.org/taxon/wfo-0000505131",
+        "organization": "World Flora Online / WCVP",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "World Flora Online explicitly lists Jawa as introduced using WCVP distribution data; native tropical American origin also independently supported by NParks. No Indonesian invasive designation inferred."
+      },
+      {
+        "title": "Swietenia macrophylla — morphology, habitat and biology",
+        "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/1/3150",
+        "organization": "National Parks Board Singapore",
+        "section_key": "profile",
+        "accessed_on": "2026-11-11",
+        "notes": "Source text inspected; original Indonesian factual summary. Local status and foreign regulations not transferred to Indonesia. Cultivation is not claimed as a successful restoration programme."
+      },
+      {
+        "title": "Swietenia macrophylla — conservation status",
+        "url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T32293A68104718.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "EN and 2023 VU→EN change directly verified in IUCN press release dated 11 December 2023; Barstow & Negrão 2023 citation corroborated. Year denotes edition, exact Date Assessed not retrieved."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "IUCN Red List update — big leaf mahogany moves to EN",
+        "url": "https://iucn.org/press-release/202312/freshwater-fish-highlight-escalating-climate-impacts-species-iucn-red-list",
+        "organization": "International Union for Conservation of Nature",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Official 11 December 2023 release directly read: EN, former VU, unsustainable logging/trade and habitat encroachment in Central/South America; not Indonesian population decline."
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES Secretariat",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact dated official PDF indexed text inspected; direct PDF fetch 403. Cycadaceae II #4 except Appendix I taxa; Swietenia macrophylla II #6 restricted to Neotropical populations. Do not conflate with Indonesian protected-species list or claim latest 2026 revision verified."
+      },
+      {
+        "title": "Swietenia macrophylla — licensed species photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:Big-leaved_Mahogany.jpg",
+        "organization": "Wikimedia Commons",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 700x465 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Bark and leaves of Swietenia macrophylla from Meliaceae.",
+        "license": "CC BY 2.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/mahoni-daun-besar.jpg",
+        "alt_id": "Mahoni daun besar, Swietenia macrophylla",
+        "photographer": "jayeshpatil912",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Big-leaved_Mahogany.jpg",
+        "license_code": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "attribution_text": "jayeshpatil912 / Wikimedia Commons, CC BY 2.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Swietenia macrophylla"
+      }
+    ]
+  },
+  {
+    "slug": "pakis-haji",
+    "scientific_name": "Cycas rumphii",
+    "common_name_id": "Pakis haji",
+    "gbif_taxon_key": "2683272",
+    "class": "Cycadopsida",
+    "order": "Cycadales",
+    "family": "Cycadaceae",
+    "region_codes": ["java", "kalimantan", "maluku", "sulawesi", "papua"],
+    "habitat_codes": ["coastal", "tropical_forest"],
+    "status_code": "NT",
+    "assessment_year": 2023,
+    "iucn_taxon_id": "216470283",
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T216470283A69156062.en",
+    "summary_id": "Tumbuhan berbiji terbuka pesisir yang menyerupai palem, tetapi bukan palem maupun tumbuhan paku sejati.",
+    "description_id": "Pakis haji pada entri ini merujuk khusus pada Cycas rumphii, anggota famili Cycadaceae yang merupakan tumbuhan berbiji terbuka. Namanya tidak menunjukkan bahwa tumbuhan ini adalah paku sejati. Batang tegak menopang daun majemuk menyirip yang hijau mengilap, dengan helaian panjang dan anak daun sempit. Tumbuhan jantan membentuk runjung penghasil serbuk sari, sedangkan tumbuhan betina membawa bakal biji pada struktur menyerupai daun. Kajian Cycas Indonesia mencatat keterkaitan dengan hutan dekat pantai pada substrat berkapur. Sebarannya mencakup beberapa kepulauan Indonesia hingga Papua Nugini sehingga bukan endemik Indonesia. Daftar ahli sikas mengonfirmasi kategori global NT pada catatan IUCN yang dirujuk.",
+    "distinctive_traits_id": "Batang tegak menyerupai palem; daun hijau mengilap sepanjang sekitar 150–250 cm; anak daun sempit dengan satu tulang tengah; individu jantan dan betina terpisah, tidak menghasilkan bunga atau buah sejati.",
+    "habitat_description_id": "Hutan atau tegakan dekat pantai, sering pada substrat berkapur. Revisi botani mencatat pusat sebaran Maluku dengan perluasan ke Sulawesi, Papua, Kalimantan selatan dan Jawa; cakupan juga mencapai Papua Nugini, bukan endemik Indonesia.",
+    "threats_description_id": "Revisi Telopea 2009 mendokumentasikan tekanan pembangunan dan perluasan akuakultur pada habitat pesisir Cycas rumphii. Itu merupakan konteks historis yang terpisah dari kategori NT pada catatan IUCN terbitan 2023; tidak ada angka populasi terkini atau rincian penilaian 2023 yang diasumsikan.",
+    "conservation_actions_id": "Prioritas yang relevan ialah menjaga habitat pesisir, memastikan identifikasi terhadap Cycas yang mirip, dan menelusuri asal tanaman yang diperdagangkan. CITES memasukkan Cycadaceae dalam Apendiks II dengan pengecualian spesies Apendiks I; ketentuan ini mengatur perdagangan internasional, bukan bukti bahwa semua sikas dilindungi nasional.",
+    "ecosystem_role": "Tumbuhan penyusun vegetasi hutan pesisir; lapisan spons pada biji kelompok Rumphiae memungkinkan pengapungan dan penyebaran lewat air menurut revisi botani Indonesia. Tidak ada angka kontribusi ekosistem atau populasi yang direka.",
+    "assessment_notes": "NT A2cd and current taxon 216470283 / assessment 69156062 directly linked by World List of Cycads. Bösenberg 2023 citation corroborated separately; old 2010 taxon 42081 not substituted. Exact Date Assessed and detailed 2023 threats unavailable.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "genus": "Cycas",
+    "specific_epithet": "rumphii",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/326820-2",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan. CITES Apendiks II melalui Cycadaceae spp., anotasi #4, kecuali spesies dalam Apendiks I (daftar 7 Februari 2025).",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://cycadlist.org/storage/references/open/c0625e39-3751-45f5-b321-e166dc21f1a9.pdf",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Cycas rumphii — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/2683272",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Cycas rumphii — native distribution",
+        "url": "https://powo.science.kew.org/taxon/326820-2",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "Kew native range and World List of Cycads Indonesian distribution corroborated by Indonesian taxonomic revision. Does not use obsolete broad Cycas circinalis identification."
+      },
+      {
+        "title": "Cycas rumphii — morphology, habitat and biology",
+        "url": "https://cycadlist.org/storage/references/open/c0625e39-3751-45f5-b321-e166dc21f1a9.pdf",
+        "organization": "Lindstrom, Hill & Stanberg / Telopea 2009",
+        "section_key": "profile",
+        "accessed_on": "2026-11-11",
+        "notes": "Source text inspected; original Indonesian factual summary. Local status and foreign regulations not transferred to Indonesia. Cultivation is not claimed as a successful restoration programme."
+      },
+      {
+        "title": "Cycas rumphii — conservation status",
+        "url": "https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T216470283A69156062.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "NT A2cd and current taxon 216470283 / assessment 69156062 directly linked by World List of Cycads. Bösenberg 2023 citation corroborated separately; old 2010 taxon 42081 not substituted. Exact Date Assessed and detailed 2023 threats unavailable."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "Cycas rumphii — World List of Cycads",
+        "url": "https://cycadlist.org/scientific_name/197",
+        "organization": "World List of Cycads / IUCN SSC Cycad Specialist Group",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Accepted taxon, Indonesian distribution, NT A2cd and link to current IUCN taxon 216470283 / assessment 69156062 directly verified."
+      },
+      {
+        "title": "Cycas rumphii 2023 citation — botanical bibliography",
+        "url": "https://botansocbengal.org/wp-content/uploads/2025/07/Journal_79_june_25.pdf",
+        "organization": "Botanical Society of Bengal",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Corroborates Bösenberg 2023 citation and current assessment identifier; not used to invent exact assessment date."
+      },
+      {
+        "title": "CITES Appendices — 7 February 2025",
+        "url": "https://cites.org/sites/default/files/eng/app/2025/E-Appendices-2025-02-07.pdf",
+        "organization": "CITES Secretariat",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact dated official PDF indexed text inspected; direct PDF fetch 403. Cycadaceae II #4 except Appendix I taxa; Swietenia macrophylla II #6 restricted to Neotropical populations. Do not conflate with Indonesian protected-species list or claim latest 2026 revision verified."
+      },
+      {
+        "title": "Cycas rumphii — licensed species photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:Cycas_rumphii-IMG_9702.JPG",
+        "organization": "Wikimedia Commons",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 960x640 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Cycas rumphii i parken Terra Nostra, Furnas, Azorerna.",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/pakis-haji.jpg",
+        "alt_id": "Pakis haji, Cycas rumphii",
+        "photographer": "C T Johansson",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cycas_rumphii-IMG_9702.JPG",
+        "license_code": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution_text": "C T Johansson / Wikimedia Commons, CC BY-SA 4.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Cycas rumphii"
+      }
+    ]
+  },
+  {
+    "slug": "paku-sarang-burung",
+    "scientific_name": "Asplenium nidus",
+    "common_name_id": "Paku sarang burung",
+    "gbif_taxon_key": "2650676",
+    "class": "Polypodiopsida",
+    "order": "Polypodiales",
+    "family": "Aspleniaceae",
+    "region_codes": ["java"],
+    "habitat_codes": ["tropical_forest", "garden"],
+    "status_code": "NE",
+    "assessment_year": null,
+    "assessment_source_url": "https://ntbg.org/database/plants/detail/asplenium-nidus",
+    "summary_id": "Paku berdaun utuh yang membentuk roset seperti sarang; tumbuh sebagai epifit atau pada batu di lingkungan lembap.",
+    "description_id": "Paku sarang burung merupakan anggota famili Aspleniaceae dengan helaian utuh yang tersusun mengelilingi pusat tumbuhan. Daun berbentuk lanset hingga menyerupai pedang, berwarna hijau muda dengan tulang tengah cokelat gelap atau hitam. Sorus tersusun sebagai garis pada sisi bawah daun mengikuti tulang-tulang halusnya. Paku ini tidak berbunga dan berkembang biak melalui spora. POWO mencatatnya sebagai epifit atau litofit dalam bioma tropis basah dan memasukkan Jawa dalam wilayah asli. NTBG melaporkan NE, sementara usulan LC dalam flora regional tidak diperlakukan sebagai penilaian global IUCN yang telah diterbitkan. Identifikasi tidak hanya berdasarkan nama umum kadaka.",
+    "distinctive_traits_id": "Daun utuh tersusun dalam roset menyerupai sarang; helaian dapat sepanjang 60–120 cm; tulang tengah gelap kontras dengan helaian hijau; sorus berbentuk garis di bawah daun; tidak memiliki bunga atau biji.",
+    "habitat_description_id": "Hutan tropis lembap sebagai epifit pada pohon atau litofit pada batu, juga dibudidayakan. Jawa termasuk wilayah asli menurut POWO; catatan ini tidak menjadikan seluruh paku berdaun sarang sebagai spesies yang sama.",
+    "threats_description_id": "NTBG menyebut status IUCN NE. Tidak ada angka populasi, tren, atau kategori LC global yang diisi berdasarkan dugaan. RBGE memang mengusulkan LC dalam kajian flora regional, tetapi usulan itu bukan pengganti catatan resmi penilaian global.",
+    "conservation_actions_id": "Utamakan pemeliharaan pohon tempat tumbuh dan lingkungan lembap serta bahan budidaya dengan identitas jelas. Jangan menganggap koleksi tanaman hias sebagai pemulihan populasi liar. Tidak ada program konservasi Indonesia atau keberhasilan pemulihan yang diklaim tanpa sumber.",
+    "ecosystem_role": "Paku penyusun vegetasi epifit atau litofit di hutan tropis basah, dengan roset daun dan reproduksi melalui spora; uraian habitat berasal dari POWO dan NTBG, bukan penetapan status invasif.",
+    "assessment_notes": "NE explicitly reported by NTBG. RBGE regional fern treatment proposes LC; it is not an official global assessment. No assessment date/year or IUCN identifier invented.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Polypodiophytina",
+    "genus": "Asplenium",
+    "specific_epithet": "nidus",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/17048040-1",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan.",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://ntbg.org/database/plants/detail/asplenium-nidus",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Asplenium nidus — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/2650676",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Asplenium nidus — native distribution",
+        "url": "https://powo.science.kew.org/taxon/17048040-1",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "POWO accepted taxon and Malesian native range including Jawa; do not use Hawaiian material in NTBG as proof of Indonesian range because taxonomic concepts may differ."
+      },
+      {
+        "title": "Asplenium nidus — conservation status",
+        "url": "https://ntbg.org/database/plants/detail/asplenium-nidus",
+        "organization": "National Tropical Botanical Garden",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "NE explicitly reported by NTBG. RBGE regional fern treatment proposes LC; it is not an official global assessment. No assessment date/year or IUCN identifier invented."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "Asplenium nidus — regional fern treatment",
+        "url": "https://websites.rbge.org.uk/thaiferns/factsheets/index.php?q=Asplenium_nidus.xml",
+        "organization": "Royal Botanic Garden Edinburgh",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Explicitly proposed LC in regional treatment, not a verified published global Red List assessment. Retain NTBG-reported NE with this scope caveat."
+      },
+      {
+        "title": "Asplenium nidus — licensed species photograph",
+        "url": "https://www.inaturalist.org/observations/337446715",
+        "organization": "iNaturalist",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 1200x801 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Research-grade observation 337446715; photo 613435308; accepted species identification verified against iNaturalist and GBIF media metadata",
+        "license": "CC BY 4.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/paku-sarang-burung.jpg",
+        "alt_id": "Paku sarang burung, Asplenium nidus",
+        "photographer": "Kalvin Chan",
+        "source_url": "https://www.inaturalist.org/observations/337446715",
+        "license_code": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution_text": "Kalvin Chan / iNaturalist, CC BY 4.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Asplenium nidus"
+      }
+    ]
+  },
+  {
+    "slug": "teratai",
+    "scientific_name": "Nymphaea nouchali",
+    "common_name_id": "Teratai",
+    "gbif_taxon_key": "7326947",
+    "class": "Magnoliopsida",
+    "order": "Nymphaeales",
+    "family": "Nymphaeaceae",
+    "region_codes": ["sumatra", "nusa_tenggara", "papua"],
+    "habitat_codes": ["freshwater", "garden"],
+    "status_code": "LC",
+    "assessment_year": 2019,
+    "iucn_taxon_id": "168917",
+    "assessment_source_url": "https://doi.org/10.2305/IUCN.UK.2019-2.RLTS.T168917A120213841.en",
+    "summary_id": "Tumbuhan air berakar di dasar perairan dengan daun mengapung dan bunga yang terbuka pada siang hari.",
+    "description_id": "Teratai dalam entri ini adalah Nymphaea nouchali, juga disebut tunjung, bukan lotus Nelumbo nucifera. Tumbuhan menahun ini berakar pada dasar perairan dengan rimpang dan daun yang mengapung. Helaian daun membulat telur dengan belahan pada pangkal, sedangkan bunga muncul sedikit di atas air. Warna bunga bervariasi dari putih hingga biru keunguan atau merah muda sehingga warna saja tidak cukup untuk menentukan spesies. PROSEA mencatat pertumbuhan di kolam, parit, dan danau dangkal. Kew mengonfirmasi kategori global LC pada catatan IUCN yang dirujuk. Teratai ini termasuk flora asli pada beberapa wilayah Indonesia dan tidak disamakan dengan eceng gondok invasif.",
+    "distinctive_traits_id": "Rimpang tertanam di dasar perairan; daun mengapung membulat dengan pangkal berbelah; bunga tunggal berdiameter sekitar 8–18 cm pada tangkai panjang; banyak benang sari, bunga terbuka siang hari.",
+    "habitat_description_id": "Kolam, parit, dan danau air tawar dangkal, menurut PROSEA hingga sekitar 500 m. POWO mencatat Sumatra, Kepulauan Sunda Kecil dan Nugini dalam wilayah asli; daftar wilayah Indonesia di sini tidak dimaksudkan sebagai sebaran lengkap.",
+    "threats_description_id": "Kategori global LC dikonfirmasi POWO dengan rujukan penilaian IUCN terbitan 2019. Rincian ancaman dalam naskah penilaian belum diperoleh; tidak ada angka atau tren populasi Indonesia yang diasumsikan. Gangguan daun dalam budidaya bukan penetapan status invasif Indonesia.",
+    "conservation_actions_id": "PROSEA mendokumentasikan perbanyakan dengan biji dan pembagian rimpang. Pertahankan kondisi perairan yang sesuai dan pastikan identitas tanaman sebelum memindahkannya. Perbanyakan untuk kolam hias bukan bukti program pemulihan populasi liar atau alasan melepas tanaman ke semua perairan.",
+    "ecosystem_role": "Tumbuhan air berakar dengan daun mengapung; bunganya menyediakan sumber daya bagi penyerbuk serangga, terutama Hymenoptera, menurut PROSEA. Peran ini tidak sama dengan perilaku hamparan invasif eceng gondok.",
+    "assessment_notes": "Kew POWO confirms global LC and IUCN taxon 168917 / assessment 120213841. Gupta, Beentje & Lansdown 2019 citation corroborated; year denotes publication edition, exact Date Assessed not retrieved.",
+    "taxon_group": "flora",
+    "taxon_rank": "species",
+    "domain": "Eukaryota",
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "subphylum": "Spermatophytina",
+    "genus": "Nymphaea",
+    "specific_epithet": "nouchali",
+    "assessment_scope": "global",
+    "indonesia_ecological_status": "native",
+    "ecological_source_url": "https://powo.science.kew.org/taxon/605643-1/general-information",
+    "regulation_status": "Tidak tercantum dalam Lampiran jenis dilindungi Permen LHK P.106/2018 yang diperiksa; bukan izin bebas pemanfaatan atau perdagangan.",
+    "regulation_source_url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+    "ecosystem_source_url": "https://prosea.prota4u.org/view.aspx?id=1206",
+    "reviewed_by": "AI-assisted inline source review; assessment editions and regulation scopes explicitly documented",
+    "reviewed_at": "2026-11-11",
+    "sources": [
+      {
+        "title": "Nymphaea nouchali — GBIF Backbone taxonomy",
+        "url": "https://www.gbif.org/species/7326947",
+        "organization": "Global Biodiversity Information Facility",
+        "section_key": "taxonomy",
+        "accessed_on": "2026-11-11",
+        "notes": "Exact accepted name match. Class/order/family follow GBIF; subphylum follows existing seed-plant/fern convention rather than mixing class systems."
+      },
+      {
+        "title": "Nymphaea nouchali — native distribution",
+        "url": "https://powo.science.kew.org/taxon/605643-1/general-information",
+        "organization": "Royal Botanic Gardens, Kew",
+        "section_key": "ecology",
+        "accessed_on": "2026-11-11",
+        "notes": "POWO native range includes Sumatera, Lesser Sunda Islands and New Guinea. PROSEA confirms wild and cultivated Southeast Asian occurrence. No invasive status inferred from aquatic habit."
+      },
+      {
+        "title": "Nymphaea nouchali — morphology, habitat and biology",
+        "url": "https://prosea.prota4u.org/view.aspx?id=1206",
+        "organization": "PROSEA Foundation",
+        "section_key": "profile",
+        "accessed_on": "2026-11-11",
+        "notes": "Source text inspected; original Indonesian factual summary. Local status and foreign regulations not transferred to Indonesia. Cultivation is not claimed as a successful restoration programme."
+      },
+      {
+        "title": "Nymphaea nouchali — conservation status",
+        "url": "https://doi.org/10.2305/IUCN.UK.2019-2.RLTS.T168917A120213841.en",
+        "organization": "IUCN Red List of Threatened Species",
+        "section_key": "assessment",
+        "accessed_on": "2026-11-11",
+        "notes": "Kew POWO confirms global LC and IUCN taxon 168917 / assessment 120213841. Gupta, Beentje & Lansdown 2019 citation corroborated; year denotes publication edition, exact Date Assessed not retrieved."
+      },
+      {
+        "title": "Permen LHK P.106/2018 — protected species appendix",
+        "url": "https://jdih.kehutanan.go.id/new2/uploads/files/P_106_2018_JENIS_TSL_menlhk_07252019152513.pdf",
+        "organization": "Kementerian Lingkungan Hidup dan Kehutanan",
+        "section_key": "regulation",
+        "accessed_on": "2026-11-11",
+        "notes": "Official full plant appendix inspected; this species is not listed. JDIH record reports regulation Berlaku. Negative claim restricted to this list; not general permission to harvest, export or trade."
+      },
+      {
+        "title": "Nymphaea nouchali — licensed species photograph",
+        "url": "https://www.inaturalist.org/observations/336227556",
+        "organization": "iNaturalist",
+        "section_key": "image",
+        "accessed_on": "2026-11-11",
+        "notes": "Taxon identity and license metadata verified. 1200x900 local JPEG; resized/recompressed, EXIF removed. No Indonesian locality inferred from photograph. Research-grade observation 336227556; photo 610948807; accepted species identification verified against iNaturalist and GBIF media metadata",
+        "license": "CC BY 4.0"
+      }
+    ],
+    "media": [
+      {
+        "url": "/images/species/teratai.jpg",
+        "alt_id": "Teratai, Nymphaea nouchali",
+        "photographer": "Davi Eduardo",
+        "source_url": "https://www.inaturalist.org/observations/336227556",
+        "license_code": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution_text": "Davi Eduardo / iNaturalist, CC BY 4.0; resized/recompressed, metadata removed",
+        "taxon_scientific_name": "Nymphaea nouchali"
+      }
+    ]
+  }
+]

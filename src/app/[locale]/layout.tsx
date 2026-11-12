@@ -15,6 +15,22 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { getAccount } from "@/features/account/server";
 
+function googleAvatarUrl(value: unknown): string | null {
+  if (typeof value !== "string") return null;
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" &&
+      url.hostname === "lh3.googleusercontent.com" &&
+      !url.username &&
+      !url.password &&
+      !url.port
+      ? value
+      : null;
+  } catch {
+    return null;
+  }
+}
+
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
@@ -76,6 +92,10 @@ export default async function LocaleLayout({
                     displayName:
                       account.profile?.display_name || "Penjelajah alam",
                     username: account.profile?.username ?? null,
+                    avatarUrl: googleAvatarUrl(
+                      account.user.user_metadata.avatar_url ??
+                        account.user.user_metadata.picture,
+                    ),
                   }
                 : null,
             )}

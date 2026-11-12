@@ -15,6 +15,10 @@ const pastDate = date.refine(
 const webUrl = z
   .url({ protocol: /^https?$/ })
   .refine((value) => /^https?:\/\/[^/@\\\s]+(?:[/?#]|$)/i.test(value));
+const mediaUrl = z.union([
+  webUrl,
+  z.string().regex(/^\/images\/species\/[a-z0-9-]+\.jpg$/),
+]);
 const status = z.enum(["EX", "EW", "CR", "EN", "VU", "NT", "LC", "DD", "NE"]);
 const year = z
   .number()
@@ -75,7 +79,7 @@ const sourceSchema = z
       !source.published_on || source.published_on <= source.accessed_on,
   );
 const mediaSchema = z.strictObject({
-  url: webUrl,
+  url: mediaUrl,
   storage_path: optionalText,
   alt_id: text,
   alt_en: optionalText,
@@ -95,8 +99,15 @@ const entrySchema = z
     scientific_name: text,
     taxon_group: text,
     taxon_rank: z.enum(["species", "subspecies"]).default("species"),
+    domain: optionalText,
+    kingdom: optionalText,
+    phylum: optionalText,
+    subphylum: optionalText,
+    class: optionalText,
+    order: optionalText,
     family: optionalText,
     genus: optionalText,
+    specific_epithet: optionalText,
     gbif_taxon_key: z.string().regex(/^\d+$/).nullish(),
     iucn_taxon_id: z.string().regex(/^\d+$/).nullish(),
     region_codes: z.array(text).default([]),
@@ -147,6 +158,24 @@ const entrySchema = z
         message: "Invalid draft provenance",
       });
     const sourceUrls = new Set(entry.sources.map((source) => source.url));
+    if (entry.taxon_group === "flora") {
+      if (
+        [
+          "domain",
+          "kingdom",
+          "phylum",
+          "subphylum",
+          "class",
+          "order",
+          "family",
+          "genus",
+          "specific_epithet",
+        ].some((field) => !entry[field]) ||
+        entry.media.length === 0 ||
+        entry.scientific_name.trim().split(/\s+/)[1] !== entry.specific_epithet
+      )
+        reject(["taxon_group"]);
+    }
     if (sourceUrls.size !== entry.sources.length) reject(["sources"]);
     if (entry.status_code === null) {
       if (
@@ -190,7 +219,9 @@ const entrySchema = z
       );
       if (
         !source ||
-        (assessment.assessment_year === null && !assessment.assessed_on)
+        (assessment.status_code !== "NE" &&
+          assessment.assessment_year === null &&
+          !assessment.assessed_on)
       )
         reject(["assessments"]);
       if (
@@ -293,6 +324,12 @@ function buildSql(entries) {
           "scientific_name",
           "taxon_group",
           "taxon_rank",
+          "domain",
+          "kingdom",
+          "phylum",
+          "subphylum",
+          "class",
+          "order",
           "family",
           "genus",
           "gbif_taxon_key",
@@ -306,11 +343,19 @@ function buildSql(entries) {
       published_at: null,
     };
     statements.push(
-      `WITH inserted AS (INSERT INTO public.species (${Object.keys(species).join(", ")}) VALUES (${Object.values(species).map(sqlValue).join(", ")}) ON CONFLICT (slug) DO NOTHING RETURNING id) INSERT INTO pg_temp.rimba_seed_new_species SELECT id FROM inserted;`,
+      `WITH inserted AS (INSERT INTO public.species (${Object.keys(species)
+        .map((column) => `"${column}"`)
+        .join(
+          ", ",
+        )}) VALUES (${Object.values(species).map(sqlValue).join(", ")}) ON CONFLICT (slug) DO NOTHING RETURNING id) INSERT INTO pg_temp.rimba_seed_new_species SELECT id FROM inserted;`,
     );
     const insert = (table, row) =>
       statements.push(
-        `INSERT INTO public.${table} (${Object.keys(row).join(", ")}) SELECT ${Object.values(row).map(sqlValue).join(", ")} WHERE EXISTS (SELECT 1 FROM pg_temp.rimba_seed_new_species WHERE id = ${sqlValue(speciesId)}::uuid);`,
+        `INSERT INTO public.${table} (${Object.keys(row)
+          .map((column) => `"${column}"`)
+          .join(
+            ", ",
+          )}) SELECT ${Object.values(row).map(sqlValue).join(", ")} WHERE EXISTS (SELECT 1 FROM pg_temp.rimba_seed_new_species WHERE id = ${sqlValue(speciesId)}::uuid);`,
       );
     for (const locale of ["id", "en"]) {
       if (!proseFields.some((field) => entry[`${field}_${locale}`] != null))

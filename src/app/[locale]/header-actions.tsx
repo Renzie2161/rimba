@@ -1,6 +1,14 @@
 "use client";
 
-import { Bell, BellOff, LogIn, UserRound } from "lucide-react";
+import {
+  ArrowUpRight,
+  Bell,
+  BellOff,
+  LogIn,
+  LogOut,
+  UserRound,
+} from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -42,32 +50,20 @@ export default function HeaderActions({
             </span>
             <div>
               <h2 className={styles.panelTitle}>{t("notifications")}</h2>
-              <p className={styles.panelSubtitle}>{t("notificationsEmpty")}</p>
+              <p className={styles.panelSubtitle}>
+                {t("notificationsUnavailable")}
+              </p>
             </div>
           </header>
 
           <div className={styles.emptyBody}>
             <span aria-hidden="true" className={styles.emptyIcon}>
-              <BellOff size={26} strokeWidth={1.6} />
+              <BellOff size={22} strokeWidth={1.6} />
             </span>
             <p className={styles.emptyText}>{t("notificationsEmptyHelp")}</p>
           </div>
-
-          <footer className={styles.panelFooter}>
-            {t("notificationsNote")}
-          </footer>
         </PopoverContent>
       </Popover>
-
-      <Link
-        className="shell-header-action shell-header-action--signin"
-        href={
-          account ? (account.username ? "/profile" : "/onboarding") : "/login"
-        }
-      >
-        <LogIn aria-hidden="true" size={16} strokeWidth={2} />
-        {account ? "Lihat profil" : t("signIn")}
-      </Link>
 
       {account ? (
         <Popover>
@@ -77,37 +73,75 @@ export default function HeaderActions({
               className={`shell-header-action ${styles.accountButton}`}
               type="button"
             >
-              <UserRound aria-hidden="true" size={18} strokeWidth={1.75} />
+              {account.avatarUrl ? (
+                <Image
+                  alt=""
+                  className={styles.avatarImage}
+                  height={36}
+                  src={account.avatarUrl}
+                  unoptimized
+                  width={36}
+                />
+              ) : (
+                <UserRound aria-hidden="true" size={18} strokeWidth={1.75} />
+              )}
             </button>
           </PopoverTrigger>
           <PopoverContent align="end" className={styles.panel}>
             <header className={styles.panelHeader}>
-              <span aria-hidden="true" className={styles.panelIcon}>
-                <UserRound size={16} strokeWidth={2} />
+              <span aria-hidden="true" className={styles.profileAvatar}>
+                {account.avatarUrl ? (
+                  <Image
+                    alt=""
+                    className={styles.avatarImage}
+                    height={44}
+                    src={account.avatarUrl}
+                    unoptimized
+                    width={44}
+                  />
+                ) : (
+                  <UserRound size={19} strokeWidth={1.75} />
+                )}
               </span>
               <div>
-                <h2 className={styles.panelTitle}>{t("account")}</h2>
-                <p className={styles.panelSubtitle}>{account.displayName}</p>
+                <h2 className={styles.panelTitle}>{account.displayName}</h2>
+                <p className={styles.panelSubtitle}>
+                  {account.username
+                    ? `@${account.username}`
+                    : "Lengkapi profil"}
+                </p>
               </div>
             </header>
 
-            <div className={styles.emptyBody}>
-              <Link href={account.username ? "/profile" : "/onboarding"}>
-                {account.username
-                  ? `@${account.username} · Lihat profil`
-                  : "Lengkapi profil"}
+            <div className={styles.profileActions}>
+              <Link
+                className={styles.profileLink}
+                href={account.username ? "/profile" : "/onboarding"}
+              >
+                <UserRound aria-hidden="true" size={16} strokeWidth={1.8} />
+                <span>
+                  {account.username ? "Lihat profil" : "Lengkapi profil"}
+                </span>
+                <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.8} />
               </Link>
               <form action={signOut}>
-                <button className="shell-account-logout" type="submit">
+                <button className={styles.logout} type="submit">
+                  <LogOut aria-hidden="true" size={16} strokeWidth={1.8} />
                   Keluar
                 </button>
               </form>
             </div>
-
-            <footer className={styles.panelFooter}>{t("accountNote")}</footer>
           </PopoverContent>
         </Popover>
-      ) : null}
+      ) : (
+        <Link
+          className="shell-header-action shell-header-action--signin"
+          href="/login"
+        >
+          <LogIn aria-hidden="true" size={16} strokeWidth={2} />
+          {t("signIn")}
+        </Link>
+      )}
     </div>
   );
 }

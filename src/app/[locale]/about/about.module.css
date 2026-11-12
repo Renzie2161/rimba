@@ -24,15 +24,14 @@
 }
 
 .prose {
-  max-width: 68ch;
+  max-width: none;
   margin-top: 18px;
   color: var(--brand-700);
   font-size: 16px;
   letter-spacing: 0;
   line-height: 1.75;
-  text-align: justify;
+  text-align: left;
   hyphens: auto;
-  text-justify: inter-word;
 }
 
 .prototypeNote {
@@ -56,7 +55,7 @@
 
 .banner h2 {
   white-space: pre-line;
-  max-width: 24ch;
+  max-width: none;
   margin: 0;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   font-weight: 650;

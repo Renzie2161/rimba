@@ -169,12 +169,9 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
               </section>
             )}
             {(pageCount > 1 || pageOutOfRange) && (
-              <nav
-                className={styles.pagination}
-                aria-label={t("paginationLabel")}
-              >
+              <div className={styles.pagination}>
                 <CatalogPagination value={parsed.value} total={catalog.total} />
-              </nav>
+              </div>
             )}
           </section>
         </>

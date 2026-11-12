@@ -1,6 +1,6 @@
 "use client";
 
-import { Sprout } from "lucide-react";
+import { ArrowUpRight, Sprout } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import styles from "./guide-dialog.module.css";
@@ -46,12 +46,14 @@ export default function GuideDialog({ label }: { label: string }) {
   return (
     <>
       <button
+        aria-haspopup="dialog"
         className={styles.trigger}
         onClick={() => dialogRef.current?.showModal()}
         type="button"
       >
         <Sprout aria-hidden="true" size={19} strokeWidth={1.75} />
         <span>{label}</span>
+        <ArrowUpRight aria-hidden="true" size={17} strokeWidth={1.75} />
       </button>
 
       <dialog

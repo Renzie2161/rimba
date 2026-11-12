@@ -17,6 +17,7 @@ import HeaderActions from "./header-actions";
 import type { AccountSummary } from "@/features/account/schemas";
 import GuideDialog from "./guide-dialog";
 import {
+  ViewTransition,
   useEffect,
   useRef,
   useState,
@@ -90,6 +91,11 @@ export default function AppShell({
   const isDetail = pathname.startsWith("/species/");
   const isIdentification = pathname === "/identify";
   const isPanelCanvas = pathname === "/about" || pathname === "/donate";
+  const routeContent = (
+    <ViewTransition key={pathname} name="route-content" default="none">
+      {children}
+    </ViewTransition>
+  );
 
   useEffect(() => {
     dialogRef.current?.close();
@@ -138,6 +144,7 @@ export default function AppShell({
             <p className="shell-navigation-heading">
               {t(group === "explore" ? "exploreGroup" : "resourcesGroup")}
             </p>
+            {group === "resources" ? <GuideDialog label={guideLabel} /> : null}
             {groupDestinations.map((destination) => {
               const active = destinationIsActive(destination.href);
               return (
@@ -157,7 +164,7 @@ export default function AppShell({
                 </Link>
               );
             })}
-            {group === "resources" ? <GuideDialog label={guideLabel} /> : null}
+
             {group === "explore" ? (
               <Link
                 aria-current={isIdentification ? "page" : undefined}
@@ -175,7 +182,7 @@ export default function AppShell({
     </nav>
   );
 
-  if (pathname === "/login") return children;
+  if (pathname === "/login") return routeContent;
   return (
     <div
       className={`app-shell${isDetail ? " app-shell--detail" : ""}${
@@ -218,9 +225,20 @@ export default function AppShell({
           }
         >
           <span className="shell-account-avatar" aria-hidden="true">
-            {account
-              ? Array.from(account.displayName)[0]?.toLocaleUpperCase("id-ID")
-              : "A"}
+            {account?.avatarUrl ? (
+              <Image
+                alt=""
+                className="shell-account-avatar-image"
+                height={36}
+                src={account.avatarUrl}
+                unoptimized
+                width={36}
+              />
+            ) : account ? (
+              Array.from(account.displayName)[0]?.toLocaleUpperCase("id-ID")
+            ) : (
+              "A"
+            )}
           </span>
           <span>
             <strong>{account?.displayName || "Penjelajah alam"}</strong>
@@ -232,7 +250,6 @@ export default function AppShell({
                   : "Masuk dengan Google"}
             </small>
           </span>
-          <ArrowRight size={15} aria-hidden="true" />
         </Link>
       </aside>
       <div className="shell-workspace">
@@ -284,7 +301,7 @@ export default function AppShell({
               : "shell-content"
           }
         >
-          {children}
+          {routeContent}
         </div>
         <footer className="site-footer">
           <div className="site-frame">{footer}</div>

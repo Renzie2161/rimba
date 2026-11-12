@@ -317,6 +317,34 @@ try {
   console.log(
     `PASS: ${importedDraftCount} researched profiles imported as drafts in disposable cluster only`,
   );
+  const floraDrafts = JSON.parse(
+    readFileSync(
+      new URL("../supabase/seeds/flora-drafts.json", import.meta.url),
+      "utf8",
+    ),
+  );
+  psql(seedSql(floraDrafts));
+  const importedFloraCount = psql(
+    "select count(*) from public.species where taxon_group='flora' and status='draft';",
+  ).trim();
+  const incompleteFloraCount = psql(
+    `select count(*) from public.species s where s.taxon_group='flora' and (
+      s.domain is null or s.kingdom is null or s.phylum is null or s.subphylum is null
+      or s.class is null or s."order" is null or s.family is null or s.genus is null
+      or s.specific_epithet is null
+      or not exists (select 1 from public.species_media m where m.species_id=s.id and not m.approved and m.url like '/images/species/%' and m.source_url is not null and m.license_code is not null and m.attribution_text is not null)
+      or not exists (select 1 from public.species_sources x where x.species_id=s.id and x.section_key='assessment')
+      or not exists (select 1 from public.species_sources x where x.species_id=s.id and x.section_key='taxonomy')
+      or not exists (select 1 from public.species_sources x where x.species_id=s.id and x.section_key='image')
+    );`,
+  ).trim();
+  if (Number(importedFloraCount) !== floraDrafts.length)
+    throw new Error("Flora draft batch did not import completely");
+  if (Number(incompleteFloraCount) !== 0)
+    throw new Error("Flora seed omitted taxonomy, image, or source provenance");
+  console.log(
+    `PASS: ${importedFloraCount} flora drafts include full taxonomy, images, and linked source records`,
+  );
   psql(
     readFileSync(
       new URL(
@@ -342,6 +370,23 @@ try {
         import.meta.url,
       ),
       "utf8",
+    ),
+  );
+  psql(
+    readFileSync(
+      new URL(
+        "../supabase/migrations/0014_journal_threatened_species.sql",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
+  );
+  console.log(
+    psql(
+      readFileSync(
+        new URL("../supabase/tests/featured-summary.sql", import.meta.url),
+        "utf8",
+      ),
     ),
   );
   psql(
