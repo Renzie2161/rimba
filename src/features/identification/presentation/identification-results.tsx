@@ -49,6 +49,7 @@ type Props = {
   fileName: string;
   labels: IdentificationResultsLabels & { previewAlt: string };
   lookupWarning: boolean;
+  modelAttribution: string;
   onRescan: () => void;
   previewUrl: string;
 };
@@ -62,6 +63,7 @@ export default function IdentificationResults({
   fileName,
   labels,
   lookupWarning,
+  modelAttribution,
   onRescan,
   previewUrl,
 }: Props) {
@@ -95,6 +97,7 @@ export default function IdentificationResults({
         <p className={styles.eyebrow}>{labels.resultEyebrow}</p>
         <h2 id="identify-result-title">{labels.resultTitle}</h2>
         <p className={styles.introduction}>{labels.resultIntroduction}</p>
+        <p className={styles.introduction}>{modelAttribution}</p>
       </header>
 
       <div className={styles.layout}>

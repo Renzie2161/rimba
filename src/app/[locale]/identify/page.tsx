@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { plantNetManifest } from "@/features/identification/models/plantnet-resnet18.manifest";
+import { iNaturalistSmallManifest } from "@/features/identification/models/inaturalist-small.manifest";
 import IdentifyWorkspace from "./identify-workspace";
 import styles from "./identify.module.css";
 import { socialMetadata } from "@/lib/social-metadata";
@@ -35,8 +36,17 @@ export default async function IdentifyPage() {
           modePlant: t("modePlant"),
           modeAnimal: t("modeAnimal"),
           modeAuto: t("modeAuto"),
-          modeUnavailable: t("modeUnavailable"),
-          dropTitle: t("dropTitle"),
+          modePlantInfo: t("modePlantInfo"),
+          modeAnimalInfo: t("modeAnimalInfo"),
+          modeAutoUnavailable: t("modeAutoUnavailable"),
+          dropTitlePlant: t("dropTitlePlant"),
+          dropTitleAnimal: t("dropTitleAnimal"),
+          modelCreditPlant: t("modelCreditPlant", {
+            revision: plantNetManifest.revision.slice(0, 12),
+          }),
+          modelCreditAnimal: t("modelCreditAnimal", {
+            revision: iNaturalistSmallManifest.revision,
+          }),
           dropHelp: t("dropHelp"),
           dropActive: t("dropActive"),
           pastedImage: t("pastedImage"),
@@ -49,8 +59,11 @@ export default async function IdentifyPage() {
           fileDimensionsError: t("fileDimensionsError"),
           fileDecoderError: t("fileDecoderError"),
           analysing: t("analysing"),
-          loadingModel: t("loadingModel", {
+          loadingPlantModel: t("loadingPlantModel", {
             size: Math.ceil(plantNetManifest.byteSize / 1_048_576),
+          }),
+          loadingAnimalModel: t("loadingAnimalModel", {
+            size: Math.ceil(iNaturalistSmallManifest.byteSize / 1_048_576),
           }),
           preprocessing: t("preprocessing"),
           runningInference: t("runningInference"),
