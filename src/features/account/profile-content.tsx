@@ -1,4 +1,4 @@
-import type { Profile } from "./schemas";
+import type { AccountActivity, Profile } from "./schemas";
 import {
   ArrowRight,
   BookOpen,
@@ -10,14 +10,24 @@ import { Link } from "@/i18n/navigation";
 import { signOut } from "@/features/account/actions";
 import styles from "@/features/account/profile.module.css";
 
+const activityDateFormat = new Intl.DateTimeFormat("id-ID", {
+  dateStyle: "medium",
+  timeStyle: "short",
+  timeZone: "Asia/Jakarta",
+});
+
 export default function ProfileContent({
   profile,
+  activities,
+  activitiesUnavailable = false,
   email,
   tab: selectedTab,
   saved,
   error,
 }: {
   profile: Profile;
+  activities: AccountActivity[];
+  activitiesUnavailable?: boolean;
   email?: string;
   tab?: string;
   saved?: string;
@@ -103,20 +113,58 @@ export default function ProfileContent({
                 ? "Pencapaian saya"
                 : "Aktivitas terbaru"}
           </h2>
-          <div className={styles.empty}>
-            <BookOpen size={26} strokeWidth={1.5} aria-hidden="true" />
-            <p>
-              {tab === "collection"
-                ? "Koleksi pribadi belum tersedia."
-                : tab === "achievements"
-                  ? "Belum ada pencapaian yang tercatat."
-                  : "Aktivitas penjelajahan pribadi belum tersedia. Kamu tetap dapat mengenal spesies di ensiklopedia."}
+          {tab === "activity" && activitiesUnavailable ? (
+            <p className={styles.error} role="alert">
+              Aktivitas terbaru belum dapat dimuat saat ini.
             </p>
-            <Link className={styles.exploreButton} href="/species">
-              Jelajahi ensiklopedia
-              <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" />
-            </Link>
-          </div>
+          ) : tab === "activity" && activities.length > 0 ? (
+            <ol
+              aria-label="Aktivitas spesies terbaru"
+              className={styles.activityList}
+            >
+              {activities.map((activity) => (
+                <li className={styles.activityItem} key={activity.id}>
+                  <div className={styles.activityContent}>
+                    <p className={styles.activityDescription}>
+                      {activity.type === "identified"
+                        ? "Berhasil mengidentifikasi"
+                        : "Melihat detail"}{" "}
+                      <Link
+                        className={styles.activitySpecies}
+                        href={`/species/${activity.speciesSlug}`}
+                      >
+                        {activity.speciesCommonName}
+                      </Link>
+                    </p>
+                    <p className={styles.activityScientificName}>
+                      <em>{activity.speciesScientificName}</em>
+                    </p>
+                  </div>
+                  <time
+                    className={styles.activityTime}
+                    dateTime={activity.occurredAt}
+                  >
+                    {activityDateFormat.format(new Date(activity.occurredAt))}
+                  </time>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <div className={styles.empty}>
+              <BookOpen size={26} strokeWidth={1.5} aria-hidden="true" />
+              <p>
+                {tab === "collection"
+                  ? "Koleksi pribadi belum tersedia."
+                  : tab === "achievements"
+                    ? "Belum ada pencapaian yang tercatat."
+                    : "Aktivitas penjelajahan pribadi belum tersedia. Kamu tetap dapat mengenal spesies di ensiklopedia."}
+              </p>
+              <Link className={styles.exploreButton} href="/species">
+                Jelajahi ensiklopedia
+                <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" />
+              </Link>
+            </div>
+          )}
         </section>
         <div className={styles.stack}>
           <section className={styles.panel}>

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
   ChevronDown,
@@ -8,6 +8,7 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { recordSpeciesActivity } from "@/features/account/actions";
 import type { ModelCandidate } from "../domain/types";
 import { displayCandidates, formatModelScore } from "./result-candidates";
 import styles from "./identification-results.module.css";
@@ -72,8 +73,18 @@ export default function IdentificationResults({
   const [expanded, setExpanded] = useState(false);
   const [failedMediaUrl, setFailedMediaUrl] = useState<string | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const lastRecordedSpeciesId = useRef<string | null>(null);
   const selected = visibleCandidates[selectedIndex];
   const species = selected?.rimbaSpecies;
+  const speciesId = species?.id;
+  useEffect(() => {
+    if (!speciesId || lastRecordedSpeciesId.current === speciesId) return;
+    lastRecordedSpeciesId.current = speciesId;
+    void recordSpeciesActivity(speciesId, "identified").catch(() => {
+      console.error("Failed to save species activity.");
+    });
+  }, [speciesId]);
+
   const media = species?.media ?? null;
   const alternatives = visibleCandidates.slice(1);
   const shownAlternatives = expanded ? alternatives : alternatives.slice(0, 1);

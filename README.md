@@ -38,7 +38,7 @@ Rimba is an Indonesian-language biodiversity encyclopedia supporting SDG 15: Lif
 - **Species encyclopedia:** browse published records with taxonomy, habitat, conservation information, and reference material.
 - **Image identification:** upload or paste a photo for local plant or animal model predictions. Photos remain on your device.
 - **Exploration journal:** browse illustrative observations with search, filtering, sorting, and shareable URL state.
-- **Google accounts:** create and edit a private profile using Supabase authentication.
+- **Google accounts:** create and edit a private profile with Supabase authentication; the profile shows recent successful encyclopedia matches and species-detail views.
 - **Field guide:** access educational material about biodiversity and conservation.
 
 Identification candidates are suggestions, not confirmed identifications. Scores are uncalibrated; animal browser inference remains unverified. Only verified plant taxon mappings link to encyclopedia entries. Automatic identification mode is unavailable.

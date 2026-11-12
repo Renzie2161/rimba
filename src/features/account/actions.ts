@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { createAuthClient } from "@/lib/supabase/auth-server";
-import { profileInputSchema } from "./schemas";
+import { profileInputSchema, speciesActivityInputSchema } from "./schemas";
 
 export async function signInWithGoogle() {
   const origin =
@@ -24,6 +24,30 @@ export async function signOut() {
   if (error) redirect("/id/profile?error=logout");
   revalidatePath("/", "layout");
   redirect("/id/login");
+}
+
+export async function recordSpeciesActivity(
+  speciesId: string,
+  activityType: string,
+) {
+  const parsed = speciesActivityInputSchema.safeParse({
+    speciesId,
+    activityType,
+  });
+  if (!parsed.success) throw new Error("Invalid species activity.");
+  const client = await createAuthClient();
+  const {
+    data: { user },
+    error: authError,
+  } = await client.auth.getUser();
+  if (authError) throw new Error("Unable to verify account.");
+  if (!user || user.app_metadata.provider !== "google") return;
+  const { error } = await client.rpc("record_my_species_activity", {
+    p_species_id: parsed.data.speciesId,
+    p_activity_type: parsed.data.activityType,
+  });
+  if (error) throw new Error("Unable to record species activity.");
+  revalidatePath("/id/profile");
 }
 
 export type ProfileFormState = { error: string };
