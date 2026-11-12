@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import ForestMedia from "../forest-media";
 import styles from "./about.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 
 type AboutPageProps = {
   params: Promise<{ locale: string }>;
@@ -12,7 +13,7 @@ export async function generateMetadata({
 }: AboutPageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
-  return { title: t("title") };
+  return socialMetadata({ locale, title: t("title"), path: "/about" });
 }
 
 export default async function AboutPage() {

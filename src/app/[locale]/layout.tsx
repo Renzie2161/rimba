@@ -14,6 +14,7 @@ import AppShell from "./app-shell";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { getAccount } from "@/features/account/server";
+import { socialMetadata } from "@/lib/social-metadata";
 
 function googleAvatarUrl(value: unknown): string | null {
   if (typeof value !== "string") return null;
@@ -53,9 +54,10 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
-    title: t("title"),
-    description: t("description"),
-    alternates: { canonical: `/${locale}` },
+    ...(await socialMetadata({ locale, title: t("title") })),
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL || "https://rimbakita.my.id",
+    ),
   };
 }
 

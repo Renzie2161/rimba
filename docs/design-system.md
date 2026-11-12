@@ -46,3 +46,11 @@ Do not replace a simple native select with a custom listbox. Do not create anoth
 ## Motion
 
 The app shell wraps route content in a brief view transition. Popovers fade and scale on entry and exit; the language menu and shared multi-select use short entrance motion. The catalog view indicator slides between choices while its filter scrim fades and drawer slides in or out. Motion preserves control dimensions and data behavior; the global reduced-motion rule suppresses it.
+
+## Social previews
+
+Public pages use `socialMetadata` from `src/lib/social-metadata.ts` for matching document, Open Graph, and Twitter titles, descriptions, canonical URLs, and `summary_large_image` cards. Pass the localized title and route path; species pages also pass their sourced SEO description. Keep login's existing no-index policy.
+
+The layout resolves absolute URLs against `NEXT_PUBLIC_SITE_URL`, falling back to `https://rimbakita.my.id`. Static 1200 × 630 PNGs in `public/images/social/` reuse the Rimba mark and existing forest hero: deep green ground, cream text, sage headline accent, and generous safe margins. No image generation runs per request. Indonesian is the enabled site locale; the English artwork is prepared but does not enable an English route.
+
+When updating artwork, preserve the original logo and photo, check legibility at thumbnail size, and keep filenames synchronized with the metadata helper. No Twitter account handle is claimed without a verified brand account.

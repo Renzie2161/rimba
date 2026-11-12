@@ -15,6 +15,7 @@ import CatalogControls, {
 import SpeciesCard from "@/features/species/species-card";
 import type { SpeciesCatalogPage } from "@/features/species/schemas";
 import styles from "@/features/species/catalog.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -26,7 +27,12 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "catalog" });
-  return { title: t("title") };
+  return socialMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/species",
+  });
 }
 
 export default async function SpeciesCatalogPage({ searchParams }: PageProps) {

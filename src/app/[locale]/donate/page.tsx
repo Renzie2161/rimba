@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { BookOpen, Leaf } from "lucide-react";
 import styles from "./donate.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 
 type DonatePageProps = {
   params: Promise<{ locale: string }>;
@@ -12,7 +13,7 @@ export async function generateMetadata({
 }: DonatePageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "donate" });
-  return { title: t("title") };
+  return socialMetadata({ locale, title: t("title"), path: "/donate" });
 }
 
 export default async function DonatePage() {

@@ -8,6 +8,7 @@ import { getAccount } from "@/features/account/server";
 import AccountUnavailable from "@/features/account/account-unavailable";
 import GoogleSignInForm from "./google-sign-in-form";
 import styles from "./login.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 
 type LoginPageProps = {
   params: Promise<{ locale: string }>;
@@ -21,7 +22,11 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "login" });
 
   return {
-    title: t("metadataTitle"),
+    ...(await socialMetadata({
+      locale,
+      title: t("metadataTitle"),
+      path: "/login",
+    })),
     robots: { index: false, follow: false },
   };
 }

@@ -10,6 +10,7 @@ import { getPublishedSpeciesDetail } from "@/features/species/queries";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import SpeciesDossier from "@/features/species/species-dossier";
 import styles from "@/features/species/catalog.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: "400",
@@ -37,10 +38,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "species" });
   const detail = await loadSpecies(slug);
   if (!detail) return { title: t("notFoundTitle") };
-  return {
+  return socialMetadata({
+    locale,
     title: detail.seoTitle ?? detail.commonName,
     description: detail.seoDescription ?? detail.summary,
-  };
+    path: `/species/${slug}`,
+  });
 }
 
 export default async function SpeciesDetailPage({ params }: PageProps) {

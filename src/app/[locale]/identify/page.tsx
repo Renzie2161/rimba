@@ -3,13 +3,14 @@ import { getTranslations } from "next-intl/server";
 import { plantNetManifest } from "@/features/identification/models/plantnet-resnet18.manifest";
 import IdentifyWorkspace from "./identify-workspace";
 import styles from "./identify.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "identify" });
-  return { title: t("title") };
+  return socialMetadata({ locale, title: t("title"), path: "/identify" });
 }
 
 export default async function IdentifyPage() {

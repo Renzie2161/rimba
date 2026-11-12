@@ -7,6 +7,7 @@ import FeaturedCarousel from "@/features/species/featured-carousel";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import ForestMedia from "../forest-media";
 import styles from "./journal.module.css";
+import { socialMetadata } from "@/lib/social-metadata";
 
 type JournalPageProps = { params: Promise<{ locale: string }> };
 
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }: Pick<JournalPageProps, "params">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "journal" });
-  return { title: t("title") };
+  return socialMetadata({ locale, title: t("title"), path: "/journal" });
 }
 
 function formatCount(count: number) {
