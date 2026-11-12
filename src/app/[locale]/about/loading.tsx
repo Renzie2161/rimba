@@ -3,5 +3,5 @@ import PageSkeleton from "@/components/page-skeleton";
 
 export default async function Loading() {
   const t = await getTranslations("states");
-  return <PageSkeleton cards={2} label={t("loading")} />;
+  return <PageSkeleton variant="about" label={t("loading")} />;
 }

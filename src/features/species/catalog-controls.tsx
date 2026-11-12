@@ -10,17 +10,18 @@ import {
   SlidersHorizontal,
   X,
 } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter, usePathname, Link } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   serializeCatalogSearchParams,
   type CatalogSearchValue,
 } from "./catalog-params";
-import { Link } from "@/i18n/navigation";
+
 import type { ConservationStatus, SpeciesCatalogFacets } from "./schemas";
-import Multiselect from "./multiselect";
+import MultiSelect from "@/components/ui/multi-select";
 import { codeLabel, regionLabel } from "./region-labels";
+import multiSelectStyles from "@/components/ui/multi-select.module.css";
 import styles from "./catalog.module.css";
 
 type Props = { value: CatalogSearchValue; facets: SpeciesCatalogFacets };
@@ -40,19 +41,22 @@ export default function CatalogControls({ value, facets }: Props) {
   const router = useRouter();
   const t = useTranslations("catalog");
   const speciesT = useTranslations("species");
+  const [draft, setDraft] = useState(value);
   const [query, setQuery] = useState(value.query);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const queryDraft = useRef(value.query);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const closeRef = useRef<HTMLButtonElement>(null);
 
+  const [drawerRevision, setDrawerRevision] = useState(0);
+  const filterRef = useRef<HTMLButtonElement>(null);
   useEffect(() => () => clearTimeout(timer.current), []);
 
   useEffect(() => {
     if (!drawerOpen) return;
     closeRef.current?.focus();
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setDrawerOpen(false);
+      if (event.key === "Escape") closeDrawer();
     }
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
@@ -82,6 +86,27 @@ export default function CatalogControls({ value, facets }: Props) {
     });
   }
 
+  function updateDraft<K extends keyof CatalogSearchValue>(
+    key: K,
+    nextValue: CatalogSearchValue[K],
+  ) {
+    setDraft((current) => ({ ...current, [key]: nextValue, page: 1 }));
+  }
+
+  function closeDrawer() {
+    setDrawerOpen(false);
+    filterRef.current?.focus();
+  }
+
+  function applyFilters() {
+    navigate({
+      ...draft,
+      query: queryDraft.current.trim().replace(/\s+/gu, " "),
+      page: 1,
+    });
+    closeDrawer();
+  }
+
   function onQueryChange(nextQuery: string) {
     queryDraft.current = nextQuery;
     setQuery(nextQuery);
@@ -109,9 +134,23 @@ export default function CatalogControls({ value, facets }: Props) {
     { value: "EW", label: `${speciesT("status.EW")} (EW)` },
     { value: "NE", label: `${speciesT("status.NE")} (NE)` },
   ];
+  const taxonLabels: Record<string, string> = {
+    amphibian: speciesT("group.amphibian"),
+    animal: speciesT("group.animal"),
+    bird: speciesT("group.bird"),
+    fish: speciesT("group.fish"),
+    flora: speciesT("group.plant"),
+    fungus: speciesT("group.fungus"),
+    insect: speciesT("group.insect"),
+    invertebrate: speciesT("group.invertebrate"),
+    mammal: speciesT("group.mammal"),
+    reptile: speciesT("group.reptile"),
+  };
   const taxonOptions = facets.taxonGroups.map((group) => ({
     value: group,
-    label: codeLabel(group),
+    label: Object.prototype.hasOwnProperty.call(taxonLabels, group)
+      ? (taxonLabels[group] ?? codeLabel(group))
+      : codeLabel(group),
   }));
   const regionOptions = facets.regions.map((region) => ({
     value: region,
@@ -155,12 +194,18 @@ export default function CatalogControls({ value, facets }: Props) {
 
         <button
           aria-expanded={drawerOpen}
+          aria-controls="species-filter-drawer"
+          ref={filterRef}
           className={
             count > 0
               ? `${styles.filterButton} ${styles.filterButtonActive}`
               : styles.filterButton
           }
-          onClick={() => setDrawerOpen(true)}
+          onClick={() => {
+            setDraft(value);
+            setDrawerRevision((revision) => revision + 1);
+            setDrawerOpen(true);
+          }}
           type="button"
         >
           <SlidersHorizontal aria-hidden="true" size={17} strokeWidth={2} />
@@ -172,6 +217,7 @@ export default function CatalogControls({ value, facets }: Props) {
 
         <div
           className={styles.viewToggle}
+          data-view={value.view}
           role="group"
           aria-label={t("viewLabel")}
         >
@@ -192,108 +238,122 @@ export default function CatalogControls({ value, facets }: Props) {
             {t("list")}
           </button>
         </div>
-
-        <label className={styles.sortField}>
-          <span className="sr-only">{t("sortLabel")}</span>
-          <select
-            aria-label={t("sortLabel")}
-            name="sort"
-            onChange={(event) =>
-              update("sort", event.target.value as CatalogSearchValue["sort"])
-            }
-            value={value.sort}
-          >
-            <option value="name">{t("sortName")}</option>
-            <option value="updated">{t("sortUpdated")}</option>
-          </select>
-        </label>
       </form>
 
-      {drawerOpen ? (
-        <>
-          <button
-            aria-label={t("closeFilters")}
-            className={styles.drawerScrim}
-            onClick={() => setDrawerOpen(false)}
-            type="button"
-          />
-          <aside
-            aria-label={t("filterPanelLabel")}
-            className={styles.drawer}
-            role="dialog"
-          >
-            <header className={styles.drawerHeader}>
-              <h2>
-                <SlidersHorizontal
-                  aria-hidden="true"
-                  size={18}
-                  strokeWidth={2}
-                />
-                {t("filterPanelTitle")}
-              </h2>
-              <button
-                aria-label={t("closeFilters")}
-                className={styles.drawerClose}
-                onClick={() => setDrawerOpen(false)}
-                ref={closeRef}
-                type="button"
-              >
-                <X aria-hidden="true" size={18} strokeWidth={2} />
-              </button>
-            </header>
+      <div
+        aria-hidden={!drawerOpen}
+        className={styles.drawerLayer}
+        data-open={drawerOpen ? "true" : "false"}
+      >
+        <button
+          aria-label={t("closeFilters")}
+          className={styles.drawerScrim}
+          onClick={closeDrawer}
+          type="button"
+        />
+        <aside
+          aria-label={t("filterPanelLabel")}
+          className={styles.drawer}
+          id="species-filter-drawer"
+          role="dialog"
+        >
+          <header className={styles.drawerHeader}>
+            <h2>
+              <SlidersHorizontal aria-hidden="true" size={18} strokeWidth={2} />
+              {t("filterPanelTitle")}
+            </h2>
+            <button
+              aria-label={t("closeFilters")}
+              className={styles.drawerClose}
+              onClick={closeDrawer}
+              ref={closeRef}
+              type="button"
+            >
+              <X aria-hidden="true" size={18} strokeWidth={2} />
+            </button>
+          </header>
 
-            <div className={styles.drawerBody}>
-              <Multiselect
-                label={t("statusLabel")}
-                onChange={(next) =>
-                  update("statuses", next as ConservationStatus[])
+          <div className={styles.drawerBody} key={drawerRevision}>
+            <MultiSelect
+              label={t("statusLabel")}
+              onChange={(next) =>
+                updateDraft("statuses", next as ConservationStatus[])
+              }
+              options={statusOptions}
+              placeholder={t("allStatuses")}
+              searchPlaceholder={t("searchOption")}
+              selected={draft.statuses}
+            />
+            <MultiSelect
+              label={t("taxonLabel")}
+              onChange={(next) => updateDraft("taxa", next)}
+              options={taxonOptions}
+              placeholder={t("allTaxa")}
+              searchPlaceholder={t("searchOption")}
+              selected={draft.taxa}
+            />
+            <MultiSelect
+              label={t("regionLabel")}
+              onChange={(next) => updateDraft("regions", next)}
+              options={regionOptions}
+              placeholder={t("allRegions")}
+              searchPlaceholder={t("searchOption")}
+              selected={draft.regions}
+            />
+            <MultiSelect
+              label={t("habitatLabel")}
+              onChange={(next) => updateDraft("habitats", next)}
+              options={habitatOptions}
+              placeholder={t("allHabitats")}
+              searchPlaceholder={t("searchOption")}
+              selected={draft.habitats}
+            />
+            <label className={styles.drawerSortField}>
+              <span>{t("sortLabel")}</span>
+              <select
+                className={multiSelectStyles.trigger}
+                name="sort"
+                onChange={(event) =>
+                  updateDraft(
+                    "sort",
+                    event.target.value as CatalogSearchValue["sort"],
+                  )
                 }
-                options={statusOptions}
-                placeholder={t("allStatuses")}
-                searchPlaceholder={t("searchOption")}
-                selected={value.statuses}
-              />
-              <Multiselect
-                label={t("taxonLabel")}
-                onChange={(next) => update("taxa", next)}
-                options={taxonOptions}
-                placeholder={t("allTaxa")}
-                searchPlaceholder={t("searchOption")}
-                selected={value.taxa}
-              />
-              <Multiselect
-                label={t("regionLabel")}
-                onChange={(next) => update("regions", next)}
-                options={regionOptions}
-                placeholder={t("allRegions")}
-                searchPlaceholder={t("searchOption")}
-                selected={value.regions}
-              />
-              <Multiselect
-                label={t("habitatLabel")}
-                onChange={(next) => update("habitats", next)}
-                options={habitatOptions}
-                placeholder={t("allHabitats")}
-                searchPlaceholder={t("searchOption")}
-                selected={value.habitats}
-              />
-            </div>
-
-            <footer className={styles.drawerFooter}>
-              <Link className={styles.drawerReset} href="/species">
-                {t("reset")}
-              </Link>
-              <button
-                className={styles.drawerApply}
-                onClick={() => setDrawerOpen(false)}
-                type="button"
+                value={draft.sort}
               >
-                {t("apply")}
-              </button>
-            </footer>
-          </aside>
-        </>
-      ) : null}
+                <option value="name">{t("sortName")}</option>
+                <option value="updated">{t("sortUpdated")}</option>
+              </select>
+            </label>
+          </div>
+          <footer className={styles.drawerFooter}>
+            <button
+              className={styles.drawerReset}
+              onClick={() =>
+                setDraft((current) => ({
+                  ...current,
+                  statuses: [],
+                  taxa: [],
+                  regions: [],
+                  habitats: [],
+                  sort: "name",
+                  page: 1,
+                }))
+              }
+              type="button"
+            >
+              {t("reset")}
+            </button>
+            <button
+              className={styles.drawerApply}
+              onClick={applyFilters}
+              type="button"
+            >
+              {t("apply")}
+            </button>
+          </footer>
+        </aside>
+      </div>
     </>
   );
 }

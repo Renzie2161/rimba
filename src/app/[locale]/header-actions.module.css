@@ -1,8 +1,8 @@
-/* Themed popover panel: header, empty body, footer. */
+/* Quiet field-journal panels with compact, actionable account controls. */
 .panel {
   display: grid;
+  width: min(352px, calc(100vw - 24px));
   gap: 0;
-  width: 320px;
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -17,7 +17,6 @@
   gap: 11px;
   padding: 15px 16px;
   border-bottom: 1px solid var(--divider);
-  background: var(--surface-green);
 }
 
 .panelIcon {
@@ -27,8 +26,8 @@
   flex: 0 0 32px;
   place-items: center;
   border-radius: 10px;
-  background: var(--brand-600);
-  color: #ffffff;
+  background: var(--surface-green);
+  color: var(--brand-800);
 }
 
 .panelTitle {
@@ -50,14 +49,14 @@
   display: grid;
   justify-items: center;
   gap: 8px;
-  padding: 26px 20px;
+  padding: 22px 20px;
   text-align: center;
 }
 
 .emptyIcon {
   display: grid;
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   border-radius: 50%;
   background: var(--surface-alt);
@@ -72,16 +71,80 @@
   line-height: 1.55;
 }
 
-.panelFooter {
-  padding: 11px 16px;
-  border-top: 1px solid var(--divider);
-  background: var(--surface-alt);
-  color: var(--ink-muted);
-  font-size: 0.75rem;
-  line-height: 1.45;
+/* Profile photo remains the account trigger; no duplicate profile button. */
+.accountButton {
+  overflow: hidden;
+  border-color: var(--line);
+  background: var(--surface);
 }
 
-/* Account control stays icon-only; the labelled button is the sign-in link. */
-.accountButton {
-  border: 1px solid var(--line);
+.avatarImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileAvatar {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--surface-green);
+  color: var(--brand-800);
+}
+
+.profileActions {
+  display: grid;
+  gap: 4px;
+  padding: 8px;
+}
+
+.profileActions form {
+  width: 100%;
+  margin: 0;
+}
+
+.profileLink,
+.logout {
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.profileLink {
+  border: 0;
+  background: transparent;
+  color: var(--brand-800);
+  text-decoration: none;
+}
+
+.profileLink span {
+  flex: 1;
+}
+
+.profileLink:hover {
+  background: var(--surface-green);
+}
+
+.logout {
+  border: 0;
+  background: transparent;
+  color: var(--danger);
+  text-align: left;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: var(--surface-alt);
 }

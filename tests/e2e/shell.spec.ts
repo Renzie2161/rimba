@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("header shows route context and unavailable account utilities", async ({
+test("header shows route context and notification availability", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
@@ -11,15 +11,20 @@ test("header shows route context and unavailable account utilities", async ({
     header.getByText("Ruang eksplorasi", { exact: true }),
   ).toBeVisible();
   await expect(header.getByText("Jurnal saya", { exact: true })).toBeVisible();
+
+  const notifications = header.getByRole("button", {
+    name: "Notifikasi",
+    exact: true,
+  });
+  await expect(notifications).toBeEnabled();
+  await notifications.click();
+  await expect(page.getByText("Notifikasi belum tersedia")).toBeVisible();
   await expect(
-    header.getByRole("button", {
-      name: "Notifikasi belum tersedia",
-      exact: true,
-    }),
-  ).toBeDisabled();
+    page.getByText("Kabar dari tim Rimba akan muncul di sini."),
+  ).toBeVisible();
   await expect(
-    header.getByRole("button", { name: "Akun belum tersedia", exact: true }),
-  ).toBeDisabled();
+    header.getByRole("link", { name: "Masuk", exact: true }),
+  ).toBeVisible();
 });
 
 test("mobile navigation opens as a keyboard-usable modal drawer", async ({
@@ -43,8 +48,7 @@ test("mobile navigation opens as a keyboard-usable modal drawer", async ({
   await expect(drawer.getByText("Identifikasi Spesies")).toBeVisible();
   await expect(
     drawer.getByRole("link", { name: "Identifikasi Spesies" }),
-  ).toHaveCount(0);
-  await expect(drawer.getByText("Belum tersedia")).toBeVisible();
+  ).toHaveAttribute("href", "/id/identify");
   await expect(
     drawer
       .getByRole("navigation", { name: "Navigasi utama" })
@@ -63,6 +67,24 @@ test("mobile navigation opens as a keyboard-usable modal drawer", async ({
   await expect(trigger).toBeFocused();
 });
 
+test("active identification navigation label stays on one line", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto("/id/identify");
+  const link = page
+    .getByRole("navigation", { name: "Navigasi utama" })
+    .getByRole("link", { name: "Identifikasi Spesies" });
+  const label = link.locator("span");
+
+  await expect(link).toHaveAttribute("aria-current", "page");
+  await expect(label).toHaveCSS("white-space", "nowrap");
+  const [scrollWidth, clientWidth] = await label.evaluate((element) => [
+    element.scrollWidth,
+    element.clientWidth,
+  ]);
+  expect(scrollWidth).toBeLessThanOrEqual(clientWidth);
+});
 test("drawer closes on desktop resize and unknown routes have no active destination", async ({
   page,
 }) => {

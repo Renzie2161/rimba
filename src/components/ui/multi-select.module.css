@@ -43,6 +43,11 @@
   outline-offset: 2px;
 }
 
+.trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .value {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -94,6 +99,16 @@
   background: rgb(14 59 44 / 14%);
 }
 
+.chipRemove:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.chipRemove:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .panel {
   position: absolute;
   z-index: 30;
@@ -106,6 +121,7 @@
   border-radius: 12px;
   background: var(--surface);
   box-shadow: 0 16px 34px -20px rgb(14 59 44 / 42%);
+  animation: multi-select-enter 130ms ease-out both;
 }
 
 .searchRow {
@@ -162,6 +178,15 @@
   outline-offset: -2px;
 }
 
+.option:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.option:disabled:hover {
+  background: transparent;
+}
+
 .optionSelected {
   background: var(--surface-green);
   color: var(--brand-800);
@@ -189,4 +214,26 @@
   color: var(--ink-muted);
   font-size: 13px;
   text-align: center;
+}
+
+@keyframes multi-select-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-3px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.searchRow:focus-within {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+.chipRemove:focus-visible,
+.option:focus-visible {
+  outline-color: var(--focus);
 }

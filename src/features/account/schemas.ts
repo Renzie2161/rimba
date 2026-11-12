@@ -24,7 +24,11 @@ export const profileSchema = z.object({
   username_changed_at: z.iso.datetime({ offset: true }).nullable(),
 });
 export type Profile = z.infer<typeof profileSchema>;
-export type AccountSummary = { displayName: string; username: string | null };
+export type AccountSummary = {
+  displayName: string;
+  username: string | null;
+  avatarUrl: string | null;
+};
 export const USERNAME_COOLDOWN_MS = 7 * 24 * 60 * 60 * 1000;
 export function usernameUnlockAt(changedAt: string | null) {
   return changedAt

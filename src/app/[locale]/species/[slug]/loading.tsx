@@ -3,5 +3,5 @@ import PageSkeleton from "@/components/page-skeleton";
 
 export default async function SpeciesDetailLoading() {
   const t = await getTranslations("species");
-  return <PageSkeleton cards={3} label={t("loading")} />;
+  return <PageSkeleton variant="detail" label={t("loading")} />;
 }

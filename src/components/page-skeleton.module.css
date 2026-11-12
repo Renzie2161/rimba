@@ -9,7 +9,44 @@
 
 .inner {
   display: grid;
-  gap: 14px;
+  gap: 18px;
+}
+
+.about,
+.donate {
+  gap: 20px;
+}
+
+.detail,
+.identify {
+  gap: 16px;
+}
+
+.journal {
+  gap: 22px;
+}
+
+.inner [data-slot="skeleton"] {
+  background: linear-gradient(
+    100deg,
+    var(--surface-alt) 20%,
+    var(--surface) 50%,
+    var(--surface-alt) 80%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.intro {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 4px;
 }
 
 .eyebrow {
@@ -30,23 +67,115 @@
   border-radius: 6px;
 }
 
-.hero {
-  width: 100%;
-  height: 260px;
-  margin-block: 20px;
+.textBlock {
+  display: grid;
+  gap: 10px;
+}
+
+.textLine,
+.textLineShort {
+  height: 14px;
+  border-radius: 6px;
+}
+
+.textLineShort {
+  width: 72%;
+}
+
+.journalHero,
+.aboutBanner {
+  display: flex;
+  min-height: 250px;
+  align-items: center;
+  padding: clamp(22px, 4vw, 40px);
   border-radius: 18px;
+  background: var(--surface-green);
+}
+
+.heroCopy {
+  display: grid;
+  width: min(620px, 100%);
+  gap: 12px;
+}
+
+.heroEyebrow {
+  width: 135px;
+  height: 12px;
+}
+
+.heroTitle,
+.heroTitleShort,
+.bannerTitle,
+.bannerTitleShort {
+  height: 34px;
+}
+
+.heroTitle {
+  width: min(440px, 90%);
+}
+
+.heroTitleShort {
+  width: min(320px, 72%);
 }
 
 .metrics {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 13px;
-  margin-block: 20px 26px;
 }
 
 .metric {
-  height: 108px;
+  height: 102px;
   border-radius: 12px;
+}
+
+.featured {
+  display: grid;
+  gap: 18px;
+}
+
+.sectionIntro {
+  display: grid;
+  gap: 8px;
+}
+
+.sectionTitle {
+  width: min(260px, 70%);
+  height: 24px;
+}
+
+.sectionSubtitle {
+  width: min(400px, 85%);
+  height: 15px;
+}
+
+.featuredCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.catalog {
+  display: grid;
+  gap: 18px;
+}
+
+.resultsHeading {
+  display: grid;
+  gap: 8px;
+}
+
+.catalogControls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 110px 158px;
+  gap: 12px;
+}
+
+.search,
+.filter,
+.viewToggle {
+  height: 46px;
+  border-radius: 10px;
 }
 
 .grid {
@@ -61,6 +190,7 @@
   padding-bottom: 14px;
   border: 1px solid var(--line);
   border-radius: 12px;
+  background: var(--surface);
   overflow: clip;
 }
 
@@ -84,6 +214,240 @@
   border-radius: 6px;
 }
 
+.cardMeta {
+  width: 42%;
+  height: 14px;
+  margin-inline: 14px;
+  border-radius: 999px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageButton,
+.pageNumber {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+}
+
+.detailColumns {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 56px);
+  align-items: start;
+}
+
+.detailAside,
+.detailBody {
+  display: grid;
+  min-width: 0;
+  gap: 16px;
+}
+
+.backLink {
+  width: 112px;
+  height: 18px;
+}
+
+.scientificName {
+  width: min(260px, 60%);
+  height: 16px;
+}
+
+.detailMedia {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+}
+
+.detailPanel,
+.observation,
+.statusCard,
+.donateStory,
+.donateDemo,
+.thanks {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.panelTitle {
+  width: 46%;
+  height: 20px;
+}
+
+.taxonomyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+}
+
+.taxonomyItem {
+  display: grid;
+  gap: 7px;
+}
+
+.taxonomyLabel {
+  width: 54%;
+  height: 10px;
+}
+
+.taxonomyValue {
+  width: 78%;
+  height: 14px;
+}
+
+.observationTitle {
+  width: 58%;
+  height: 18px;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.statusTitle {
+  width: 76%;
+  height: 16px;
+}
+
+.statusValue {
+  width: 48%;
+  height: 24px;
+}
+
+.detailBody .textLineShort {
+  width: 84%;
+}
+
+.modeOptions {
+  display: flex;
+  gap: 10px;
+}
+
+.modeOption {
+  width: 128px;
+  height: 42px;
+  border-radius: 9px;
+}
+
+.uploadPanel {
+  display: grid;
+  min-height: 280px;
+  justify-items: center;
+  align-content: center;
+  gap: 16px;
+  padding: 28px;
+  border: 1px dashed var(--control-border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.uploadIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+}
+
+.uploadTitle {
+  width: min(320px, 80%);
+  height: 24px;
+}
+
+.uploadHelp {
+  width: min(440px, 90%);
+  height: 16px;
+}
+
+.uploadActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.uploadAction,
+.uploadActionSecondary {
+  width: 150px;
+  height: 44px;
+  border-radius: 9px;
+}
+
+.limits {
+  display: grid;
+  gap: 14px;
+  padding-top: 18px;
+}
+
+.aboutBanner {
+  display: grid;
+  min-height: 190px;
+  align-content: center;
+  gap: 12px;
+}
+
+.bannerTitle {
+  width: min(520px, 86%);
+}
+
+.bannerTitleShort {
+  width: min(330px, 66%);
+}
+
+.about .textBlock {
+  gap: 12px;
+}
+
+.donateColumns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 24px;
+}
+
+.donateStory,
+.donateDemo {
+  align-content: start;
+  gap: 18px;
+  padding: 22px;
+}
+
+.purpose {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.purposeIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+.purposeTitle {
+  width: 62%;
+  height: 18px;
+  margin-bottom: 10px;
+}
+
+.demoBox {
+  min-height: 108px;
+  border-radius: 12px;
+}
+
+.thanks {
+  min-height: 118px;
+  align-content: center;
+}
+
 @media (max-width: 1199px) {
   .page {
     padding-block: 24px 40px;
@@ -92,20 +456,79 @@
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .featuredCards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-@media (max-width: 767px) {
-  .metrics {
+@media (max-width: 900px) {
+  .detailColumns,
+  .donateColumns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .detailAside {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .grid {
+  .detailMedia {
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .metrics,
+  .statusGrid,
+  .detailAside {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid,
+  .featuredCards {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .catalogControls {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .search {
+    grid-column: 1 / -1;
+  }
+
+  .detailColumns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .detailAside {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .detailMedia {
+    grid-row: auto;
+  }
+
+  .modeOptions,
+  .uploadActions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .modeOption {
+    width: 100%;
+  }
+
+  .uploadAction,
+  .uploadActionSecondary {
+    width: 100%;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .inner * {
+  .inner [data-slot="skeleton"] {
     animation: none !important;
+    background: var(--surface-alt);
   }
 }

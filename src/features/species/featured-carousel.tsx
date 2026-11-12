@@ -5,6 +5,7 @@ import {
   ArrowUpRight,
   ChevronLeft,
   ChevronRight,
+  MapPin,
 } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -192,7 +193,10 @@ export default function FeaturedCarousel({ species }: Props) {
                   <p className={styles.summary}>{entry.summary}</p>
                   {entry.regionCodes.length > 0 ? (
                     <p className={styles.region}>
-                      {entry.regionCodes.map(regionLabel).join(" · ")}
+                      <MapPin aria-hidden="true" size={13} strokeWidth={2} />
+                      <span>
+                        {entry.regionCodes.map(regionLabel).join(" · ")}
+                      </span>
                     </p>
                   ) : null}
                 </div>
