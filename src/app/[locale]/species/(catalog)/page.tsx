@@ -131,11 +131,7 @@ export default async function SpeciesCatalogPage({ searchParams }: PageProps) {
               facets={catalog.facets}
             />
             {catalog.items.length ? (
-              <div
-                className={
-                  parsed.value.view === "list" ? styles.list : styles.grid
-                }
-              >
+              <div className={styles.grid}>
                 {catalog.items.map((species) => (
                   <SpeciesCard key={species.id} species={species} />
                 ))}
