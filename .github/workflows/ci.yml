@@ -1,0 +1,66 @@
+name: CI and Delivery Artifact
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          lfs: ${{ github.event_name != 'pull_request' }}
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6
+        with:
+          bun-version: 1.4.4
+      - run: bun install --frozen-lockfile
+      - run: bun run lint
+      - run: bun run typecheck
+      - run: bun run test
+      - name: Validate production build variables
+        if: github.event_name != 'pull_request'
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: >-
+            ${{ vars.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          if [ -z "$NEXT_PUBLIC_SUPABASE_URL" ]; then
+            echo "Missing repository variable: NEXT_PUBLIC_SUPABASE_URL"
+            exit 1
+          fi
+          if [ -z "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
+            echo "Missing repository variable: NEXT_PUBLIC_SUPABASE_ANON_KEY"
+            exit 1
+          fi
+      - name: Build standalone app
+        if: github.event_name != 'pull_request'
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: >-
+            ${{ vars.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: bun run build
+      - name: Assemble self-hostable output
+        if: github.event_name != 'pull_request'
+        run: |
+          test -f .next/standalone/server.js
+          mkdir -p .next/standalone/public .next/standalone/.next/static
+          cp -a public/. .next/standalone/public/
+          cp -a .next/static/. .next/standalone/.next/static/
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: github.event_name != 'pull_request'
+        with:
+          name: rimba-standalone-${{ github.sha }}
+          path: .next/standalone/
+          if-no-files-found: error
+          retention-days: 7

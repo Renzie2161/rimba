@@ -42,7 +42,25 @@ The configured development database has four published species entries and six s
 
 The review flag means a demo record needs review. It does not describe conservation status or expert verification. Demo dates and regions are illustrative.
 
-Cloudflare Pages remains planned and unverified. No deployment is claimed.
+Cloudflare deployment is paused. GitHub Actions runs lint, typecheck, and unit tests on pull requests; master pushes and manual runs build and publish a Linux Node standalone artifact. It does not deploy.
+
+Artifact builds require GitHub repository variables `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`; commit `bun.lock` for frozen installs. Start artifact with `node server.js` on Node.js `>=20.9`.
+
+## Linux homelab (Docker)
+
+Build from the project root after exporting Supabase public config. Next.js bakes `NEXT_PUBLIC_*` values into the build.
+After cloning, run `git lfs pull` to fetch model weights.
+
+```sh
+docker build \
+  --build-arg NEXT_PUBLIC_SUPABASE_URL \
+  --build-arg NEXT_PUBLIC_SUPABASE_ANON_KEY \
+  --build-arg NEXT_PUBLIC_SITE_URL \
+  -t rimba:latest .
+docker run -d --name rimba --restart unless-stopped -p 3000:3000 rimba:latest
+```
+
+`NEXT_PUBLIC_SITE_URL` is optional. Put a reverse proxy in front for HTTPS.
 
 ## How Rimba works
 

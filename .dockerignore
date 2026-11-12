@@ -1,0 +1,11 @@
+.git
+.github
+.private
+.next
+public/ai/runtime/onnxruntime-web/
+node_modules
+coverage
+playwright-report
+test-results
+.env*
+*.log
