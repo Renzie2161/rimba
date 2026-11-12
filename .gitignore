@@ -37,3 +37,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /public/ai/runtime/onnxruntime-web/
+/AGENTS.md
