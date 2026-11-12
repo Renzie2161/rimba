@@ -6,16 +6,18 @@ export async function socialMetadata({
   title,
   path = "",
   description,
+  image: speciesImage,
 }: {
   locale: string;
   title: string;
   path?: string;
   description?: string;
+  image?: { url: string; alt: string } | undefined;
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "metadata" });
   const summary = description ?? t("description");
   const url = `/${locale}${path}`;
-  const image = {
+  const image = speciesImage ?? {
     url: `/images/social/rimba-${locale === "en" ? "en" : "id"}.png`,
     width: 1200,
     height: 630,

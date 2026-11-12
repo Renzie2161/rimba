@@ -49,8 +49,10 @@ The app shell wraps route content in a brief view transition. Popovers fade and 
 
 ## Social previews
 
-Public pages use `socialMetadata` from `src/lib/social-metadata.ts` for matching document, Open Graph, and Twitter titles, descriptions, canonical URLs, and `summary_large_image` cards. Pass the localized title and route path; species pages also pass their sourced SEO description. Keep login's existing no-index policy.
+Public pages use `socialMetadata` from `src/lib/social-metadata.ts` for matching document, Open Graph, and Twitter titles, descriptions, canonical URLs, and `summary_large_image` cards. Pass the localized title and route path; species pages also pass their sourced SEO description and first approved image with its alt text. Species images retain their original aspect ratio: dimensions are not invented. If no approved image exists, the branded Rimba card is used. Keep login's existing no-index policy.
 
 The layout resolves absolute URLs against `NEXT_PUBLIC_SITE_URL`, falling back to `https://rimbakita.my.id`. Static 1200 × 630 PNGs in `public/images/social/` reuse the Rimba mark and existing forest hero: deep green ground, cream text, sage headline accent, and generous safe margins. No image generation runs per request. Indonesian is the enabled site locale; the English artwork is prepared but does not enable an English route.
 
 When updating artwork, preserve the original logo and photo, check legibility at thumbnail size, and keep filenames synchronized with the metadata helper. No Twitter account handle is claimed without a verified brand account.
+
+WhatsApp and Facebook previews read the same Open Graph tags. Next.js recognizes their crawlers and includes metadata in the initial HTML head; do not replace this with client-only tags. Verify the final absolute image URL is publicly accessible without authentication after deployment. Platform caches can retain earlier previews until they recrawl.

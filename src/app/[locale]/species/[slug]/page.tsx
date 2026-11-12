@@ -43,6 +43,7 @@ export async function generateMetadata({
     title: detail.seoTitle ?? detail.commonName,
     description: detail.seoDescription ?? detail.summary,
     path: `/species/${slug}`,
+    image: detail.media[0],
   });
 }
 
