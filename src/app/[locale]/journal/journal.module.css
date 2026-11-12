@@ -111,10 +111,9 @@
 .metric {
   display: grid;
   min-height: 112px;
-  grid-template-columns: 44px auto minmax(0, 1fr);
-  grid-template-rows: auto auto auto;
-  align-items: center;
-  gap: 4px 12px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 12px;
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -123,7 +122,7 @@
 
 .metric > svg {
   grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-row: 1;
   width: 44px;
   height: 44px;
   padding: 10px;
@@ -143,27 +142,41 @@
   background: #faf0ec;
 }
 
+.metricContent {
+  display: grid;
+  min-width: 0;
+  grid-column: 2;
+  grid-row: 1;
+  gap: 4px;
+}
+
+.metricHeading {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: start;
+  column-gap: 12px;
+}
+
 .metricLabel {
   min-width: 0;
-  grid-column: 3;
-  grid-row: 1;
+  align-self: center;
+  overflow-wrap: anywhere;
   color: var(--ink-muted);
   font-size: 12px;
   line-height: 1.35;
 }
 
 .metricValue {
-  grid-column: 2;
-  grid-row: 1;
+  white-space: nowrap;
   color: var(--brand-700);
   font-size: 1.875rem;
   font-weight: 750;
   line-height: 1;
 }
+
 .metricHelp {
   min-width: 0;
-  grid-column: 2 / -1;
-  grid-row: 3;
   color: var(--ink-muted);
   font-size: 12px;
   line-height: 1.4;
@@ -204,9 +217,13 @@
 
   .metric {
     min-height: 78.9px;
-    grid-template-columns: 32px auto minmax(0, 1fr);
-    gap: 2px 6px;
+    grid-template-columns: 32px minmax(0, 1fr);
+    column-gap: 6px;
     padding: 10px;
+  }
+
+  .metricHeading {
+    column-gap: 6px;
   }
 
   .metric > svg {
