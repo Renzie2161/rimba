@@ -2,12 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { createAuthClient } from "@/lib/supabase/auth-server";
 
 function getPublicOrigin(request: NextRequest): string {
-  const forwardedHost = request.headers.get("x-forwarded-host");
-  if (forwardedHost) {
-    const protocol = request.headers.get("x-forwarded-proto") ?? "https";
-    return `${protocol}://${forwardedHost}`;
-  }
-  return request.nextUrl.origin;
+  return process.env.NEXT_PUBLIC_SITE_URL
+    ? new URL(process.env.NEXT_PUBLIC_SITE_URL).origin
+    : request.nextUrl.origin;
 }
 
 export async function GET(request: NextRequest) {
