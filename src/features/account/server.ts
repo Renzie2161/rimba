@@ -1,7 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import { createAuthClient } from "@/lib/supabase/auth-server";
-import { profileSchema } from "./schemas";
+import { accountActivitiesSchema, profileSchema } from "./schemas";
 import { getSupabaseEnvironment } from "@/lib/env";
 
 export const getAccount = cache(async () => {
@@ -25,5 +25,14 @@ export const getAccount = cache(async () => {
     profile: data ? profileSchema.parse(data) : null,
     unavailable: Boolean(error),
     checkedAt: Date.now(),
+  };
+});
+
+export const getAccountActivities = cache(async () => {
+  const client = await createAuthClient();
+  const { data, error } = await client.rpc("get_my_species_activity");
+  return {
+    activities: error ? [] : accountActivitiesSchema.parse(data ?? []),
+    unavailable: Boolean(error),
   };
 });

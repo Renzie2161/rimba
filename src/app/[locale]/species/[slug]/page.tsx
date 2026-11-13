@@ -9,6 +9,7 @@ import { speciesRowSchema } from "@/features/species/schemas";
 import { getPublishedSpeciesDetail } from "@/features/species/queries";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import SpeciesDossier from "@/features/species/species-dossier";
+import SpeciesActivityRecorder from "@/features/account/species-activity-recorder";
 import styles from "@/features/species/catalog.module.css";
 import { socialMetadata } from "@/lib/social-metadata";
 const ibmPlexMono = IBM_Plex_Mono({
@@ -60,6 +61,7 @@ export default async function SpeciesDetailPage({ params }: PageProps) {
         <ArrowLeft aria-hidden="true" size={17} strokeWidth={2} />
         {t("backToCatalog")}
       </Link>
+      <SpeciesActivityRecorder speciesId={species.id} />
       <SpeciesDossier species={species} labels={t} />
     </main>
   );

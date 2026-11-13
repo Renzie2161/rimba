@@ -11,7 +11,8 @@ import {
   X,
 } from "lucide-react";
 import { useRouter, usePathname, Link } from "@/i18n/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   serializeCatalogSearchParams,
@@ -20,8 +21,8 @@ import {
 
 import type { ConservationStatus, SpeciesCatalogFacets } from "./schemas";
 import MultiSelect from "@/components/ui/multi-select";
+import SingleSelect from "@/components/ui/single-select";
 import { codeLabel, regionLabel } from "./region-labels";
-import multiSelectStyles from "@/components/ui/multi-select.module.css";
 import styles from "./catalog.module.css";
 
 type Props = { value: CatalogSearchValue; facets: SpeciesCatalogFacets };
@@ -38,6 +39,8 @@ function activeFilterCount(value: CatalogSearchValue) {
 
 export default function CatalogControls({ value, facets }: Props) {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const view = searchParams.get("view") === "list" ? "list" : "grid";
   const router = useRouter();
   const t = useTranslations("catalog");
   const speciesT = useTranslations("species");
@@ -68,22 +71,30 @@ export default function CatalogControls({ value, facets }: Props) {
   ) {
     clearTimeout(timer.current);
     timer.current = undefined;
-    const queryString = serializeCatalogSearchParams(next);
+    const currentView =
+      new URLSearchParams(window.location.search).get("view") === "list"
+        ? "list"
+        : "grid";
+    const queryString = serializeCatalogSearchParams({
+      ...next,
+      view: currentView,
+    });
     router[mode](`${pathname}${queryString ? `?${queryString}` : ""}`, {
       scroll: false,
     });
   }
 
-  function update<K extends keyof CatalogSearchValue>(
-    key: K,
-    nextValue: CatalogSearchValue[K],
-  ) {
-    navigate({
-      ...value,
-      query: queryDraft.current.trim().replace(/\s+/gu, " "),
-      [key]: nextValue,
-      page: key === "view" ? value.page : 1,
-    });
+  function updateView(nextView: CatalogSearchValue["view"]) {
+    if (view === nextView) return;
+    const params = new URLSearchParams(window.location.search);
+    if (nextView === "grid") params.delete("view");
+    else params.set("view", nextView);
+    const queryString = params.toString();
+    window.history.pushState(
+      null,
+      "",
+      `${pathname}${queryString ? `?${queryString}` : ""}${window.location.hash}`,
+    );
   }
 
   function updateDraft<K extends keyof CatalogSearchValue>(
@@ -160,6 +171,14 @@ export default function CatalogControls({ value, facets }: Props) {
     value: habitat,
     label: codeLabel(habitat),
   }));
+  const sortOptions = useMemo(
+    () =>
+      [
+        { value: "name", label: t("sortName") },
+        { value: "updated", label: t("sortUpdated") },
+      ] as const,
+    [t],
+  );
   const count = activeFilterCount(value);
 
   return (
@@ -196,11 +215,7 @@ export default function CatalogControls({ value, facets }: Props) {
           aria-expanded={drawerOpen}
           aria-controls="species-filter-drawer"
           ref={filterRef}
-          className={
-            count > 0
-              ? `${styles.filterButton} ${styles.filterButtonActive}`
-              : styles.filterButton
-          }
+          className={styles.filterButton}
           onClick={() => {
             setDraft(value);
             setDrawerRevision((revision) => revision + 1);
@@ -217,21 +232,21 @@ export default function CatalogControls({ value, facets }: Props) {
 
         <div
           className={styles.viewToggle}
-          data-view={value.view}
+          data-view={view}
           role="group"
           aria-label={t("viewLabel")}
         >
           <button
-            aria-pressed={value.view === "grid"}
-            onClick={() => update("view", "grid")}
+            aria-pressed={view === "grid"}
+            onClick={() => updateView("grid")}
             type="button"
           >
             <LayoutGrid aria-hidden="true" size={16} strokeWidth={2} />
             {t("grid")}
           </button>
           <button
-            aria-pressed={value.view === "list"}
-            onClick={() => update("view", "list")}
+            aria-pressed={view === "list"}
+            onClick={() => updateView("list")}
             type="button"
           >
             <List aria-hidden="true" size={16} strokeWidth={2} />
@@ -308,23 +323,12 @@ export default function CatalogControls({ value, facets }: Props) {
               searchPlaceholder={t("searchOption")}
               selected={draft.habitats}
             />
-            <label className={styles.drawerSortField}>
-              <span>{t("sortLabel")}</span>
-              <select
-                className={multiSelectStyles.trigger}
-                name="sort"
-                onChange={(event) =>
-                  updateDraft(
-                    "sort",
-                    event.target.value as CatalogSearchValue["sort"],
-                  )
-                }
-                value={draft.sort}
-              >
-                <option value="name">{t("sortName")}</option>
-                <option value="updated">{t("sortUpdated")}</option>
-              </select>
-            </label>
+            <SingleSelect
+              label={t("sortLabel")}
+              onChange={(next) => updateDraft("sort", next)}
+              options={sortOptions}
+              value={draft.sort}
+            />
           </div>
           <footer className={styles.drawerFooter}>
             <button
@@ -379,9 +383,11 @@ export function CatalogPagination({
   total: number;
 }) {
   const t = useTranslations("catalog");
+  const searchParams = useSearchParams();
+  const view = searchParams.get("view") === "list" ? "list" : "grid";
   const pages = Math.max(1, Math.ceil(total / value.pageSize));
   const href = (page: number) => {
-    const query = serializeCatalogSearchParams({ ...value, page });
+    const query = serializeCatalogSearchParams({ ...value, view, page });
     return `/species${query ? `?${query}` : ""}`;
   };
   const current = Math.min(Math.max(value.page, 1), pages);

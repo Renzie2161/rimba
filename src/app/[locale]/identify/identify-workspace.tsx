@@ -6,12 +6,17 @@ import {
   resolveRimbaCandidates,
   resolveTaxonResponseSchema,
 } from "@/features/identification/domain/taxon-resolution";
-import type { ModelCandidate } from "@/features/identification/domain/types";
+import type {
+  IdentificationMode,
+  ModelAAdapter,
+  ModelCandidate,
+} from "@/features/identification/domain/types";
 import {
   imageFromClipboard,
   prepareImageFile,
   type ImageValidationError,
 } from "@/features/identification/image-validation";
+import { createINaturalistSmallAdapter } from "@/features/identification/models/inaturalist-small";
 import { createPlantNetResNet18Adapter } from "@/features/identification/models/plantnet-resnet18";
 
 import IdentificationResults, {
@@ -52,8 +57,13 @@ type Labels = {
   modePlant: string;
   modeAnimal: string;
   modeAuto: string;
-  modeUnavailable: string;
-  dropTitle: string;
+  modePlantInfo: string;
+  modeAnimalInfo: string;
+  modeAutoUnavailable: string;
+  dropTitlePlant: string;
+  dropTitleAnimal: string;
+  modelCreditPlant: string;
+  modelCreditAnimal: string;
   dropHelp: string;
   dropActive: string;
   pastedImage: string;
@@ -66,7 +76,8 @@ type Labels = {
   fileDimensionsError: string;
   fileDecoderError: string;
   analysing: string;
-  loadingModel: string;
+  loadingPlantModel: string;
+  loadingAnimalModel: string;
   preprocessing: string;
   runningInference: string;
   resolving: string;
@@ -84,10 +95,10 @@ type Labels = {
 type Props = { labels: Labels };
 
 /**
- * Runs the pinned plant model locally; only exact candidate taxon keys reach the
- * encyclopedia lookup endpoint.
+ * Runs the selected model locally; only verified GBIF keys reach encyclopedia lookup.
  */
 export default function IdentifyWorkspace({ labels }: Props) {
+  const [selectedMode, setSelectedMode] = useState<IdentificationMode>("plant");
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [fileName, setFileName] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -101,9 +112,7 @@ export default function IdentifyWorkspace({ labels }: Props) {
   const dragDepth = useRef(0);
   const validationAttempt = useRef(0);
   const activeFile = useRef<File | null>(null);
-  const adapterRef = useRef<ReturnType<
-    typeof createPlantNetResNet18Adapter
-  > | null>(null);
+  const adapterRef = useRef<ModelAAdapter | null>(null);
 
   const cameraAvailable = useSyncExternalStore(
     subscribe,
@@ -116,11 +125,15 @@ export default function IdentifyWorkspace({ labels }: Props) {
     activity === "preprocessing" ||
     activity === "running" ||
     activity === "resolving";
+  const dropTitle =
+    selectedMode === "plant" ? labels.dropTitlePlant : labels.dropTitleAnimal;
   const status =
     activity === "validating"
       ? labels.analysing
       : activity === "loading-model"
-        ? labels.loadingModel
+        ? selectedMode === "plant"
+          ? labels.loadingPlantModel
+          : labels.loadingAnimalModel
         : activity === "preprocessing"
           ? labels.preprocessing
           : activity === "running"
@@ -164,10 +177,23 @@ export default function IdentifyWorkspace({ labels }: Props) {
     return () => window.removeEventListener("paste", handlePaste);
   });
 
-  async function identify(file: File, attempt: number) {
+  async function identify(
+    file: File,
+    attempt: number,
+    mode: IdentificationMode,
+  ) {
     setError(null);
     setLookupWarning(false);
-    const adapter = adapterRef.current ?? createPlantNetResNet18Adapter();
+    const previousAdapter = adapterRef.current;
+    if (previousAdapter && previousAdapter.mode !== mode) {
+      adapterRef.current = null;
+      void previousAdapter.dispose().catch(() => undefined);
+    }
+    const adapter =
+      adapterRef.current ??
+      (mode === "plant"
+        ? createPlantNetResNet18Adapter()
+        : createINaturalistSmallAdapter());
     adapterRef.current = adapter;
     if (!adapter.isAvailable()) {
       setError(labels.runtimeUnavailable);
@@ -222,7 +248,6 @@ export default function IdentifyWorkspace({ labels }: Props) {
     }
     if (attempt !== validationAttempt.current) return;
 
-    setActivity("resolving");
     const taxonKeys = Array.from(
       new Set(
         prediction.candidates.flatMap(({ canonicalTaxonId }) =>
@@ -233,6 +258,7 @@ export default function IdentifyWorkspace({ labels }: Props) {
     let resolved = resolveRimbaCandidates(prediction.candidates, []);
 
     if (taxonKeys.length > 0) {
+      setActivity("resolving");
       try {
         const response = await fetch("/api/identify/resolve", {
           method: "POST",
@@ -289,7 +315,22 @@ export default function IdentifyWorkspace({ labels }: Props) {
     activeFile.current = validation.file;
     setFileName(displayName);
     setPreviewUrl(URL.createObjectURL(validation.file));
-    void identify(validation.file, attempt);
+    void identify(validation.file, attempt, selectedMode);
+  }
+
+  function selectMode(mode: IdentificationMode) {
+    if (busy || mode === selectedMode) return;
+    setSelectedMode(mode);
+    setCandidates([]);
+    setLookupWarning(false);
+    setError(null);
+    if (activeFile.current) {
+      const attempt = ++validationAttempt.current;
+      setActivity("validating");
+      void identify(activeFile.current, attempt, mode);
+    } else {
+      setActivity("idle");
+    }
   }
 
   function clear() {
@@ -311,17 +352,43 @@ export default function IdentifyWorkspace({ labels }: Props) {
       <fieldset className={styles.modeSelector}>
         <legend>{labels.modeLabel}</legend>
         <div className={styles.modeOptions}>
-          <span aria-current="true" className={styles.modeActive}>
+          <button
+            aria-pressed={selectedMode === "plant"}
+            className={
+              selectedMode === "plant" ? styles.modeActive : styles.modeOption
+            }
+            disabled={busy}
+            onClick={() => selectMode("plant")}
+            type="button"
+          >
             {labels.modePlant}
-          </span>
-          <button className={styles.modeOption} disabled type="button">
+          </button>
+          <button
+            aria-pressed={selectedMode === "animal"}
+            className={
+              selectedMode === "animal" ? styles.modeActive : styles.modeOption
+            }
+            disabled={busy}
+            onClick={() => selectMode("animal")}
+            type="button"
+          >
             {labels.modeAnimal}
           </button>
-          <button className={styles.modeOption} disabled type="button">
+          <button
+            aria-describedby="identify-mode-help"
+            className={styles.modeOption}
+            disabled
+            type="button"
+          >
             {labels.modeAuto}
           </button>
         </div>
-        <p className={styles.modeHelp}>{labels.modeUnavailable}</p>
+        <p className={styles.modeHelp} id="identify-mode-help">
+          {selectedMode === "plant"
+            ? labels.modePlantInfo
+            : labels.modeAnimalInfo}{" "}
+          {labels.modeAutoUnavailable}
+        </p>
       </fieldset>
 
       <section
@@ -330,7 +397,7 @@ export default function IdentifyWorkspace({ labels }: Props) {
         className={styles.uploader}
       >
         <h2 className="sr-only" id="identify-upload">
-          {labels.dropTitle}
+          {dropTitle}
         </h2>
 
         {previewUrl ? (
@@ -394,7 +461,7 @@ export default function IdentifyWorkspace({ labels }: Props) {
               strokeWidth={1.6}
             />
             <p className={styles.dropTitle}>
-              {dragging ? labels.dropActive : labels.dropTitle}
+              {dragging ? labels.dropActive : dropTitle}
             </p>
             <p className={styles.dropHelp}>{labels.dropHelp}</p>
             <div
@@ -471,7 +538,11 @@ export default function IdentifyWorkspace({ labels }: Props) {
             className={styles.secondary}
             onClick={() => {
               if (activeFile.current) {
-                void identify(activeFile.current, validationAttempt.current);
+                void identify(
+                  activeFile.current,
+                  validationAttempt.current,
+                  selectedMode,
+                );
               }
             }}
             type="button"
@@ -487,9 +558,18 @@ export default function IdentifyWorkspace({ labels }: Props) {
           fileName={fileName}
           labels={labels}
           lookupWarning={lookupWarning}
+          modelAttribution={
+            selectedMode === "plant"
+              ? labels.modelCreditPlant
+              : labels.modelCreditAnimal
+          }
           onRescan={() => {
             if (activeFile.current) {
-              void identify(activeFile.current, validationAttempt.current);
+              void identify(
+                activeFile.current,
+                validationAttempt.current,
+                selectedMode,
+              );
             }
           }}
           previewUrl={previewUrl}

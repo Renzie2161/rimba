@@ -37,4 +37,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /public/ai/runtime/onnxruntime-web/
+/public/ai/runtime/tfjs-tflite/
 /AGENTS.md

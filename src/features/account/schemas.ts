@@ -23,6 +23,37 @@ export const profileSchema = z.object({
   username_created_at: z.iso.datetime({ offset: true }).nullable(),
   username_changed_at: z.iso.datetime({ offset: true }).nullable(),
 });
+export const accountActivityRowSchema = z
+  .object({
+    id: z.uuid(),
+    activity_type: z.enum(["identified", "viewed"]),
+    occurred_at: z.iso.datetime({ offset: true }),
+    species_slug: z.string().min(1),
+    species_common_name: z.string().min(1),
+    species_scientific_name: z.string().min(1),
+  })
+  .strict();
+export const accountActivitiesSchema = z
+  .array(accountActivityRowSchema)
+  .max(20)
+  .transform((rows) =>
+    rows.map((row) => ({
+      id: row.id,
+      type: row.activity_type,
+      occurredAt: row.occurred_at,
+      speciesSlug: row.species_slug,
+      speciesCommonName: row.species_common_name,
+      speciesScientificName: row.species_scientific_name,
+    })),
+  );
+export const speciesActivityInputSchema = z
+  .object({
+    speciesId: z.uuid(),
+    activityType: z.enum(["identified", "viewed"]),
+  })
+  .strict();
+export type AccountActivity = z.output<typeof accountActivitiesSchema>[number];
+
 export type Profile = z.infer<typeof profileSchema>;
 export type AccountSummary = {
   displayName: string;

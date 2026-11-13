@@ -70,35 +70,55 @@ export default async function JournalPage() {
       <ul className={styles.metrics} aria-label={t("metricsLabel")}>
         <li className={styles.metric}>
           <NotebookText aria-hidden="true" />
-          <span className={styles.metricValue} data-metric="total">
-            {formatCount(summary.total)}
-          </span>
-          <span className={styles.metricLabel}>{t("metricTotal")}</span>
-          <span className={styles.metricHelp}>{t("metricTotalHelp")}</span>
+          <div className={styles.metricContent}>
+            <div className={styles.metricHeading}>
+              <span className={styles.metricValue} data-metric="total">
+                {formatCount(summary.total)}
+              </span>
+              <span className={styles.metricLabel}>{t("metricTotal")}</span>
+            </div>
+            <span className={styles.metricHelp}>{t("metricTotalHelp")}</span>
+          </div>
         </li>
         <li className={styles.metric}>
           <Leaf aria-hidden="true" />
-          <span className={styles.metricValue} data-metric="flora">
-            {formatCount(summary.flora)}
-          </span>
-          <span className={styles.metricLabel}>{t("metricFlora")}</span>
-          <span className={styles.metricHelp}>{t("metricFloraHelp")}</span>
+          <div className={styles.metricContent}>
+            <div className={styles.metricHeading}>
+              <span className={styles.metricValue} data-metric="flora">
+                {formatCount(summary.flora)}
+              </span>
+              <span className={styles.metricLabel}>{t("metricFlora")}</span>
+            </div>
+            <span className={styles.metricHelp}>{t("metricFloraHelp")}</span>
+          </div>
         </li>
         <li className={styles.metric}>
           <PawPrint aria-hidden="true" />
-          <span className={styles.metricValue} data-metric="fauna">
-            {formatCount(summary.fauna)}
-          </span>
-          <span className={styles.metricLabel}>{t("metricFauna")}</span>
-          <span className={styles.metricHelp}>{t("metricFaunaHelp")}</span>
+          <div className={styles.metricContent}>
+            <div className={styles.metricHeading}>
+              <span className={styles.metricValue} data-metric="fauna">
+                {formatCount(summary.fauna)}
+              </span>
+              <span className={styles.metricLabel}>{t("metricFauna")}</span>
+            </div>
+            <span className={styles.metricHelp}>{t("metricFaunaHelp")}</span>
+          </div>
         </li>
         <li className={styles.metric}>
           <ClipboardList aria-hidden="true" />
-          <span className={styles.metricValue} data-metric="attention">
-            {formatCount(summary.attention)}
-          </span>
-          <span className={styles.metricLabel}>{t("metricThreatened")}</span>
-          <span className={styles.metricHelp}>{t("metricThreatenedHelp")}</span>
+          <div className={styles.metricContent}>
+            <div className={styles.metricHeading}>
+              <span className={styles.metricValue} data-metric="attention">
+                {formatCount(summary.attention)}
+              </span>
+              <span className={styles.metricLabel}>
+                {t("metricThreatened")}
+              </span>
+            </div>
+            <span className={styles.metricHelp}>
+              {t("metricThreatenedHelp")}
+            </span>
+          </div>
         </li>
       </ul>
 
