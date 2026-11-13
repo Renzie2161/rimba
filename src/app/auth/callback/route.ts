@@ -1,9 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createAuthClient } from "@/lib/supabase/auth-server";
 
+function getPublicOrigin(request: NextRequest): string {
+  return process.env.NEXT_PUBLIC_SITE_URL
+    ? new URL(process.env.NEXT_PUBLIC_SITE_URL).origin
+    : request.nextUrl.origin;
+}
+
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code");
+  const origin = getPublicOrigin(request);
   const client = await createAuthClient();
+
   if (code) {
     const { error } = await client.auth.exchangeCodeForSession(code);
     if (!error) {
@@ -16,14 +24,13 @@ export async function GET(request: NextRequest) {
         );
         const target =
           profileError || !data?.username ? "/id/onboarding" : "/id/profile";
-        return NextResponse.redirect(new URL(target, request.url), {
+        return NextResponse.redirect(new URL(target, origin), {
           headers: { "Cache-Control": "private, no-store" },
         });
       }
       await client.auth.signOut();
     }
   }
-  return NextResponse.redirect(
-    new URL("/id/login?error=callback", request.url),
-  );
+
+  return NextResponse.redirect(new URL("/id/login?error=callback", origin));
 }
